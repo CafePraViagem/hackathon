@@ -1,10 +1,8 @@
-# Rotina de Commits
+# Rotina de Commits no git
 RepositórioTeste
 
 
-## Pegar o link do repositório a ser clonado...
-
-### clonar um repositório em uma pasta de sua escolha
+### Pegar o link do repositório a ser clonado e clonar o repositório em uma pasta de sua escolha
 ```
 git clone link do repositório
 ```
@@ -19,8 +17,7 @@ git pull origin main
 //mudando e criando uma nova branch para não alterar codigo alheio
 git checkout -b minhaBranch
 ```
-### 2 - Trabalhe como se não houvesse amanhã
-## acabou?
+### 2 - Trabalhe como se não houvesse amanhã...  acabou?
 
 ### 3 - Vamos subir as modificações para o github, dentro da mesma branch
 ```
