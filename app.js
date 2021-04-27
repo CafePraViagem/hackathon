@@ -1,8 +1,2 @@
 prompt("Ismael Esteve aqui");
-console.log("algo")prompt("Ismael Esteve aqui");
-console.log("algo")prompt("Ismael Esteve aqui");
-console.log("algo")prompt("Ismael Esteve aqui");
-console.log("algo")prompt("Ismael Esteve aqui");
-console.log("algo")prompt("Ismael Esteve aqui");
-console.log("algo")prompt("Ismael Esteve aqui");
-console.log("algo")
+console.log("isso e aquilo")
