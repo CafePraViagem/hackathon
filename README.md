@@ -1,16 +1,18 @@
-# Rotina de Commits no git
-RepositórioTeste Café no Bule 
+# RepositórioTeste Café no Bule 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimgwN0yxiKDLmKa5dHz8Z8jq8IupAxz_3kQ&usqp=CAU" width="60px" alt="">
 
 
-### Pegar o link do repositório a ser clonado e clonar o repositório em uma pasta de sua escolha
+### Clonar um reposítório...
+1 - Criar uma pasta nova e nomear com algo que faça sentido rs
+2 - Pegar o link do repositório a ser clonado. 
+3 - Abrir um terminal do windows ou gitbash apontado para essa pasta.
+4 - Usar o código abaixo para clonar o repositório dentro dessa pasta.
 ```
 git clone link do repositório
 ```
 
-<hr/>
 
-## As linhas abaixo são uma rotina...
+## -----Rotina de Commits no git
 ### 1 - Começando o dia de trabalho, puxando as alterações da Main.
 ```
 git pull origin main
