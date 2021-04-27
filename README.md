@@ -10,16 +10,16 @@ git clone link do repositório
 <hr/>
 
 ## As linhas abaixo são uma rotina...
-### 1 - Começando o dia de trabalho, puxando as alterações da Main
+### 1 - Começando o dia de trabalho, puxando as alterações da Main.
 ```
 git pull origin main
 
-//mudando e criando uma nova branch para não alterar codigo alheio
-git checkout -b minhaBranch
+//sair da Main e trocar de branch para não alterar codigo alheio
+git checkout nomeDaMinhaBranch
 ```
 ### 2 - Trabalhe como se não houvesse amanhã...  acabou?
 
-### 3 - Vamos subir as modificações para o github, dentro da mesma branch
+### 3 - Vamos subir as modificações para o github, dentro da mesma branch.
 ```
 git add .
 git commit -m "nome do commit"
@@ -28,5 +28,5 @@ git push --set-upstream origin minhBranch
 //ou apenas git push e ele vai devolver a linha de codigo correta pra você
 ```
 
-## Bonus - Mudando de branch
-```git checkout nomeDaBranch```
+## Bonus - Criando uma nova branch
+```git checkout -b nomeDaBranch```
