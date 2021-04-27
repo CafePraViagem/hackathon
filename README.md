@@ -16,11 +16,13 @@ git clone link do repositório
 ### 1 - Começando o dia de trabalho, puxando as alterações da Main.
 ```
 git pull origin main
-
+```
 //sair da Main e trocar de branch para não alterar codigo do seu brother.
+```
 git checkout nomeDaMinhaBranch
-
+```
 //juntar o que você puxou da main na sua branch
+```
 git merge main
 ```
 ### 2 - Trabalhe como se não houvesse amanhã...  acabou?
@@ -30,12 +32,12 @@ git merge main
 git add .
 git commit -m "nome do commit"
 git push 
-
-//Caso ele dê erro, observe que o próprio terminal te dá uma linha com o codigo correto parecida com essa abaixo:
-git push --set-upstream origin nomeDaMinhaBranch
-
-//Basta copiar e colar no terminal que ele envia as modificações...
 ```
+//Caso ele dê erro, observe que o próprio terminal te dá uma linha com o codigo correto parecida com essa abaixo:
+```
+git push --set-upstream origin nomeDaMinhaBranch
+```
+//Basta copiar e colar no terminal que ele envia as modificações...
 
 ## Bonus - Criando uma nova branch
 ```git checkout -b nomeDaBranch```
