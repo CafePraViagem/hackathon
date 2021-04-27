@@ -23,7 +23,7 @@ git checkout nomeDaMinhaBranch
 ```
 git add .
 git commit -m "nome do commit"
-git push --set-upstream origin minhBranch
+git push --set-upstream origin nomeDaMinhaBranch
 
 //ou apenas git push e ele vai devolver a linha de codigo correta pra você
 ```
