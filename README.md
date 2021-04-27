@@ -1,5 +1,6 @@
 # Rotina de Commits no git
-RepositórioTeste
+RepositórioTeste Café no Bule 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimgwN0yxiKDLmKa5dHz8Z8jq8IupAxz_3kQ&usqp=CAU" width="60px" alt="">
 
 
 ### Pegar o link do repositório a ser clonado e clonar o repositório em uma pasta de sua escolha
