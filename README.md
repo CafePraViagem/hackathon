@@ -16,6 +16,7 @@ git pull origin main
 
 //sair da Main e trocar de branch para não alterar codigo alheio
 git checkout nomeDaMinhaBranch
+git merge main
 ```
 ### 2 - Trabalhe como se não houvesse amanhã...  acabou?
 
