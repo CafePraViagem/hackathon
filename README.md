@@ -21,13 +21,16 @@ git merge main
 ```
 ### 2 - Trabalhe como se não houvesse amanhã...  acabou?
 
-### 3 - Vamos subir as modificações para o github, dentro da mesma branch.
+### 3 - Vamos subir as modificações para o github, dentro da **mesma branch**.
 ```
 git add .
 git commit -m "nome do commit"
+git push 
+
+//Caso ele dê erro, observe que o próprio terminal te dá uma linha com o codigo correto parecida com essa abaixo:
 git push --set-upstream origin nomeDaMinhaBranch
 
-//ou apenas git push e ele vai devolver a linha de codigo correta pra você
+//Basta copiar e colar no terminal que ele envia as modificações...
 ```
 
 ## Bonus - Criando uma nova branch
