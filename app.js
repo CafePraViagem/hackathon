@@ -1,2 +1,2 @@
 prompt("Ismael Esteve aqui");
-console.log("algo");
+console.log("algo")
