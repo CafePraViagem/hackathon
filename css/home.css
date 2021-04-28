@@ -1,46 +1,71 @@
+/* Font Awesome Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
 * {
-    font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+/* NAVBAR */
+
+.navbar-nav {
+  transition: all 0.3s ease-in;
+}
+
+.container-fluid {
+  padding-bottom: 2rem;
+}
+.navbar-nav :hover {
+  font-weight: bold;
+}
+
+a.navbar-brand {
+  font-weight: bold;
+}
+
+/* BODY */
 
 /* Texto & Infos */
 section {
-    margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 #rectangle {
-    width: 9px;
-    height: 17px;
-    background: #FF9A9A;
+  width: 9px;
+  height: 17px;
+  background: #ff9a9a;
 }
 
 .title-section {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 #text-01 h2,
 #text-02 h2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #text-01 p,
-#text-02 p{
-    font-size: 12px;
+#text-02 p {
+  font-size: 12px;
 }
 
 /* Footer */
 footer {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 #link-footer {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 #link-footer a {
-    margin: 1rem;
-    color: grey;
+  margin: 1rem;
+  color: grey;
 }
 
 #foot-text {
-    font-weight: bold;
+  font-weight: bold;
 }
