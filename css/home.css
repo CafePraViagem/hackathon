@@ -33,10 +33,11 @@ a.navbar-brand {
   text-align: center;
 }
 
+
 #howMuch {
   background: #EF653C;
   border-radius: 100px;
-
+  transform: translateY(-20px);
   
   border: none;
   font-family: Sen;
@@ -45,6 +46,15 @@ a.navbar-brand {
   font-size: 18px;
   line-height: 30px;
       
+}
+
+/* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
+
+#carousel img {
+  -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, 
+  color-stop(0.20,  rgba(0,0,0,0)), /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
+  color-stop(0.60,  rgba(0,0,0,1))); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+
 }
 
 /* Texto & Infos */
