@@ -1,0 +1,10 @@
+.image-width-height-carousel {
+    width: 100vw;
+    height: 40vh;
+}
+
+@media (min-width: 1010px) {
+    .image-width-height-carousel {
+        height: 50vh;
+    }
+}
