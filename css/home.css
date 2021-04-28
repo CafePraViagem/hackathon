@@ -1,0 +1,12 @@
+footer {
+    padding: 20px 0 15px;
+}
+
+footer h2 {
+    font-size: 15px;
+}
+
+#link-footer a {
+    margin: 1rem;
+    color: grey;
+}
