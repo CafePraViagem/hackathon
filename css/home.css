@@ -45,7 +45,20 @@ a.navbar-brand {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-      
+  box-shadow: none;
+
+}
+
+#howMuch:hover {
+  background: #4B4FA1;
+  outline: none;
+  box-shadow: none;
+
+}
+
+#howMuch:active{
+  background: #363b75;
+  box-shadow: none;
 }
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
