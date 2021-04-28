@@ -96,6 +96,13 @@ section {
 }
 
 /* Footer */
+.footer {
+  margin: auto;
+  width: 100%;
+  bottom: 0;
+  position: fixed
+}
+
 footer {
   padding: 10px 0;
 }
