@@ -48,6 +48,23 @@ a.navbar-brand {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+/* <<<<<<< HEAD */
+/* ======= */
+  box-shadow: none;
+
+}
+
+#howMuch:hover {
+  background: #4B4FA1;
+  outline: none;
+  box-shadow: none;
+
+}
+
+#howMuch:active{
+  background: #363b75;
+  box-shadow: none;
+/* >>>>>>> ce6543c1904c9f553d793564c18a15e13000418e */
 }
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
@@ -96,7 +113,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-/* #text-01 e text-02 | Tamanho do h2/p em telas menores: MAX-WIDTH 319PX */
+/* #text-01 e text-02 | Tamanho do h2/p/rectangle em telas menores: MAX-WIDTH 319PX */
 @media only screen and (max-width: 319px) {
   #rectangle {
     width: 6px;
@@ -115,7 +132,7 @@ footer {
 }
 }
 
-/* #text-01 e text-02 | Tamanho do h2/p em telas menores: MIN-WIDTH 320PX & MAX-WIDTH 374PX */
+/* #text-01 e text-02 | Tamanho do h2/p/rectangle em telas menores: MIN-WIDTH 320PX & MAX-WIDTH 374PX */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   #rectangle {
     width: 8px;
