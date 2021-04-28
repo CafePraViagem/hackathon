@@ -17,7 +17,8 @@
 .container-fluid {
   padding-bottom: 2rem;
 }
-.navbar-nav :hover {
+
+.navbar-nav:hover {
   font-weight: bold;
 }
 
@@ -35,7 +36,7 @@ section {
 #rectangle {
   width: 9px;
   height: 17px;
-  background: #ff9a9a;
+  background: #4E00C8;
 }
 
 .title-section {
