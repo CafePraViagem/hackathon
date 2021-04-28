@@ -67,3 +67,22 @@ let images = [
     }
 
 ];
+
+let imageCarrousselButton = document.querySelector(".carroussel-button");
+
+function changeBannerCarroussel () {
+
+    for (let i = 0; i < images.length; i++) {
+        console.log(images[i]);
+    }
+
+    
+    /* for(let i in images) {
+        html += `<div class="carroussel-home"><img src="${images[i].image}"></div>`;
+    } */
+    
+}
+
+imageCarrousselButton.onclick = changeBannerCarroussel;
+
+
