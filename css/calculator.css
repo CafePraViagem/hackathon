@@ -1,0 +1,9 @@
+/* Font Awesome Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+    font-family: "Sen", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }

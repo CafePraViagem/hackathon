@@ -28,6 +28,25 @@ a.navbar-brand {
 
 /* BODY */
 
+/* Botão Calculador */
+.container {
+  text-align: center;
+}
+
+#howMuch {
+  background: #EF653C;
+  border-radius: 100px;
+
+  
+  border: none;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+      
+}
+
 /* Texto & Infos */
 section {
   margin-bottom: 0.3rem;
