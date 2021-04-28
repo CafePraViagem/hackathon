@@ -1,9 +1,13 @@
 footer {
-    padding: 20px 0 15px;
+    padding: 15px 0;
 }
 
 footer h2 {
     font-size: 15px;
+}
+
+#link-footer {
+    padding-bottom: 1rem;
 }
 
 #link-footer a {
