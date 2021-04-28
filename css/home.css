@@ -1,9 +1,35 @@
-footer {
-    padding: 15px 0;
+* {
+    font-family: 'Sen', sans-serif;
 }
 
-footer h2 {
-    font-size: 15px;
+/* Texto & Infos */
+section {
+    margin-bottom: .3rem;
+}
+
+#rectangle {
+    width: 9px;
+    height: 17px;
+    background: #FF9A9A;
+}
+
+.title-section {
+    margin-left: 5px;
+}
+
+#text-01 h2,
+#text-02 h2 {
+    font-weight: bold;
+}
+
+#text-01 p,
+#text-02 p{
+    font-size: 12px;
+}
+
+/* Footer */
+footer {
+    padding: 15px 0;
 }
 
 #link-footer {
@@ -13,4 +39,8 @@ footer h2 {
 #link-footer a {
     margin: 1rem;
     color: grey;
+}
+
+#foot-text {
+    font-weight: bold;
 }
