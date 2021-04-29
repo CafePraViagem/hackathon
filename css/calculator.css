@@ -9,9 +9,7 @@
   }
 
 
-/* .footer | Posição absoluta em telas com alturas maiores que 610px - Solução para conteudo não cobrir toda página */
-@media only screen and (min-height: 610px) {
-  .footer { 
-    position: relative;
-  }
+.footer { 
+  position: relative;
 }
+
