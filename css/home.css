@@ -60,15 +60,26 @@ img.logo {
 
 /* BODY */
 
+/* Linha roxa do carousel */
+#bordaRoxaCarrosel {
+  border-top: solid 6px #4B4FA1;
+  z-index: 1;
+
+  margin: 0;
+}
+
 /* Botão Calculador */
 #alinhamentoCentro {
+  position: relative;
   text-align: center;
+  z-index: 2;
+
 }
 
 #howMuch {
   background: #fc9523;
   border-radius: 100px;
-  transform: translateY(-20px);
+  transform: translateY(-30px);
   border: none;
   font-family: Sen;
   font-style: normal;
@@ -113,7 +124,7 @@ section {
 #rectangle {
   width: 6px;
   height: 6px;
-  background: #4e00c8;
+  background: #4B4FA1;
 }
 
 .title-section {
@@ -128,7 +139,7 @@ section {
 #rectangle {
   width: 6px;
   height: 6px;
-  background: #4E00C8;
+  background: #4B4FA1;
 }
 
 #text-01 h2,
@@ -187,7 +198,7 @@ p.bolder-text {
 }
 
 /* .footer | Posição absoluta em telas com alturas maiores que 610px - Solução para conteudo não cobrir toda página */
-@media only screen and (min-height: 610px) {
+@media (min-height: 610px) {
   .footer { 
     position: absolute;
   }
