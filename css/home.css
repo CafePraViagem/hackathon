@@ -131,15 +131,15 @@ section {
 }
 
 /* Footer */
-.footer { 
-  bottom: 0;
-  width: 100%;
+.footer {
   height: 60px;
+  width: 100%;
 
 }
 
 footer {
   padding: 10px 0 1px 0;
+  
 }
 
 footer p {
