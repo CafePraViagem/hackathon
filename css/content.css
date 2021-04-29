@@ -1,6 +1,9 @@
-.container-text-section, .container-click-button-message, .infos-trip-list, .li-trip, .ul-trip {
+.fon
+
+.container-click-button-message, .infos-trip-list, .li-trip, .ul-trip, .plus-trip, .final-message,.container-text-section {
     margin: 0 auto;
     width: 60vw;
+    text-align: justify;
 }
 
 .container-click-button-message {
@@ -12,13 +15,62 @@
     
 }
 
-.infos-trip-list {
-    text-align: center;
-    margin-bottom: 20px;
+.li-trip div {
+    margin-top: 10px;
+}
+
+.central-ul-trip{
+    margin: 0 auto;
+    
+}
+
+.li-iten-trip {
+    position: relative;
 }
 
 .ul-trip {
     text-align: left;
+}
+
+.plus-trip, .plus-trip {
+    margin-top: 10px;
+}
+
+.button-type-trip {
+    background: #fc9523;
+    border-radius: 100px;
+    border: none;
+    box-shadow: none;
+    font-family: Sen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.button-type-trip a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-type-trip:hover {
+    background-color: #4E00C8;
+    box-shadow: 3px 3px #FC9523;
+}
+
+.final-link {
+    color:  #ff9500 ;
+
+}
+
+.final-link:hover {
+    color: #4E00C8;
+}
+
+.final-message {
+    text-align: center;
+    margin: 30px 0;
 }
 
 .text-decoration-color-underline {
@@ -41,8 +93,42 @@ li > strong {
     }
 }
 
-@media (min-width: 1080px) {
+/* @media (min-width: 526px) {
+    .li-trip > p {
+        text-align: left;
+    }
+} */
+
+@media (min-width: 976px){
+
+    .coffee-go-trip{
+        text-align: center;
+    }
+
+    .container-text-section {
+        width: 95vw;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .section1, .section2 {
+        width: 38vw;
+        margin: 0;
+    }
+
+    .section1 {
+        float: left;
+        
+    }
+
+    .section2 {
+        float: right;
+    }
+}
+
+
+/* @media (min-width: 1080px) {
     .infos-trip {
         text-align: left;
     }
-}
+} */
