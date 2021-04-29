@@ -1,4 +1,4 @@
-.container-text-section, .container-click-button-message, .infos-trip, .infos-trip-list {
+.container-text-section, .container-click-button-message, .infos-trip-list, .li-trip, .ul-trip {
     margin: 0 auto;
     width: 60vw;
 }
@@ -18,9 +18,18 @@
 }
 
 .ul-trip {
+    text-align: left;
+}
+
+.text-decoration-color-underline {
+    text-decoration: underline;
+    text-decoration-color: #FC9523;
+}
+
+/* .ul-trip {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     padding: 0 0 3px 3px;
-}
+} */
 
 li > strong {
     color: #ff9500;
@@ -29,12 +38,11 @@ li > strong {
 @media (min-width: 407px) {
     .ul-trip {
         box-shadow: none;
-        margin-left: 5vw;
     }
 }
 
-@media (min-width: 575px) {
-    .infos-trip-list {
+@media (min-width: 1080px) {
+    .infos-trip {
         text-align: left;
     }
 }
