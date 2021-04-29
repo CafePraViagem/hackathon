@@ -130,15 +130,14 @@ section {
   font-size: 10px;
 }
 
-Footer
-.footer {
-  margin: auto;
-  width: 100%;
+/* Footer */
+.footer { 
   bottom: 0;
-  position: static
+  width: 100%;
+  height: 60px;
+
 }
 
-/* Footer */
 footer {
   padding: 10px 0 1px 0;
 }
@@ -156,6 +155,14 @@ footer p {
   margin: 0.89rem;
   color: grey;
 }
+
+/* .footer | Posição absoluta em telas com alturas maiores que 610px */
+@media only screen and (min-height: 610px) {
+  .footer { 
+    position: absolute;
+  }
+}
+
 
 /* #text-01 e text-02 | Tamanho do h2/p/rectangle em telas menores: MIN-WIDTH 320PX & MAX-WIDTH 374PX */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
