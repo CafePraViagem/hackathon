@@ -61,7 +61,7 @@ img.logo {
 /* BODY */
 
 /* Linha roxa do carousel */
-#bordaRoxaCarrosel {
+#bordaCarrosel {
   border-top: solid 6px #4B4FA1;
   z-index: 1;
 
