@@ -1,1 +1,40 @@
-/* teste */
+.container-text-section, .container-click-button-message, .infos-trip, .infos-trip-list {
+    margin: 0 auto;
+    width: 60vw;
+}
+
+.container-click-button-message {
+    text-align: center;
+}
+
+.click-button-message {
+    margin: 15px;   
+    
+}
+
+.infos-trip-list {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ul-trip {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    padding: 0 0 3px 3px;
+}
+
+li > strong {
+    color: #ff9500;
+}
+
+@media (min-width: 407px) {
+    .ul-trip {
+        box-shadow: none;
+        margin-left: 5vw;
+    }
+}
+
+@media (min-width: 575px) {
+    .infos-trip-list {
+        text-align: left;
+    }
+}
