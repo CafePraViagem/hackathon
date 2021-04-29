@@ -14,37 +14,47 @@
 }
 
 /* NAVBAR */
-
-.navbar-nav {
-  transition: all 0.3s ease-in;
-}
-.navbar-nav:hover {
-  font-weight: bold;
+.navbar {
+  margin: 0 auto;
+  padding: 1rem 1rem;
 }
 
 .container-fluid {
-  padding-bottom: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
 
 a.navbar-brand {
-  font-size: 0.9rem;
   margin: 0;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
+
 img.logo {
-  width: 3.2rem;
-  margin-left: 0.8rem;
-  margin-right: 0.6rem;
+  width: 4rem;
 }
 
 .navbar-toggler {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  margin: 0;
+  padding: 0;
   border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .navbar-collapse {
-  background-color: rgb(255, 255, 255, 30);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* BODY */
@@ -78,7 +88,6 @@ img.logo {
 #howMuch:active {
   background: #363b75;
   box-shadow: none;
-
 }
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
@@ -117,12 +126,12 @@ section {
 #rectangle {
   width: 6px;
   height: 6px;
-  background: #4E00C8;
+  background: #4e00c8;
 }
 
 #text-01 h2,
 #text-02 h2 {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 #text-01 p,
@@ -130,15 +139,14 @@ section {
   font-size: 10px;
 }
 
-Footer
-.footer {
+/* Footer */
+Footer .footer {
   margin: auto;
   width: 100%;
   bottom: 0;
-  position: static
+  position: static;
 }
 
-/* Footer */
 footer {
   padding: 10px 0 1px 0;
 }
@@ -157,34 +165,46 @@ footer p {
   color: grey;
 }
 
-/* #text-01 e text-02 | Tamanho do h2/p/rectangle em telas menores: MIN-WIDTH 320PX & MAX-WIDTH 374PX */
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  #rectangle {
-    width: 8px;
-    height: 8px;
-    background: #4e00c8;
-  }
+/* BOOTSTRAP MEDIA QUERY */
 
-  #text-01 h2,
-  #text-02 h2 {
-    font-size: 1rem;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* navbar */
+  a.navbar-brand {
+    font-size: 2rem;
   }
-
-  #text-01 p,
-  #text-02 p {
-    font-size: 12px;
+  img.logo {
+    width: 5rem;
+  }
+  .navbar-toggler {
+    font-size: 1.6rem;
   }
 }
 
-/* #text-01 e text-02 | Tamanho do h2/p em telas menores: MIN-WIDTH 375PX & MAX-WIDTH 500PX */
-@media only screen and (min-width: 375px) and (max-width: 500px) {
-  #text-01 h2,
-  #text-02 h2 {
-    font-size: 1.1rem;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* navbar */
+  .navbar {
+    padding: 0 1rem;
   }
+  .container-fluid {
+    flex-direction: row;
+  }
+  img.logo {
+    width: 4rem;
+  }
+  .navbar-collapse {
+    background-color: transparent;
+  }
+}
 
-  #text-01 p,
-  #text-02 p {
-    font-size: 12px;
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* navbar */
+  .nav-link {
+    font-size: 1rem;
+  }
+  a.navbar-brand {
+    font-size: 1.4rem;
   }
 }
