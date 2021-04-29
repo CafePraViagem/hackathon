@@ -161,6 +161,7 @@ footer p {
   .footer { 
     position: absolute;
   }
+}
 
 
 /* #text-01 e text-02 | Tamanho do h2/p/rectangle em telas menores: MIN-WIDTH 320PX & MAX-WIDTH 374PX */
