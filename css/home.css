@@ -27,6 +27,10 @@
   justify-items: center;
 }
 
+.fixed-top {
+  position: relative;
+}
+
 a.navbar-brand {
   margin: 0;
   padding-top: 1rem;
