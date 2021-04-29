@@ -132,6 +132,8 @@ section {
 
 /* Footer */
 .footer {
+  position: relative;
+  bottom: 0;
   height: 60px;
   width: 100%;
 
@@ -156,12 +158,13 @@ footer p {
   color: grey;
 }
 
-/* .footer | Posição absoluta em telas com alturas maiores que 610px */
+/* .footer | Posição absoluta em telas com alturas maiores que 610px - Solução para conteudo não cobrir toda página */
 @media only screen and (min-height: 610px) {
   .footer { 
     position: absolute;
   }
 }
+
 
 
 /* #text-01 e text-02 | Tamanho do h2/p/rectangle em telas menores: MIN-WIDTH 320PX & MAX-WIDTH 374PX */
