@@ -20,7 +20,7 @@
 
     Spain = {
         name: "Barcelona", 
-        image: "https://images.pexels.com/photos/4969900/pexels-photo-4969900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        image: "https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         alt: "Cidade de Barcelona"
     },
 
@@ -50,7 +50,7 @@
 
     Japan = {
         name: "Tokyo",
-        image: "https://images.pexels.com/photos/161164/senso-ji-kyoto-japan-temple-161164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        image: "https://images.pexels.com/photos/4344748/pexels-photo-4344748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         alt: "Cidade de Tokyo"
     }, 
 
