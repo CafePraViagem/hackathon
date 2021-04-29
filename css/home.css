@@ -60,12 +60,17 @@ img.logo {
 
 /* BODY */
 
-/* Linha roxa do carousel */
+/* Carousel */
 #bordaCarrosel {
   border-top: solid 6px #4B4FA1;
   z-index: 1;
 
   margin: 0;
+}
+
+#nextCarousel > .carousel-control-next-icon{
+  transform: translateY(-120px);
+  background-image: url("https://i.ibb.co/pRGXDSR/SETA2.png");
 }
 
 /* Botão Calculador */
