@@ -18,17 +18,33 @@
 .navbar-nav {
   transition: all 0.3s ease-in;
 }
-
-.container-fluid {
-  padding-bottom: 2rem;
-}
-
 .navbar-nav:hover {
   font-weight: bold;
 }
 
+.container-fluid {
+  padding-bottom: 2rem 0;
+}
+
 a.navbar-brand {
-  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0;
+}
+img.logo {
+  width: 3.2rem;
+  margin-left: 0.8rem;
+  margin-right: 0.6rem;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1rem;
+}
+
+.navbar-collapse {
+  background-color: rgb(255, 255, 255, 30);
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 /* BODY */
@@ -48,31 +64,34 @@ a.navbar-brand {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-/* <<<<<<< HEAD */
-/* ======= */
+  /* <<<<<<< HEAD */
+  /* ======= */
   box-shadow: none;
-
 }
 
 #howMuch:hover {
-  background: #4B4FA1;
+  background: #4b4fa1;
   outline: none;
   box-shadow: none;
-
 }
 
-#howMuch:active{
+#howMuch:active {
   background: #363b75;
   box-shadow: none;
-/* >>>>>>> ce6543c1904c9f553d793564c18a15e13000418e */
+  /* >>>>>>> ce6543c1904c9f553d793564c18a15e13000418e */
 }
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
 
 #carousel img {
-  -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, 
-  color-stop(0.20,  rgba(0,0,0,0)), /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
-  color-stop(0.60,  rgba(0,0,0,1))); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    center top,
+    center bottom,
+    color-stop(0.2, rgba(0, 0, 0, 0)),
+    /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
+      color-stop(0.6, rgba(0, 0, 0, 1))
+  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
 }
 
 /* Texto & Infos */
@@ -81,9 +100,9 @@ section {
 }
 
 #rectangle {
-  width: 10px;
-  height: 10px;
-  background: #4E00C8;
+  width: 6px;
+  height: 6px;
+  background: #4e00c8;
 }
 
 .title-section {
@@ -92,7 +111,7 @@ section {
 
 #text-01 p,
 #text-02 p {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 #rectangle {
@@ -119,8 +138,13 @@ Footer
   position: static
 }
 
+/* Footer */
 footer {
-  padding: 10px 0;
+  padding: 10px 0 1px 0;
+}
+
+footer p {
+  font-size: 12px;
 }
 
 #link-footer {
@@ -128,7 +152,8 @@ footer {
 }
 
 #link-footer a {
-  margin: .89rem;
+  font-size: 12px;
+  margin: 0.89rem;
   color: grey;
 }
 
@@ -137,9 +162,9 @@ footer {
   #rectangle {
     width: 8px;
     height: 8px;
-    background: #4E00C8;
+    background: #4e00c8;
   }
-  
+
   #text-01 h2,
   #text-02 h2 {
     font-size: 1rem;
@@ -148,11 +173,11 @@ footer {
   #text-01 p,
   #text-02 p {
     font-size: 12px;
-}
+  }
 }
 
 /* #text-01 e text-02 | Tamanho do h2/p em telas menores: MIN-WIDTH 375PX & MAX-WIDTH 500PX */
-@media only screen and (min-width: 375px) and (max-width: 500px) {  
+@media only screen and (min-width: 375px) and (max-width: 500px) {
   #text-01 h2,
   #text-02 h2 {
     font-size: 1.1rem;
@@ -161,5 +186,5 @@ footer {
   #text-01 p,
   #text-02 p {
     font-size: 12px;
-}
+  }
 }

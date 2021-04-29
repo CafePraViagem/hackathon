@@ -41,3 +41,6 @@ git push --set-upstream origin nomeDaMinhaBranch
 
 ## Bonus - Criando uma nova branch
 ```git checkout -b nomeDaBranch```
+
+## Desfazer alterações antes de comitar
+```git checkout -- nomeDoArquivo
