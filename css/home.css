@@ -145,7 +145,7 @@ section {
 .footer {
   position: relative;
   bottom: 0;
-  height: 60px;
+  height: 30px;
   width: 100%;
 
 }
@@ -166,7 +166,24 @@ footer p {
 #link-footer a {
   font-size: 12px;
   margin: 0.89rem;
-  color: grey;
+  color: rgb(199, 199, 199);
+}
+
+p.bolder-text {
+  color: white;
+}
+
+.bg-light > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.bg-light {
+  background-color: #303033!important;
+}
+
+#footer2 {
+  background-color: #5B5B5B!important;
 }
 
 /* .footer | Posição absoluta em telas com alturas maiores que 610px - Solução para conteudo não cobrir toda página */
