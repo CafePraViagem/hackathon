@@ -62,7 +62,7 @@ img.logo {
 
 /* Carousel */
 #bordaCarrosel {
-  border-top: solid 6px #4B4FA1;
+  border-top: solid 6px #FC9523;
   z-index: 1;
 
   margin: 0;
@@ -70,7 +70,6 @@ img.logo {
 
 #nextCarousel > .carousel-control-next-icon{
   transform: translateY(-120px);
-  background-image: url("https://i.ibb.co/pRGXDSR/SETA2.png");
 }
 
 /* Botão Calculador */
@@ -129,7 +128,7 @@ section {
 #rectangle {
   width: 6px;
   height: 6px;
-  background: #4B4FA1;
+  background: #FF9A9A;
 }
 
 .title-section {
@@ -144,7 +143,7 @@ section {
 #rectangle {
   width: 6px;
   height: 6px;
-  background: #4B4FA1;
+  background: #FF9A9A;
 }
 
 #text-01 h2,
@@ -182,11 +181,11 @@ footer p {
 #link-footer a {
   font-size: 12px;
   margin: 0.89rem;
-  color: rgb(199, 199, 199);
+  color: rgb(0, 0, 0);
 }
 
 p.bolder-text {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .bg-light > .container {
@@ -194,12 +193,14 @@ p.bolder-text {
   padding-left: 0;
 }
 
+/* Faq, Contato, Quem Somos */
 .bg-light {
-  background-color: #303033!important;
+  background-color: #f0f0f09d!important;
 }
 
+/* Copyright */
 #footer2 {
-  background-color: #5B5B5B!important;
+  background-color: #d6d6d69d!important;
 }
 
 /* .footer | Posição absoluta em telas com alturas maiores que 610px - Solução para conteudo não cobrir toda página */
@@ -231,7 +232,7 @@ p.bolder-text {
   #rectangle {
     width: 8px;
     height: 8px;
-    background: #4e00c8;
+    background: #FF9A9A;
   }
   #text-01 h2,
   #text-02 h2 {
