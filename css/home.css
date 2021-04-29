@@ -14,6 +14,7 @@
 }
 
 /* NAVBAR */
+
 .navbar {
   margin: 0 auto;
   padding: 1rem 1rem;
@@ -88,6 +89,7 @@ img.logo {
 #howMuch:active {
   background: #363b75;
   box-shadow: none;
+
 }
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
@@ -126,7 +128,7 @@ section {
 #rectangle {
   width: 6px;
   height: 6px;
-  background: #4e00c8;
+  background: #4E00C8;
 }
 
 #text-01 h2,
@@ -140,15 +142,17 @@ section {
 }
 
 /* Footer */
-Footer .footer {
-  margin: auto;
-  width: 100%;
+.footer {
+  position: relative;
   bottom: 0;
-  position: static;
+  height: 60px;
+  width: 100%;
+
 }
 
 footer {
   padding: 10px 0 1px 0;
+  
 }
 
 footer p {
@@ -165,20 +169,47 @@ footer p {
   color: grey;
 }
 
-/* BOOTSTRAP MEDIA QUERY */
+/* .footer | Posição absoluta em telas com alturas maiores que 610px - Solução para conteudo não cobrir toda página */
+@media only screen and (min-height: 610px) {
+  .footer { 
+    position: absolute;
+  }
+}
 
+
+
+/* BOOTSTRAP MEDIA QUERY */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  /* navbar */
+/* navbar */
   a.navbar-brand {
     font-size: 2rem;
   }
+
   img.logo {
     width: 5rem;
   }
+
   .navbar-toggler {
     font-size: 1.6rem;
   }
+
+  /* Texto & Infos */
+  #rectangle {
+    width: 8px;
+    height: 8px;
+    background: #4e00c8;
+  }
+  #text-01 h2,
+  #text-02 h2 {
+    font-size: 1rem;
+  }
+
+  #text-01 p,
+  #text-02 p {
+    font-size: 12px;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -190,11 +221,24 @@ footer p {
   .container-fluid {
     flex-direction: row;
   }
+
   img.logo {
     width: 4rem;
   }
+
   .navbar-collapse {
     background-color: transparent;
+  }
+
+  /* Texto & Infos */
+  #text-01 h2,
+  #text-02 h2 {
+    font-size: 1.1rem;
+  }
+
+  #text-01 p,
+  #text-02 p {
+    font-size: 12px;
   }
 }
 
@@ -204,7 +248,15 @@ footer p {
   .nav-link {
     font-size: 1rem;
   }
+
   a.navbar-brand {
     font-size: 1.4rem;
   }
 }
+
+
+
+
+
+ 
+

@@ -43,4 +43,4 @@ git push --set-upstream origin nomeDaMinhaBranch
 ```git checkout -b nomeDaBranch```
 
 ## Desfazer alterações antes de comitar
-```git checkout -- nomeDoArquivo
+```git checkout -- nomeDoArquivo```
