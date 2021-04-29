@@ -18,17 +18,27 @@
 .navbar-nav {
   transition: all 0.3s ease-in;
 }
-
-.container-fluid {
-  padding-bottom: 2rem;
-}
-
 .navbar-nav:hover {
   font-weight: bold;
 }
 
+.container-fluid {
+  padding-bottom: 2rem 0;
+}
+
 a.navbar-brand {
-  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0;
+}
+img.logo {
+  width: 3.2rem;
+  margin-left: 0.8rem;
+  margin-right: 0.6rem;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1rem;
 }
 
 .navbar-collapse {
