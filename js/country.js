@@ -25,8 +25,44 @@ function randomImage() {
     // Encontra na DOM oque deve ser modificado
     var backgroundHTML = document.getElementById("backgroundImage")
     // Modificia na DOM
-    backgroundHTML.style.background = "url(" + imgURL + ") no-repeat center center"
+    backgroundHTML.style.background = "url(" + imgURL + ") no-repeat center center fixed"
 }
 
 // Tempo em milisegundos
 setInterval(function() { randomImage() }, 10000)
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bs-grid-big {
+    background: #fff;
+    margin-bottom: 10px;
+}
+    
+.bs-grid-small {
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 0.875rem;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.75rem;
+}
+      
+@media (min-width: 768px) { html { font-size:100%;} }
+
+@media (min-width: 992px) { html { font-size:120%;} }
+
+@media (min-width: 1200px) { html { font-size:140%; } }

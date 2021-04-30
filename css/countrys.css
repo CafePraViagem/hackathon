@@ -1,5 +1,5 @@
 #backgroundImage {
-    background: url("https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center;
+    background: url("https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
@@ -24,8 +24,6 @@ body { background-color: transparent; }
 /* Paises - Botão */
 
 #pais {
-  position: relative;
-
   text-align: center;
   margin: 0 auto;
 
@@ -34,11 +32,20 @@ body { background-color: transparent; }
   background-color: rgb(0, 128, 255);
   border: 1px solid rgb(241, 241, 241);
 
-  margin-left: 10px;
   color: white;
 
 }
-
-.container {
+* {
   margin: 0 auto;
+  padding: 0;
 }
+
+.box{
+  height: 150px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  max-width: 150px;
+
+}
+
