@@ -104,27 +104,30 @@ const arrPontosTuristicos = [
 // Hospedagem event listeners
 hospedagem1.addEventListener('click', () => {
     let valor = 400,
+        valorDolar = valor / 5.60,
         output;
 
-    output = `Total: R$ ${valor.toFixed(2)}`;
+    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
 
     output1.innerHTML = output;
 });
 
 hospedagem2.addEventListener('click', () => {
     let valor = 300,
+        valorDolar = valor / 5.60,
         output;
 
-    output = `Total: R$ ${valor.toFixed(2)}`;
+    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
 
     output1.innerHTML = output;
 });
 
 hospedagem3.addEventListener('click', () => {
     let valor = 200,
+        valorDolar = valor / 5.60,
         output;
 
-    output = `Total: R$ ${valor.toFixed(2)}`;
+    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
 
     output1.innerHTML = output;
 });
@@ -132,18 +135,20 @@ hospedagem3.addEventListener('click', () => {
 // Aluguem de Carros event listeners
 aluguelCarro1.addEventListener('click', () => {
     let valor = 30,
+        valorDolar = valor / 5.60,
         output;
 
-    output = `Total: R$ ${valor.toFixed(2)}`;
+        output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
 
     output2.innerHTML = output;
 });
 
 aluguelCarro2.addEventListener('click', () => {
     let valor = 45,
+        valorDolar = valor / 5.60,
         output;
 
-    output = `Total: R$ ${valor.toFixed(2)}`;
+        output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
 
     output2.innerHTML = output;
 });
@@ -187,7 +192,8 @@ function showDisplay() {
 }
 
 function somaPontosTuristicos() {
-    let total = 0;
+    let total = 0,
+        valorDolar = 0;
 
     if (role.checked == false && torre.checked == false && arco.checked == false) {
         output3.style.display = "none";
@@ -196,23 +202,27 @@ function somaPontosTuristicos() {
 
         if (role.checked) {
             total += Role.valor;
-            output3.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output3.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (torre.checked) {
             total += Torre.valor;
-            output3.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output3.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (arco.checked) {
             total += Arco.valor;
-            output3.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output3.innerHTML = `Total: R$ ${total * numeroPessoas.value} /  US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
     }
 }
 
 function somaAlimentacao() {
-    let total = 0;
+    let total = 0,
+        valorDolar = 0;
 
     if (cafe.checked == false && almoco.checked == false && janta.checked == false && almocoJanta.checked == false) {
         output4.style.display = "none";
@@ -221,28 +231,33 @@ function somaAlimentacao() {
 
         if (cafe.checked) {
             total += Cafe.valor;
-            output4.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output4.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (almoco.checked) {
             total += Almoco.valor;
-            output4.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output4.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (janta.checked) {
             total += Janta.valor;
-            output4.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output4.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (almocoJanta.checked) {
             total += Almoco.valor + Janta.valor;
-            output4.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output4.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
     }
 }
 
 function somaSeguroViagem() {
-    let total = 0;
+    let total = 0,
+        valorDolar = 0;
 
     if (bagagem.checked == false && vida.checked == false && saude.checked == false) {
         output5.style.display = "none";
@@ -251,23 +266,27 @@ function somaSeguroViagem() {
 
         if (bagagem.checked) {
             total += SeguroBagagem.valor;
-            output5.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output5.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (vida.checked) {
             total += SeguroVida.valor;
-            output5.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output5.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (saude.checked) {
             total += SeguroSaude.valor;
-            output5.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output5.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
     }
 }
 
 function somaExtras() {
-    let total = 0;
+    let total = 0,
+        valorDolar = 0;
 
     if (tourEspecialista.checked == false && vip.checked == false && familia.checked == false) {
         output6.style.display = "none";
@@ -276,17 +295,20 @@ function somaExtras() {
 
         if (tourEspecialista.checked) {
             total += extraTour.valor;
-            output6.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output6.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (vip.checked) {
             total += extraVIP.valor;
-            output6.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output6.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
 
         if (familia.checked) {
             total += extraPet.valor;
-            output6.innerHTML = `Total: R$ ${total.toFixed(2)}`
+            valorDolar = total / 5.60;
+            output6.innerHTML = `Total: R$ ${total.toFixed(2) * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
         }
     }
 }
