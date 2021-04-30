@@ -16,24 +16,24 @@
       crossorigin="anonymous"
     />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/calculator.css"/>
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
+    rel="stylesheet"
     />
     <!-- Font Awesome -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
     />
-
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/calculator.css"/>
     <!-- FAVICON -->
     <link
       rel="shortcut icon"
@@ -95,7 +95,7 @@
           </div>
         </div>
       </nav>
-
+<!-- CAROUSEL -->
       <section id="carousel">
         <div
           id="carouselExampleSlidesOnly"
@@ -227,15 +227,16 @@
       <section id="carousel">
      
 
-<div class="mainDiv">
+<div class="mainDiv d-flex align-items-left flex-column">
 
 
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Quantas pessoas irão viajar?</p>
+      <p class="title fw-bold" ><span class="orangeMarker">.</span> Quantas pessoas irão viajar?</p>
      <span> <i class="fas fa-user-plus"> </i> </i><input type="number"></span>
       <hr class="my-12">
 
       <!-- Hospedagem -->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Hospedagem</p>
+      
+      <p class="title fw-bold "><span class="orangeMarker">.</span> Hospedagem</p>
       
       <div class="form-check">
         <input type="radio" id="hospedagem_1" name="hospedagem" value="5 Estrelas" class="form-check-input" required>
@@ -367,20 +368,24 @@
 
 </div>
 
+  <!-- Resultado -->
+  <h2 class="result text-center">Seu rolê vai custar:</h2>
 
-  <!-- CALCULAR -->
-
-<div class="buttonCalcular">
-  <a class="btn btn-warning"
-  id="total"
-  href="#"
-  role="button"
-  onclick= testeCalcula()>
-  Calcular
-</a>
+  <div class="resultContainer">
+    <div class="btnResult">
+    <a class="btn align-center" 
+    id="total"
+    href="#"
+    role="button"
+    onclick= testeCalcula()>
+    Calcular
+     </a>
+    </div>
 </div>
-      
 
+<h4 class="showValorMessage text-center">1 MILHÃO DE REAIS, que valem mais que barras de ourooo... hihi, vai pra lá</h4>
+
+   
 
     
       <!-- Footer -->
