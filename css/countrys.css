@@ -1,4 +1,4 @@
-#intro {
+#backgroundImage {
     background: url("https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center ;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -6,6 +6,18 @@
     background-size:cover;
 
 }
+
+#backgroundImage{
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      center top,
+      center bottom,
+      color-stop(0.0, rgba(0, 0, 0, 0)),
+      /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
+        color-stop(0.1, rgba(0, 0, 0, 1))
+    ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+  }
+  
 
 body { background-color: transparent; }
 
