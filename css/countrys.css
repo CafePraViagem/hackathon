@@ -49,3 +49,21 @@ body { background-color: transparent; }
 
 }
 
+
+@media (min-width: 576px) {
+  .col-lg-2 {
+    width: 30%;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-lg-2 {
+    width: 30%;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-lg-2 {
+    width: 30%;
+  }
+}
