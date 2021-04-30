@@ -17,8 +17,8 @@
     />
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/content.css" />
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/carousel.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -45,7 +45,9 @@
   </head>
 
   <body>
+
     <main role="main">
+      
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-md fixed-top navbar-light">
         <div class="container-fluid">
@@ -221,79 +223,85 @@
           <span class="sr-only">Next</span>
         </a>
       </div>  
-    </section>
+      </section>
     
-    <section id="carousel">
-      <div id="alinhamentoCentro" class="container">
-        <!-- BOTÃO CALCULADORA -->
-        <a
-          class="btn btn-primary"
-          id="howMuch"
-          href="calculator.html"
-          role="button"
-          >quanto custa?</a
-        >
-      </div>
-      
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="images/imgs-countries/london.jpg" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
+      <section id="carousel">
+        <div id="alinhamentoCentro" class="container">
+          <!-- BOTÃO CALCULADORA -->
+          <a
+            class="btn btn-primary"
+            id="howMuch"
+            href="calculator.html"
+            role="button"
+            >quanto custa?</a
+          >
         </div>
-    </section>
+      </section>
 
-    <!-- Sections | Texto 01 -->
-    <section id="text-01">
-      <div class="container d-flex justify-content-center">
-        <div class="d-flex flex-column">
-          <div class="d-flex flex-row align-items-center">
-            <div id="rectangle"></div>
-            <div class="title-section">
-              <h2 class="bolder-text">Calcule a sua viagem dos sonhos!</h2>
-            </div>
-          </div>
-          <p>
-            A
-            <span class="bolder-text">Café pra Viagem</span>
-            conta com uma calculadora de preços para melhor organizar sua
-            viagem pós-pandemia!
-          </p>
+      <div class="container-text-section font-style-content-home">
+    
+        <div class="coffee-go-trip">
+          <p>A <strong><i class="fas fa-plane-departure"></i> Café Pra Viagem</strong> é feito pra você, que nesse pós pandemia vai querer curtir as belezas desse mundão!</p>
+          <p>Mas não deixe de se planejar: E nós estamos aqui para te ajudamos nisso! </p>
+        </div>
+    
+        <br>
+    
+        <div class="container-click-button-message">
+          <div class="click-button-message"><strong><em><p class="text-decoration-color-underline">Clique no botão acima e faça um cálculo médio de quanto você irá gastar!</p></em></strong></div>
         </div>
       </div>
-    </section>
-
-    <!-- Sections | Texto 02 -->
-    <section id="text-02">
-      <div class="container d-flex justify-content-center">
-        <div class="d-flex flex-column justify-content-center">
-          <div class="d-flex flex-row align-items-center">
-            <div id="rectangle"></div>
-            <div class="title-section">
-              <h2 class="bolder-text">
-                Selecione o destino, extras e pronto!
-
-              </h2>
+    
+      <div class="container-infos">
+          <div class="infos-trip-list">
+          
+            <div><strong>Selecione o lugar, refeições, extras e pronto!</strong></div>
+            <br>
+            <div class="list-trip">
+              <div>Você contará com:</div>
+              <div class="central-ul-trip">
+                <ul class="ul-trip">
+                  <li class="li-iten-trip"><i class="fas fa-bed"></i> Hospedagens;</li>
+                  <li class="li-iten-trip"><i class="fas fa-car"></i> Aluguel de carros;</li>
+                  <li class="li-iten-trip"><i class="fas fa-utensils"></i></i> Restaurantes e cafés locais;</li>
+                  <li class="li-iten-trip"><i class="fas fa-map-marked-alt"></i> Pontos turísticos com guias </li>
+                  <li class="li-iten-trip"><i class="fas fa-heartbeat"></i> Seguro Viagem;</li>
+                  <li class="li-iten-trip"><strong>E Muito mais!</strong></li>
+                </ul>
+              </div>
+              <div>
+                Simples e fácil, não é mesmo?! <br>
+                <br>
+                <span class="text-decoration-color-underline"><strong>E veja ainda o valor cambiado para dólar</strong></span>!
+              </div>
             </div>
           </div>
-          <p>
-            Simples e fácil, não é mesmo?! E você ainda vai receber a opção de
-            câmbio da moeda do país selecionado!
-          </p>
-        </div>
+    
+          <div class="plus-trip">
+            <strong>E ainda:</strong> <em>Qual é o seu tipo de viagem?</em>
+            <br>
+            <div>
+                <br>
+                <div class="pefil-trip"><i class="fas fa-globe-americas"></i> Aventureiro:</div>
+                <div>Você gosta de estar em Contato com a natureza?</div>
+                <button class="btn btn-primary button-type-trip"><a href="">Clique aqui</a></button>
+            </div>
+            <br>
+            <div>
+                <div class="pefil-trip"><i class="fas fa-globe-americas"></i> Jovem:</div>
+                <div>Quer aproveitar a vida noturna da cidade?</div>
+                <button class="btn btn-primary button-type-trip"><a href="">Clique aqui</a></button></p>
+            </div>
+            <br>
+            <div>
+                <div class="pefil-trip"><i class="fas fa-globe-americas"></i> Pra família toda?</div> <a class="final-link" href="https://www.viagensquesonhamos.com.br/2015/02/5-destinos-para-viajar-em-familia.html" target="_blank"> <em>Conheça os destinos mais visitados com nosso <strong>Parceiro</strong></em></a>
+            </div>
+          </div>
+    
       </div>
-    </section>
+    
+      <br>
 
-      <!-- Footer -->
       <div class="footer">
         <footer class="bg-light text-center">
           <div class="container">
