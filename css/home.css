@@ -66,7 +66,7 @@ img.logo {
 
 /* Carousel */
 #bordaCarrosel {
-  border-top: solid 6px #FC9523;
+  border-top: solid 6px #fc9523;
   z-index: 1;
   margin: 0;
 }
@@ -76,7 +76,7 @@ img.logo {
   height: 50vh;
 }
 
-#nextCarousel > .carousel-control-next-icon{
+#nextCarousel > .carousel-control-next-icon {
   transform: translateY(-120px);
 }
 
@@ -85,7 +85,6 @@ img.logo {
   position: relative;
   text-align: center;
   z-index: 2;
-
 }
 
 #howMuch {
@@ -112,7 +111,6 @@ img.logo {
 #howMuch:active {
   background: #363b75;
   box-shadow: none;
-
 }
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
@@ -136,7 +134,7 @@ section {
 #rectangle {
   width: 6px;
   height: 6px;
-  background: #FF9A9A;
+  background: #ff9a9a;
 }
 
 .title-section {
@@ -151,7 +149,7 @@ section {
 #rectangle {
   width: 6px;
   height: 6px;
-  background: #FF9A9A;
+  background: #ff9a9a;
 }
 
 #text-01 h2,
@@ -183,13 +181,13 @@ footer p {
 
 #link-footer {
   padding-bottom: 1rem;
-} 
+}
 
 #link-footer a {
   font-size: 12px;
   margin: 0.89rem;
   color: rgb(0, 0, 0);
-} 
+}
 
 p.bolder-text {
   color: rgb(0, 0, 0);
@@ -202,12 +200,12 @@ p.bolder-text {
 
 /* Faq, Contato, Quem Somos */
 .bg-light {
-  background-color: #f0f0f09d!important;
+  background-color: #f0f0f09d !important;
 }
 
 /* Copyright */
 #footer2 {
-  background-color: #d6d6d69d!important;
+  background-color: #d6d6d69d !important;
 }
 
 /* Carousel */
@@ -217,12 +215,10 @@ p.bolder-text {
   }
 }
 
-
-
 /* BOOTSTRAP MEDIA QUERY */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-/* navbar */
+  /* navbar */
   a.navbar-brand {
     font-size: 2rem;
   }
@@ -239,7 +235,7 @@ p.bolder-text {
   #rectangle {
     width: 8px;
     height: 8px;
-    background: #FF9A9A;
+    background: #ff9a9a;
   }
   #text-01 h2,
   #text-02 h2 {
@@ -250,7 +246,6 @@ p.bolder-text {
   #text-02 p {
     font-size: 12px;
   }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
