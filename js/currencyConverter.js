@@ -6,53 +6,48 @@ const
     hospedagem2 = document.getElementById('hospedagem-2'),
     hospedagem3 = document.getElementById('hospedagem-3'),
 
-    output1 = document.getElementById('output1'),
-
     aluguelCarro1 = document.getElementById('aluguelCarro-1'),
     aluguelCarro2 = document.getElementById('aluguelCarro-2'),
-
-    output2 = document.getElementById('output2'),
 
     role = document.getElementById('role'),
     torre = document.getElementById('torre'),
     arco = document.getElementById('arco'),
-
-    output3 = document.getElementById('output3'),
 
     cafe = document.getElementById('cafe'),
     almoco = document.getElementById('almoco'),
     janta = document.getElementById('janta'),
     almocoJanta = document.getElementById('almocoJanta'),
 
-    output4 = document.getElementById('output4'),
-
     bagagem = document.getElementById('bagagem'),
     vida = document.getElementById('vida'),
     saude = document.getElementById('saude'),
-
-    output5 = document.getElementById('output5'),
 
     tourEspecialista = document.getElementById('tourEspecialista'),
     vip = document.getElementById('vip'),
     familia = document.getElementById('familia'),
 
+    output1 = document.getElementById('output1'),
+    output2 = document.getElementById('output2'),
+    output3 = document.getElementById('output3'),
+    output4 = document.getElementById('output4'),
+    output5 = document.getElementById('output5'),
     output6 = document.getElementById('output6');
 
 // Pontos Turísticos object
 const arrPontosTuristicos = [
-    Role = {
-        name: 'Role pela cidade',
-        valor: 100
-    },
-    Torre = {
-        name: 'Subir na torre',
-        valor: 300
-    },
-    Arco = {
-        name: 'Arco do triunfo',
-        valor: 200
-    },
-],
+        Role = {
+            name: 'Role pela cidade',
+            valor: 100
+        },
+        Torre = {
+            name: 'Subir na torre',
+            valor: 300
+        },
+        Arco = {
+            name: 'Arco do triunfo',
+            valor: 200
+        },
+    ],
     // Alimentacao object
     arrAlimentacao = [
         Cafe = {
@@ -138,7 +133,7 @@ aluguelCarro1.addEventListener('click', () => {
         valorDolar = valor / 5.60,
         output;
 
-        output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
+    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
 
     output2.innerHTML = output;
 });
@@ -148,7 +143,7 @@ aluguelCarro2.addEventListener('click', () => {
         valorDolar = valor / 5.60,
         output;
 
-        output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
+    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
 
     output2.innerHTML = output;
 });
