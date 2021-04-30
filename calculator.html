@@ -225,16 +225,162 @@
       </section>
     
       <section id="carousel">
-      <div id="alinhamentoCentro" class="container">
-        <!-- BOTÃO CALCULADORA -->
-        <a
-          class="btn btn-primary"
-          id="howMuch"
-          href="calculator.html"
-          role="button"
-          >quanto custa?</a
-        >
+     
+
+<div class="mainDiv">
+
+
+      <p class="title fw-bold"><span class="orangeMarker">.</span> Quantas pessoas irão viajar?</p>
+     <span> <i class="fas fa-user-plus"> </i> </i><input type="number"></span>
+      <hr class="my-12">
+
+      <!-- Hospedagem -->
+      <p class="title fw-bold"><span class="orangeMarker">.</span> Hospedagem</p>
+      
+      <div class="form-check">
+        <input type="radio" id="hospedagem" name="hospedagem" class="form-check-input" required>
+        <label for="hospedagem">5 Estrelas</label>
       </div>
+      <div class="form-check">
+        <input type="radio" id="hospedagem" name="hospedagem" class="form-check-input" required>
+        <label for="hospedagem">4 Estrelas</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" id="hospedagem" name="hospedagem" class="form-check-input" required>
+        <label for="hospedagem">3 Estrelas</label>
+      </div>
+      <hr class="my-12">
+
+
+        <!-- Aluguel de Carro -->
+      <p class="title fw-bold"><span class="orangeMarker">.</span> Aluguel de Carros</p>
+
+      <div class="form-check">
+        <input type="radio" id="aluguelCarro" name="aluguelCarro" class="form-check-input" required>
+        <label for="aluguelCarro">Carro Comum</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" id="aluguelCarro" name="aluguelCarro" class="form-check-input" required>
+        <label for="aluguelCarro">Carro 5+</label>
+      </div>
+      <hr class="my-12">
+
+
+      <!-- Pontos Turísticos -->
+      <p class="title fw-bold"><span class="orangeMarker">.</span> Pontos Turísticos:</p>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="role">
+        <label for="role" class="form-check-label">
+          Rolê pela cidade. - (R$ 100,00)
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="torre">
+        <label for="torre" class="form-check-label">
+          Subir na Torre. - (R$ 100,00)
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="arco">
+        <label for="arco" class="form-check-label">
+          Arco do Triunfo. - (R$ 100,00)
+        </label>
+      </div>
+      <hr class="my-12">
+
+      <!-- Alimentação -->
+      <p class="title fw-bold"><span class="orangeMarker">.</span> Alimentação:</p>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="cafe">
+        <label for="cafe" class="form-check-label">
+          Café da manhã. 
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="almoco">
+        <label for="almoco" class="form-check-label">
+          Almoço.
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="janta">
+        <label for="janta" class="form-check-label">
+          Jantar.
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="almocoJanta">
+        <label for="almocoJanta" class="form-check-label">
+          Almoço + Jantar.
+        </label>
+      </div>
+      <hr class="my-12">
+
+      <!-- Seguro Viagem-->
+      <p class="title fw-bold"><span class="orangeMarker">.</span> Seguro Viagem:</p>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="bagagem">
+        <label for="bagagem" class="form-check-label">
+          Bagagem. 
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="vida">
+        <label for="vida" class="form-check-label">
+          Vida.
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="saude">
+        <label for="saude" class="form-check-label">
+          Saúde.
+        </label>
+      </div>
+      <hr class="my-12">
+
+
+      <!-- Extras-->
+      <p class="title fw-bold"><span class="orangeMarker">.</span> Extras:</p>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="tourEspecialista">
+        <label for="tourEspecialista" class="form-check-label">
+          Tour com o Especialista. 
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="vip">
+        <label for="vip" class="form-check-label">
+          VIP Casa Noturna.
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" value="" id="familia">
+        <label for="familia" class="form-check-label">
+          Família com Pet.
+        </label>
+      </div>
+      <hr class="my-12">
+
+</div>
+
+
+  <!-- CALCULAR -->
+
+<div class="buttonCalcular">
+  <a class="btn btn-warning"
+  id="total"
+  href="#"
+  role="button">
+  Calcular
+</a>
+</div>
+      
+
+
     
       <!-- Footer -->
       <div class="footer">
