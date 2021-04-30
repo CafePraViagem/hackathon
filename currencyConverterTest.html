@@ -31,8 +31,10 @@
 
 
         <p class="title fw-bold"><span class="orangeMarker">.</span> Quantas pessoas irão viajar?</p>
-       <span> <i class="fas fa-user-plus"> </i> </i><input type="number"></span>
+        <span> <i class="fas fa-user-plus"> </i> </i><input id="numeroPessoas" type="number"><button class="btn btn-primary m-1" id="disable-after-click" onclick="showDisplay()">Começar</button></span>
         <hr class="my-12">
+
+        <div id="options" style="display: none;">
 
         <!-- Hospedagem -->
         <p class="title fw-bold"><span class="orangeMarker">.</span> Hospedagem</p>
@@ -74,22 +76,21 @@
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="role">
             <label for="role" class="form-check-label">
-                Rolê pela cidade. - (R$ 100,00)
+                Rolê pela cidade
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="torre">
             <label for="torre" class="form-check-label">
-                Subir na Torre. - (R$ 100,00)
+                Subir na Torre
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="arco">
             <label for="arco" class="form-check-label">
-                Arco do Triunfo. - (R$ 100,00)
+                Arco do Triunfo
             </label>
         </div>
-        <!-- <button class="btn btn-dark p-1" onclick="somaValoresPontos()">Calcular</button> -->
         <div id="output3"></div>
         <hr class="my-12">
 
@@ -99,27 +100,28 @@
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="cafe">
             <label for="cafe" class="form-check-label">
-                Café da manhã.
+                Café da manhã
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="almoco">
             <label for="almoco" class="form-check-label">
-                Almoço.
+                Almoço
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="janta">
             <label for="janta" class="form-check-label">
-                Jantar.
+                Jantar
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="almocoJanta">
             <label for="almocoJanta" class="form-check-label">
-                Almoço + Jantar.
+                Almoço + Jantar
             </label>
         </div>
+        <div id="output4"></div>
         <hr class="my-12">
 
         <!-- Seguro Viagem-->
@@ -128,21 +130,22 @@
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="bagagem">
             <label for="bagagem" class="form-check-label">
-                Bagagem.
+                Bagagem
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="vida">
             <label for="vida" class="form-check-label">
-                Vida.
+                Vida
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="saude">
             <label for="saude" class="form-check-label">
-                Saúde.
+                Saúde
             </label>
         </div>
+        <div id="output5"></div>
         <hr class="my-12">
 
 
@@ -152,22 +155,24 @@
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="tourEspecialista">
             <label for="tourEspecialista" class="form-check-label">
-                Tour com o Especialista.
+                Tour com o Especialista
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="vip">
             <label for="vip" class="form-check-label">
-                VIP Casa Noturna.
+                VIP Casa Noturna
             </label>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" value="" id="familia">
             <label for="familia" class="form-check-label">
-                Família com Pet.
+                Família com Pet
             </label>
         </div>
+        <div id="output6"></div>
         <hr class="my-12">
+    </div>
 
     </div>
 
