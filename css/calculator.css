@@ -9,13 +9,11 @@
 }
 
 .mainDiv {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: left;
   padding-left: 1rem;
-  font-size: 1rem;
+  padding-right: 1rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  font-size: 1rem;
+  border: 1px solid red;
 }
 
 .orangeMarker {
@@ -26,13 +24,38 @@
 }
 
 input {
-  width: 1.8rem;
-  border-style: dotted;
-  background-color: bisque;
+  width: 60%;
+  border-style: none ;
+  background-color:darkgrey;
 }
 
-.buttonCalcular {
-  margin: 0 auto;
+.resultContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   padding-bottom: 2rem;
-  width: 6rem;
+  border: 1px solid red;
+  margin-top: 1rem;
 }
+
+.btn{
+  background-color: #fc9523;
+  border-radius: 100px;
+  width: 8.1rem;
+  height: 3.1rem;
+  font-size: 1.4rem;
+  transition: ease-out 0.3s;
+}
+
+.btn:hover {
+  font-weight: bold;
+  color: white;
+  transition: ease-in 0.3s;
+}
+
+h2.result {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+
