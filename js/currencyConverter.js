@@ -3,18 +3,18 @@ const
     hospedagem1 = document.getElementById('hospedagem-1'),
     hospedagem2 = document.getElementById('hospedagem-2'),
     hospedagem3 = document.getElementById('hospedagem-3'),
-    
+
     output1 = document.getElementById('output1'),
-    
+
     aluguelCarro1 = document.getElementById('aluguelCarro-1'),
     aluguelCarro2 = document.getElementById('aluguelCarro-2'),
 
     output2 = document.getElementById('output2'),
-    
+
     role = document.getElementById('role'),
     torre = document.getElementById('torre'),
     arco = document.getElementById('arco'),
-    
+
     output3 = document.getElementById('output3');
 
 // Add event listeners
@@ -31,7 +31,7 @@ hospedagem2.addEventListener('click', () => { // HOSPEDAGEM 4 ESTRELAS
     let valor = 200,
         output;
 
-    output = `Total: R$ ${valor.toFixed(2)}` ;
+    output = `Total: R$ ${valor.toFixed(2)}`;
 
     output1.innerHTML = output;
 });
@@ -63,66 +63,29 @@ aluguelCarro2.addEventListener('click', () => { // ALUGUEL CARRO 5+
     output2.innerHTML = output;
 });
 
-role.addEventListener('click', () => {
-    let valor = 600,
-        output;
+// ---------------------------------------------------------------------------------------------
 
-        if(torre.checked === true && arco.checked === true) {
-            valor += torre.valor + arco.valor;
-        } else if(torre.checked === true) {
-            valor += torre.valor;
-        } else if(arco.checked) {
-            valor += arco.valor;
-        }
+const pontosTuristicos = {
+    items: [
+        { name: 'Role pela cidade', valor: 100 },
+        { name: 'Subir na torre', valor: 200 },
+        { name: 'Arco do triunfo', valor: 300 }
+    ]
+}
 
-    output = `Total: R$ ${valor.toFixed(2)}`;
+function somaValoresPontos() {
+    let total = 0;
 
-    output3.innerHTML = output;
-})
+    if (role.checked && torre.checked && arco.checked) {
+        pontosTuristicos.items.forEach(item => {
+            total += item.valor;
+            output3.innerHTML = `Total: R$ ${total.toFixed(2)}`;
+        });
 
-torre.addEventListener('click', () => {
-    let valor = 700,
-        output;
+    }
 
-        if(role.checked === true && arco.checked === true) {
-            valor += role.valor + arco.valor;
-        } else if(role.checked === true) {
-            valor += role.valor;
-        } else if(arco.checked) {
-            valor += arco.valor;
-        }
+}
 
-    output = `Total: R$ ${valor.toFixed(2)}`;
-
-    output3.innerHTML = output;
-})
-
-arco.addEventListener('click', () => {
-    let valor = 800,
-        output;
-
-        if(torre.checked === true && role.checked === true) {
-            valor += torre.valor + role.valor;
-        } else if(torre.checked === true) {
-            valor += torre.valor;
-        } else if(role.checked === true) {
-            valor += role.valor;
-        }
-
-    output = `Total: R$ ${valor.toFixed(2)}`;
-
-    output3.innerHTML = output;
-})
-
-// let somaCheckbox = 0;
-// function plusCheckbox() {
-//     if(role.checked === true) {
-//         somaCheckbox += eval(role.valor)
-//     } else if(torre.checked === true) {
-//         somaCheckbox += eval(torre.valor)
-//     } else if (arco.checked === true) {
-//         somaCheckbox += eval(arco.valor)
-//     }
-// }
-
-// plusCheckbox();
+role.addEventListener('click', somaValoresPontos);
+torre.addEventListener('click', somaValoresPontos);
+arco.addEventListener('click', somaValoresPontos);
