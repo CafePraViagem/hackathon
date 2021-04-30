@@ -1,8 +1,8 @@
-.font-style-conntent-home {
-    font-size: ;
+.font-style-content-home {
+    font-size: 1.1rem;
 }
 
-.container-text-section, .coffee-go-trip, .container-click-button-message, .infos-trip-list, .li-trip, .ul-trip, .plus-trip, .final-message {
+.container-text-section, .coffee-go-trip, .container-click-button-message, .container-infos,.infos-trip-list, .li-trip, .ul-trip, .plus-trip, .info-message {
     margin: 0 auto;
     width: 70vw;
     text-align: center;
@@ -15,29 +15,6 @@
 .infos-trip-list {
     margin-top: 30px;
 }
-
-/*
-.click-button-message {
-    margin: 15px;   
-    
-}
-
-.list-trip div {
-    margin-top: 10px;
-}
-
-.central-ul-trip{
-    margin: 0 auto;
-    
-}
-
-.li-iten-trip {
-    position: relative;
-}
-
-.ul-trip {
-    text-align: left;
-}*/
 
 .plus-trip {
     margin-top: 20px;
@@ -74,7 +51,7 @@
     color: #4E00C8;
 }
 
-.final-message {
+.info-message {
     margin: 30px 0;
 }
 
@@ -87,59 +64,26 @@ li > strong {
     color: #ff9500;
 }
 
-
-
-/*
-@media (min-width: 976px){
-
-    .coffee-go-trip{
-        text-align: center;
+@media (min-width: 834px) {
+    .font-style-conntent-home {
+        font-size: 1rem;
     }
 
-    .container-text-section {
-        width: 60vw;
-        text-align: center;
-        margin: 0 auto;
+    .container-infos {
+        width: 75vw;
     }
-
-    .section1, .section2 {
-        width: 38vw;
-        margin: 0;
-    }
-
-    .section1 {
+    
+    .infos-trip-list, .list-trip, .ul-trip {
         float: left;
-        clear: both;
+        width: 35vw;
         text-align: right;
-        
     }
 
-    .list-trip {
-        float: left;
-
-    }
-
-    .section2 {
+    .plus-trip {
         float: right;
+        width: 35vw;
+        margin-top: 30px;
+        text-align: left;
     }
+
 }
-
- */
-
-
-/* 
-
-------------------------------
-
-
-@media (min-width: 526px) {
-    .list-trip > p {
-        text-align: left;
-    }
-} */
-
-/* @media (min-width: 1080px) {
-    .infos-trip {
-        text-align: left;
-    }
-} */
