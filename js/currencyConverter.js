@@ -65,27 +65,46 @@ aluguelCarro2.addEventListener('click', () => { // ALUGUEL CARRO 5+
 
 // ---------------------------------------------------------------------------------------------
 
-const pontosTuristicos = {
-    items: [
-        { name: 'Role pela cidade', valor: 100 },
-        { name: 'Subir na torre', valor: 200 },
-        { name: 'Arco do triunfo', valor: 300 }
-    ]
-}
+const pontosTuristicos2 = [
+    Role = {
+        name: 'Role pela cidade',
+        valor: 100
+    },
+    Torre = {
+        name: 'Subir na torre',
+        valor: 100
+    },
+    Arco = {
+        name: 'Role pela cidade',
+        valor: 100
+    },
+]
 
 function somaValoresPontos() {
     let total = 0;
 
-    if (role.checked && torre.checked && arco.checked) {
-        pontosTuristicos.items.forEach(item => {
-            total += item.valor;
-            output3.innerHTML = `Total: R$ ${total.toFixed(2)}`;
-        });
+    if (role.checked == false && torre.checked == false && arco.checked == false) {
+        output3.style.display = "none";
+    } else {
+        output3.style.display = "block";
 
+        if (role.checked) {
+            total += Role.valor;
+            output3.innerHTML = `Total: R$ ${total.toFixed(2)}`
+        }
+
+        if (torre.checked) {
+            total += Torre.valor;
+            output3.innerHTML = `Total: R$ ${total.toFixed(2)}`
+        }
+
+        if (arco.checked) {
+            total += Arco.valor;
+            output3.innerHTML = `Total: R$ ${total.toFixed(2)}`
+        }
     }
-
 }
 
 role.addEventListener('click', somaValoresPontos);
-torre.addEventListener('click', somaValoresPontos);
 arco.addEventListener('click', somaValoresPontos);
+torre.addEventListener('click', somaValoresPontos);
