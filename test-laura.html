@@ -17,8 +17,8 @@
     />
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/content.css" />
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/calculator.css"/>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -41,12 +41,13 @@
       type="image/x-icon"
     />
 
-    <title>Calculadora</title>
+    <title>Home</title>
   </head>
 
   <body>
 
     <main role="main">
+      
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-md fixed-top navbar-light">
         <div class="container-fluid">
@@ -77,7 +78,7 @@
                 >
               </li>
               <li>
-                <a class="nav-link main-menu" href=""
+                <a class="nav-link main-menu" href="calculator.html"
                   ><i class="fas fa-funnel-dollar"></i> Descobrir valores</a
                 >
               </li>
@@ -87,7 +88,7 @@
                 >
               </li>
               <li>
-                <a class="nav-link main-menu" href=""
+                <a class="nav-link main-menu" href="aboutUs.html"
                   ><i class="fas fa-user-astronaut"></i> Quem somos</a
                 >
               </li>
@@ -217,173 +218,90 @@
             </div>
           </div>
         </div>
-        <div class="container">
-        <!-- BOTÃO CALCULADORA -->
-        <!-- <a class="btn btn-primary" id="howMuch" href="calculator.html" role="button">quanto custa?</a>  -->     
-        </div>    
+        <a id="nextCarousel" class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>  
       </section>
     
       <section id="carousel">
-     
+        <div id="alinhamentoCentro" class="container">
+          <!-- BOTÃO CALCULADORA -->
+          <a
+            class="btn btn-primary"
+            id="howMuch"
+            href="calculator.html"
+            role="button"
+            >quanto custa?</a
+          >
+        </div>
+      </section>
 
-<div class="mainDiv">
-
-
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Quantas pessoas irão viajar?</p>
-     <span> <i class="fas fa-user-plus"> </i> </i><input type="number"></span>
-      <hr class="my-12">
-
-      <!-- Hospedagem -->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Hospedagem</p>
-      
-      <div class="form-check">
-        <input type="radio" id="hospedagem_1" name="hospedagem" value="5 Estrelas" class="form-check-input" required>
-        <label for="hospedagem" id="estrelas">5 Estrelas</label>
-      </div>
-      <div class="form-check">
-        <input type="radio" id="hospedagem_2" name="hospedagem" value="4 Estrelas" class="form-check-input" required>
-        <label for="hospedagem">4 Estrelas</label>
-      </div>
-      <div class="form-check">
-        <input type="radio" id="hospedagem_3" name="hospedagem" value="3 Estrelas" class="form-check-input" required>
-        <label for="hospedagem">3 Estrelas</label>
-      </div>
-      <hr class="my-12">
-
-
-        <!-- Aluguel de Carro -->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Aluguel de Carros</p>
-
-      <div class="form-check">
-        <input type="radio" id="aluguelCarro" name="aluguelCarro" value= "Carro Comum" class="form-check-input" required>
-        <label for="aluguelCarro">Carro Comum</label>
-      </div>
-      <div class="form-check">
-        <input type="radio" id="aluguelCarro" name="aluguelCarro" value= "Carro 5+" class="form-check-input" required>
-        <label for="aluguelCarro">Carro 5+</label>
-      </div>
-      <hr class="my-12">
-
-
-      <!-- Pontos Turísticos -->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Pontos Turísticos:</p>
-
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="role">
-        <label for="role" class="form-check-label">
-          Rolê pela cidade. - (R$ 100,00)
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="torre">
-        <label for="torre" class="form-check-label">
-          Subir na Torre. - (R$ 100,00)
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="arco">
-        <label for="arco" class="form-check-label">
-          Arco do Triunfo. - (R$ 100,00)
-        </label>
-      </div>
-      <hr class="my-12">
-
-      <!-- Alimentação -->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Alimentação:</p>
-
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="cafe">
-        <label for="cafe" class="form-check-label">
-          Café da manhã. 
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="almoco">
-        <label for="almoco" class="form-check-label">
-          Almoço.
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="janta">
-        <label for="janta" class="form-check-label">
-          Jantar.
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="almocoJanta">
-        <label for="almocoJanta" class="form-check-label">
-          Almoço + Jantar.
-        </label>
-      </div>
-      <hr class="my-12">
-
-      <!-- Seguro Viagem-->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Seguro Viagem:</p>
-
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="bagagem">
-        <label for="bagagem" class="form-check-label">
-          Bagagem. 
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="vida">
-        <label for="vida" class="form-check-label">
-          Vida.
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="saude">
-        <label for="saude" class="form-check-label">
-          Saúde.
-        </label>
-      </div>
-      <hr class="my-12">
-
-
-      <!-- Extras-->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Extras:</p>
-
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="tourEspecialista">
-        <label for="tourEspecialista" class="form-check-label">
-          Tour com o Especialista. 
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="vip">
-        <label for="vip" class="form-check-label">
-          VIP Casa Noturna.
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="" id="familia">
-        <label for="familia" class="form-check-label">
-          Família com Pet.
-        </label>
-      </div>
-      <hr class="my-12">
-
-</div>
-
-
-  <!-- CALCULAR -->
-
-<div class="buttonCalcular">
-  <a class="btn btn-warning"
-  id="total"
-  href="#"
-  role="button"
-  onclick= testeCalcula()>
-  Calcular
-</a>
-</div>
-      
-
-
+      <div class="container-text-section font-style-content-home">
     
-      <!-- Footer -->
+        <div class="coffee-go-trip">
+          <p>A <strong><i class="fas fa-plane-departure"></i> Café Pra Viagem</strong> é feito pra você, que nesse pós pandemia vai querer curtir as belezas desse mundão!</p>
+          <p>Mas não deixe de se planejar: E nós estamos aqui para te ajudamos nisso! </p>
+        </div>
+    
+        <br>
+    
+        <div class="container-click-button-message">
+          <div class="click-button-message"><strong><em><p class="text-decoration-color-underline">Clique no botão acima e faça um cálculo médio de quanto você irá gastar!</p></em></strong></div>
+        </div>
+      </div>
+    
+      <div class="container-infos">
+          <div class="infos-trip-list">
+          
+            <div><strong>Selecione o lugar, refeições, extras e pronto!</strong></div>
+            <br>
+            <div class="list-trip">
+              <div>Você contará com:</div>
+              <div class="central-ul-trip">
+                <ul class="ul-trip">
+                  <li class="li-iten-trip"><i class="fas fa-bed"></i> Hospedagens;</li>
+                  <li class="li-iten-trip"><i class="fas fa-car"></i> Aluguel de carros;</li>
+                  <li class="li-iten-trip"><i class="fas fa-utensils"></i></i> Restaurantes e cafés locais;</li>
+                  <li class="li-iten-trip"><i class="fas fa-map-marked-alt"></i> Pontos turísticos com guias </li>
+                  <li class="li-iten-trip"><i class="fas fa-heartbeat"></i> Seguro Viagem;</li>
+                  <li class="li-iten-trip"><strong>E Muito mais!</strong></li>
+                </ul>
+              </div>
+              <div>
+                Simples e fácil, não é mesmo?! <br>
+                <br>
+                <span class="text-decoration-color-underline"><strong>E veja ainda o valor cambiado para dólar</strong></span>!
+              </div>
+            </div>
+          </div>
+    
+          <div class="plus-trip">
+            <strong>E ainda:</strong> <em>Qual é o seu tipo de viagem?</em>
+            <br>
+            <div>
+                <br>
+                <div class="pefil-trip"><i class="fas fa-globe-americas"></i> Aventureiro:</div>
+                <div>Você gosta de estar em Contato com a natureza?</div>
+                <button class="btn btn-primary button-type-trip"><a href="">Clique aqui</a></button>
+            </div>
+            <br>
+            <div>
+                <div class="pefil-trip"><i class="fas fa-globe-americas"></i> Jovem:</div>
+                <div>Quer aproveitar a vida noturna da cidade?</div>
+                <button class="btn btn-primary button-type-trip"><a href="">Clique aqui</a></button></p>
+            </div>
+            <br>
+            <div>
+                <div class="pefil-trip"><i class="fas fa-globe-americas"></i> Pra família toda?</div> <a class="final-link" href="https://www.viagensquesonhamos.com.br/2015/02/5-destinos-para-viajar-em-familia.html" target="_blank"> <em>Conheça os destinos mais visitados com nosso <strong>Parceiro</strong></em></a>
+            </div>
+          </div>
+    
+      </div>
+    
+      <br>
+
       <div class="footer">
         <footer class="bg-light text-center">
           <div class="container">
@@ -405,10 +323,10 @@
 
     </main>
 
-    <script src="js/calculator.js"></script>
+    <!-- SCRIPTS -->
+    <!-- Bootstrap -->
 
-    <!-- Script Bootstrap -->
-    <script
+<!--     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
       crossorigin="anonymous"
@@ -418,5 +336,28 @@
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- /home.js -->
+    <script src="js/home.js"></script>
+
+    <!-- /carroussel.js -->
+<!--     <script src="js/carroussel.js"></script> -->
+
   </body>
+  
 </html>
