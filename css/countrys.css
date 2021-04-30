@@ -21,4 +21,24 @@
 
 body { background-color: transparent; }
 
+/* Paises - Botão */
 
+#pais {
+  position: relative;
+
+  text-align: center;
+  margin: 0 auto;
+
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgb(0, 128, 255);
+  border: 1px solid rgb(241, 241, 241);
+
+  margin-left: 10px;
+  color: white;
+
+}
+
+.container {
+  margin: 0 auto;
+}

@@ -16,7 +16,7 @@ var listImageBackground = ["https://images.pexels.com/photos/460672/pexels-photo
 // Função para randomizar o url da background
 function randomImage() {
     // Encontra um valor aleatorio entre 0 e tamanho da lista de imgs
-    let max = listImageBackground.length + 1
+    let max = listImageBackground.length
     let index = Math.floor(Math.random() * (max))
 
     // Usa o valor como index da lista
