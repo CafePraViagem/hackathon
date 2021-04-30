@@ -1,21 +1,28 @@
-.fon
-
-.container-click-button-message, .infos-trip-list, .li-trip, .ul-trip, .plus-trip, .final-message,.container-text-section {
-    margin: 0 auto;
-    width: 60vw;
-    text-align: justify;
+.font-style-conntent-home {
+    font-size: ;
 }
 
-.container-click-button-message {
+.container-text-section, .coffee-go-trip, .container-click-button-message, .infos-trip-list, .li-trip, .ul-trip, .plus-trip, .final-message {
+    margin: 0 auto;
+    width: 70vw;
     text-align: center;
 }
 
+.container-click-button-message, .coffee-go-trip {
+    text-align: center;
+}
+
+.infos-trip-list {
+    margin-top: 30px;
+}
+
+/*
 .click-button-message {
     margin: 15px;   
     
 }
 
-.li-trip div {
+.list-trip div {
     margin-top: 10px;
 }
 
@@ -30,10 +37,10 @@
 
 .ul-trip {
     text-align: left;
-}
+}*/
 
-.plus-trip, .plus-trip {
-    margin-top: 10px;
+.plus-trip {
+    margin-top: 20px;
 }
 
 .button-type-trip {
@@ -61,7 +68,6 @@
 
 .final-link {
     color:  #ff9500 ;
-
 }
 
 .final-link:hover {
@@ -69,7 +75,6 @@
 }
 
 .final-message {
-    text-align: center;
     margin: 30px 0;
 }
 
@@ -78,27 +83,13 @@
     text-decoration-color: #FC9523;
 }
 
-/* .ul-trip {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-    padding: 0 0 3px 3px;
-} */
-
 li > strong {
     color: #ff9500;
 }
 
-@media (min-width: 407px) {
-    .ul-trip {
-        box-shadow: none;
-    }
-}
 
-/* @media (min-width: 526px) {
-    .li-trip > p {
-        text-align: left;
-    }
-} */
 
+/*
 @media (min-width: 976px){
 
     .coffee-go-trip{
@@ -106,8 +97,8 @@ li > strong {
     }
 
     .container-text-section {
-        width: 95vw;
-        text-align: justify;
+        width: 60vw;
+        text-align: center;
         margin: 0 auto;
     }
 
@@ -118,7 +109,14 @@ li > strong {
 
     .section1 {
         float: left;
+        clear: both;
+        text-align: right;
         
+    }
+
+    .list-trip {
+        float: left;
+
     }
 
     .section2 {
@@ -126,6 +124,19 @@ li > strong {
     }
 }
 
+ */
+
+
+/* 
+
+------------------------------
+
+
+@media (min-width: 526px) {
+    .list-trip > p {
+        text-align: left;
+    }
+} */
 
 /* @media (min-width: 1080px) {
     .infos-trip {
