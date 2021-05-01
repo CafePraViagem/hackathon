@@ -8,12 +8,16 @@
   padding: 0;
 }
 
+h2.result {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
 .mainDiv {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
   font-size: 1rem;
-  border: 1px solid red;
 }
 
 .orangeMarker {
@@ -23,22 +27,28 @@
   background-color: #fc9523;
 }
 
-input {
-  width: 60%;
-  border-style: none ;
-  background-color:darkgrey;
+input.morePeople {
+  width: 3rem;
+  border-style: none;
+  background-color: #fff;
+  font-weight: bold;
+  color: #fc9523;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  background-color: rgb(253, 253, 220);
+  border-radius: 10px;
 }
 
 .resultContainer {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  padding-bottom: 2rem;
-  border: 1px solid red;
+  align-items: center;
   margin-top: 1rem;
+  height: 5rem;
 }
 
-.btn{
+.btn {
   background-color: #fc9523;
   border-radius: 100px;
   width: 8.1rem;
@@ -50,12 +60,18 @@ input {
 .btn:hover {
   font-weight: bold;
   color: white;
+  width: 8.5rem;
+  height: 3.5rem;
+  font-size: 1.7rem;
   transition: ease-in 0.3s;
+  background-color: rgb(106, 51, 207);
 }
 
-h2.result {
-  font-size: 1rem;
-  margin-top: 1rem;
+.showValorMessage {
+  margin: 1rem auto;
+  width: 40%;
+  background-color: rgb(106, 51, 207);
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
 }
-
-
