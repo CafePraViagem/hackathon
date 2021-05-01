@@ -43,12 +43,21 @@ h1 {
 .box{
 
 
-  height: 150px;
+  height: 145px;
   background: #4B4FA1;
   border-radius: 10px;
   margin-bottom: 30px;
   max-width: 150px;
 
+}
+
+.figure {
+  margin: 10px!important;
+  padding: 6px!important;
+}
+
+.figure > img {
+  padding: 5px;
 }
 
 /* Medias query */
@@ -99,4 +108,11 @@ h1 {
 .figure {
   margin: 10px;
   padding: 1px;
+}
+
+
+@media (min-width: 1px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width : 540px
+  }
 }
