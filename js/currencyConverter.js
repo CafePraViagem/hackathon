@@ -33,8 +33,31 @@ const
     output5 = document.getElementById('output5'),
     output6 = document.getElementById('output6');
 
-// Pontos Turísticos object
-const arrPontosTuristicos = [
+
+const
+    // Hospedagem object
+    arrHospedagem = [
+        FiveStar = {
+            valor: 400
+        },
+        FourStar = {
+            valor: 300
+        },
+        ThreeStar = {
+            valor: 200
+        }
+    ],
+    // Aluguel Carro object
+    arrAluguelCarro = [
+        CarroComum = {
+            valor: 30
+        },
+        CarroMaisCinco = {
+            valor: 45
+        }
+    ],
+    // Pontos Turisticos object
+    arrPontosTuristicos = [
         Role = {
             name: 'Role pela cidade',
             valor: 100
@@ -94,88 +117,35 @@ const arrPontosTuristicos = [
         }
     ]
 
-// --------------------------------------------------------------------------------------------- //    
-
 // Hospedagem event listeners
-hospedagem1.addEventListener('click', () => {
-    let valor = 400,
-        valorDolar = valor / 5.60,
-        output;
-
-    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
-
-    output1.innerHTML = output;
-});
-
-hospedagem2.addEventListener('click', () => {
-    let valor = 300,
-        valorDolar = valor / 5.60,
-        output;
-
-    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
-
-    output1.innerHTML = output;
-});
-
-hospedagem3.addEventListener('click', () => {
-    let valor = 200,
-        valorDolar = valor / 5.60,
-        output;
-
-    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
-
-    output1.innerHTML = output;
-});
+hospedagem1.addEventListener('click', hospedagem)
+hospedagem2.addEventListener('click', hospedagem)
+hospedagem3.addEventListener('click', hospedagem)
 
 // Aluguem de Carros event listeners
-aluguelCarro1.addEventListener('click', () => {
-    let valor = 30,
-        valorDolar = valor / 5.60,
-        output;
-
-    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
-
-    output2.innerHTML = output;
-});
-
-aluguelCarro2.addEventListener('click', () => {
-    let valor = 45,
-        valorDolar = valor / 5.60,
-        output;
-
-    output = `Total: R$ ${valor * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`;
-
-    output2.innerHTML = output;
-});
+aluguelCarro1.addEventListener('click', aluguelCarro)
+aluguelCarro2.addEventListener('click', aluguelCarro)
 
 // Pontos turísticos event listeners
-role.addEventListener('click', somaPontosTuristicos);
+role.addEventListener('click', pontosTuristicos);
+arco.addEventListener('click', pontosTuristicos);
+torre.addEventListener('click', pontosTuristicos);
 
-arco.addEventListener('click', somaPontosTuristicos);
+// Alimentação event listeners
+cafe.addEventListener('click', alimentacao);
+almoco.addEventListener('click', alimentacao);
+janta.addEventListener('click', alimentacao);
+almocoJanta.addEventListener('click', alimentacao);
 
-torre.addEventListener('click', somaPontosTuristicos);
+// Seguro Viagem event listeners
+bagagem.addEventListener('click', seguroViagem);
+vida.addEventListener('click', seguroViagem);
+saude.addEventListener('click', seguroViagem);
 
-cafe.addEventListener('click', somaAlimentacao);
-
-almoco.addEventListener('click', somaAlimentacao);
-
-janta.addEventListener('click', somaAlimentacao);
-
-almocoJanta.addEventListener('click', somaAlimentacao);
-
-bagagem.addEventListener('click', somaSeguroViagem);
-
-vida.addEventListener('click', somaSeguroViagem);
-
-saude.addEventListener('click', somaSeguroViagem);
-
-tourEspecialista.addEventListener('click', somaExtras);
-
-vip.addEventListener('click', somaExtras);
-
-familia.addEventListener('click', somaExtras);
-
-// --------------------------------------------------------------------------------------------- //
+// Extras event listeners
+tourEspecialista.addEventListener('click', extras);
+vip.addEventListener('click', extras);
+familia.addEventListener('click', extras);
 
 // Functions
 function showDisplay() {
@@ -183,12 +153,44 @@ function showDisplay() {
 
     options.style.display = 'block';
 
-    document.querySelector('#disable-after-click').disable = true;
+    document.querySelector('#disable-after-click').disabled = true;
 }
 
-function somaPontosTuristicos() {
-    let total = 0,
-        valorDolar = 0;
+function showAlertMessage() {
+    document.getElementById('alert-space').style.display = "block";
+
+    setTimeout(() => {
+        document.getElementById('alert-space').style.display = "none";
+    }, 2000);
+}
+
+function somaValores(output, valor) {
+    output.innerHTML = `Total: R$ ${valor.toFixed(2) * numeroPessoas.value}`
+}
+
+function hospedagem() {
+
+    if(hospedagem1.checked) {
+        somaValores(output1, FiveStar.valor);
+    } else if(hospedagem2.checked) {
+        somaValores(output1, FourStar.valor);
+    } else if(hospedagem3.checked) {
+        somaValores(output1, ThreeStar.valor);
+    }
+    showAlertMessage();
+}
+
+function aluguelCarro() {
+    if(aluguelCarro1.checked) {
+        somaValores(output2, CarroComum.valor);
+    } else if(aluguelCarro2.checked) {
+        somaValores(output2, CarroMaisCinco.valor);
+    }
+    showAlertMessage();
+}
+
+function pontosTuristicos() {
+    let total = 0;
 
     if (role.checked == false && torre.checked == false && arco.checked == false) {
         output3.style.display = "none";
@@ -197,27 +199,23 @@ function somaPontosTuristicos() {
 
         if (role.checked) {
             total += Role.valor;
-            valorDolar = total / 5.60;
-            output3.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output3, total);
         }
 
         if (torre.checked) {
             total += Torre.valor;
-            valorDolar = total / 5.60;
-            output3.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output3, total);
         }
 
         if (arco.checked) {
             total += Arco.valor;
-            valorDolar = total / 5.60;
-            output3.innerHTML = `Total: R$ ${total * numeroPessoas.value} /  US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output3, total);
         }
     }
 }
 
-function somaAlimentacao() {
-    let total = 0,
-        valorDolar = 0;
+function alimentacao() {
+    let total = 0;
 
     if (cafe.checked == false && almoco.checked == false && janta.checked == false && almocoJanta.checked == false) {
         output4.style.display = "none";
@@ -226,33 +224,28 @@ function somaAlimentacao() {
 
         if (cafe.checked) {
             total += Cafe.valor;
-            valorDolar = total / 5.60;
-            output4.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output4, total);
         }
 
         if (almoco.checked) {
             total += Almoco.valor;
-            valorDolar = total / 5.60;
-            output4.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output4, total);
         }
 
         if (janta.checked) {
             total += Janta.valor;
-            valorDolar = total / 5.60;
-            output4.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output4, total);
         }
 
         if (almocoJanta.checked) {
             total += Almoco.valor + Janta.valor;
-            valorDolar = total / 5.60;
-            output4.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output4, total);
         }
     }
 }
 
-function somaSeguroViagem() {
-    let total = 0,
-        valorDolar = 0;
+function seguroViagem() {
+    let total = 0;
 
     if (bagagem.checked == false && vida.checked == false && saude.checked == false) {
         output5.style.display = "none";
@@ -261,27 +254,23 @@ function somaSeguroViagem() {
 
         if (bagagem.checked) {
             total += SeguroBagagem.valor;
-            valorDolar = total / 5.60;
-            output5.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output5, total);
         }
 
         if (vida.checked) {
             total += SeguroVida.valor;
-            valorDolar = total / 5.60;
-            output5.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output5, total);
         }
 
         if (saude.checked) {
             total += SeguroSaude.valor;
-            valorDolar = total / 5.60;
-            output5.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output5, total);
         }
     }
 }
 
-function somaExtras() {
-    let total = 0,
-        valorDolar = 0;
+function extras() {
+    let total = 0;
 
     if (tourEspecialista.checked == false && vip.checked == false && familia.checked == false) {
         output6.style.display = "none";
@@ -290,20 +279,17 @@ function somaExtras() {
 
         if (tourEspecialista.checked) {
             total += extraTour.valor;
-            valorDolar = total / 5.60;
-            output6.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output6, total);
         }
 
         if (vip.checked) {
             total += extraVIP.valor;
-            valorDolar = total / 5.60;
-            output6.innerHTML = `Total: R$ ${total * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output6, total);
         }
 
         if (familia.checked) {
             total += extraPet.valor;
-            valorDolar = total / 5.60;
-            output6.innerHTML = `Total: R$ ${total.toFixed(2) * numeroPessoas.value} / US$ ${valorDolar.toFixed(2) * numeroPessoas.value}`
+            somaValores(output6, total);
         }
     }
 }
