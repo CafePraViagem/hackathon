@@ -16,8 +16,8 @@
 /* NAVBAR */
 
 .navbar {
+  padding: 0;
   margin: 0 auto;
-  padding: 1rem 1rem;
 }
 
 .container-fluid {
@@ -33,7 +33,7 @@
 
 a.navbar-brand {
   margin: 0;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,8 +72,9 @@ img.logo {
 }
 
 .image-width-height-carousel {
+  padding: 0;
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
 }
 
 #nextCarousel > .carousel-control-next-icon {
@@ -211,7 +212,7 @@ p.bolder-text {
 /* Carousel */
 @media (min-width: 1010px) {
   .image-width-height-carousel {
-    height: 60vh;
+    height: 50vh;
   }
 }
 
