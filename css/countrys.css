@@ -78,15 +78,15 @@ h1 {
 
 }
 
-/* Disposição de 2 botões na tela quando maior q 375px */
-@media (min-width: 375px) {
+/* Disposição de 2 botões na tela quando maior q 320px */
+@media (min-width: 320px) {
   .col-lg-2 {
     width: 50%;
   }
 }
 
-/* Disposição de 3 botões na tela quando maior q 700px */
-@media (min-width: 700px) {
+/* Disposição de 3 botões na tela quando maior q 540px */
+@media (min-width: 540px) {
   .col-lg-2 {
     width: 30%;
   }
