@@ -33,21 +33,44 @@ const
     output5 = document.getElementById('output5'),
     output6 = document.getElementById('output6');
 
-// Pontos Turísticos object
-const arrPontosTuristicos = [
-    Role = {
-        name: 'Role pela cidade',
-        valor: 100
-    },
-    Torre = {
-        name: 'Subir na torre',
-        valor: 300
-    },
-    Arco = {
-        name: 'Arco do triunfo',
-        valor: 200
-    },
-],
+
+const
+    // Hospedagem object
+    arrHospedagem = [
+        FiveStar = {
+            valor: 400
+        },
+        FourStar = {
+            valor: 300
+        },
+        ThreeStar = {
+            valor: 200
+        }
+    ],
+    // Aluguel Carro object
+    arrAluguelCarro = [
+        CarroComum = {
+            valor: 30
+        },
+        CarroMaisCinco = {
+            valor: 45
+        }
+    ],
+    // Pontos Turisticos object
+    arrPontosTuristicos = [
+        Role = {
+            name: 'Role pela cidade',
+            valor: 100
+        },
+        Torre = {
+            name: 'Subir na torre',
+            valor: 300
+        },
+        Arco = {
+            name: 'Arco do triunfo',
+            valor: 200
+        },
+    ],
     // Alimentacao object
     arrAlimentacao = [
         Cafe = {
@@ -92,79 +115,37 @@ const arrPontosTuristicos = [
             nome: "Família com Pet",
             valor: 249.99
         }
-    ]    
+    ]
 
 // Hospedagem event listeners
-hospedagem1.addEventListener('click', () => {
-    let valor = 400;
-
-    somaValores(output1, valor);
-
-    showAlertMessage();
-});
-
-hospedagem2.addEventListener('click', () => {
-    let valor = 300;
-
-    somaValores(output1, valor);
-
-    showAlertMessage();
-});
-
-hospedagem3.addEventListener('click', () => {
-    let valor = 200;
-
-    somaValores(output1, valor);
-
-    showAlertMessage();
-});
+hospedagem1.addEventListener('click', hospedagem)
+hospedagem2.addEventListener('click', hospedagem)
+hospedagem3.addEventListener('click', hospedagem)
 
 // Aluguem de Carros event listeners
-aluguelCarro1.addEventListener('click', () => {
-    let valor = 30;
-
-    somaValores(output2, valor);
-
-    showAlertMessage();
-});
-
-aluguelCarro2.addEventListener('click', () => {
-    let valor = 45;
-
-    somaValores(output2, valor);
-
-    showAlertMessage();
-});
+aluguelCarro1.addEventListener('click', aluguelCarro)
+aluguelCarro2.addEventListener('click', aluguelCarro)
 
 // Pontos turísticos event listeners
-role.addEventListener('click', somaPontosTuristicos);
-
-arco.addEventListener('click', somaPontosTuristicos);
-
-torre.addEventListener('click', somaPontosTuristicos);
+role.addEventListener('click', pontosTuristicos);
+arco.addEventListener('click', pontosTuristicos);
+torre.addEventListener('click', pontosTuristicos);
 
 // Alimentação event listeners
-cafe.addEventListener('click', somaAlimentacao);
-
-almoco.addEventListener('click', somaAlimentacao);
-
-janta.addEventListener('click', somaAlimentacao);
-
-almocoJanta.addEventListener('click', somaAlimentacao);
+cafe.addEventListener('click', alimentacao);
+almoco.addEventListener('click', alimentacao);
+janta.addEventListener('click', alimentacao);
+almocoJanta.addEventListener('click', alimentacao);
 
 // Seguro Viagem event listeners
-bagagem.addEventListener('click', somaSeguroViagem);
-
-vida.addEventListener('click', somaSeguroViagem);
-
-saude.addEventListener('click', somaSeguroViagem);
+bagagem.addEventListener('click', seguroViagem);
+vida.addEventListener('click', seguroViagem);
+saude.addEventListener('click', seguroViagem);
 
 // Extras event listeners
-tourEspecialista.addEventListener('click', somaExtras);
-
-vip.addEventListener('click', somaExtras);
-
-familia.addEventListener('click', somaExtras);
+tourEspecialista.addEventListener('click', extras);
+vip.addEventListener('click', extras);
+familia.addEventListener('click', extras);
 
 // Functions
 function showDisplay() {
@@ -187,7 +168,28 @@ function somaValores(output, valor) {
     output.innerHTML = `Total: R$ ${valor.toFixed(2) * numeroPessoas.value}`
 }
 
-function somaPontosTuristicos() {
+function hospedagem() {
+
+    if(hospedagem1.checked) {
+        somaValores(output1, FiveStar.valor);
+    } else if(hospedagem2.checked) {
+        somaValores(output1, FourStar.valor);
+    } else if(hospedagem3.checked) {
+        somaValores(output1, ThreeStar.valor);
+    }
+    showAlertMessage();
+}
+
+function aluguelCarro() {
+    if(aluguelCarro1.checked) {
+        somaValores(output2, CarroComum.valor);
+    } else if(aluguelCarro2.checked) {
+        somaValores(output2, CarroMaisCinco.valor);
+    }
+    showAlertMessage();
+}
+
+function pontosTuristicos() {
     let total = 0;
 
     if (role.checked == false && torre.checked == false && arco.checked == false) {
@@ -212,7 +214,7 @@ function somaPontosTuristicos() {
     }
 }
 
-function somaAlimentacao() {
+function alimentacao() {
     let total = 0;
 
     if (cafe.checked == false && almoco.checked == false && janta.checked == false && almocoJanta.checked == false) {
@@ -242,7 +244,7 @@ function somaAlimentacao() {
     }
 }
 
-function somaSeguroViagem() {
+function seguroViagem() {
     let total = 0;
 
     if (bagagem.checked == false && vida.checked == false && saude.checked == false) {
@@ -267,7 +269,7 @@ function somaSeguroViagem() {
     }
 }
 
-function somaExtras() {
+function extras() {
     let total = 0;
 
     if (tourEspecialista.checked == false && vip.checked == false && familia.checked == false) {
