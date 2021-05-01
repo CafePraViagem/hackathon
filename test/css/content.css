@@ -64,10 +64,6 @@ li > strong {
     color: #ff9500;
 }
 
-.adventure-profile-on {
-    display: none;
-}
-
 @media (min-width: 834px) {
     .font-style-conntent-home {
         font-size: 1rem;
@@ -75,36 +71,20 @@ li > strong {
 
     .container-infos {
         width: 75vw;
-        display: flex;
-        flex-direction: initial;
     }
     
     .infos-trip-list, .list-trip, .ul-trip {
-        /* float: left; */
+        float: left;
         width: 35vw;
         text-align: right;
-        align-items: left;
-        justify-items: left;
     }
 
     .plus-trip {
-        /* float: right; */
+        float: right;
         width: 35vw;
         margin-top: 30px;
         text-align: left;
         margin-bottom: 30px;
-        align-items: right;
-        justify-items: right;
-    }
-
-    .adventure-profile-on {
-        display: block;
-    }
-
-    .adventure-profile-off {
-        display: none;
-        position: relative;
-
     }
 
 }
