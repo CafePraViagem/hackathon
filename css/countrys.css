@@ -1,3 +1,9 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* IMAGEM DO FUNDO RESPONSIVA*/
 #backgroundImage {
     background: url("https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
     -webkit-background-size:cover;
@@ -5,8 +11,10 @@
     -o-background-size:cover;
     background-size:cover;
 
+
 }
 
+/* TRANSPARENCIA DO FUNDO */
 #backgroundImage{
     -webkit-mask-image: -webkit-gradient(
       linear,
@@ -14,38 +22,81 @@
       center bottom,
       color-stop(0.0, rgba(0, 0, 0, 0)),
       /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
-        color-stop(0.1, rgba(0, 0, 0, 1))
+        color-stop(0.13, rgba(0, 0, 0, 1))
     ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
-  }
-  
+}
 
-body { background-color: transparent; }
+body { 
+  background-color: transparent; 
+}
 
-/* Paises - Botão */
-
-#pais {
+/* Titulo */
+h1 {
   text-align: center;
-  margin: 0 auto;
-
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: rgb(0, 128, 255);
-  border: 1px solid rgb(241, 241, 241);
+  font-style: normal;
+  font-weight: bold;
 
   color: white;
-
-}
-* {
-  margin: 0 auto;
-  padding: 0;
 }
 
+/* Paises - Botão */
 .box{
+
+
   height: 150px;
-  background: #fff;
-  border-radius: 5px;
+  background: #4B4FA1;
+  border-radius: 10px;
   margin-bottom: 30px;
   max-width: 150px;
 
 }
 
+/* Medias query */
+
+/* Transparencia do topo menor em dispositivos pequenos */
+@media (max-width: 375px) {
+
+  #backgroundImage{
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      center top,
+      center bottom,
+      color-stop(0.0, rgba(0, 0, 0, 0)),
+      /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
+        color-stop(0.035, rgba(0, 0, 0, 1))
+    ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+  }
+
+}
+
+/* Disposição de 2 botões na tela quando maior q 375px */
+@media (min-width: 375px) {
+  .col-lg-2 {
+    width: 50%;
+  }
+}
+
+/* Disposição de 3 botões na tela quando maior q 700px */
+@media (min-width: 700px) {
+  .col-lg-2 {
+    width: 30%;
+  }
+}
+
+/* Footer  */
+@media (min-width: 576px) and (min-height: 957px) {
+  #backgroundImage {
+    height: 100vh;
+  }
+}
+
+.figure > figcaption {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.figure {
+  margin: 10px;
+  padding: 1px;
+}
