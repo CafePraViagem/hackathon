@@ -7,7 +7,8 @@ var listImageBackground = ["https://images.pexels.com/photos/460672/pexels-photo
 "https://images.pexels.com/photos/2797526/pexels-photo-2797526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
 "https://images.pexels.com/photos/823696/pexels-photo-823696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
 "https://images.pexels.com/photos/2819082/pexels-photo-2819082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940mach",
-"https://images.pexels.com/photos/1570610/pexels-photo-1570610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",]
+"https://images.pexels.com/photos/1570610/pexels-photo-1570610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+"https://images.pexels.com/photos/1963082/pexels-photo-1963082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",]
 
 
 // Função para randomizar o url da background
@@ -26,5 +27,5 @@ function randomImage() {
 }
 
 // Tempo em milisegundos
-setInterval(function() { randomImage() }, 10000)
+// setInterval(function() { randomImage() }, 10000)
 
