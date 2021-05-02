@@ -1,8 +1,3 @@
-* {
-  margin: 0 auto;
-  padding: 0;
-}
-
 /* IMAGEM DO FUNDO RESPONSIVA*/
 #backgroundImage {
     background: url("https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
@@ -26,33 +21,6 @@
     ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
 }
 
-body { 
-  background-color: transparent; 
-}
-
-/* Titulo */
-h1 {
-  text-align: center;
-  font-style: normal;
-  font-weight: bold;
-
-  color: white;
-}
-
-/* Paises - Botão */
-.box{
-
-
-  height: 150px;
-  background: #4B4FA1;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  max-width: 150px;
-
-}
-
-/* Medias query */
-
 /* Transparencia do topo menor em dispositivos pequenos */
 @media (max-width: 375px) {
 
@@ -66,37 +34,91 @@ h1 {
         color-stop(0.035, rgba(0, 0, 0, 1))
     ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
   }
-
 }
 
-/* Disposição de 2 botões na tela quando maior q 375px */
-@media (min-width: 375px) {
-  .col-lg-2 {
-    width: 50%;
-  }
-}
-
-/* Disposição de 3 botões na tela quando maior q 700px */
-@media (min-width: 700px) {
-  .col-lg-2 {
-    width: 30%;
-  }
-}
-
-/* Footer  */
-@media (min-width: 576px) and (min-height: 957px) {
+/* Imagem responsiva com 100% height - Quando a tela foir maior que 957px */
+@media (min-height: 957px) {
   #backgroundImage {
     height: 100vh;
   }
 }
 
-.figure > figcaption {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
+body { 
+  background-color: transparent; 
 }
 
-.figure {
-  margin: 10px;
-  padding: 1px;
+/* Titulo */
+h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+}
+
+/* Grade do Botões */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Definindo margin do botão e em quanto de tamanho ele deve cortar a faixa de botão no caso MAX 200PX */
+.flex > .box {
+  flex: 0 1 200px;
+  margin: 10px 10px;
+}
+
+/* Imagem ficar na box com 100% do tamanho */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Botão - Propriedaes */
+.box {
+  padding: 20px;
+  background-color: #4B4FA1;
+  border-radius: 10px;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  background-color: #FC9523;
+  box-shadow: 3px 3px #000000;
+}
+
+.box:active {
+  transform: scale(1.1);
+  background-color: #FC9523;
+  box-shadow: 3px 3px #000000;
+}
+
+/* Texto do Botão */
+.box > a {
+  color: white!important;
+  text-decoration: none!important;
+  text-align: center!important;
+}
+
+.box > a:hover {
+  color: white!important;
+}
+
+.box > h4 {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* Botão menor - Quando a tela for menorr que 437px */
+@media (max-width: 437px) {
+  .flex > .box {
+    flex: 0 1 150px;
+  }
 }
