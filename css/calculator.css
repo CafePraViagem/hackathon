@@ -8,16 +8,25 @@
   padding: 0;
 }
 
+.mainDiv {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.formBoxes {
+  background-color: tan;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 h2.result {
   font-weight: bold;
   font-size: 1rem;
   margin-top: 1rem;
-}
-.mainDiv {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  font-size: 1rem;
 }
 
 .orangeMarker {
@@ -28,13 +37,13 @@ h2.result {
 }
 
 input.morePeople {
-  width: 3rem;
-  border-style: none;
+  text-align: center;
+  width: 5rem;
+  border-style: dashed;
   background-color: #fff;
   font-weight: bold;
   color: #fc9523;
   font-size: 1.6rem;
-  margin-left: 2rem;
   background-color: rgb(253, 253, 220);
   border-radius: 10px;
 }
@@ -54,7 +63,7 @@ input.morePeople {
   width: 8.1rem;
   height: 3.1rem;
   font-size: 1.4rem;
-  transition: ease-out 0.3s;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -63,15 +72,42 @@ input.morePeople {
   width: 8.5rem;
   height: 3.5rem;
   font-size: 1.7rem;
-  transition: ease-in 0.3s;
+  transition: 0.3s;
   background-color: rgb(106, 51, 207);
 }
 
 .showValorMessage {
-  margin: 1rem auto;
-  width: 40%;
+  margin: 1.4rem auto;
+  width: 80%;
   background-color: rgb(106, 51, 207);
   color: white;
   border-radius: 10px;
   padding: 1rem;
+}
+
+/* ------ BOOTSTRAP MEDIA QUERYS ------ */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .mainDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    grid-gap: 20px;
+  }
+
+  .formBoxes:nth-child(1) {
+    grid-column: 1/3;
+  }
+
+  .form-check {
+    max-width: 80%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 }
