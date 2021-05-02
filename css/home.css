@@ -107,11 +107,14 @@ img.logo {
   background: #4b4fa1;
   outline: none;
   box-shadow: none;
+  box-shadow: 3px 3px #FC9523;
 }
 
 #howMuch:active {
   background: #363b75;
+  outline: none;
   box-shadow: none;
+  box-shadow: 2px 2px #FC9523;
 }
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
