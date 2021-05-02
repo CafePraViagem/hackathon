@@ -212,7 +212,7 @@ p.bolder-text {
 /* Carousel */
 @media (min-width: 1010px) {
   .image-width-height-carousel {
-    height: 50vh;
+    height: 54vh;
   }
 }
 
