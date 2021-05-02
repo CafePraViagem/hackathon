@@ -100,7 +100,7 @@ img {
 
 /* Texto do Botão */
 a {
-  color: white;
+  color: white!important;
   text-decoration: none;
   text-align: center;
 }
