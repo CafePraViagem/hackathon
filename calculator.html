@@ -226,19 +226,23 @@
     
       <section id="carousel">
      
-<div class="container d-flex align-items-left flex-column ">
-<div class="mainDiv">
- 
 
-      <p class="title fw-bold" ><span class="orangeMarker">.</span> Quantas pessoas irão viajar?</p>
-     <span> <i class="fas fa-user-plus"></i></i></i> <input type="number" placeholder="0" id="numberOfTravelers" class="morePeople align-center" ></span>
-      <hr class="my-12">
+<div class="mainDiv">
+  
+  <div class="formBoxes">
+ 
+  <p class="title fw-bold" ><span class="orangeMarker">.</span> Quantas pessoas irão viajar?</p>
+      <div class="form-check">
+       <span> <i class="fas fa-user-plus"></i></i></i> <input type="number" placeholder="0" id="numberOfTravelers" class="morePeople align-center" ></span>
+       </div>
+       </div>
+       
 
       <!-- Hospedagem -->
+      <div class="formBoxes">
       
-      <p class="title fw-bold "><span class="orangeMarker">.</span> Hospedagem</p>
-      
-      <div class="form-check">
+        <p class="title fw-bold "><span class="orangeMarker">.</span> Hospedagem</p>
+        <div class="form-check">
         <input type="radio" id="hospedagem_3" name="hospedagem" value="3 Estrelas" class="form-check-input" required>
         <label for="hospedagem">Eu escolho (AirBnB)        
         </label>
@@ -271,13 +275,15 @@
         </label>
       </div>
    
-      <hr class="my-12">
+      
+    </div>
 
 
         <!-- Aluguel de Carro -->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Aluguel de Carros</p>
-
-      <div class="form-check">
+        <div class="formBoxes">
+          
+          <p class="title fw-bold"><span class="orangeMarker">.</span> Aluguel de Carros</p>
+          <div class="form-check">
         <input type="radio" id="aluguelCarro" name="aluguelCarro" value= "Carro Comum" class="form-check-input" required>
         <label for="aluguelCarro">Comum</label>
       </div>
@@ -285,12 +291,13 @@
         <input type="radio" id="aluguelCarro" name="aluguelCarro" value= "Carro 5+" class="form-check-input" required>
         <label for="aluguelCarro">5+ Lugares</label>
       </div>
-      <hr class="my-12">
-
+      
+      </div>
 
       <!-- Pontos Turísticos -->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Pontos Turísticos:</p>
-
+      <div class="formBoxes">
+      
+        <p class="title fw-bold"><span class="orangeMarker">.</span> Pontos Turísticos:</p>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" value="" id="role">
         <label for="role" class="form-check-label">
@@ -309,11 +316,13 @@
           Arco do Triunfo - R$ 100,00
         </label>
       </div>
-      <hr class="my-12">
+      
+      </div>
 
       <!-- Alimentação -->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Alimentação:</p>
-
+      <div class="formBoxes">
+      
+        <p class="title fw-bold"><span class="orangeMarker">.</span> Alimentação:</p>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" value="" id="cafe">
         <label for="cafe" class="form-check-label">
@@ -338,11 +347,13 @@
           Almoço + Jantar
         </label>
       </div>
-      <hr class="my-12">
+      
+</div>
 
       <!-- Seguro Viagem-->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Seguro Viagem:</p>
-
+      <div class="formBoxes">
+      
+        <p class="title fw-bold"><span class="orangeMarker">.</span> Seguro Viagem:</p>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" value="" id="bagagem">
         <label for="bagagem" class="form-check-label">
@@ -361,12 +372,14 @@
           Saúde
         </label>
       </div>
-      <hr class="my-12">
+      
+      </div>
 
 
       <!-- Extras-->
-      <p class="title fw-bold"><span class="orangeMarker">.</span> Extras:</p>
-
+      <div class="formBoxes">
+      
+        <p class="title fw-bold"><span class="orangeMarker">.</span> Extras:</p>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" value="" id="tourEspecialista">
         <label for="tourEspecialista" class="form-check-label">
@@ -385,9 +398,9 @@
           Família com Pet
         </label>
       </div>
-      <hr class="my-12">
+      
+      </div>
 
-</div>
 </div>
 
   <!-- Resultado -->
