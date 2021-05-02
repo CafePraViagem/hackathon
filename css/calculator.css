@@ -8,7 +8,36 @@
   padding: 0;
 }
 
-.mainDiv {
+.headerDiv {
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+  filter: opacity(90%);
+}
+
+.headerDiv img {
+  width: 100%;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    center top,
+    center bottom,
+    color-stop(0.05, rgba(0, 0, 0, 0)),
+    /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
+      color-stop(0.4, rgba(0, 0, 0, 1))
+  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+}
+.imageTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  text-shadow: 2px 2px rgb(17, 17, 26, 2);
+}
+
+.mainDivForm {
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr;
@@ -18,11 +47,13 @@
 }
 
 .formBoxes {
-  background-color: tan;
+  background-color: white;
   border-radius: 10px;
+  border: 3px solid rgba(237, 148, 33, 0.2);
   padding: 10px;
   max-width: 380px;
   min-width: 218px;
+  box-shadow: 6px -6px rgba(237, 148, 33, 0.2);
 }
 
 .form-check {
@@ -94,7 +125,7 @@ input.morePeople {
 /* ------ BOOTSTRAP MEDIA QUERYS ------ */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .mainDiv {
+  .mainDivForm {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
@@ -110,15 +141,21 @@ input.morePeople {
     max-width: none;
     width: 100%;
   }
+  .imageTitle {
+    font-size: 2.4rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .imageTitle {
+    font-size: 3.4rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .mainDiv {
+  .mainDivForm {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
@@ -128,9 +165,12 @@ input.morePeople {
 
   .formBoxes:nth-child(1) {
     display: grid;
-    grid-column: 1/5;
+    grid-column: 1/4;
     justify-items: center;
     margin: 0 auto;
     width: 100%;
+  }
+  .imageTitle {
+    font-size: 4.4rem;
   }
 }
