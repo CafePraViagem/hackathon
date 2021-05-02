@@ -2,13 +2,17 @@
     font-size: 1.1rem;
 }
 
-.container-text-section, .coffee-go-trip, .container-click-button-message, .container-infos,.infos-trip-list, .li-trip, .ul-trip, .plus-trip, .info-message {
+.container-text-section, 
+.coffee-go-trip, 
+.container-click-button-message, 
+.container-infos,.infos-trip-list, .container-text-button, .ul-trip {
     margin: 0 auto;
     width: 70vw;
     text-align: center;
 }
 
-.container-click-button-message, .coffee-go-trip {
+.container-click-button-message, 
+.coffee-go-trip  {
     text-align: center;
 }
 
@@ -65,6 +69,11 @@ li > strong {
 }
 
 .adventure-profile-on {
+    display: block;
+    position: relative;
+}
+
+.adventure-profile-off {
     display: none;
 }
 
@@ -79,7 +88,9 @@ li > strong {
         flex-direction: initial;
     }
     
-    .infos-trip-list, .list-trip, .ul-trip {
+    .infos-trip-list, 
+    .list-trip, 
+    .ul-trip {
         /* float: left; */
         width: 35vw;
         text-align: right;
@@ -96,15 +107,4 @@ li > strong {
         align-items: right;
         justify-items: right;
     }
-
-    .adventure-profile-on {
-        display: block;
-    }
-
-    .adventure-profile-off {
-        display: none;
-        position: relative;
-
-    }
-
 }

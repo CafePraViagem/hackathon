@@ -60,10 +60,10 @@
         alt: "Cidade de Bangkok"
     },
 
-    UnitedArabEmirates = {
-        name: "Dubai", 
+    Germany = {
+        name: "Berlim", 
         image: "https://images.pexels.com/photos/823696/pexels-photo-823696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        alt: "Cidade de Dubai"
+        alt: "Cidade de Berlim"
     }, 
 
     Chile = {
