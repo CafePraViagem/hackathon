@@ -5,7 +5,10 @@
 .container-text-section, 
 .coffee-go-trip, 
 .container-click-button-message, 
-.container-infos,.infos-trip-list, .container-text-button, .ul-trip {
+.container-infos,
+.infos-trip-list, 
+.container-text-button, 
+.ul-trip {
     margin: 0 auto;
     width: 70vw;
     text-align: center;
@@ -18,6 +21,11 @@
 
 .infos-trip-list {
     margin-top: 30px;
+    text-align: center;
+}
+
+.li-iten-trip {
+    margin-right: 15px;
 }
 
 .plus-trip {
@@ -45,6 +53,10 @@
 .button-type-trip:hover {
     background-color: #4E00C8;
     box-shadow: 3px 3px #FC9523;
+}
+
+.final-messege-simple {
+    margin-top: 20px;
 }
 
 .final-link {
@@ -89,13 +101,16 @@ li > strong {
     }
     
     .infos-trip-list, 
-    .list-trip, 
     .ul-trip {
         /* float: left; */
         width: 35vw;
         text-align: right;
         align-items: left;
         justify-items: left;
+    }
+
+    .li-iten-trip {
+        margin-right: 0;
     }
 
     .plus-trip {
