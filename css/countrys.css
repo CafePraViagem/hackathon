@@ -86,7 +86,29 @@ img {
   border-radius: 10px;
 }
 
+.box:hover {
+  transform: scale(1.1);
+  background-color: #FC9523;
+  box-shadow: 3px 3px #000000;
+}
+
+.box:active {
+  transform: scale(1.1);
+  background-color: #FC9523;
+  box-shadow: 3px 3px #000000;
+}
+
 /* Texto do Botão */
+a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  color: white;
+}
+
 .box > h4 {
   color: white;
   text-align: center;
