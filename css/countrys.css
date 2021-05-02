@@ -99,14 +99,14 @@ img {
 }
 
 /* Texto do Botão */
-a {
+.box > a {
   color: white!important;
-  text-decoration: none;
-  text-align: center;
+  text-decoration: none!important;
+  text-align: center!important;
 }
 
-a:hover {
-  color: white;
+.box > a:hover {
+  color: white!important;
 }
 
 .box > h4 {
