@@ -26,5 +26,5 @@ function randomImage() {
 }
 
 // Tempo em milisegundos
-setInterval(function() { randomImage() }, 1000)
+setInterval(function() { randomImage() }, 10000)
 
