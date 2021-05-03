@@ -1,3 +1,5 @@
+// Adelar
+
 // DOM Request
 const
     // Name: Hospedagem
@@ -214,16 +216,16 @@ function showAlertMessage(element) {
 
 function isChecked(element, output) {
     if (!element.checked) {
-        console.log("Desmarcado")
+        // Do something
     } else {
         showAlertMessage(output)
     }
 }
 
-function somaValores(output, valor) {
+function somaValores(output, value) {
     const numeroPessoas = document.getElementById("numeroPessoas");
 
-    output.innerHTML = `Total: R$ ${valor.toFixed(2) * numeroPessoas.value}`
+    output.innerHTML = `Total: R$ ${value.toFixed(2) * numeroPessoas.value}`
 }
 
 function hospedagem() {
