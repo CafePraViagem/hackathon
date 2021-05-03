@@ -76,19 +76,34 @@
     text-decoration-color: #FC9523;
 }
 
-li > strong {
+li > strong, span > strong {
     color: #ff9500;
 }
 
-.adventure-profile-on, .young-profile-on {
+.adventurous-profile-on, .young-profile-on {
     display: block;
     position: relative;
-    margin-top: 30px;
 }
 
-.adventure-profile-off, .young-profile-off {
+.adventurous-profile-off, .young-profile-off {
     display: none;
 }
+
+.indications {
+    margin: 40px 0;
+}
+
+.country-indication {
+    margin: 20px 0;
+}
+
+.country-indication img {
+    width: 70vw;
+    border-radius: 20px;
+    border: solid 2px lightcoral;
+    box-shadow: 3px 3px lightcoral;
+}
+
 
 
 @media (min-width: 834px) {

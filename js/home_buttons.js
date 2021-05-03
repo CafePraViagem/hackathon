@@ -50,9 +50,9 @@ function clickButtonTypeTripChangeClass(tagId, profileOff, profileOn){
 let buttonTypeTripAdventure = document.querySelector(".button-type-trip-adventure");
 
 buttonTypeTripAdventure.addEventListener('click', function() {
-    let divTag = document.querySelector('#adventure');
+    let divTag = document.querySelector('#adventurous');
 
-    clickButtonTypeTripChangeClass(divTag, 'adventure-profile-off', 'adventure-profile-on');
+    clickButtonTypeTripChangeClass(divTag, 'adventurous-profile-off', 'adventurous-profile-on');
 });
 
 let buttonTypeTripYoung = document.querySelector(".button-type-trip-young");
