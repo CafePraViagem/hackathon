@@ -360,3 +360,9 @@ function extras() {
         }
     }
 }
+
+// Request JSON file
+fetch('./data/data.json')
+    .then(data => data.json())
+    .then(console.log);
+
