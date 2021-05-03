@@ -1,30 +1,29 @@
 // DOM Request
 const
-    numeroPessoas = document.getElementById('numeroPessoas'),
     // Name: Hospedagem
-    hospedagem1 = document.getElementById('hospedagem-1'),
-    hospedagem2 = document.getElementById('hospedagem-2'),
-    hospedagem3 = document.getElementById('hospedagem-3'),
+    hospedagem1 = document.getElementById("hospedagem-1"),
+    hospedagem2 = document.getElementById("hospedagem-2"),
+    hospedagem3 = document.getElementById("hospedagem-3"),
     // Name: Aluguel Carro
-    aluguelCarro1 = document.getElementById('aluguelCarro-1'),
-    aluguelCarro2 = document.getElementById('aluguelCarro-2'),
+    aluguelCarro1 = document.getElementById("aluguelCarro-1"),
+    aluguelCarro2 = document.getElementById("aluguelCarro-2"),
     // Name: Pontos Turisticos
-    role = document.getElementById('role'),
-    torre = document.getElementById('torre'),
-    arco = document.getElementById('arco'),
+    role = document.getElementById("role"),
+    torre = document.getElementById("torre"),
+    arco = document.getElementById("arco"),
     // Name: Alimentacao
-    cafe = document.getElementById('cafe'),
-    almoco = document.getElementById('almoco'),
-    janta = document.getElementById('janta'),
-    almocoJanta = document.getElementById('almocoJanta'),
+    cafe = document.getElementById("cafe"),
+    almoco = document.getElementById("almoco"),
+    janta = document.getElementById("janta"),
+    almocoJanta = document.getElementById("almocoJanta"),
     // Name: Seguro Viagem
-    bagagem = document.getElementById('bagagem'),
-    vida = document.getElementById('vida'),
-    saude = document.getElementById('saude'),
+    bagagem = document.getElementById("bagagem"),
+    vida = document.getElementById("vida"),
+    saude = document.getElementById("saude"),
     // Name: Extras
-    tourEspecialista = document.getElementById('tourEspecialista'),
-    vip = document.getElementById('vip'),
-    familia = document.getElementById('familia');
+    tourEspecialista = document.getElementById("tourEspecialista"),
+    vip = document.getElementById("vip"),
+    familia = document.getElementById("familia");
 
 const
     // Hospedagem object
@@ -51,15 +50,15 @@ const
     // Pontos Turisticos object
     arrPontosTuristicos = [
         Role = {
-            name: 'Role pela cidade',
+            name: "Role pela cidade",
             valor: 100
         },
         Torre = {
-            name: 'Subir na torre',
+            name: "Subir na torre",
             valor: 300
         },
         Arco = {
-            name: 'Arco do triunfo',
+            name: "Arco do triunfo",
             valor: 200
         },
     ],
@@ -110,42 +109,101 @@ const
     ]
 
 // Hospedagem event listeners
-hospedagem1.addEventListener('click', hospedagem);
-hospedagem2.addEventListener('click', hospedagem);
-hospedagem3.addEventListener('click', hospedagem);
+hospedagem1.addEventListener("click", hospedagem);
+hospedagem2.addEventListener("click", hospedagem);
+hospedagem3.addEventListener("click", hospedagem);
 
 // Aluguem de Carros event listeners
-aluguelCarro1.addEventListener('click', aluguelCarro);
-aluguelCarro2.addEventListener('click', aluguelCarro);
+aluguelCarro1.addEventListener("click", aluguelCarro);
+aluguelCarro2.addEventListener("click", aluguelCarro);
 
-// Pontos turísticos event listeners
-role.addEventListener('click', pontosTuristicos);
-arco.addEventListener('click', pontosTuristicos);
-torre.addEventListener('click', pontosTuristicos);
+// Pontos Turísticos event listeners
+role.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(role, "alert3");
+    // Chama função relacionada ao evento
+    pontosTuristicos();
+})
+arco.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(arco, "alert3");
+    // Chama função relacionada ao evento
+    pontosTuristicos();
+})
+torre.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(torre, "alert3");
+    // Chama função relacionada ao evento
+    pontosTuristicos();
+})
 
 // Alimentação event listeners
-cafe.addEventListener('click', alimentacao);
-almoco.addEventListener('click', alimentacao);
-janta.addEventListener('click', alimentacao);
-almocoJanta.addEventListener('click', alimentacao);
+cafe.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(cafe, "alert4");
+    // Chama função relacionada ao evento
+    alimentacao();
+});
+almoco.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(almoco, "alert4");
+    // Chama função relacionada ao evento
+    alimentacao();
+});
+janta.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(janta, "alert4");
+    // Chama função relacionada ao evento
+    alimentacao();
+});
+almocoJanta.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(almocoJanta, "alert4");
+    // Chama função relacionada ao evento
+    alimentacao();
+});
 
 // Seguro Viagem event listeners
-bagagem.addEventListener('click', seguroViagem);
-vida.addEventListener('click', seguroViagem);
-saude.addEventListener('click', seguroViagem);
+bagagem.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(bagagem, "alert5");
+    // Chama função relacionada ao evento
+    seguroViagem();
+});
+vida.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(vida, "alert5");
+    // Chama função relacionada ao evento
+    seguroViagem();
+});
+saude.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(saude, "alert5");
+    // Chama função relacionada ao evento
+    seguroViagem();
+});
 
 // Extras event listeners
-tourEspecialista.addEventListener('click', extras);
-vip.addEventListener('click', extras);
-familia.addEventListener('click', extras);
+tourEspecialista.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(tourEspecialista, "alert6");
+    // Chama função relacionada ao evento
+    extras();
+});
+vip.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(vip, "alert6");
+    // Chama função relacionada ao evento
+    extras();
+});
+familia.addEventListener("click", () => {
+    // Verifica se elemento está marcado (inserir ou não ShowAlert())
+    isChecked(familia, "alert6");
+    // Chama função relacionada ao evento
+    extras();
+});
 
 // Functions
-function showDisplay() {
-    document.getElementById('options').style.display = 'block';
-
-    document.querySelector('#disable-after-click').disabled = true;
-}
-
 function showAlertMessage(element) {
     document.getElementById(element).style.display = "block";
 
@@ -154,12 +212,22 @@ function showAlertMessage(element) {
     }, 3000);
 }
 
+function isChecked(element, output) {
+    if (!element.checked) {
+        console.log("Desmarcado")
+    } else {
+        showAlertMessage(output)
+    }
+}
+
 function somaValores(output, valor) {
+    const numeroPessoas = document.getElementById("numeroPessoas");
+
     output.innerHTML = `Total: R$ ${valor.toFixed(2) * numeroPessoas.value}`
 }
 
 function hospedagem() {
-    const output = document.getElementById('output1');
+    const output = document.getElementById("output1");
 
     if (hospedagem1.checked) {
         somaValores(output, FiveStar.valor);
@@ -168,25 +236,25 @@ function hospedagem() {
     } else if (hospedagem3.checked) {
         somaValores(output, ThreeStar.valor);
     }
-    showAlertMessage('alert1');
+    showAlertMessage("alert1");
 }
 
 function aluguelCarro() {
-    const output = document.getElementById('output2');
+    const output = document.getElementById("output2");
 
     if (aluguelCarro1.checked) {
         somaValores(output, CarroComum.valor);
     } else if (aluguelCarro2.checked) {
         somaValores(output, CarroMaisCinco.valor);
     }
-    showAlertMessage('alert2');
+    showAlertMessage("alert2");
 }
 
 function pontosTuristicos() {
-    const output = document.getElementById('output3');
+    const output = document.getElementById("output3");
     let total = 0;
 
-    if (role.checked == false && torre.checked == false && arco.checked == false) {
+    if (!role.checked && !torre.checked && !arco.checked) {
         output.style.display = "none";
     } else {
         output.style.display = "block";
@@ -206,14 +274,13 @@ function pontosTuristicos() {
             somaValores(output, total);
         }
     }
-    showAlertMessage('alert3')
 }
 
 function alimentacao() {
-    const output = document.getElementById('output4');
+    const output = document.getElementById("output4");
     let total = 0;
 
-    if (cafe.checked == false && almoco.checked == false && janta.checked == false && almocoJanta.checked == false) {
+    if (!cafe.checked && !almoco.checked && !janta.checked && !almocoJanta.checked) {
         output.style.display = "none";
     } else {
         output.style.display = "block";
@@ -238,14 +305,13 @@ function alimentacao() {
             somaValores(output, total);
         }
     }
-    showAlertMessage('alert4')
 }
 
 function seguroViagem() {
-    const output = document.getElementById('output5');
+    const output = document.getElementById("output5");
     let total = 0;
 
-    if (bagagem.checked == false && vida.checked == false && saude.checked == false) {
+    if (!bagagem.checked && !vida.checked && !saude.checked) {
         output.style.display = "none";
     } else {
         output.style.display = "block";
@@ -265,14 +331,13 @@ function seguroViagem() {
             somaValores(output, total);
         }
     }
-    showAlertMessage('alert5')
 }
 
 function extras() {
-    const output = document.getElementById('output6');
+    const output = document.getElementById("output6");
     let total = 0;
 
-    if (tourEspecialista.checked == false && vip.checked == false && familia.checked == false) {
+    if (!tourEspecialista.checked && !vip.checked && !familia.checked) {
         output.style.display = "none";
     } else {
         output.style.display = "block";
@@ -292,5 +357,4 @@ function extras() {
             somaValores(output, total);
         }
     }
-    showAlertMessage('alert6')
 }
