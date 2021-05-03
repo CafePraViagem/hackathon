@@ -80,14 +80,16 @@ li > strong {
     color: #ff9500;
 }
 
-.adventure-profile-on {
+.adventure-profile-on, .young-profile-on {
     display: block;
     position: relative;
+    margin-top: 30px;
 }
 
-.adventure-profile-off {
+.adventure-profile-off, .young-profile-off {
     display: none;
 }
+
 
 @media (min-width: 834px) {
     .font-style-conntent-home {
