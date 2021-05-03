@@ -76,7 +76,7 @@
     text-decoration-color: #FC9523;
 }
 
-li > strong, span > strong {
+li > strong, div > strong {
     color: #ff9500;
 }
 
@@ -94,14 +94,19 @@ li > strong, span > strong {
 }
 
 .country-indication {
-    margin: 20px 0;
+    margin: 20px 0 ;
 }
 
 .country-indication img {
-    width: 70vw;
-    border-radius: 20px;
-    border: solid 2px lightcoral;
-    box-shadow: 3px 3px lightcoral;
+    width: 60vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid 3px #FF9500;
+    box-shadow: 4px -4px #FF9500;
+}
+
+.country-indication div {
+    margin-top: 10px;
 }
 
 
