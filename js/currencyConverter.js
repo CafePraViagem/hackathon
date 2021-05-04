@@ -1,5 +1,4 @@
 // Adelar
-
 // DOM Request
 const
     // Name: Hospedagem
@@ -360,3 +359,15 @@ function extras() {
         }
     }
 }
+
+let myRequest = new Request("./data/data.json")
+
+// Request JSON file
+fetch(myRequest)
+    .then(function(data) {
+        return data.json();
+    })
+    .then(function(data){
+        console.log(data.France)
+    })
+
