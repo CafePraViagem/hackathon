@@ -326,6 +326,228 @@
                 "valor": 109.50
             }
         }
+    }, 
+
+    "Greece": {
+        "name": "Grecia",
+        "image": "https://images.pexels.com/photos/4388164/pexels-photo-4388164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "hospedagem": {
+            "nomeCategoria": "Hospedagem",
+            "hospedagem1": {
+                "nomeHospedagem1": "5 Estrelas",
+                "valor": 290.00
+            },
+            "hospedagem2": {
+                "nomeHospedagem2": "4 Estrelas",
+                "valor": 200.00
+            },
+            "hospedagem3": {
+                "nomeHospedagem3": "3 Estrelas",
+                "valor": 95.00
+            },
+            "hospedagem4": {
+                "nomeHospedagem4": "Eu escolho (AirBnB)",
+                "valor": 0
+            }
+        },
+        "aluguelCarro": {
+            "nomeCategoria": "Aluguel Carro",
+            "carro1": {
+                "nomeCarro1": "Carro Comum",
+                "valor": 26.00
+            },
+            "carro2": {
+                "nomeCarro2": "Carro 5+",
+                "valor": 31.99
+            }
+        },
+        "alimentacao": {
+            "nomeCategoria": "Alimentação",
+            "cafeDaManha": {
+                "nome": "Café da Manhã",
+                "valor": 13.00
+            },
+            "almoco": {
+                "nome": "Almoço",
+                "valor": 25.50
+            },
+            "jantar": {
+                "nome": "Jantar",
+                "valor": 31.90
+            },
+            "almocoEJantar": {
+                "nome": "Almoço + Jantar",
+                "valor": 57.40
+            }
+        },
+        "seguroViagem": {
+            "nomeCategoria": "Seguro Viagem",
+            "seguroBagagem": {
+                "nome": "Bagagem",
+                "valor": 300.99
+            },
+            "seguroVida": {
+                "nome": "Vida",
+                "valor": 509.99
+            },
+            "seguroSaude": {
+                "nome": "Saúde",
+                "valor": 215.99
+            }
+        },
+        "pontosTuristicos": {
+            "nomeCategoria": "Turismo",
+            "primeiroPontoTuristico": {
+                "nome": "Acrópole de Atenas",
+                "valor": 120.00
+            },
+            "segundoPontoTuristico": {
+                "nome": "Partenos",
+                "valor": 150.00
+            },
+            "terceiroPontoTuristico": {
+                "nome": "Delfos",
+                "valor": 113.00
+            },
+            "quartoPontoTuristico": {
+                "nome": "Templo de Zeus Olímpico",
+                "valor": 129.00
+            },
+            "quintoPontoTuristico": {
+                "nome": "Santorini Tour",
+                "valor": 39.00
+            },
+            "sextoPontoTuristico": {
+                "nome": "Kefalonia Island",
+                "valor": 145.00
+            }
+        },
+        "Extras": {
+            "nomeCategoria": "Extras",
+            "extraTour": {
+                "nome": "Tour com o Especialista",
+                "valor": 79.00
+            },
+            "extraVIP": {
+                "nome": "VIP Casa Noturna",
+                "valor": 257.99
+            },
+            "extraPet": {
+                "nome": "Família com Pet",
+                "valor": 69.50
+            }
+        }
+    }, 
+
+    "UnitedKingdon": {
+        "name": "Inglaterra",
+        "image": "https://images.pexels.com/photos/50632/pexels-photo-50632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "hospedagem": {
+            "nomeCategoria": "Hospedagem",
+            "hospedagem1": {
+                "nomeHospedagem1": "5 Estrelas",
+                "valor": 590.00
+            },
+            "hospedagem2": {
+                "nomeHospedagem2": "4 Estrelas",
+                "valor": 400.00
+            },
+            "hospedagem3": {
+                "nomeHospedagem3": "3 Estrelas",
+                "valor": 305.00
+            },
+            "hospedagem4": {
+                "nomeHospedagem4": "Eu escolho (AirBnB)",
+                "valor": 0
+            }
+        },
+        "aluguelCarro": {
+            "nomeCategoria": "Aluguel Carro",
+            "carro1": {
+                "nomeCarro1": "Carro Comum",
+                "valor": 76.00
+            },
+            "carro2": {
+                "nomeCarro2": "Carro 5+",
+                "valor": 91.99
+            }
+        },
+        "alimentacao": {
+            "nomeCategoria": "Alimentação",
+            "cafeDaManha": {
+                "nome": "Café da Manhã",
+                "valor": 43.00
+            },
+            "almoco": {
+                "nome": "Almoço",
+                "valor": 55.50
+            },
+            "jantar": {
+                "nome": "Jantar",
+                "valor": 61.90
+            },
+            "almocoEJantar": {
+                "nome": "Almoço + Jantar",
+                "valor": 117.40
+            }
+        },
+        "seguroViagem": {
+            "nomeCategoria": "Seguro Viagem",
+            "seguroBagagem": {
+                "nome": "Bagagem",
+                "valor": 500.99
+            },
+            "seguroVida": {
+                "nome": "Vida",
+                "valor": 609.99
+            },
+            "seguroSaude": {
+                "nome": "Saúde",
+                "valor": 355.99
+            }
+        },
+        "pontosTuristicos": {
+            "nomeCategoria": "Turismo",
+            "primeiroPontoTuristico": {
+                "nome": "Big Ben",
+                "valor": 120.00
+            },
+            "segundoPontoTuristico": {
+                "nome": "Partenos",
+                "valor": 150.00
+            },
+            "terceiroPontoTuristico": {
+                "nome": "Delfos",
+                "valor": 113.00
+            },
+            "quartoPontoTuristico": {
+                "nome": "Templo de Zeus Olímpico",
+                "valor": 129.00
+            },
+            "quintoPontoTuristico": {
+                "nome": "Santorini Tour",
+                "valor": 39.00
+            },
+            "sextoPontoTuristico": {
+                "nome": "Kefalonia Island",
+                "valor": 145.00
+            }
+        },
+        "Extras": {
+            "nomeCategoria": "Extras",
+            "extraTour": {
+                "nome": "Tour com o Especialista",
+                "valor": 79.00
+            },
+            "extraVIP": {
+                "nome": "VIP Casa Noturna",
+                "valor": 257.99
+            },
+            "extraPet": {
+                "nome": "Família com Pet",
+                "valor": 69.50
+            }
+        }
     }
     
 }
