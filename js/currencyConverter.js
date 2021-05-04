@@ -26,88 +26,7 @@ const
     vip = document.getElementById("vip"),
     familia = document.getElementById("familia");
 
-const
-    // Hospedagem object
-    arrHospedagem = [
-        FiveStar = {
-            valor: 400
-        },
-        FourStar = {
-            valor: 300
-        },
-        ThreeStar = {
-            valor: 200
-        }
-    ],
-    // Aluguel Carro object
-    arrAluguelCarro = [
-        CarroComum = {
-            valor: 30
-        },
-        CarroMaisCinco = {
-            valor: 45
-        }
-    ],
-    // Pontos Turisticos object
-    arrPontosTuristicos = [
-        Role = {
-            name: "Role pela cidade",
-            valor: 100
-        },
-        Torre = {
-            name: "Subir na torre",
-            valor: 300
-        },
-        Arco = {
-            name: "Arco do triunfo",
-            valor: 200
-        },
-    ],
-    // Alimentacao object
-    arrAlimentacao = [
-        Cafe = {
-            nome: "Café da Manhã",
-            valor: 50.00
-        },
-        Almoco = {
-            nome: "Almoço",
-            valor: 25.50
-        },
-        Janta = {
-            nome: "Jantar",
-            valor: 34.90
-        }
-    ],
-    // Seguro Viagem object
-    arrSeguroViagem = [
-        SeguroBagagem = {
-            nome: "Bagagem",
-            valor: 400.99
-        },
-        SeguroVida = {
-            nome: "Vida",
-            valor: 789.99
-        },
-        SeguroSaude = {
-            nome: "Saúde",
-            valor: 548.99
-        }
-    ],
-    // Extras object
-    arrExtra = [
-        extraTour = {
-            nome: "Tour com o Especialista",
-            valor: 900.00
-        },
-        extraVIP = {
-            nome: "VIP Casa Noturna",
-            valor: 1999.99
-        },
-        extraPet = {
-            nome: "Família com Pet",
-            valor: 249.99
-        }
-    ]
+let myRequest = new Request("./data/data.json")
 
 // Hospedagem event listeners
 hospedagem1.addEventListener("click", hospedagem);
@@ -126,15 +45,11 @@ role.addEventListener("click", () => {
     pontosTuristicos();
 })
 arco.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
     isChecked(arco, "alert3");
-    // Chama função relacionada ao evento
     pontosTuristicos();
 })
 torre.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
     isChecked(torre, "alert3");
-    // Chama função relacionada ao evento
     pontosTuristicos();
 })
 
@@ -146,21 +61,11 @@ cafe.addEventListener("click", () => {
     alimentacao();
 });
 almoco.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
     isChecked(almoco, "alert4");
-    // Chama função relacionada ao evento
     alimentacao();
 });
 janta.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
     isChecked(janta, "alert4");
-    // Chama função relacionada ao evento
-    alimentacao();
-});
-almocoJanta.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
-    isChecked(almocoJanta, "alert4");
-    // Chama função relacionada ao evento
     alimentacao();
 });
 
@@ -172,15 +77,11 @@ bagagem.addEventListener("click", () => {
     seguroViagem();
 });
 vida.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
     isChecked(vida, "alert5");
-    // Chama função relacionada ao evento
     seguroViagem();
 });
 saude.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
     isChecked(saude, "alert5");
-    // Chama função relacionada ao evento
     seguroViagem();
 });
 
@@ -192,15 +93,11 @@ tourEspecialista.addEventListener("click", () => {
     extras();
 });
 vip.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
     isChecked(vip, "alert6");
-    // Chama função relacionada ao evento
     extras();
 });
 familia.addEventListener("click", () => {
-    // Verifica se elemento está marcado (inserir ou não ShowAlert())
     isChecked(familia, "alert6");
-    // Chama função relacionada ao evento
     extras();
 });
 
@@ -231,11 +128,23 @@ function hospedagem() {
     const output = document.getElementById("output1");
 
     if (hospedagem1.checked) {
-        somaValores(output, FiveStar.valor);
+        fetch(myRequest)
+            .then(response => response.json())
+            .then(data => {
+                somaValores(output, data.France.hospedagem.hospedagem1.valor)
+            })
     } else if (hospedagem2.checked) {
-        somaValores(output, FourStar.valor);
+        fetch(myRequest)
+            .then(response => response.json())
+            .then(data => {
+                somaValores(output, data.France.hospedagem.hospedagem2.valor);
+            })
     } else if (hospedagem3.checked) {
-        somaValores(output, ThreeStar.valor);
+        fetch(myRequest)
+            .then(response => response.json())
+            .then(data => {
+                somaValores(output, data.France.hospedagem.hospedagem3.valor);
+            })
     }
     showAlertMessage("alert1");
 }
@@ -244,9 +153,17 @@ function aluguelCarro() {
     const output = document.getElementById("output2");
 
     if (aluguelCarro1.checked) {
-        somaValores(output, CarroComum.valor);
+        fetch(myRequest)
+            .then(response => response.json())
+            .then(data => {
+                somaValores(output, data.France.aluguelCarro.carro1.valor);
+            })
     } else if (aluguelCarro2.checked) {
-        somaValores(output, CarroMaisCinco.valor);
+        fetch(myRequest)
+            .then(response => response.json())
+            .then(data => {
+                somaValores(output, data.France.aluguelCarro.carro2.valor);
+            })
     }
     showAlertMessage("alert2");
 }
@@ -261,18 +178,30 @@ function pontosTuristicos() {
         output.style.display = "block";
 
         if (role.checked) {
-            total += Role.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.pontosTuristicos.primeiroPontoTuristico.valor;
+                    somaValores(output, total);
+                })
         }
 
         if (torre.checked) {
-            total += Torre.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.pontosTuristicos.segundoPontoTuristico.valor;
+                    somaValores(output, total);
+                })
         }
 
         if (arco.checked) {
-            total += Arco.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.pontosTuristicos.terceiroPontoTuristico.valor;
+                    somaValores(output, total);
+                })
         }
     }
 }
@@ -281,29 +210,36 @@ function alimentacao() {
     const output = document.getElementById("output4");
     let total = 0;
 
-    if (!cafe.checked && !almoco.checked && !janta.checked && !almocoJanta.checked) {
+    if (!cafe.checked && !almoco.checked && !janta.checked) {
         output.style.display = "none";
     } else {
         output.style.display = "block";
 
         if (cafe.checked) {
-            total += Cafe.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.alimentacao.cafeDaManha.valor;
+                    somaValores(output, total);
+                })
         }
 
         if (almoco.checked) {
-            total += Almoco.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.alimentacao.almoco.valor;
+                    somaValores(output, total);
+                })
         }
 
         if (janta.checked) {
-            total += Janta.valor;
-            somaValores(output, total);
-        }
-
-        if (almocoJanta.checked) {
-            total += Almoco.valor + Janta.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.alimentacao.jantar.valor;
+                    somaValores(output, total);
+                })
         }
     }
 }
@@ -318,18 +254,30 @@ function seguroViagem() {
         output.style.display = "block";
 
         if (bagagem.checked) {
-            total += SeguroBagagem.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.seguroViagem.seguroBagagem.valor;
+                    somaValores(output, total);
+                })
         }
 
         if (vida.checked) {
-            total += SeguroVida.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.seguroViagem.seguroVida.valor;
+                    somaValores(output, total);
+                })
         }
 
         if (saude.checked) {
-            total += SeguroSaude.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.seguroViagem.seguroSaude.valor;
+                    somaValores(output, total);
+                })
         }
     }
 }
@@ -344,30 +292,30 @@ function extras() {
         output.style.display = "block";
 
         if (tourEspecialista.checked) {
-            total += extraTour.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.Extras.extraTour.valor;
+                    somaValores(output, total);
+                })
         }
 
         if (vip.checked) {
-            total += extraVIP.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.Extras.extraVIP.valor;
+                    somaValores(output, total);
+                })
         }
 
         if (familia.checked) {
-            total += extraPet.valor;
-            somaValores(output, total);
+            fetch(myRequest)
+                .then(response => response.json())
+                .then(data => {
+                    total += data.France.Extras.extraPet.valor;
+                    somaValores(output, total);
+                })
         }
     }
 }
-
-let myRequest = new Request("./data/data.json")
-
-// Request JSON file
-fetch(myRequest)
-    .then(function(data) {
-        return data.json();
-    })
-    .then(function(data){
-        console.log(data.France)
-    })
-
