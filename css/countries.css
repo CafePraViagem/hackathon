@@ -124,3 +124,9 @@ h4 {
     flex: 0 1 150px;
   }
 }
+
+/* Botão dos countries-young e adventurous */
+.flex > .button { 
+  flex: 0 1 100vw;
+  text-align: center;
+}
