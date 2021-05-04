@@ -18,12 +18,17 @@
     /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
       color-stop(0.4, rgba(0, 0, 0, 1))
   ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+  
   position : relative;
   height: 40vh;
   overflow: hidden;
   background: url("https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
   background-size: cover;
+
+  border-bottom: solid 0.5rem #fc9523;
+
 }
+
 
 .containerimg {
   position: absolute;
