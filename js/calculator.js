@@ -5,7 +5,7 @@ let countries = [
         name: "França",
         image:"https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         hospedagem: {
-            nomeCategoria: "Hospedagem",
+            
             hospedagem1: {
                 nomeHospedagem1: "5 Estrelas",
                 valor: 400.00,
@@ -19,6 +19,10 @@ let countries = [
             hospedagem3: {
                 nomeHospedagem3: "3 Estrelas",
                 valor: 200.00
+            },
+            hospedagem4: {
+                nomeHospedagem4: "AirBnB",
+                valor: 0.00
             }
     
         },
@@ -51,6 +55,10 @@ let countries = [
             jantar: {
                 nome: "Jantar",
                 valor: 34.90
+            }, 
+            almocoJanta: {
+                nome: "Almoço e Janta",
+                valor: 94.90
             }
         },
 
@@ -110,47 +118,163 @@ let countries = [
 
 console.log(typeof countries[i].hospedagem);
 console.log(countries[0].hospedagem.valor);
+*/
+function somaHospedagem(){
+    let valorSoma = 0;
+    let dados = document.getElementsByName('hospedagem');
 
-function calculaHospedagem(){
-    let pacote = document.getElementsByName('hospedagem');
-    let precoHospedagem;
-
-    for (let i = 0; i < pacote.length; i++){
-        if ( pacote[i].checked ) {
-            if(pacote[i].value == countries[0].hospedagem.hospedagem1.nomeHospedagem1){
-                precoHospedagem = countries[0].hospedagem.hospedagem1.valor;
-                alert(precoHospedagem);
-            }else if (pacote[i].value == countries[0].hospedagem.hospedagem2.nomeHospedagem2) {
-                precoHospedagem = countries[0].hospedagem.hospedagem2.valor;
-                alert(precoHospedagem);
-            }else if (pacote[i].value == countries[0].hospedagem.hospedagem3.nomeHospedagem3) {
-                precoHospedagem = countries[0].hospedagem.hospedagem3.valor;
-                alert(precoHospedagem);
+    for (let i = 0; i < dados.length; i++){
+        if ( dados[i].checked ) {
+            if(dados[i].value == countries[0].hospedagem.hospedagem1.nomeHospedagem1){
+                valorSoma = countries[0].hospedagem.hospedagem1.valor;
+            }else if (dados[i].value == countries[0].hospedagem.hospedagem2.nomeHospedagem2) {
+                valorSoma = countries[0].hospedagem.hospedagem2.valor;
+            }else if (dados[i].value == countries[0].hospedagem.hospedagem3.nomeHospedagem3) {
+                valorSoma = countries[0].hospedagem.hospedagem3.valor;
+            }else if(dados[i].value == countries[0].hospedagem.hospedagem4.nomeHospedagem4){
+                valorSoma = countries[0].hospedagem.hospedagem4.valor;
             }
         }
     }
+    return valorSoma;
+}
+
+function calculaHospedagem(){
+    let output = document.getElementById("output1");
+    let precoHospedagem = somaHospedagem();
+    output.innerHTML = `Total: R$ ${precoHospedagem}`;
+}
+
+function somaAluguelCarro() {
+    let dados = document.getElementsByName('aluguelCarro');
+    let valorSoma = 0;
+    for (let i = 0; i < dados.length; i++){
+        if ( dados[i].checked ) {
+            if(dados[i].value == countries[0].aluguelCarro.carro1.nomeCarro1){
+                valorSoma = countries[0].aluguelCarro.carro1.valor;
+            }else if (dados[i].value == countries[0].aluguelCarro.carro2.nomeCarro2) {
+                valorSoma = countries[0].aluguelCarro.carro2.valor;
+            }
+        }
+    }
+    return valorSoma;
 }
 
 function calculaAluguelCarros(){
-    let pacote = document.getElementsByName('aluguelCarro');
-    let precoAluguel;
+    let precoAluguel = somaAluguelCarro();
+    let output = document.getElementById("output2");
+    output.innerHTML = `Total: R$ ${precoAluguel}`;
+}
 
-    for (let i = 0; i < pacote.length; i++){
-        if ( pacote[i].checked ) {
-            if(pacote[i].value == countries[0].aluguelCarro.carro1.nomeCarro1){
-                precoAluguel = countries[0].aluguelCarro.carro1.valor;
-                alert(precoAluguel);
-            }else if (pacote[i].value == countries[0].aluguelCarro.carro2.nomeCarro2) {
-                precoAluguel = countries[0].aluguelCarro.carro2.valor;
-                alert(precoAluguel);
+function somaTurismo(){
+    let dados = document.getElementsByName('turismo');
+    let valorSoma = 0;
+    for (let i = 0; i < dados.length; i++){
+        if ( dados[i].checked ) {
+            if(dados[i].value == countries[0].pontosTuristicos.primeiroPontoTuristico.nome){
+                valorSoma = countries[0].pontosTuristicos.primeiroPontoTuristico.valor;
+            }if (dados[i].value == countries[0].pontosTuristicos.segundoPontoTuristico.nome) {
+                valorSoma = valorSoma + countries[0].pontosTuristicos.segundoPontoTuristico.valor;
+            } if (dados[i].value == countries[0].pontosTuristicos.terceiroPontoTuristico.nome) {
+                valorSoma = valorSoma + countries[0].pontosTuristicos.terceiroPontoTuristico.valor;
             }
         }
     }
-
+    return valorSoma;
 }
 
-function testeCalcula(){
-    calculaHospedagem();
-    calculaAluguelCarros();
+function calculaTurismo(){
+    let precoTurismo = somaTurismo();
+    let output = document.getElementById("output3");
+    output.innerHTML = `Total: R$ ${precoTurismo}`;
 }
-*/
+
+function somaAlimentacao(){
+    let dados = document.getElementsByName('alimentacao');
+    let valorSoma = 0;
+    for (let i = 0; i < dados.length; i++){
+        if ( dados[i].checked ) {
+            if(dados[i].value == countries[0].alimentacao.cafeDaManha.nome){
+                valorSoma = countries[0].alimentacao.cafeDaManha.valor;
+            }else if (dados[i].value == countries[0].alimentacao.almoco.nome) {
+                valorSoma = valorSoma + countries[0].alimentacao.almoco.valor;
+            }else if (dados[i].value == countries[0].alimentacao.jantar.nome) {
+                valorSoma = valorSoma + countries[0].alimentacao.jantar.valor;
+            }else if (dados[i].value == countries[0].alimentacao.almocoJanta.nome){
+                valorSoma = valorSoma + countries[0].alimentacao.almocoJanta.valor;
+            }
+        }
+    }
+    return valorSoma;
+}
+
+function calculaAlimentacao(){
+    let precoAlimentacao = somaAlimentacao();
+    let output = document.getElementById("output4");
+    output.innerHTML = `Total: R$ ${precoAlimentacao}`;
+}
+
+function somaSeguro(){
+    let dados = document.getElementsByName('seguro');
+    let valorSoma = 0;
+    for (let i = 0; i < dados.length; i++){
+        if ( dados[i].checked ) {
+            if(dados[i].value == countries[0].seguroViagem.seguroBagagem.nome){
+                valorSoma = countries[0].seguroViagem.seguroBagagem.valor;
+            }else if (dados[i].value == countries[0].seguroViagem.seguroSaude.nome) {
+                valorSoma = valorSoma + countries[0].seguroViagem.seguroSaude.valor;
+            }else if (dados[i].value == countries[0].seguroViagem.seguroVida.nome) {
+                valorSoma = valorSoma + countries[0].seguroViagem.seguroVida.valor;
+            }
+        }
+    }
+    return valorSoma;
+}
+
+function calculaSeguroVida(){
+    let precoSeguro = somaSeguro();
+    let output = document.getElementById("output5");
+    output.innerHTML = `Total: R$ ${precoSeguro}`;
+}
+
+function somaExtra(){
+    let dados = document.getElementsByName('extra');
+    let valorSoma = 0;
+    for (let i = 0; i < dados.length; i++){
+        if ( dados[i].checked ) {
+            if(dados[i].value == countries[0].Extras.extraTour.nome){
+                valorSoma = countries[0].Extras.extraTour.valor;
+            }else if (dados[i].value == countries[0].Extras.extraVIP.nome){
+                valorSoma = valorSoma + countries[0].Extras.extraVIP.valor;
+            }else if (dados[i].value == countries[0].Extras.extraPet.nome){
+                valorSoma = valorSoma + countries[0].Extras.extraPet.valor;
+            }
+        }
+    }
+    return valorSoma;
+}
+
+function calculaExtra(){
+    let precoExtra = somaExtra();
+    let output = document.getElementById("output6");
+    output.innerHTML = `Toral: R$ ${precoExtra}`;
+}
+
+function isEmpty(){
+    let dados = document.getElementById("numberOfTravelers");
+    return dados.value;    
+}
+
+function valorT(){
+ 
+    if(isEmpty() >= 1 && isEmpty() <= 100){
+         valorTotal = isEmpty() * (somaHospedagem() + somaAluguelCarro() + somaTurismo() 
+        + somaAlimentacao() + somaSeguro() + somaExtra());
+        let output = document.getElementById('resultado');
+        output.innerHTML = `Valor total a ser investido: R$ ${valorTotal}`;
+    }else{
+        alert("Por favor insira um número entre 1 e 100, as agências de viagem não trabalham com passagens para 0 pessoas :)")
+    }
+    //alert("O valor da somaHospedagem + somaAluguelCarro + somaTurismo + somaAlimentacao + somaSeguro + somaExtra é: " + valorTotal);
+}
+

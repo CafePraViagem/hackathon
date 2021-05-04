@@ -53,7 +53,7 @@ let countries = [
                 valor: 34.90
             },
             almocoJantar: {
-                nome: "Almoço e Jantar",
+                nome: "Almoço e Janta",
                 valor: 61.30
             }
         },
