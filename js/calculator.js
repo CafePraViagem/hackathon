@@ -5,7 +5,7 @@ let countries = [
         name: "França",
         image:"https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         hospedagem: {
-            nomeCategoria: "Hospedagem",
+            
             hospedagem1: {
                 nomeHospedagem1: "5 Estrelas",
                 valor: 400.00,
@@ -19,6 +19,10 @@ let countries = [
             hospedagem3: {
                 nomeHospedagem3: "3 Estrelas",
                 valor: 200.00
+            },
+            hospedagem4: {
+                nomeHospedagem4: "AirBnB",
+                valor: 0.00
             }
     
         },
@@ -51,6 +55,10 @@ let countries = [
             jantar: {
                 nome: "Jantar",
                 valor: 34.90
+            }, 
+            almocoJanta: {
+                nome: "Almoço e Janta",
+                valor: 94.90
             }
         },
 
@@ -110,47 +118,4 @@ let countries = [
 
 console.log(typeof countries[i].hospedagem);
 console.log(countries[0].hospedagem.valor);
-
-function calculaHospedagem(){
-    let pacote = document.getElementsByName('hospedagem');
-    let precoHospedagem;
-
-    for (let i = 0; i < pacote.length; i++){
-        if ( pacote[i].checked ) {
-            if(pacote[i].value == countries[0].hospedagem.hospedagem1.nomeHospedagem1){
-                precoHospedagem = countries[0].hospedagem.hospedagem1.valor;
-                alert(precoHospedagem);
-            }else if (pacote[i].value == countries[0].hospedagem.hospedagem2.nomeHospedagem2) {
-                precoHospedagem = countries[0].hospedagem.hospedagem2.valor;
-                alert(precoHospedagem);
-            }else if (pacote[i].value == countries[0].hospedagem.hospedagem3.nomeHospedagem3) {
-                precoHospedagem = countries[0].hospedagem.hospedagem3.valor;
-                alert(precoHospedagem);
-            }
-        }
-    }
-}
-
-function calculaAluguelCarros(){
-    let pacote = document.getElementsByName('aluguelCarro');
-    let precoAluguel;
-
-    for (let i = 0; i < pacote.length; i++){
-        if ( pacote[i].checked ) {
-            if(pacote[i].value == countries[0].aluguelCarro.carro1.nomeCarro1){
-                precoAluguel = countries[0].aluguelCarro.carro1.valor;
-                alert(precoAluguel);
-            }else if (pacote[i].value == countries[0].aluguelCarro.carro2.nomeCarro2) {
-                precoAluguel = countries[0].aluguelCarro.carro2.valor;
-                alert(precoAluguel);
-            }
-        }
-    }
-
-}
-
-function testeCalcula(){
-    calculaHospedagem();
-    calculaAluguelCarros();
-}
 */
