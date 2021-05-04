@@ -109,6 +109,7 @@ div > strong {
 
 .country-indication img {
     width: 60vw;
+    height: 45vh;
     margin: 0 auto;
     border-radius: 10px;
     border: solid 3px #FF9500;
