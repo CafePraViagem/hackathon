@@ -7,7 +7,6 @@
 .container-click-button-message, 
 .container-infos,
 .infos-trip-list, 
-.container-text-button, 
 .ul-trip {
     margin: 0 auto;
     width: 70vw;
@@ -16,6 +15,13 @@
 
 .container-click-button-message, 
 .coffee-go-trip  {
+    text-align: center;
+}
+
+ 
+.container-text-button {
+    width: 90vw;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -76,40 +82,53 @@
     text-decoration-color: #FC9523;
 }
 
-li > strong, div > strong {
+li > strong, 
+div > strong {
     color: #ff9500;
 }
 
-.adventurous-profile-on, .young-profile-on {
+div > strong {
+    font-size: 1.3rem;
+}
+
+.adventurous-profile-on, 
+.young-profile-on {
     display: block;
     position: relative;
 }
 
-.adventurous-profile-off, .young-profile-off {
+.adventurous-profile-off, 
+.young-profile-off {
     display: none;
 }
 
 .indications {
     margin: 40px 0;
+    border-radius: 10px;
+    border: solid 3px #FCCA80;
+    box-shadow: 4px -4px #FCCA80;
 }
 
 .country-indication {
-    margin: 20px 0 ;
+    margin: 15px 0 ;
 }
 
 .country-indication img {
-    width: 60vw;
+    width: 84vw;
+    height: 40vh;
     margin: 0 auto;
     border-radius: 10px;
     border: solid 3px #FF9500;
-    box-shadow: 4px -4px #FF9500;
+    box-shadow: 3px -3px #FF9500;
 }
 
 .country-indication div {
-    margin-top: 10px;
+    margin: 10px;
 }
 
-
+.button-contries-adventurous, .button-contries-young {
+    margin: 20px auto 0;
+}
 
 @media (min-width: 834px) {
     .font-style-conntent-home {
