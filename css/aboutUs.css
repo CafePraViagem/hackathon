@@ -1,0 +1,48 @@
+* {
+    font-family: "Sen", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .textTitle {
+      margin: 2rem auto;
+      font-size: 4rem;
+
+      
+
+  }
+
+.imgHeader{
+    margin: 0 auto;
+    display: flex;
+}
+
+  .accordion {
+      margin: 5rem auto;
+  }
+
+  .profilePicture{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 2rem;
+  }
+
+.accordion-button {
+    background-color:rgba(252, 149, 35, 0.8);
+    border-radius: 10px;
+    margin: 2px auto;
+}
+
+.accordion-header {
+    background-color:rgba(252, 149, 35, 0.8);
+    border-radius: 10px;
+    margin: 2px auto;
+}
+
+.accordion-item {
+    background-color: rgba(132,132,132,0.1);
+    border-radius: 10px;
+    margin: 2px auto;
+} 
