@@ -8,15 +8,8 @@
   padding: 0;
 }
 
-.headerDiv {
-  width: 100vw;
-  margin: 0 auto;
-  position: relative;
-  filter: opacity(90%);
-}
-
-.headerDiv img {
-  width: 100%;
+/* NEW HEADER */
+.header-image {
   -webkit-mask-image: -webkit-gradient(
     linear,
     center top,
@@ -25,16 +18,33 @@
     /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
       color-stop(0.4, rgba(0, 0, 0, 1))
   ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+  
+  position : relative;
+  height: 40vh;
+  overflow: hidden;
+  background: url("https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
+  background-size: cover;
+
+  border-bottom: solid 0.5rem #fc9523;
+
 }
-.imageTitle {
+
+
+.containerimg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 1.4rem;
+  color: rgb(255, 0, 0);
+  font-weight: 700;
+}
+
+.containerimg h1{
   color: white;
-  text-shadow: 2px 2px rgb(17, 17, 26, 2);
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
 }
 
 .mainDivForm {
@@ -141,15 +151,25 @@ input.morePeople {
     max-width: none;
     width: 100%;
   }
-  .imageTitle {
-    font-size: 2.4rem;
+
+  .containerimg h1 {
+    font-size: calc(1.375rem + 3vw);
   }
+
+  .header-image {
+    height: 40vh;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .imageTitle {
-    font-size: 3.4rem;
+@media (max-width: 768px) {
+  .containerimg h1 {
+    font-size: calc(1.375rem + 3vw);
+  }
+
+  .header-image {
+    height: 50vh;
   }
 }
 
@@ -170,7 +190,12 @@ input.morePeople {
     margin: 0 auto;
     width: 100%;
   }
-  .imageTitle {
-    font-size: 4.4rem;
+
+  .containerimg h1 {
+    font-size: calc(1.375rem + 2vw);
+  }
+
+  .header-image {
+    height: 60vh;
   }
 }
