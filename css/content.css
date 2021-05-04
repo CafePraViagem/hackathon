@@ -76,21 +76,31 @@
     text-decoration-color: #FC9523;
 }
 
-li > strong, div > strong {
+li > strong, 
+div > strong {
     color: #ff9500;
 }
 
-.adventurous-profile-on, .young-profile-on {
+div > strong {
+    font-size: 1.3rem;
+}
+
+.adventurous-profile-on, 
+.young-profile-on {
     display: block;
     position: relative;
 }
 
-.adventurous-profile-off, .young-profile-off {
+.adventurous-profile-off, 
+.young-profile-off {
     display: none;
 }
 
 .indications {
-    margin: 40px 0;
+    margin: 40px 5px;
+    border-radius: 10px;
+    border: solid 3px #FCCA80;
+    box-shadow: 4px -4px #FCCA80;
 }
 
 .country-indication {
@@ -99,6 +109,7 @@ li > strong, div > strong {
 
 .country-indication img {
     width: 60vw;
+    height: 45vh;
     margin: 0 auto;
     border-radius: 10px;
     border: solid 3px #FF9500;
@@ -106,10 +117,8 @@ li > strong, div > strong {
 }
 
 .country-indication div {
-    margin-top: 10px;
+    margin: 10px;
 }
-
-
 
 @media (min-width: 834px) {
     .font-style-conntent-home {
