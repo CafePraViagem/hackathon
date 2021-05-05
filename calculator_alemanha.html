@@ -104,7 +104,7 @@
           </a>
         </div>
         <div class="titleofsite">
-          <span>Vamos calcular seu role</span>
+          <span>Vamos calcular seu rolê</span>
         </div>
       </div>
 
@@ -120,6 +120,8 @@
     <div class="form-check">
     <span class="firstQuestion"><i class="fas fa-user-plus"></i></i></i> <input type="number" placeholder="0" id="numberOfTravelers" class="morePeople" ></span>
     </div>
+    <div id="outputViajantes"></div>
+    <hr class="my-12">
     </div>
 <!-- Question 2 -->
        <div class="formBoxes">
@@ -130,6 +132,8 @@
       <div class="form-check">
       <span class="firstQuestion"><i class="fas fa-umbrella-beach"></i></i></i></i> <input type="number" placeholder="0" id="numberOfDays" class="morePeople" ></span>
       </div>
+      <div id="outputTaxa"></div>
+      <hr class="my-12">
       </div>
        
 
@@ -138,7 +142,7 @@
       
         <p class="title fw-bold "><span class="orangeMarker">.</span> Hospedagem</p>
         <div class="form-check">
-        <input type="radio" id="hospedagem_3" name="hospedagem" value="AirBnB" onclick=calculaHospedagem() class="form-check-input" required>
+        <input type="radio" id="hospedagem_0" name="hospedagem" value="AirBnB" onclick=calculaHospedagem() class="form-check-input" required>
         <label for="hospedagem">Eu escolho (AirBnB)        
         </label>
       </div>
@@ -198,21 +202,21 @@
       
         <p class="title fw-bold"><span class="orangeMarker">.</span> Pontos Turísticos:</p>
       <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="Rolê pela cidade" onclick=calculaTurismo() name="turismo" id="role">
+        <input type="checkbox" class="form-check-input" value="Memorial do Muro de Berlim" onclick=calculaTurismo() name="turismo" id="role">
         <label for="role" class="form-check-label">
-          Rolê pela cidade
+          Memorial do Muro de Berlim
         </label>
       </div>
       <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="Subir na Torre" onclick=calculaTurismo() name="turismo" id="torre">
+        <input type="checkbox" class="form-check-input" value="Berliner Fernsehturm" onclick=calculaTurismo() name="turismo" id="torre">
         <label for="torre" class="form-check-label">
-          Subir na Torre
+          Berliner Fernsehturm
         </label>
       </div>
       <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="Arco do Triunfo" onclick=calculaTurismo() name="turismo" id="arco">
+        <input type="checkbox" class="form-check-input" value="Palácio do Reichstag" onclick=calculaTurismo() name="turismo" id="arco">
         <label for="arco" class="form-check-label">
-          Arco do Triunfo
+          Palácio do Reichstag
         </label>
       </div>
       <div id="output3"></div>
@@ -358,3 +362,4 @@
     ></script>
   </body>
 </html>
+

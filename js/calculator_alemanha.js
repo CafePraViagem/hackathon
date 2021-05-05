@@ -1,6 +1,4 @@
-let countries = [
-
-    Alemanha = {
+let Alemanha = {
         name: "Alemanha",
         image:"https://images.pexels.com/photos/1963082/pexels-photo-1963082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         hospedagem: {
@@ -49,15 +47,11 @@ let countries = [
             },
             almoco: {
                 nome:"Almoço",
-                valor: 1005.50
+                valor: 105.50
             },
             jantar: {
                 nome: "Jantar",
                 valor: 49.90
-            }, 
-            almocoJanta: {
-                nome: "Almoço e Janta",
-                valor: 94.90
             }
         },
 
@@ -65,30 +59,30 @@ let countries = [
             nomeCategoria: "Seguro Viagem",
             seguroBagagem: {
                 nome: "Bagagem",
-                valor: 3400.99
+                valor: 400.99
             },
             seguroVida: {
                 nome: "Vida",
-                valor: 2789.99
+                valor: 789.99
             },
             seguroSaude: {
                 nome: "Saúde",
-                valor: 4548.99
+                valor: 548.99
             }
         },
 
         pontosTuristicos: {
             nomeCategoria: "Turismo",
             primeiroPontoTuristico: {
-                nome: "Rolê pela cidade",
+                nome: "Memorial do Muro de Berlim",
                 valor: 100.00
             },
             segundoPontoTuristico: {
-                nome: "Subir na Torre",
+                nome: "Berliner Fernsehturm",
                 valor: 300.00
             },
             terceiroPontoTuristico: {
-                nome: "Arco do Triunfo",
+                nome: "Palácio do Reichstag",
                 valor: 200.00
             }
 
@@ -111,7 +105,6 @@ let countries = [
         }
 
     }
-]
 
 
 /* Função para trocar a imagem do fundo */
@@ -122,26 +115,20 @@ function mudarFundoCalculadora() {
 }
 mudarFundoCalculadora()
 
-
-/*let i = 0
-
-console.log(typeof countries[i].hospedagem);
-console.log(countries[0].hospedagem.valor);
-*/
 function somaHospedagem(){
     let valorSoma = 0;
     let dados = document.getElementsByName('hospedagem');
 
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].hospedagem.hospedagem1.nomeHospedagem1){
-                valorSoma = countries[0].hospedagem.hospedagem1.valor;
-            }else if (dados[i].value == countries[0].hospedagem.hospedagem2.nomeHospedagem2) {
-                valorSoma = countries[0].hospedagem.hospedagem2.valor;
-            }else if (dados[i].value == countries[0].hospedagem.hospedagem3.nomeHospedagem3) {
-                valorSoma = countries[0].hospedagem.hospedagem3.valor;
-            }else if(dados[i].value == countries[0].hospedagem.hospedagem4.nomeHospedagem4){
-                valorSoma = countries[0].hospedagem.hospedagem4.valor;
+            if(dados[i].value == Alemanha.hospedagem.hospedagem1.nomeHospedagem1){
+                valorSoma = Alemanha.hospedagem.hospedagem1.valor;
+            }else if (dados[i].value == Alemanha.hospedagem.hospedagem2.nomeHospedagem2) {
+                valorSoma = Alemanha.hospedagem.hospedagem2.valor;
+            }else if (dados[i].value == Alemanha.hospedagem.hospedagem3.nomeHospedagem3) {
+                valorSoma = Alemanha.hospedagem.hospedagem3.valor;
+            }else if(dados[i].value == Alemanha.hospedagem.hospedagem4.nomeHospedagem4){
+                valorSoma = Alemanha.hospedagem.hospedagem4.valor;
             }
         }
     }
@@ -151,7 +138,7 @@ function somaHospedagem(){
 function calculaHospedagem(){
     let output = document.getElementById("output1");
     let precoHospedagem = somaHospedagem();
-    output.innerHTML = `Total: R$ ${precoHospedagem}`;
+    output.innerHTML = `Total: R$ ${precoHospedagem.toFixed(2)}`;
 }
 
 function somaAluguelCarro() {
@@ -159,10 +146,10 @@ function somaAluguelCarro() {
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].aluguelCarro.carro1.nomeCarro1){
-                valorSoma = countries[0].aluguelCarro.carro1.valor;
+            if(dados[i].value == Alemanha.aluguelCarro.carro1.nomeCarro1){
+                valorSoma = Alemanha.aluguelCarro.carro1.valor;
             }else if (dados[i].value == countries[0].aluguelCarro.carro2.nomeCarro2) {
-                valorSoma = countries[0].aluguelCarro.carro2.valor;
+                valorSoma = Alemanha.aluguelCarro.carro2.valor;
             }
         }
     }
@@ -172,7 +159,7 @@ function somaAluguelCarro() {
 function calculaAluguelCarros(){
     let precoAluguel = somaAluguelCarro();
     let output = document.getElementById("output2");
-    output.innerHTML = `Total: R$ ${precoAluguel}`;
+    output.innerHTML = `Total: R$ ${precoAluguel.toFixed(2)}`;
 }
 
 function somaTurismo(){
@@ -180,12 +167,12 @@ function somaTurismo(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].pontosTuristicos.primeiroPontoTuristico.nome){
-                valorSoma = countries[0].pontosTuristicos.primeiroPontoTuristico.valor;
-            }if (dados[i].value == countries[0].pontosTuristicos.segundoPontoTuristico.nome) {
-                valorSoma = valorSoma + countries[0].pontosTuristicos.segundoPontoTuristico.valor;
-            } if (dados[i].value == countries[0].pontosTuristicos.terceiroPontoTuristico.nome) {
-                valorSoma = valorSoma + countries[0].pontosTuristicos.terceiroPontoTuristico.valor;
+            if(dados[i].value == Alemanha.pontosTuristicos.primeiroPontoTuristico.nome){
+                valorSoma = Alemanha.pontosTuristicos.primeiroPontoTuristico.valor;
+            }if (dados[i].value == Alemanha.pontosTuristicos.segundoPontoTuristico.nome) {
+                valorSoma = valorSoma + Alemanha.pontosTuristicos.segundoPontoTuristico.valor;
+            } if (dados[i].value == Alemanha.pontosTuristicos.terceiroPontoTuristico.nome) {
+                valorSoma = valorSoma + Alemanha.pontosTuristicos.terceiroPontoTuristico.valor;
             }
         }
     }
@@ -195,7 +182,7 @@ function somaTurismo(){
 function calculaTurismo(){
     let precoTurismo = somaTurismo();
     let output = document.getElementById("output3");
-    output.innerHTML = `Total: R$ ${precoTurismo}`;
+    output.innerHTML = `Total: R$ ${precoTurismo.toFixed(2)}`;
 }
 
 function somaAlimentacao(){
@@ -203,14 +190,12 @@ function somaAlimentacao(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].alimentacao.cafeDaManha.nome){
-                valorSoma = countries[0].alimentacao.cafeDaManha.valor;
-            }else if (dados[i].value == countries[0].alimentacao.almoco.nome) {
-                valorSoma = valorSoma + countries[0].alimentacao.almoco.valor;
-            }else if (dados[i].value == countries[0].alimentacao.jantar.nome) {
-                valorSoma = valorSoma + countries[0].alimentacao.jantar.valor;
-            }else if (dados[i].value == countries[0].alimentacao.almocoJanta.nome){
-                valorSoma = valorSoma + countries[0].alimentacao.almocoJanta.valor;
+            if(dados[i].value == Alemanha.alimentacao.cafeDaManha.nome){
+                valorSoma = Alemanha.alimentacao.cafeDaManha.valor;
+            }else if (dados[i].value == Alemanha.alimentacao.almoco.nome) {
+                valorSoma = valorSoma + Alemanha.alimentacao.almoco.valor;
+            }else if (dados[i].value == Alemanha.alimentacao.jantar.nome) {
+                valorSoma = valorSoma + Alemanha.alimentacao.jantar.valor;
             }
         }
     }
@@ -220,7 +205,7 @@ function somaAlimentacao(){
 function calculaAlimentacao(){
     let precoAlimentacao = somaAlimentacao();
     let output = document.getElementById("output4");
-    output.innerHTML = `Total: R$ ${precoAlimentacao}`;
+    output.innerHTML = `Total: R$ ${precoAlimentacao.toFixed(2)}`;
 }
 
 function somaSeguro(){
@@ -228,12 +213,12 @@ function somaSeguro(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].seguroViagem.seguroBagagem.nome){
-                valorSoma = countries[0].seguroViagem.seguroBagagem.valor;
-            }else if (dados[i].value == countries[0].seguroViagem.seguroSaude.nome) {
-                valorSoma = valorSoma + countries[0].seguroViagem.seguroSaude.valor;
-            }else if (dados[i].value == countries[0].seguroViagem.seguroVida.nome) {
-                valorSoma = valorSoma + countries[0].seguroViagem.seguroVida.valor;
+            if(dados[i].value == Alemanha.seguroViagem.seguroBagagem.nome){
+                valorSoma = Alemanha.seguroViagem.seguroBagagem.valor;
+            }else if (dados[i].value == Alemanha.seguroViagem.seguroSaude.nome) {
+                valorSoma = valorSoma + Alemanha.seguroViagem.seguroSaude.valor;
+            }else if (dados[i].value == Alemanha.seguroViagem.seguroVida.nome) {
+                valorSoma = valorSoma + Alemanha.seguroViagem.seguroVida.valor;
             }
         }
     }
@@ -243,7 +228,7 @@ function somaSeguro(){
 function calculaSeguroVida(){
     let precoSeguro = somaSeguro();
     let output = document.getElementById("output5");
-    output.innerHTML = `Total: R$ ${precoSeguro}`;
+    output.innerHTML = `Total: R$ ${precoSeguro.toFixed(2)}`;
 }
 
 function somaExtra(){
@@ -251,12 +236,12 @@ function somaExtra(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].Extras.extraTour.nome){
-                valorSoma = countries[0].Extras.extraTour.valor;
-            }else if (dados[i].value == countries[0].Extras.extraVIP.nome){
-                valorSoma = valorSoma + countries[0].Extras.extraVIP.valor;
-            }else if (dados[i].value == countries[0].Extras.extraPet.nome){
-                valorSoma = valorSoma + countries[0].Extras.extraPet.valor;
+            if(dados[i].value == Alemanha.Extras.extraTour.nome){
+                valorSoma = Alemanha.Extras.extraTour.valor;
+            }else if (dados[i].value == Alemanha.Extras.extraVIP.nome){
+                valorSoma = valorSoma + Alemanha.Extras.extraVIP.valor;
+            }else if (dados[i].value == Alemanha.Extras.extraPet.nome){
+                valorSoma = valorSoma + Alemanha.Extras.extraPet.valor;
             }
         }
     }
@@ -266,7 +251,7 @@ function somaExtra(){
 function calculaExtra(){
     let precoExtra = somaExtra();
     let output = document.getElementById("output6");
-    output.innerHTML = `Toral: R$ ${precoExtra}`;
+    output.innerHTML = `Toral: R$ ${precoExtra.toFixed(2)}`;
 }
 
 function getNumeroViajantes(){
@@ -279,30 +264,53 @@ function getNumeroDias(){
     return dados.value;
 }
 
-function valorT(){
- 
-    let taxaDias = getNumeroDias();
-    if(taxaDias <= 90 && taxaDias >= 50){
-        taxaDias = 1.5;
-    }else if(taxaDias < 50 && taxaDias >= 1){
-        taxaDias = 1.2;
+function verificaDias(dias){
+    if(dias <= 90 && dias >= 50){
+        return 1.5;
+    }else if(dias < 50 && dias >= 1){
+        return 1.2;
     }else{
-        alert("A quantidade de dias deve estar entre 1 e 90!");
-        taxaDias = 0;
+        return 0;
     }
-
-    if(getNumeroViajantes() >= 1 && getNumeroViajantes() <= 100){
-        valorTotal = getNumeroViajantes() * (somaHospedagem() + somaTurismo() 
-        + somaAlimentacao() + somaSeguro() + somaExtra()) + somaAluguelCarro();
-        
-        valorTotal = valorTotal * taxaDias;
-
-        let output = document.getElementById('resultado');
-        
-        output.innerHTML = `Valor total a ser investido: R$ ${valorTotal} \n Acréscimo de *${taxaDias}`;
-    }else{
-        alert("Por favor insira um número entre 1 e 100, as agências de viagem não trabalham com passagens para 0 pessoas :)")
-    }
-    //alert("O valor da somaHospedagem + somaAluguelCarro + somaTurismo + somaAlimentacao + somaSeguro + somaExtra é: " + valorTotal);
 }
 
+function taxa(){
+    let output = document.getElementById('outputTaxa');
+    let valorTaxa = verificaDias(getNumeroDias());
+    
+    if(valorTaxa == 1.2){
+        output.innerHTML = `Acrésicmo de 20% no valor total`
+    }else if(valorTaxa == 1.5){
+        output.innerHTML = `Acrésicmo de 50% no valor total`
+    }else{
+        output.innerHTML = `A quantidade de dias deve estar entre 1 e 90`
+    }
+}
+
+function validaViajantes(){
+    let viajantes = getNumeroViajantes();
+    let output = document.getElementById('outputViajantes');
+    if(viajantes >= 1 && viajantes <= 100){
+        output.innerHTML.display = "none";
+        return true;
+    }else{
+        output.innerHTML = `A quantidade de pessoas deve estar entre 1 e 100`
+        return false;
+    }
+}
+
+function somaTotal(){
+    return getNumeroViajantes() * (somaHospedagem() + somaTurismo() 
+    + somaAlimentacao() + somaSeguro() + somaExtra()) + somaAluguelCarro();
+}
+
+function valorT(){
+    let taxaDias = verificaDias(getNumeroDias());
+    let output = document.getElementById('resultado');
+    
+    if(validaViajantes()){
+        taxa();
+        valorTotal = somaTotal() * taxaDias;
+        output.innerHTML = `Valor total a ser investido: R$ ${valorTotal.toFixed(2)}`;  
+    }
+}
