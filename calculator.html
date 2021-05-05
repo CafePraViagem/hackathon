@@ -111,15 +111,26 @@
 
 <div class="mainDivForm">
   
+  <!-- Question 1 -->
   <div class="formBoxes">
  
-  <p class="title fw-bold" >
-    <!-- <span class="orangeMarker">.</span>  -->
+    <p class="title fw-bold" >
+    <span class="orangeMarker">.</span> 
     Quantas pessoas irão viajar?</p>
+    <div class="form-check">
+    <span class="firstQuestion"><i class="fas fa-user-plus"></i></i></i> <input type="number" placeholder="0" id="numberOfTravelers" class="morePeople" ></span>
+    </div>
+    </div>
+<!-- Question 2 -->
+       <div class="formBoxes">
+ 
+      <p class="title fw-bold" >
+      <span class="orangeMarker">.</span> 
+      Quantos dias pretende ficar?</p>
       <div class="form-check">
-       <span class="firstQuestion"><i class="fas fa-user-plus"></i></i></i> <input type="number" placeholder="0" id="numberOfTravelers" class="morePeople" ></span>
-       </div>
-       </div>
+      <span class="firstQuestion"><i class="fas fa-umbrella-beach"></i></i></i></i> <input type="number" placeholder="0" id="numberOfTravelers" class="morePeople" ></span>
+      </div>
+      </div>
        
 
       <!-- Hospedagem -->
@@ -208,6 +219,32 @@
       <hr class="my-12">
       </div>
 
+      <!-- Seguro Viagem-->
+      <div class="formBoxes">
+      
+        <p class="title fw-bold"><span class="orangeMarker">.</span> Seguro Viagem:</p>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="seguro" value="Bagagem" onclick=calculaSeguroVida() id="bagagem">
+        <label for="bagagem" class="form-check-label">
+          Bagagem
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="seguro" value="Vida" onclick=calculaSeguroVida() id="vida">
+        <label for="vida" class="form-check-label">
+          Vida
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="seguro" value="Saúde" onclick=calculaSeguroVida() id="saude">
+        <label for="saude" class="form-check-label">
+          Saúde
+        </label>
+      </div>
+      <div id="output5"></div>
+      <hr class="my-12">
+      </div>
+
       <!-- Alimentação -->
       <div class="formBoxes">
       
@@ -239,34 +276,7 @@
       <div id="output4"></div>
       <hr class="my-12">
       
-</div>
-
-      <!-- Seguro Viagem-->
-      <div class="formBoxes">
-      
-        <p class="title fw-bold"><span class="orangeMarker">.</span> Seguro Viagem:</p>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="seguro" value="Bagagem" onclick=calculaSeguroVida() id="bagagem">
-        <label for="bagagem" class="form-check-label">
-          Bagagem
-        </label>
       </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="seguro" value="Vida" onclick=calculaSeguroVida() id="vida">
-        <label for="vida" class="form-check-label">
-          Vida
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="seguro" value="Saúde" onclick=calculaSeguroVida() id="saude">
-        <label for="saude" class="form-check-label">
-          Saúde
-        </label>
-      </div>
-      <div id="output5"></div>
-      <hr class="my-12">
-      </div>
-
 
       <!-- Extras-->
       <div class="formBoxes">
