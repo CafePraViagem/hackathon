@@ -163,13 +163,13 @@ input.morePeople {
   height: 3.5rem;
   font-size: 1.7rem;
   transition: 0.3s;
-  background-color: rgb(106, 51, 207);
+  background-color: rgba(68, 0, 195, 1);
 }
 
 .showValorMessage {
   margin: 1.4rem auto;
   width: 80%;
-  background-color: rgb(106, 51, 207);
+  background-color: rgba(68, 0, 195, 1);
   color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -251,45 +251,6 @@ input.morePeople {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .mainDivForm {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    grid-gap: 20px;
-    max-width: 960px;
-  }
-
-  .formBoxes:nth-child(1) {
-    display: grid;
-    grid-column: 1/3;
-    justify-items: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .formBoxes:nth-child(2) {
-    display: grid;
-    grid-column: 3/5;
-    justify-items: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .formBoxes:nth-child(7) {
-    display: grid;
-    grid-column: 1/3;
-    justify-items: left;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .formBoxes:nth-child(8) {
-    display: grid;
-    grid-column: 3/5;
-    justify-items: left;
-    margin: 0 auto;
-    width: 100%;
-  }
-
   .titleofsite > span {
     font-size: calc(1.375rem + 4vw);
   }

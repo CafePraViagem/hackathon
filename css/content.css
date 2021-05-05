@@ -1,166 +1,166 @@
 .font-style-content-home {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
-.container-text-section, 
-.coffee-go-trip, 
-.container-click-button-message, 
+.container-text-section,
+.coffee-go-trip,
+.container-click-button-message,
 .container-infos,
-.infos-trip-list, 
+.infos-trip-list,
 .ul-trip {
-    margin: 0 auto;
-    width: 70vw;
-    text-align: center;
+  margin: 0 auto;
+  width: 70vw;
+  text-align: center;
 }
 
-.container-click-button-message, 
-.coffee-go-trip  {
-    text-align: center;
+.container-click-button-message,
+.coffee-go-trip {
+  text-align: center;
 }
 
- 
 .container-text-button {
-    width: 90vw;
-    margin: 0 auto;
-    text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .infos-trip-list {
-    margin-top: 30px;
-    text-align: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .li-iten-trip {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .plus-trip {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .button-type-trip {
-    background: #fc9523;
-    border-radius: 100px;
-    border: none;
-    box-shadow: none;
-    font-family: Sen;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 10px 0;
+  background: #fc9523;
+  border-radius: 100px;
+  border: none;
+  box-shadow: none;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 10px 0;
 }
 
 .button-type-trip a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .button-type-trip:hover {
-    background-color: #4E00C8;
-    box-shadow: 3px 3px #FC9523;
+  background-color: #4400c3;
+  box-shadow: 3px 3px #fc9523;
 }
 
 .final-messege-simple {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .final-link {
-    color:  #ff9500 ;
+  color: #ff9500;
 }
 
 .final-link:hover {
-    color: #4E00C8;
+  color: #4400c3;
 }
 
 .info-message {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .text-decoration-color-underline {
-    text-decoration: underline;
-    text-decoration-color: #FC9523;
+  text-decoration: underline;
+  text-decoration-color: #fc9523;
 }
 
-li > strong, 
+li > strong,
 div > strong {
-    color: #ff9500;
+  color: #ff9500;
 }
 
 div > strong {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
-.adventurous-profile-on, 
+.adventurous-profile-on,
 .young-profile-on {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 
-.adventurous-profile-off, 
+.adventurous-profile-off,
 .young-profile-off {
-    display: none;
+  display: none;
 }
 
 .indications {
-    margin: 40px 0;
-    border-radius: 10px;
-    border: solid 3px #FCCA80;
-    box-shadow: 4px -4px #FCCA80;
+  margin: 40px 0;
+  border-radius: 10px;
+  border: solid 3px #fcca80;
+  box-shadow: 4px -4px #fcca80;
 }
 
 .country-indication {
-    margin: 15px 0 ;
+  margin: 15px 0;
 }
 
 .country-indication img {
-    width: 84vw;
-    height: 40vh;
-    margin: 0 auto;
-    border-radius: 10px;
-    border: solid 3px #FF9500;
-    box-shadow: 3px -3px #FF9500;
+  width: 84vw;
+  height: 40vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 3px #ff9500;
+  box-shadow: 3px -3px #ff9500;
 }
 
 .country-indication div {
-    margin: 10px;
+  margin: 10px;
 }
 
-.button-contries-adventurous, .button-contries-young {
-    margin: 20px auto 0;
+.button-contries-adventurous,
+.button-contries-young {
+  margin: 20px auto 0;
 }
 
 @media (min-width: 834px) {
-    .font-style-conntent-home {
-        font-size: 1rem;
-    }
+  .font-style-conntent-home {
+    font-size: 1rem;
+  }
 
-    .container-infos {
-        width: 75vw;
-        display: flex;
-        flex-direction: initial;
-    }
-    
-    .infos-trip-list, 
-    .ul-trip {
-        /* float: left; */
-        width: 35vw;
-        text-align: right;
-        align-items: left;
-        justify-items: left;
-    }
+  .container-infos {
+    width: 75vw;
+    display: flex;
+    flex-direction: initial;
+  }
 
-    .li-iten-trip {
-        margin-right: 0;
-    }
+  .infos-trip-list,
+  .ul-trip {
+    /* float: left; */
+    width: 35vw;
+    text-align: right;
+    align-items: left;
+    justify-items: left;
+  }
 
-    .plus-trip {
-        /* float: right; */
-        width: 35vw;
-        margin-top: 30px;
-        text-align: left;
-        margin-bottom: 30px;
-        align-items: right;
-        justify-items: right;
-    }
+  .li-iten-trip {
+    margin-right: 0;
+  }
+
+  .plus-trip {
+    /* float: right; */
+    width: 35vw;
+    margin-top: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+    align-items: right;
+    justify-items: right;
+  }
 }
