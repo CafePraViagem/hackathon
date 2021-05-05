@@ -15,18 +15,18 @@
     center top,
     center bottom,
     color-stop(0.001, rgba(0, 0, 0, 0)),
-      /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
+    /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
       color-stop(0.1, rgba(0, 0, 0, 1))
-  );  /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
 
-  position : relative;
+  position: relative;
   height: 40vh;
   overflow: hidden;
-  background: url("https://i.ibb.co/DgWRCQL/Female-tourists-on-hand-have-a-happy-travel-map.jpg") no-repeat center;
+  background: url("https://i.ibb.co/DgWRCQL/Female-tourists-on-hand-have-a-happy-travel-map.jpg")
+    no-repeat center;
   background-size: cover;
 
   border-bottom: solid 0.5rem #fc9523;
-
 }
 
 .header-image {
@@ -57,16 +57,14 @@ img {
 }
 
 .box > a {
-  color: white!important;
-  text-decoration: none!important;
-  text-align: center!important;
-
+  color: white !important;
+  text-decoration: none !important;
+  text-align: center !important;
 }
 
 .header-image > .titleofsite {
   flex: 0 1 100vw;
   text-align: center;
-
 }
 
 /* Titulo do site */
@@ -76,7 +74,6 @@ img {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 
   font-size: calc(1.375rem + 2vw);
-
 }
 
 span {
@@ -87,15 +84,11 @@ span {
   font-size: calc(1.375rem + 2vw);
 }
 
-
 a > h4 {
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
-
 }
-
-
 
 /* ------ BOOTSTRAP MEDIA QUERYS ------ */
 /* Small devices (landscape phones, 576px and up) */
@@ -107,7 +100,6 @@ a > h4 {
   .header-image {
     height: 40vh;
   }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
