@@ -1,3 +1,14 @@
 #backgroundImage {
-    height: 100vh;
+}
+
+@media (min-width: 660px) {
+    #backgroundImage {
+        height: 100vh;
+    }
+}
+
+@media (max-height: 420px) {
+    #backgroundImage {
+        height: auto;
+    }
 }
