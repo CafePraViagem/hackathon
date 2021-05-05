@@ -1,35 +1,33 @@
 /* IMAGEM DO FUNDO RESPONSIVA*/
 #backgroundImage {
-    background: url("https://images.pexels.com/photos/1963082/pexels-photo-1963082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-
-
+  background: url("https://images.pexels.com/photos/1963082/pexels-photo-1963082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* TRANSPARENCIA DO FUNDO */
-#backgroundImage{
-    -webkit-mask-image: -webkit-gradient(
-      linear,
-      center top,
-      center bottom,
-      color-stop(0.0, rgba(0, 0, 0, 0)),
-      /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
-        color-stop(0.13, rgba(0, 0, 0, 1))
-    ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+#backgroundImage {
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    center top,
+    center bottom,
+    color-stop(0, rgba(0, 0, 0, 0)),
+    /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
+      color-stop(0.13, rgba(0, 0, 0, 1))
+  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
 }
 
 /* Transparencia do topo menor em dispositivos pequenos */
 @media (max-width: 659px) {
-
-  #backgroundImage{
+  #backgroundImage {
     -webkit-mask-image: -webkit-gradient(
       linear,
       center top,
       center bottom,
-      color-stop(0.0, rgba(0, 0, 0, 0)),
+      color-stop(0, rgba(0, 0, 0, 0)),
       /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
         color-stop(0.035, rgba(0, 0, 0, 1))
     ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
@@ -43,8 +41,8 @@
   }
 }
 
-body { 
-  background-color: transparent; 
+body {
+  background-color: transparent;
 }
 
 /* Titulo */
@@ -55,7 +53,6 @@ h1 {
 
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
-
 }
 
 /* Grade do Botões */
@@ -82,32 +79,31 @@ img {
 /* Botão - Propriedaes */
 .box {
   padding: 20px;
-  background-color: #FC9523;
+  background-color: #fc9523;
   border-radius: 10px;
 }
 
 .box:hover {
   transform: scale(1.1);
-  background-color: #4B4FA1;
-  box-shadow: 3px 3px #FC9523;
+  background-color: ##4400c3;
+  box-shadow: 3px 3px #fc9523;
 }
 
 .box:active {
   transform: scale(1.1);
-  background-color: #3d4183;
-  box-shadow: 3px 3px #FC9523;
+  background-color: ##4400c3;
+  box-shadow: 3px 3px #fc9523;
 }
 
 /* Texto do Botão */
 .box > a {
-  color: white!important;
-  text-decoration: none!important;
-  text-align: center!important;
-
+  color: white !important;
+  text-decoration: none !important;
+  text-align: center !important;
 }
 
 .box > a:hover {
-  color: white!important;
+  color: white !important;
 }
 
 h4 {
@@ -117,7 +113,6 @@ h4 {
   margin-top: 10px;
 }
 
-
 /* Botão menor - Quando a tela for menorr que 437px */
 @media (max-width: 437px) {
   .flex > .box {
@@ -126,7 +121,7 @@ h4 {
 }
 
 /* Botão dos countries-young e adventurous */
-.flex > .button { 
+.flex > .button {
   flex: 0 1 100vw;
   text-align: center;
 }
