@@ -1,6 +1,4 @@
-let countries = [
-
-    UnitedStates = {
+let UnitedStates = {
         name: "United States",
         image:"https://images7.alphacoders.com/458/458532.jpg",
         hospedagem: {
@@ -107,7 +105,6 @@ let countries = [
         }
 
     }
-]
 
 /* Função para trocar a imagem do fundo */
 function mudarFundoCalculadora() {
@@ -123,14 +120,14 @@ function somaHospedagem(){
 
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].hospedagem.hospedagem1.nomeHospedagem1){
-                valorSoma = countries[0].hospedagem.hospedagem1.valor;
-            }else if (dados[i].value == countries[0].hospedagem.hospedagem2.nomeHospedagem2) {
-                valorSoma = countries[0].hospedagem.hospedagem2.valor;
-            }else if (dados[i].value == countries[0].hospedagem.hospedagem3.nomeHospedagem3) {
-                valorSoma = countries[0].hospedagem.hospedagem3.valor;
-            }else if(dados[i].value == countries[0].hospedagem.hospedagem4.nomeHospedagem4){
-                valorSoma = countries[0].hospedagem.hospedagem4.valor;
+            if(dados[i].value == UnitedStates.hospedagem.hospedagem1.nomeHospedagem1){
+                valorSoma = UnitedStates.hospedagem.hospedagem1.valor;
+            }else if (dados[i].value == UnitedStates.hospedagem.hospedagem2.nomeHospedagem2) {
+                valorSoma = UnitedStates.hospedagem.hospedagem2.valor;
+            }else if (dados[i].value == UnitedStates.hospedagem.hospedagem3.nomeHospedagem3) {
+                valorSoma = UnitedStates.hospedagem.hospedagem3.valor;
+            }else if(dados[i].value == UnitedStates.hospedagem.hospedagem4.nomeHospedagem4){
+                valorSoma = UnitedStates.hospedagem.hospedagem4.valor;
             }
         }
     }
@@ -148,10 +145,10 @@ function somaAluguelCarro() {
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].aluguelCarro.carro1.nomeCarro1){
-                valorSoma = countries[0].aluguelCarro.carro1.valor;
-            }else if (dados[i].value == countries[0].aluguelCarro.carro2.nomeCarro2) {
-                valorSoma = countries[0].aluguelCarro.carro2.valor;
+            if(dados[i].value == UnitedStates.aluguelCarro.carro1.nomeCarro1){
+                valorSoma = UnitedStates.aluguelCarro.carro1.valor;
+            }else if (dados[i].value == UnitedStates.aluguelCarro.carro2.nomeCarro2) {
+                valorSoma = UnitedStates.aluguelCarro.carro2.valor;
             }
         }
     }
@@ -169,12 +166,12 @@ function somaTurismo(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].pontosTuristicos.primeiroPontoTuristico.nome){
-                valorSoma = countries[0].pontosTuristicos.primeiroPontoTuristico.valor;
-            }if (dados[i].value == countries[0].pontosTuristicos.segundoPontoTuristico.nome) {
-                valorSoma = valorSoma + countries[0].pontosTuristicos.segundoPontoTuristico.valor;
-            } if (dados[i].value == countries[0].pontosTuristicos.terceiroPontoTuristico.nome) {
-                valorSoma = valorSoma + countries[0].pontosTuristicos.terceiroPontoTuristico.valor;
+            if(dados[i].value == UnitedStates.pontosTuristicos.primeiroPontoTuristico.nome){
+                valorSoma = UnitedStates.pontosTuristicos.primeiroPontoTuristico.valor;
+            }if (dados[i].value == UnitedStates.pontosTuristicos.segundoPontoTuristico.nome) {
+                valorSoma = valorSoma + UnitedStates.pontosTuristicos.segundoPontoTuristico.valor;
+            } if (dados[i].value == UnitedStates.pontosTuristicos.terceiroPontoTuristico.nome) {
+                valorSoma = valorSoma + UnitedStates.pontosTuristicos.terceiroPontoTuristico.valor;
             }
         }
     }
@@ -192,12 +189,12 @@ function somaAlimentacao(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].alimentacao.cafeDaManha.nome){
-                valorSoma = countries[0].alimentacao.cafeDaManha.valor;
-            }else if (dados[i].value == countries[0].alimentacao.almoco.nome) {
-                valorSoma = valorSoma + countries[0].alimentacao.almoco.valor;
-            }else if (dados[i].value == countries[0].alimentacao.jantar.nome) {
-                valorSoma = valorSoma + countries[0].alimentacao.jantar.valor;
+            if(dados[i].value == UnitedStates.alimentacao.cafeDaManha.nome){
+                valorSoma = UnitedStates.alimentacao.cafeDaManha.valor;
+            }else if (dados[i].value == UnitedStates.alimentacao.almoco.nome) {
+                valorSoma = valorSoma + UnitedStates.alimentacao.almoco.valor;
+            }else if (dados[i].value == UnitedStates.alimentacao.jantar.nome) {
+                valorSoma = valorSoma + UnitedStates.alimentacao.jantar.valor;
             }
         }
     }
@@ -215,12 +212,12 @@ function somaSeguro(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].seguroViagem.seguroBagagem.nome){
-                valorSoma = countries[0].seguroViagem.seguroBagagem.valor;
-            }else if (dados[i].value == countries[0].seguroViagem.seguroSaude.nome) {
-                valorSoma = valorSoma + countries[0].seguroViagem.seguroSaude.valor;
-            }else if (dados[i].value == countries[0].seguroViagem.seguroVida.nome) {
-                valorSoma = valorSoma + countries[0].seguroViagem.seguroVida.valor;
+            if(dados[i].value == UnitedStates.seguroViagem.seguroBagagem.nome){
+                valorSoma = UnitedStates.seguroViagem.seguroBagagem.valor;
+            }else if (dados[i].value == UnitedStates.seguroViagem.seguroSaude.nome) {
+                valorSoma = valorSoma + UnitedStates.seguroViagem.seguroSaude.valor;
+            }else if (dados[i].value == UnitedStates.seguroViagem.seguroVida.nome) {
+                valorSoma = valorSoma + UnitedStates.seguroViagem.seguroVida.valor;
             }
         }
     }
@@ -238,12 +235,12 @@ function somaExtra(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].Extras.extraTour.nome){
-                valorSoma = countries[0].Extras.extraTour.valor;
-            }else if (dados[i].value == countries[0].Extras.extraVIP.nome){
-                valorSoma = valorSoma + countries[0].Extras.extraVIP.valor;
-            }else if (dados[i].value == countries[0].Extras.extraPet.nome){
-                valorSoma = valorSoma + countries[0].Extras.extraPet.valor;
+            if(dados[i].value == UnitedStates.Extras.extraTour.nome){
+                valorSoma = UnitedStates.Extras.extraTour.valor;
+            }else if (dados[i].value == UnitedStates.Extras.extraVIP.nome){
+                valorSoma = valorSoma + UnitedStates.Extras.extraVIP.valor;
+            }else if (dados[i].value == UnitedStates.Extras.extraPet.nome){
+                valorSoma = valorSoma + UnitedStates.Extras.extraPet.valor;
             }
         }
     }
