@@ -1,48 +1,52 @@
 * {
-    font-family: "Sen", sans-serif;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .textTitle {
-      margin: 2rem auto;
-      font-size: 4rem;
-
-      
-
-  }
-
-.imgHeader{
-    margin: 0 auto;
-    display: flex;
+  font-family: "Sen", sans-serif;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
-  .accordion {
-      margin: 5rem auto;
-  }
+h4 {
+  font-size: small;
+}
 
-  .profilePicture{
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      margin-right: 2rem;
-  }
+.textTitle {
+  margin: 2rem auto;
+  font-size: 4rem;
+}
+
+.imgHeader {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+.accordion {
+  margin: 4rem auto;
+}
+
+.profilePicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
 
 .accordion-button {
-    background-color:rgba(252, 149, 35, 0.8);
-    border-radius: 10px;
-    margin: 2px auto;
+  background-color: rgba(252, 149, 35, 0.8);
+  border-radius: 20px 0 20px 0;
+  height: 4rem;
+  /* margin: 2px auto; */
 }
 
 .accordion-header {
-    background-color:rgba(252, 149, 35, 0.8);
-    border-radius: 10px;
-    margin: 2px auto;
+  background-color: rgba(252, 149, 35, 0.8);
+  border-radius: 20px 0 20px 0;
+  /* margin: 2px auto; */
 }
 
 .accordion-item {
-    background-color: rgba(132,132,132,0.1);
-    border-radius: 10px;
-    margin: 2px auto;
-} 
+  background-color: rgba(132, 132, 132, 0.1);
+  border: none;
+  margin: 0.6rem auto;
+  border-radius: 20px 0 20px 0;
+}
