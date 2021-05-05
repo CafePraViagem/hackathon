@@ -74,7 +74,7 @@ let Alemanha = {
         pontosTuristicos: {
             nomeCategoria: "Turismo",
             primeiroPontoTuristico: {
-                nome: "Rolê pela cidade",
+                nome: "Memorial do Muro de Berlim",
                 valor: 100.00
             },
             segundoPontoTuristico: {
@@ -138,7 +138,7 @@ function somaHospedagem(){
 function calculaHospedagem(){
     let output = document.getElementById("output1");
     let precoHospedagem = somaHospedagem();
-    output.innerHTML = `Total: R$ ${precoHospedagem}`;
+    output.innerHTML = `Total: R$ ${precoHospedagem.toFixed(2)}`;
 }
 
 function somaAluguelCarro() {
@@ -159,7 +159,7 @@ function somaAluguelCarro() {
 function calculaAluguelCarros(){
     let precoAluguel = somaAluguelCarro();
     let output = document.getElementById("output2");
-    output.innerHTML = `Total: R$ ${precoAluguel}`;
+    output.innerHTML = `Total: R$ ${precoAluguel.toFixed(2)}`;
 }
 
 function somaTurismo(){
@@ -182,7 +182,7 @@ function somaTurismo(){
 function calculaTurismo(){
     let precoTurismo = somaTurismo();
     let output = document.getElementById("output3");
-    output.innerHTML = `Total: R$ ${precoTurismo}`;
+    output.innerHTML = `Total: R$ ${precoTurismo.toFixed(2)}`;
 }
 
 function somaAlimentacao(){
@@ -205,7 +205,7 @@ function somaAlimentacao(){
 function calculaAlimentacao(){
     let precoAlimentacao = somaAlimentacao();
     let output = document.getElementById("output4");
-    output.innerHTML = `Total: R$ ${precoAlimentacao}`;
+    output.innerHTML = `Total: R$ ${precoAlimentacao.toFixed(2)}`;
 }
 
 function somaSeguro(){
@@ -228,7 +228,7 @@ function somaSeguro(){
 function calculaSeguroVida(){
     let precoSeguro = somaSeguro();
     let output = document.getElementById("output5");
-    output.innerHTML = `Total: R$ ${precoSeguro}`;
+    output.innerHTML = `Total: R$ ${precoSeguro.toFixed(2)}`;
 }
 
 function somaExtra(){
@@ -251,7 +251,7 @@ function somaExtra(){
 function calculaExtra(){
     let precoExtra = somaExtra();
     let output = document.getElementById("output6");
-    output.innerHTML = `Toral: R$ ${precoExtra}`;
+    output.innerHTML = `Toral: R$ ${precoExtra.toFixed(2)}`;
 }
 
 function getNumeroViajantes(){
