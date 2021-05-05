@@ -16,7 +16,7 @@
     center bottom,
     color-stop(0.001, rgba(0, 0, 0, 0)),
     /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
-      color-stop(0.1, rgba(0, 0, 0, 1))
+      color-stop(0.05, rgba(0, 0, 0, 1))
   ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
 
   position: relative;
@@ -104,3 +104,35 @@ a > h4 {
     height: 60vh;
   }
 }
+
+
+/* Viajante */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+.flex > .traveler {
+  flex: 0 1 100vw;
+  margin: 10px 10px;
+
+  border-color: black;
+  border: solid 1px black;
+}
+
+.traveler {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.traveler > .boxIMG {
+  flex: 0 1 80px;
+  margin: 10px 10px;
+}
+.boxIMG > img {
+  border-radius: 100%!important;
+}
+
