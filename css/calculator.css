@@ -113,12 +113,6 @@ a > h4 {
   max-width: 80%;
 }
 
-h2.result {
-  font-weight: bold;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
 .orangeMarker {
   color: #fc9523;
   font-size: 1rem;
@@ -126,7 +120,8 @@ h2.result {
   background-color: #fc9523;
 }
 
-input.morePeople {
+.morePeople,
+.moreDays {
   text-align: center;
   width: 5rem;
   border-style: dashed;
@@ -140,11 +135,33 @@ input.morePeople {
 
 .resultContainer {
   display: grid;
+  margin-top: 0 auto;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 1rem;
   margin-top: 1rem;
-  height: 5rem;
+}
+
+.btnOK {
+  margin: 0 auto;
+  width: 3rem;
+  height: 3rem;
+  transition: 0.3s;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btnOK:hover {
+  margin: 0 auto;
+  width: 1rem;
+  transition: 0.3s;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .btn {
@@ -168,7 +185,6 @@ input.morePeople {
 
 .showValorMessage {
   margin: 1.4rem auto;
-  width: 80%;
   background-color: rgba(68, 0, 195, 1);
   color: white;
   border-radius: 10px;
@@ -183,6 +199,12 @@ input.morePeople {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
     grid-gap: 20px;
+  }
+
+  #box1,
+  #box2 {
+    display: grid;
+    width: 100%;
   }
 
   .formBoxes:nth-child(1) {

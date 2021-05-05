@@ -16,24 +16,23 @@
       crossorigin="anonymous"
     />
 
-    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
+      rel="stylesheet"
     />
     <!-- Font Awesome -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
     />
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/calculator.css"/>
+    <link rel="stylesheet" href="css/calculator.css" />
     <!-- FAVICON -->
     <link
       rel="shortcut icon"
@@ -45,7 +44,6 @@
   </head>
 
   <body>
-
     <main role="main">
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-md fixed-top navbar-light">
@@ -95,12 +93,19 @@
           </div>
         </div>
       </nav>
-<!-- HEADER IMAGE -->
+      <!-- HEADER IMAGE -->
       <div class="header-image">
         <div class="box">
           <a href="#">
-            <img id="countryImg" src="https://i.ibb.co/gW8MZBn/usa.png" alt="New York, USA">
-            <h4 id="countryName">Nova York, <br> E.U.A</h4>
+            <img
+              id="countryImg"
+              src="https://i.ibb.co/gW8MZBn/usa.png"
+              alt="New York, USA"
+            />
+            <h4 id="countryName">
+              Nova York, <br />
+              E.U.A
+            </h4>
           </a>
         </div>
         <div class="titleofsite">
@@ -108,219 +113,361 @@
         </div>
       </div>
 
+      <div class="mainDivForm">
+        <!-- Question 1 -->
 
-<div class="mainDivForm">
-  
-  <!-- Question 1 -->
-  <div class="formBoxes">
- 
-    <p class="title fw-bold" >
-    <span class="orangeMarker">.</span> 
-    Quantas pessoas irão viajar?</p>
-    <div class="form-check">
-    <span class="firstQuestion"><i class="fas fa-user-plus"></i></i></i> <input type="number" placeholder="0" id="numberOfTravelers" class="morePeople" ></span>
-    </div>
-    </div>
-<!-- Question 2 -->
-       <div class="formBoxes">
- 
-      <p class="title fw-bold" >
-      <span class="orangeMarker">.</span> 
-      Quantos dias pretende ficar?</p>
-      <div class="form-check">
-      <span class="firstQuestion"><i class="fas fa-umbrella-beach"></i></i></i></i> <input type="number" placeholder="0" id="numberOfTravelers" class="morePeople" ></span>
-      </div>
-      </div>
-       
+        <div class="formBoxes" id="question1">
+          <p class="title fw-bold">
+            <span class="orangeMarker">.</span>
+            Quantas pessoas irão viajar?
+          </p>
+          <div class="form-check">
+            <span class="firstQuestion"
+              ><i class="fas fa-user-plus"></i>
+              <input
+                type="number"
+                placeholder="0"
+                id="numberOfTravelers"
+                class="morePeople"
+            /></span>
+            <a
+              class="btnOK"
+              style="color: #fc9523"
+              id="Q1"
+              onclick="showBox2()"
+            >
+              <i class="fas fa-angle-double-right fa-2x"></i>
+            </a>
+          </div>
+        </div>
 
-      <!-- Hospedagem -->
-      <div class="formBoxes">
-      
-        <p class="title fw-bold "><span class="orangeMarker">.</span> Hospedagem</p>
-        <div class="form-check">
-        <input type="radio" id="hospedagem_3" name="hospedagem" value="AirBnB" onclick=calculaHospedagem() class="form-check-input" required>
-        <label for="hospedagem">Eu escolho (AirBnB)        
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="radio" id="hospedagem_1" name="hospedagem" value="5 Estrelas" onclick=calculaHospedagem() class="form-check-input" required>
-        <label for="hospedagem" id="estrelas"> 5 
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </label>
-      </div>
+        <!-- Question 2 -->
 
-      <div class="form-check">
-        <input type="radio" id="hospedagem_2" name="hospedagem" value="4 Estrelas" onclick=calculaHospedagem() class="form-check-input" required>
-        <label for="hospedagem">4 
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="radio" id="hospedagem_3" name="hospedagem" value="3 Estrelas" onclick=calculaHospedagem() class="form-check-input" required>
-        <label for="hospedagem">3 
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>        
-        </label>
-      </div>
-      <div id="output1"></div>
-      <hr class="my-12">
-      
-    </div>
+        <div class="formBoxes" id="question2">
+          <p class="title fw-bold">
+            <span class="orangeMarker">.</span>
+            Quantos dias pretende ficar?
+          </p>
+          <div class="form-check">
+            <span class="secondQuestion"
+              ><i class="fas fa-umbrella-beach"></i>
+              <input
+                type="number"
+                placeholder="0"
+                id="howManyDays"
+                class="moreDays"
+            /></span>
+            <a
+              class="btnOK"
+              style="color: #fc9523"
+              id="Q2"
+              onclick="showForms()"
+            >
+              <i class="fas fa-angle-double-right fa-2x"></i>
+            </a>
+          </div>
+        </div>
 
+        <!-- Hospedagem -->
+
+        <div class="formBoxes" id="formBoxID">
+          <p class="title fw-bold">
+            <span class="orangeMarker">.</span> Hospedagem
+          </p>
+          <div class="form-check">
+            <input
+              type="radio"
+              id="hospedagem_3"
+              name="hospedagem"
+              value="AirBnB"
+              onclick="calculaHospedagem()"
+              class="form-check-input"
+              required
+            />
+            <label for="hospedagem">Eu escolho (AirBnB) </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              id="hospedagem_1"
+              name="hospedagem"
+              value="5 Estrelas"
+              onclick="calculaHospedagem()"
+              class="form-check-input"
+              required
+            />
+            <label for="hospedagem" id="estrelas">
+              5
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input
+              type="radio"
+              id="hospedagem_2"
+              name="hospedagem"
+              value="4 Estrelas"
+              onclick="calculaHospedagem()"
+              class="form-check-input"
+              required
+            />
+            <label for="hospedagem"
+              >4
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              id="hospedagem_3"
+              name="hospedagem"
+              value="3 Estrelas"
+              onclick="calculaHospedagem()"
+              class="form-check-input"
+              required
+            />
+            <label for="hospedagem"
+              >3
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </label>
+          </div>
+          <div id="output1"></div>
+          <hr class="my-12" />
+        </div>
 
         <!-- Aluguel de Carro -->
-        <div class="formBoxes">
-          
-          <p class="title fw-bold"><span class="orangeMarker">.</span> Aluguel de Carros</p>
+        <div class="formBoxes" id="formBoxID">
+          <p class="title fw-bold">
+            <span class="orangeMarker">.</span> Aluguel de Carros
+          </p>
           <div class="form-check">
-        <input type="radio" id="aluguelCarro" name="aluguelCarro" value= "Carro Comum" onclick=calculaAluguelCarros() class="form-check-input" required>
-        <label for="aluguelCarro">Comum</label>
-      </div>
-      <div class="form-check">
-        <input type="radio" id="aluguelCarro" name="aluguelCarro" value= "Carro 5+" onclick=calculaAluguelCarros() class="form-check-input" required>
-        <label for="aluguelCarro">5+ Lugares</label>
-      </div>
-      <div id="output2"></div>
-      <hr class="my-12">
-    </div>
+            <input
+              type="radio"
+              id="aluguelCarro"
+              name="aluguelCarro"
+              value="Carro Comum"
+              onclick="calculaAluguelCarros()"
+              class="form-check-input"
+              required
+            />
+            <label for="aluguelCarro">Comum</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              id="aluguelCarro"
+              name="aluguelCarro"
+              value="Carro 5+"
+              onclick="calculaAluguelCarros()"
+              class="form-check-input"
+              required
+            />
+            <label for="aluguelCarro">5+ Lugares</label>
+          </div>
+          <div id="output2"></div>
+          <hr class="my-12" />
+        </div>
 
+        <!-- Pontos Turísticos -->
+        <div class="formBoxes" id="formBoxID">
+          <p class="title fw-bold">
+            <span class="orangeMarker">.</span> Pontos Turísticos:
+          </p>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="Rolê pela cidade"
+              onclick="calculaTurismo()"
+              name="turismo"
+              id="role"
+            />
+            <label for="role" class="form-check-label">
+              Rolê pela cidade
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="Subir na Torre"
+              onclick="calculaTurismo()"
+              name="turismo"
+              id="torre"
+            />
+            <label for="torre" class="form-check-label"> Subir na Torre </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="Arco do Triunfo"
+              onclick="calculaTurismo()"
+              name="turismo"
+              id="arco"
+            />
+            <label for="arco" class="form-check-label"> Arco do Triunfo </label>
+          </div>
+          <div id="output3"></div>
+          <hr class="my-12" />
+        </div>
 
-      <!-- Pontos Turísticos -->
-      <div class="formBoxes">
-      
-        <p class="title fw-bold"><span class="orangeMarker">.</span> Pontos Turísticos:</p>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="Rolê pela cidade" onclick=calculaTurismo() name="turismo" id="role">
-        <label for="role" class="form-check-label">
-          Rolê pela cidade
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="Subir na Torre" onclick=calculaTurismo() name="turismo" id="torre">
-        <label for="torre" class="form-check-label">
-          Subir na Torre
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="Arco do Triunfo" onclick=calculaTurismo() name="turismo" id="arco">
-        <label for="arco" class="form-check-label">
-          Arco do Triunfo
-        </label>
-      </div>
-      <div id="output3"></div>
-      <hr class="my-12">
+        <!-- Seguro Viagem-->
+        <div class="formBoxes" id="formBoxID">
+          <p class="title fw-bold">
+            <span class="orangeMarker">.</span> Seguro Viagem:
+          </p>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="seguro"
+              value="Bagagem"
+              onclick="calculaSeguroVida()"
+              id="bagagem"
+            />
+            <label for="bagagem" class="form-check-label"> Bagagem </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="seguro"
+              value="Vida"
+              onclick="calculaSeguroVida()"
+              id="vida"
+            />
+            <label for="vida" class="form-check-label"> Vida </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="seguro"
+              value="Saúde"
+              onclick="calculaSeguroVida()"
+              id="saude"
+            />
+            <label for="saude" class="form-check-label"> Saúde </label>
+          </div>
+          <div id="output5"></div>
+          <hr class="my-12" />
+        </div>
+
+        <!-- Alimentação -->
+        <div class="formBoxes" id="formBoxID">
+          <p class="title fw-bold">
+            <span class="orangeMarker">.</span> Alimentação:
+          </p>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="alimentacao"
+              onclick="calculaAlimentacao()"
+              value="Café da Manhã"
+              id="cafe"
+            />
+            <label for="cafe" class="form-check-label"> Café da manhã </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="alimentacao"
+              onclick="calculaAlimentacao()"
+              value="Almoço"
+              id="almoco"
+            />
+            <label for="almoco" class="form-check-label"> Almoço </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="alimentacao"
+              onclick="calculaAlimentacao()"
+              value="Jantar"
+              id="janta"
+            />
+            <label for="janta" class="form-check-label"> Jantar </label>
+          </div>
+          <div id="output4"></div>
+          <hr class="my-12" />
+        </div>
+
+        <!-- Extras-->
+        <div class="formBoxes" id="formBoxID">
+          <p class="title fw-bold">
+            <span class="orangeMarker">.</span> Extras:
+          </p>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="Tour com o Especialista"
+              onclick="calculaExtra()"
+              name="extra"
+              id="tourEspecialista"
+            />
+            <label for="tourEspecialista" class="form-check-label">
+              Tour com o Especialista
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="VIP Casa Noturna"
+              onclick="calculaExtra()"
+              name="extra"
+              id="vip"
+            />
+            <label for="vip" class="form-check-label"> VIP Casa Noturna </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="Família com Pet"
+              onclick="calculaExtra()"
+              name="extra"
+              id="familia"
+            />
+            <label for="familia" class="form-check-label">
+              Família com Pet
+            </label>
+          </div>
+          <div id="output6"></div>
+          <hr class="my-12" />
+        </div>
+        <!-- mainDiv Form End -->
       </div>
 
-      <!-- Seguro Viagem-->
-      <div class="formBoxes">
-      
-        <p class="title fw-bold"><span class="orangeMarker">.</span> Seguro Viagem:</p>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="seguro" value="Bagagem" onclick=calculaSeguroVida() id="bagagem">
-        <label for="bagagem" class="form-check-label">
-          Bagagem
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="seguro" value="Vida" onclick=calculaSeguroVida() id="vida">
-        <label for="vida" class="form-check-label">
-          Vida
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="seguro" value="Saúde" onclick=calculaSeguroVida() id="saude">
-        <label for="saude" class="form-check-label">
-          Saúde
-        </label>
-      </div>
-      <div id="output5"></div>
-      <hr class="my-12">
+      <!-- Resultado -->
+
+      <div class="resultContainer">
+        <h2 class="result text-center">Seu rolê vai custar:</h2>
+        <div class="btnResult">
+          <a class="btn" id="total" role="button" onclick="valorT()">
+            Calcular
+          </a>
+        </div>
+        <h4 class="showValorMessage text-center" id="resultado">
+          Pressione O Botão :)
+        </h4>
       </div>
 
-      <!-- Alimentação -->
-      <div class="formBoxes">
-      
-        <p class="title fw-bold"><span class="orangeMarker">.</span> Alimentação:</p>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="alimentacao" onclick=calculaAlimentacao() value="Café da Manhã" id="cafe">
-        <label for="cafe" class="form-check-label">
-          Café da manhã
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="alimentacao" onclick=calculaAlimentacao() value="Almoço" id="almoco">
-        <label for="almoco" class="form-check-label">
-          Almoço
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" name="alimentacao" onclick=calculaAlimentacao() value="Jantar" id="janta">
-        <label for="janta" class="form-check-label">
-          Jantar
-        </label>
-      </div>
-      <div id="output4"></div>
-      <hr class="my-12">
-      
-      </div>
-
-      <!-- Extras-->
-      <div class="formBoxes">
-      
-        <p class="title fw-bold"><span class="orangeMarker">.</span> Extras:</p>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="Tour com o Especialista" onclick=calculaExtra() name="extra" id="tourEspecialista">
-        <label for="tourEspecialista" class="form-check-label">
-          Tour com o Especialista
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="VIP Casa Noturna" onclick=calculaExtra() name="extra" id="vip">
-        <label for="vip" class="form-check-label">
-          VIP Casa Noturna
-        </label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" value="Família com Pet" onclick=calculaExtra() name="extra" id="familia">
-        <label for="familia" class="form-check-label">
-          Família com Pet
-        </label>
-      </div>
-      <div id="output6"></div>
-      <hr class="my-12">
-      </div>
-
-</div>
-
-  <!-- Resultado -->
-  <h2 class="result text-center">Seu rolê vai custar:</h2>
-
-  <div class="resultContainer">
-    <div class="btnResult">
-    <a class="btn" 
-    id="total"
-    role="button"
-    onclick= valorT()>
-    Calcular
-     </a>
-    </div>
-</div>
-
-
-<h4 class="showValorMessage text-center" id="resultado">Pressione O Botão :)</h4>
-
-
-   
-
-    
       <!-- Footer -->
       <div class="footer">
         <footer class="bg-light text-center">
@@ -340,7 +487,6 @@
           </div>
         </footer>
       </div>
-
     </main>
 
     <script src="js/calculator.js"></script>
@@ -356,5 +502,7 @@
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
       crossorigin="anonymous"
     ></script>
+
+    <script src="calculator.js"></script>
   </body>
 </html>
