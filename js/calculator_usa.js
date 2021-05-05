@@ -74,7 +74,7 @@ let UnitedStates = {
         pontosTuristicos: {
             nomeCategoria: "Turismo",
             primeiroPontoTuristico: {
-                nome: "Rolê pela cidade",
+                nome: "Shark Reef Aquarium",
                 valor: 500.00
             },
             segundoPontoTuristico: {
