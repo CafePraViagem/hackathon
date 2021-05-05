@@ -279,32 +279,40 @@ function verificaDias(dias){
 function taxa(){
     let output = document.getElementById('outputTaxa');
     let valorTaxa = verificaDias(getNumeroDias());
+    
     if(valorTaxa == 1.2){
         output.innerHTML = `Acrésicmo de 20% no valor total`
     }else if(valorTaxa == 1.5){
         output.innerHTML = `Acrésicmo de 50% no valor total`
     }else{
-        output.innerHTML = `A quantidade de dias deve estar entre 1 e 90!`
+        output.innerHTML = `A quantidade de dias deve estar entre 1 e 90`
     }
-    
+}
+
+function validaViajantes(){
+    let viajantes = getNumeroViajantes();
+    let output = document.getElementById('outputViajantes');
+    if(viajantes >= 1 && viajantes <= 100){
+        output.innerHTML.display = 'none';
+        return true;
+    }else{
+        output.innerHTML = `A quantidade de pessoas deve estar entre 1 e 100`
+        return false;
+    }
+}
+
+function somaTotal(){
+    return getNumeroViajantes() * (somaHospedagem() + somaTurismo() 
+    + somaAlimentacao() + somaSeguro() + somaExtra()) + somaAluguelCarro();
 }
 
 function valorT(){
-    taxa();
     let taxaDias = verificaDias(getNumeroDias());
-
-    if(getNumeroViajantes() >= 1 && getNumeroViajantes() <= 100){
-        valorTotal = getNumeroViajantes() * (somaHospedagem() + somaTurismo() 
-        + somaAlimentacao() + somaSeguro() + somaExtra()) + somaAluguelCarro();
-        
-        valorTotal = valorTotal * taxaDias;
-
-        let output = document.getElementById('resultado');
-        
-        output.innerHTML = `Valor total a ser investido: R$ ${valorTotal.toFixed(2)}`;
-    }else{
-        alert("Por favor insira um número entre 1 e 100, as agências de viagem não trabalham com passagens para 0 pessoas :)")
+    let output = document.getElementById('resultado');
+    
+    if(validaViajantes()){
+        taxa();
+        valorTotal = somaTotal() * taxaDias;
+        output.innerHTML = `Valor total a ser investido: R$ ${valorTotal.toFixed(2)}`;  
     }
-    //alert("O valor da somaHospedagem + somaAluguelCarro + somaTurismo + somaAlimentacao + somaSeguro + somaExtra é: " + valorTotal);
 }
-
