@@ -2,7 +2,7 @@ let countries = [
 
     UnitedStates = {
         name: "United States",
-        image:"https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        image:"https://images7.alphacoders.com/458/458532.jpg",
         hospedagem: {
             
             hospedagem1: {
