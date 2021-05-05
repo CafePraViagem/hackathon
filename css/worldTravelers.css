@@ -22,8 +22,7 @@
   position: relative;
   height: 40vh;
   overflow: hidden;
-  background: url("https://i.ibb.co/DgWRCQL/Female-tourists-on-hand-have-a-happy-travel-map.jpg")
-    no-repeat center;
+  background: url("https://i.ibb.co/9Z19jXM/travelermap.png") no-repeat center;
   background-size: cover;
 
   border-bottom: solid 0.5rem #fc9523;
@@ -38,33 +37,15 @@
   justify-content: flex-start;
 }
 
-.header-image > .box {
-  flex: 0 1 100px;
-  margin: 10px 10px;
-
-  align-self: self-start;
-}
 
 img {
   max-width: 100%;
   display: block;
 }
 
-.box {
-  padding: 20px;
-  background-color: #dbdbdb00;
-  border-radius: 10px;
-}
-
-.box > a {
-  color: white !important;
-  text-decoration: none !important;
-  text-align: center !important;
-}
-
 .header-image > .titleofsite {
   flex: 0 1 100vw;
-  text-align: center;
+  margin: 10px;
 }
 
 /* Titulo do site */
@@ -94,7 +75,7 @@ a > h4 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .titleofsite > span {
-    font-size: calc(1.375rem + 2vw);
+    font-size: calc(1.375rem + 1vw);
   }
 
   .header-image {
@@ -105,7 +86,7 @@ a > h4 {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .titleofsite > span {
-    font-size: calc(1.375rem + 3vw);
+    font-size: calc(1.375rem + 1vw);
   }
 
   .header-image {
@@ -116,7 +97,7 @@ a > h4 {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .titleofsite > span {
-    font-size: calc(1.375rem + 4vw);
+    font-size: calc(1.375rem + 1vw);
   }
 
   .header-image {
