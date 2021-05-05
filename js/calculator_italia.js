@@ -81,15 +81,15 @@ let countries = [
             nomeCategoria: "Turismo",
             primeiroPontoTuristico: {
                 nome: "Rolê pela cidade",
-                valor: 100.00
+                valor: 700.00
             },
             segundoPontoTuristico: {
                 nome: "Subir na Torre",
-                valor: 300.00
+                valor: 900.00
             },
             terceiroPontoTuristico: {
                 nome: "Arco do Triunfo",
-                valor: 200.00
+                valor: 700.00
             }
 
         },
