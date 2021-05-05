@@ -22,10 +22,7 @@
   position: relative;
   height: 40vh;
   overflow: hidden;
-  background: url("https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-    no-repeat center;
-  background-size: cover;
-
+  background: url("https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
   border-bottom: solid 0.5rem #fc9523;
 }
 

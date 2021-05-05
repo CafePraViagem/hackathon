@@ -1,5 +1,4 @@
 let countries = [
-
     France = {
         name: "França",
         image:"https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -112,6 +111,15 @@ let countries = [
 
     }
 ]
+
+/* Função para trocar a imagem do fundo */
+function mudarFundoCalculadora() {
+    var imgURL = document.getElementsByClassName("header-image")
+    imgURL[0].style.background = "url('" + France["image"] + "') no-repeat center"
+    imgURL[0].style.backgroundSize = "cover"
+}
+mudarFundoCalculadora()
+
 
 /*let i = 0
 
