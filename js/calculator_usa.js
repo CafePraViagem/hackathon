@@ -54,10 +54,6 @@ let countries = [
             jantar: {
                 nome: "Jantar",
                 valor: 34.90
-            }, 
-            almocoJanta: {
-                nome: "Almoço e Janta",
-                valor: 94.90
             }
         },
 
@@ -84,12 +80,12 @@ let countries = [
                 valor: 500.00
             },
             segundoPontoTuristico: {
-                nome: "Subir na Torre",
-                valor: 600.00
+                nome: "Bellagio Resort (Cassino)",
+                valor: 873.00
             },
             terceiroPontoTuristico: {
-                nome: "Arco do Triunfo",
-                valor: 200.00
+                nome: "Stratosphere Las Vegas",
+                valor: 338.00
             }
 
         },
@@ -121,11 +117,6 @@ function mudarFundoCalculadora() {
 }
 mudarFundoCalculadora()
 
-/*let i = 0
-
-console.log(typeof countries[i].hospedagem);
-console.log(countries[0].hospedagem.valor);
-*/
 function somaHospedagem(){
     let valorSoma = 0;
     let dados = document.getElementsByName('hospedagem');
@@ -149,7 +140,7 @@ function somaHospedagem(){
 function calculaHospedagem(){
     let output = document.getElementById("output1");
     let precoHospedagem = somaHospedagem();
-    output.innerHTML = `Total: R$ ${precoHospedagem}`;
+    output.innerHTML = `Total: R$ ${precoHospedagem.toFixed(2)}`;
 }
 
 function somaAluguelCarro() {
@@ -170,7 +161,7 @@ function somaAluguelCarro() {
 function calculaAluguelCarros(){
     let precoAluguel = somaAluguelCarro();
     let output = document.getElementById("output2");
-    output.innerHTML = `Total: R$ ${precoAluguel}`;
+    output.innerHTML = `Total: R$ ${precoAluguel.toFixed(2)}`;
 }
 
 function somaTurismo(){
@@ -193,7 +184,7 @@ function somaTurismo(){
 function calculaTurismo(){
     let precoTurismo = somaTurismo();
     let output = document.getElementById("output3");
-    output.innerHTML = `Total: R$ ${precoTurismo}`;
+    output.innerHTML = `Total: R$ ${precoTurismo.toFixed(2)}`;
 }
 
 function somaAlimentacao(){
@@ -207,8 +198,6 @@ function somaAlimentacao(){
                 valorSoma = valorSoma + countries[0].alimentacao.almoco.valor;
             }else if (dados[i].value == countries[0].alimentacao.jantar.nome) {
                 valorSoma = valorSoma + countries[0].alimentacao.jantar.valor;
-            }else if (dados[i].value == countries[0].alimentacao.almocoJanta.nome){
-                valorSoma = valorSoma + countries[0].alimentacao.almocoJanta.valor;
             }
         }
     }
@@ -218,7 +207,7 @@ function somaAlimentacao(){
 function calculaAlimentacao(){
     let precoAlimentacao = somaAlimentacao();
     let output = document.getElementById("output4");
-    output.innerHTML = `Total: R$ ${precoAlimentacao}`;
+    output.innerHTML = `Total: R$ ${precoAlimentacao.toFixed(2)}`;
 }
 
 function somaSeguro(){
@@ -241,7 +230,7 @@ function somaSeguro(){
 function calculaSeguroVida(){
     let precoSeguro = somaSeguro();
     let output = document.getElementById("output5");
-    output.innerHTML = `Total: R$ ${precoSeguro}`;
+    output.innerHTML = `Total: R$ ${precoSeguro.toFixed(2)}`;
 }
 
 function somaExtra(){
@@ -264,7 +253,7 @@ function somaExtra(){
 function calculaExtra(){
     let precoExtra = somaExtra();
     let output = document.getElementById("output6");
-    output.innerHTML = `Toral: R$ ${precoExtra}`;
+    output.innerHTML = `Toral: R$ ${precoExtra.toFixed(2)}`;
 }
 
 function getNumeroViajantes(){
@@ -277,17 +266,32 @@ function getNumeroDias(){
     return dados.value;
 }
 
-function valorT(){
- 
-    let taxaDias = getNumeroDias();
-    if(taxaDias <= 90 && taxaDias >= 50){
-        taxaDias = 1.5;
-    }else if(taxaDias < 50 && taxaDias >= 1){
-        taxaDias = 1.2;
+function verificaDias(dias){
+    if(dias <= 90 && dias >= 50){
+        return 1.5;
+    }else if(dias < 50 && dias >= 1){
+        return 1.2;
     }else{
-        alert("A quantidade de dias deve estar entre 1 e 90!");
-        taxaDias = 0;
+        return 0;
     }
+}
+
+function taxa(){
+    let output = document.getElementById('outputTaxa');
+    let valorTaxa = verificaDias(getNumeroDias());
+    if(valorTaxa == 1.2){
+        output.innerHTML = `Acrésicmo de 20% no valor total`
+    }else if(valorTaxa == 1.5){
+        output.innerHTML = `Acrésicmo de 50% no valor total`
+    }else{
+        output.innerHTML = `A quantidade de dias deve estar entre 1 e 90!`
+    }
+    
+}
+
+function valorT(){
+    taxa();
+    let taxaDias = verificaDias(getNumeroDias());
 
     if(getNumeroViajantes() >= 1 && getNumeroViajantes() <= 100){
         valorTotal = getNumeroViajantes() * (somaHospedagem() + somaTurismo() 
@@ -297,7 +301,7 @@ function valorT(){
 
         let output = document.getElementById('resultado');
         
-        output.innerHTML = `Valor total a ser investido: R$ ${valorTotal} \n Acréscimo de *${taxaDias}`;
+        output.innerHTML = `Valor total a ser investido: R$ ${valorTotal.toFixed(2)}`;
     }else{
         alert("Por favor insira um número entre 1 e 100, as agências de viagem não trabalham com passagens para 0 pessoas :)")
     }
