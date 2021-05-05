@@ -763,7 +763,7 @@
             },
             "extraVIP": {
                 "nome": "VIP Casa Noturna",
-                "valor": 1798.99
+                "valor": 2798.99
             },
             "extraPet": {
                 "nome": "Família com Pet",
@@ -1099,7 +1099,227 @@
                 "valor": 42.00
             }
         }
-    }
-    
-}
+    },
 
+    "Germany": {
+        "name": "Alemanha",
+        "image": "https://images.pexels.com/photos/1963082/pexels-photo-1963082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "hospedagem": {
+            "nomeCategoria": "Hospedagem",
+            "hospedagem1": {
+                "nomeHospedagem1": "5 Estrelas",
+                "valor": 672.00
+            },
+            "hospedagem2": {
+                "nomeHospedagem2": "4 Estrelas",
+                "valor": 514.00
+            },
+            "hospedagem3": {
+                "nomeHospedagem3": "3 Estrelas",
+                "valor": 477.50
+            },
+            "hospedagem4": {
+                "nomeHospedagem4": "Eu escolho (AirBnB)",
+                "valor": 0
+            }
+        },
+        "aluguelCarro": {
+            "nomeCategoria": "Aluguel Carro",
+            "carro1": {
+                "nomeCarro1": "Carro Comum",
+                "valor": 69.00
+            },
+            "carro2": {
+                "nomeCarro2": "Carro 5+",
+                "valor": 78.00
+            }
+        },
+        "alimentacao": {
+            "nomeCategoria": "Alimentação",
+            "cafeDaManha": {
+                "nome": "Café da Manhã",
+                "valor": 22.00
+            },
+            "almoco": {
+                "nome": "Almoço",
+                "valor": 48.20
+            },
+            "jantar": {
+                "nome": "Jantar",
+                "valor": 49.60
+            },
+            "almocoEJantar": {
+                "nome": "Almoço + Jantar",
+                "valor": 97.80
+            }
+        },
+        "seguroViagem": {
+            "nomeCategoria": "Seguro Viagem",
+            "seguroBagagem": {
+                "nome": "Bagagem",
+                "valor": 364.99
+            },
+            "seguroVida": {
+                "nome": "Vida",
+                "valor": 302.00
+            },
+            "seguroSaude": {
+                "nome": "Saúde",
+                "valor": 229.00
+            }
+        },
+        "pontosTuristicos": {
+            "nomeCategoria": "Turismo",
+            "primeiroPontoTuristico": {
+                "nome": "Portão de Brandenburgo",
+                "valor": 47.00
+            },
+            "segundoPontoTuristico": {
+                "nome": "Catedral de Colônia",
+                "valor": 115.50
+            },
+            "terceiroPontoTuristico": {
+                "nome": "Memorial do Holocausto",
+                "valor": 57.50
+            },
+            "quartoPontoTuristico": {
+                "nome": "Prédio do Reichstag",
+                "valor": 61.00
+            },
+            "quintoPontoTuristico": {
+                "nome": "Memorial do Muro de Berlim",
+                "valor": 92.00
+            },
+            "sextoPontoTuristico": {
+                "nome": "Castelo Neuschwanstein",
+                "valor": 197.90
+            }
+        },
+        "Extras": {
+            "nomeCategoria": "Extras",
+            "extraTour": {
+                "nome": "Tour com o Especialista",
+                "valor": 185.00
+            },
+            "extraVIP": {
+                "nome": "VIP Casa Noturna",
+                "valor": 1755.99
+            },
+            "extraPet": {
+                "nome": "Família com Pet",
+                "valor": 142.99
+            }
+        }
+    },
+
+    "Peru": {
+        "name": "Peru",
+        "image": "https://images.pexels.com/photos/1570610/pexels-photo-1570610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "hospedagem": {
+            "nomeCategoria": "Hospedagem",
+            "hospedagem1": {
+                "nomeHospedagem1": "5 Estrelas",
+                "valor": 415.00
+            },
+            "hospedagem2": {
+                "nomeHospedagem2": "4 Estrelas",
+                "valor": 345.00
+            },
+            "hospedagem3": {
+                "nomeHospedagem3": "3 Estrelas",
+                "valor": 251.50
+            },
+            "hospedagem4": {
+                "nomeHospedagem4": "Eu escolho (AirBnB)",
+                "valor": 0
+            }
+        },
+        "aluguelCarro": {
+            "nomeCategoria": "Aluguel Carro",
+            "carro1": {
+                "nomeCarro1": "Carro Comum",
+                "valor": 49.00
+            },
+            "carro2": {
+                "nomeCarro2": "Carro 5+",
+                "valor": 58.00
+            }
+        },
+        "alimentacao": {
+            "nomeCategoria": "Alimentação",
+            "cafeDaManha": {
+                "nome": "Café da Manhã",
+                "valor": 18.00
+            },
+            "almoco": {
+                "nome": "Almoço",
+                "valor": 22.20
+            },
+            "jantar": {
+                "nome": "Jantar",
+                "valor": 25.60
+            },
+            "almocoEJantar": {
+                "nome": "Almoço + Jantar",
+                "valor": 47.80
+            }
+        },
+        "seguroViagem": {
+            "nomeCategoria": "Seguro Viagem",
+            "seguroBagagem": {
+                "nome": "Bagagem",
+                "valor": 261.99
+            },
+            "seguroVida": {
+                "nome": "Vida",
+                "valor": 426.00
+            },
+            "seguroSaude": {
+                "nome": "Saúde",
+                "valor": 262.00
+            }
+        },
+        "pontosTuristicos": {
+            "nomeCategoria": "Turismo",
+            "primeiroPontoTuristico": {
+                "nome": "Machu Picchu",
+                "valor": 188.00
+            },
+            "segundoPontoTuristico": {
+                "nome": "Templo do Sol",
+                "valor": 125.50
+            },
+            "terceiroPontoTuristico": {
+                "nome": "Plaza de Armas",
+                "valor": 16.50
+            },
+            "quartoPontoTuristico": {
+                "nome": "Ruínas de Pachacamac",
+                "valor": 54.00
+            },
+            "quintoPontoTuristico": {
+                "nome": "Parque Nascional de Huascarán",
+                "valor": 179.00
+            },
+            "sextoPontoTuristico": {
+                "nome": "Linhas de Nazca",
+                "valor": 197.90
+            }
+        },
+        "Extras": {
+            "nomeCategoria": "Extras",
+            "extraTour": {
+                "nome": "Tour com o Especialista",
+                "valor": 89.00
+            },
+            "extraVIP": {
+                "nome": "VIP Casa Noturna",
+                "valor": 666.99
+            },
+            "extraPet": {
+                "nome": "Família com Pet",
+                "valor": 77.90
+            }
+        }
+    }
+}
