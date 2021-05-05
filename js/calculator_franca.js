@@ -236,12 +236,12 @@ function somaExtra(){
     let valorSoma = 0;
     for (let i = 0; i < dados.length; i++){
         if ( dados[i].checked ) {
-            if(dados[i].value == countries[0].Extras.extraTour.nome){
-                valorSoma = countries[0].Extras.extraTour.valor;
-            }else if (dados[i].value == countries[0].Extras.extraVIP.nome){
-                valorSoma = valorSoma + countries[0].Extras.extraVIP.valor;
-            }else if (dados[i].value == countries[0].Extras.extraPet.nome){
-                valorSoma = valorSoma + countries[0].Extras.extraPet.valor;
+            if(dados[i].value == France.Extras.extraTour.nome){
+                valorSoma = France.Extras.extraTour.valor;
+            }else if (dados[i].value == France.Extras.extraVIP.nome){
+                valorSoma = valorSoma + France.Extras.extraVIP.valor;
+            }else if (dados[i].value == France.Extras.extraPet.nome){
+                valorSoma = valorSoma + France.Extras.extraPet.valor;
             }
         }
     }
