@@ -136,3 +136,20 @@ a > h4 {
   border-radius: 100%!important;
 }
 
+.traveler > .boxName {
+  flex: 0 1 66vw;
+  font-size: 10.3px
+}
+
+h7 {
+  color: orange;
+  font-weight: bold;
+}
+
+.boxName > p, span {
+  color : black;
+  font-weight: bold;
+  text-shadow: none;
+
+  font-size: 10px;
+}
