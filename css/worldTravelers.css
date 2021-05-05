@@ -129,24 +129,25 @@ a > h4 {
 }
 
 .traveler > .boxIMG {
-  flex: 0 1 80px;
+  flex: 0 1 60px;
   margin: 10px 10px;
 }
 .boxIMG > img {
   border-radius: 100%!important;
 }
 
-.traveler > .boxName {
-  flex: 0 1 66vw;
-  font-size: 10.3px
-}
 
 h7 {
   color: orange;
   font-weight: bold;
 }
 
-.boxName > p, span {
+.traveler > .boxName {
+  flex: 0 1 63vw;
+  font-size: 10.3px
+} 
+
+p > span {
   color : black;
   font-weight: bold;
   text-shadow: none;
