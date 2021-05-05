@@ -94,9 +94,9 @@
         }
     },
 
-    "Canada": {
-        "name": "Canadá",
-        "image": "https://images.pexels.com/photos/935474/toronto-beauty-clouds-skyline-935474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "Italy": {
+        "name": "Itália",
+        "image": "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "hospedagem": {
             "nomeCategoria": "Hospedagem",
             "hospedagem1": {
@@ -160,15 +160,15 @@
         "pontosTuristicos": {
             "nomeCategoria": "Turismo",
             "primeiroPontoTuristico": {
-                "nome": "Banff National Park",
+                "nome": "Coliseu",
                 "valor": 190.00
             },
             "segundoPontoTuristico": {
-                "nome": "CN Tower",
+                "nome": "Capela Sistina",
                 "valor": 150.00
             },
             "terceiroPontoTuristico": {
-                "nome": "Parliament Hill",
+                "nome": "Torre de Pizza",
                 "valor": 113.00
             }
         },
@@ -284,22 +284,22 @@
         }
     },
 
-    "Thailand": {
-        "name": "Tailândia",
-        "image": "https://images.pexels.com/photos/2797526/pexels-photo-2797526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "France": {
+        "name": "França",
+        "image": "https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "hospedagem": {
             "nomeCategoria": "Hospedagem",
             "hospedagem1": {
                 "nomeHospedagem1": "5 Estrelas",
-                "valor": 299.00
+                "valor": 579.00
             },
             "hospedagem2": {
                 "nomeHospedagem2": "4 Estrelas",
-                "valor": 112.00
+                "valor": 422.00
             },
             "hospedagem3": {
                 "nomeHospedagem3": "3 Estrelas",
-                "valor": 49.50
+                "valor": 389.50
             },
             "hospedagem4": {
                 "nomeHospedagem4": "Eu escolho (AirBnB)",
@@ -310,26 +310,26 @@
             "nomeCategoria": "Aluguel Carro",
             "carro1": {
                 "nomeCarro1": "Carro Comum",
-                "valor": 20.00
+                "valor": 69.00
             },
             "carro2": {
                 "nomeCarro2": "Carro 5+",
-                "valor": 29.00
+                "valor": 84.00
             }
         },
         "alimentacao": {
             "nomeCategoria": "Alimentação",
             "cafeDaManha": {
                 "nome": "Café da Manhã",
-                "valor": 6.00
+                "valor": 20.00
             },
             "almoco": {
                 "nome": "Almoço",
-                "valor": 12.80
+                "valor": 37.80
             },
             "jantar": {
                 "nome": "Jantar",
-                "valor": 14.60
+                "valor": 45.60
             }
         },
         "seguroViagem": {
@@ -350,15 +350,15 @@
         "pontosTuristicos": {
             "nomeCategoria": "Turismo",
             "primeiroPontoTuristico": {
-                "nome": "Grande Palácio de Bangkok",
+                "nome": "Torre Eiffel",
                 "valor": 36.00
             },
             "segundoPontoTuristico": {
-                "nome": "Ayutthaya",
+                "nome": "Arco do Triunfo",
                 "valor": 65.00
             },
             "terceiroPontoTuristico": {
-                "nome": "Parque Nacional Khao Yai",
+                "nome": "Museu do Louvre",
                 "valor": 43.50
             }
         },
