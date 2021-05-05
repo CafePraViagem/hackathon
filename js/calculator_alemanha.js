@@ -148,7 +148,7 @@ function somaAluguelCarro() {
         if ( dados[i].checked ) {
             if(dados[i].value == Alemanha.aluguelCarro.carro1.nomeCarro1){
                 valorSoma = Alemanha.aluguelCarro.carro1.valor;
-            }else if (dados[i].value == countries[0].aluguelCarro.carro2.nomeCarro2) {
+            }else if (dados[i].value == Alemanha.aluguelCarro.carro2.nomeCarro2) {
                 valorSoma = Alemanha.aluguelCarro.carro2.valor;
             }
         }
