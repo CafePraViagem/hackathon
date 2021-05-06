@@ -162,10 +162,11 @@ p > span {
 }
 
 /* Redes Sociais */
-.socialMedia > i {
+.socialMedia > i, .socialMedia > a {
   color: #fc9523;
   margin: 0.15rem;
   margin-bottom: 0.3rem;
+  
 }
 
 .socialMedia {
@@ -287,6 +288,7 @@ p > span {
 
   .socialMedia {
     visibility: hidden;
+    
   }
 
   .traveler > .boxIMG {
