@@ -265,11 +265,22 @@ function getNumeroDias() {
 }
 
 function verificaDias(dias) {
-    if (dias <= 90 && dias >= 50) {
-        return 1.5;
-    } else if (dias < 50 && dias >= 1) {
+    if (dias >= 1 && dias <= 7) {
+        return 1.1;
+    } else if (dias > 7 && dias <= 15) {
         return 1.2;
-    } else {
+    } else if (dias > 15 && dias <= 21){
+        return 1.3;
+    } else if (dias > 21 && dias <= 30){
+        return 1.4;
+    }else if (dias > 30 && dias <= 40){
+        return 1.5;
+    }else if (dias > 40 && dias <= 60){
+        return 1.65;
+    }else if (dias > 60 && dias <= 90){
+        return 1.7;
+    }
+    else {
         return 0;
     }
 }
@@ -278,11 +289,22 @@ function taxa() {
     let output = document.getElementById('outputTaxa');
     let valorTaxa = verificaDias(getNumeroDias());
 
-    if (valorTaxa == 1.2) {
+    if (valorTaxa == 1.1) {
+        output.innerHTML = `Acrésicmo de 10% no valor total`
+    } else if (valorTaxa == 1.2) {
         output.innerHTML = `Acrésicmo de 20% no valor total`
+    } else if (valorTaxa == 1.3) {
+        output.innerHTML = `Acrésicmo de 30% no valor total`
+    } else if (valorTaxa == 1.4) {
+        output.innerHTML = `Acrésicmo de 40% no valor total`
     } else if (valorTaxa == 1.5) {
         output.innerHTML = `Acrésicmo de 50% no valor total`
-    } else {
+    } else if (valorTaxa == 1.65) {
+        output.innerHTML = `Acrésicmo de 65% no valor total`
+    } else if (valorTaxa == 1.7) {
+        output.innerHTML = `Acrésicmo de 70% no valor total`
+    }
+    else {
         output.innerHTML = `A quantidade de dias deve estar entre 1 e 90`
     }
 }
