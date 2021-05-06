@@ -177,9 +177,10 @@ p > span {
   text-align: center;
 }
 
-.socialMediaBigDevices > i {
+.socialMediaBigDevices > i, .socialMediaBigDevices > a {
   color: #fc9523;
   display: none;
+  text-decoration: none;
 }
 
 /* Video preview para medium devices e big devices */
@@ -280,7 +281,7 @@ p > span {
     font-size: calc(1.375rem + 1vw);
   }
 
-  .socialMediaBigDevices > i {
+  .socialMediaBigDevices > i, .socialMediaBigDevices > a  {
     display: inline;
   }
 
@@ -358,3 +359,5 @@ p > span {
   }
 
 }
+
+
