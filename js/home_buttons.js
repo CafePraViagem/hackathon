@@ -4,6 +4,10 @@ function clickButtonTypeTripChangeClass(tagId, profileOff, profileOn){
     tagId.classList.add(profileOn);
 }
 
+function hideDiv(divType, profileOff) {
+    divType.classList.add(profileOff);
+}
+
 let buttonTypeTripAdventurous = document.querySelector(".button-type-trip-adventure");
 
 buttonTypeTripAdventurous.addEventListener('click', function() {
@@ -12,6 +16,9 @@ buttonTypeTripAdventurous.addEventListener('click', function() {
 
     clickButtonTypeTripChangeClass(divTag, 'adventurous-profile-off', 'adventurous-profile-on');
 
+    let divTypeIndication = document.querySelector(".young-profile-on");
+
+    hideDiv(divTypeIndication, "young-profile-off");
 });
 
 let buttonTypeTripYoung = document.querySelector(".button-type-trip-young");
@@ -21,5 +28,9 @@ buttonTypeTripYoung.addEventListener('click', function() {
     let divTag = document.querySelector('#young');
 
     clickButtonTypeTripChangeClass(divTag, 'young-profile-off', 'young-profile-on');
+
+    let divTypeIndication = document.querySelector(".adventurous-profile-on");
+
+    hideDiv(divTypeIndication, "adventurous-profile-off");
     
 });

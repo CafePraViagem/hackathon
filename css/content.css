@@ -113,8 +113,8 @@ div > strong {
 }
 
 .image-country {
-  width: 80vw;
-  height: 40vh;
+  width: 82vw;
+  height: 30vh;
   margin: 0 auto;
   border-radius: 10px;
   border: solid 3px #ff9500;
@@ -132,6 +132,18 @@ div > strong {
 
 .carousel-control-prev-icon-indication, .carousel-control-next-icon-indication {
   background-color: #ff9500;
+}
+
+@media (min-width: 432px) {
+  .image-country {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 650px) {
+  .image-country {
+    height: 35vh;
+  }
 }
 
 @media (min-width: 834px) {
@@ -174,13 +186,19 @@ div > strong {
   }
 
   .image-country {
-    width: 40vw;
+    width: 64vw;
     height: 30vh;
   }
 
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 940px) {
+  .image-country {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1200px) {
 
   .container-text-image-country {
     display: flex;
@@ -188,8 +206,8 @@ div > strong {
   }
 
   .image-country {
-    width: 40vw;
-    height: 55vh;
+    width: 35vw;
+    height: 34vh;
     align-items: left;
     justify-content: left;
   }
@@ -198,5 +216,12 @@ div > strong {
     width: 35vw;
     align-items: right;
     justify-content: right;
+  }
+}
+
+@media (min-width: 1350px) {
+  
+  .image-country {
+    height: 46vh;
   }
 }
