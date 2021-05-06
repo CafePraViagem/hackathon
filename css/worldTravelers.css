@@ -166,3 +166,43 @@ p > span {
   flex: 0 1 80px;
   align-self: flex-end;
 }
+
+.subTitle > p {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Botão do final da pagina */
+#buttonCountries {
+  background-color: #fc9523;
+  border-radius: 10px;
+
+  margin: 50px;
+  border: none;
+  outline: none;
+  left: 50%;  
+}
+
+#buttonCountries:hover {
+  transform: scale(1.1);
+  background-color: #4400c3;
+  box-shadow: 3px 3px #fc9523;
+}
+
+#buttonCountries:active {
+  transform: scale(1.1);
+  background-color: #4400c3;
+  box-shadow: 3px 3px #fc9523;
+}
+
+#buttonCountries > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Centralizar o botão */
+.button {
+  text-align: center;
+}
