@@ -37,7 +37,6 @@
   justify-content: flex-start;
 }
 
-
 img {
   max-width: 100%;
   display: block;
@@ -70,6 +69,15 @@ a > h4 {
   font-weight: bold;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
+
+/* Subtitle da Pagina */
+.subTitle > p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
 
 /* ------ BOOTSTRAP MEDIA QUERYS ------ */
 /* Small devices (landscape phones, 576px and up) */
@@ -123,7 +131,6 @@ a > h4 {
   -webkit-box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
   -moz-box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
   box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
-  
 }
 
 .traveler {
@@ -139,14 +146,9 @@ a > h4 {
   margin: 10px 10px;
   align-self: flex-start;
 }
+
 .boxIMG > img {
   border-radius: 100%!important;
-}
-
-
-h7 {
-  color: orange;
-  font-weight: bold;
 }
 
 .traveler > .boxName {
@@ -154,23 +156,40 @@ h7 {
   font-size: 10.3px
 } 
 
-p > span {
-  color : black;
-  font-weight: bold;
-  text-shadow: none;
-
-  font-size: 10px;
-}
-
 .traveler > .socialMedia {
   flex: 0 1 80px;
   align-self: flex-end;
 }
 
-.subTitle > p {
-  margin-top: 1rem;
-  text-align: center;
+/* Nome do viajante */
+h5 {
+  color: black;
   font-weight: bold;
+
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Parte alcunha do viajante */ 
+h6 {
+  color: #fc9523;
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Texto de cada viajanta */
+p > span {
+  color : black;
+  font-weight: bold;
+  text-shadow: none;
+
+  font-size: 0.8rem;
+}
+
+.boxName > p {
+  margin-bottom: 0.5rem; 
 }
 
 /* Botão do final da pagina */
@@ -205,4 +224,8 @@ p > span {
 /* Centralizar o botão */
 .button {
   text-align: center;
+}
+
+i {
+  color: #fc9523;
 }
