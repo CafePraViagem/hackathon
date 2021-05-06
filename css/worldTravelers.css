@@ -76,34 +76,6 @@ a > h4 {
   font-weight: bold;
 }
 
-
-/* ------ BOOTSTRAP MEDIA QUERYS ------ */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .titleofsite > span {
-    font-size: calc(1.375rem + 1vw);
-  }
-
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .titleofsite > span {
-    font-size: calc(1.375rem + 1vw);
-  }
-
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .titleofsite > span {
-    font-size: calc(1.375rem + 1vw);
-  }
-
-}
-
 /* Viajante */
 .flex {
   display: flex;
@@ -142,7 +114,7 @@ a > h4 {
 }
 
 .traveler > .boxText {
-  flex: 0 1 63vw;
+  flex: 0 1 64vw;
   font-size: 10.3px
 } 
 
@@ -160,7 +132,7 @@ h5 {
   font-size: 0.9rem;
 }
 
-/* Parte alcunha do viajante */ 
+/* Alcunha do viajante */ 
 h6 {
   color: #fc9523;
   font-weight: bold;
@@ -182,6 +154,13 @@ p > span {
   margin-bottom: 0.5rem; 
 }
 
+/* Texto para medium-big deviced */
+#travelerText {
+  display: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 /* Redes Sociais */
 .socialMedia > i {
   color: #fc9523;
@@ -192,6 +171,15 @@ p > span {
 .socialMedia {
   display: flex;
   justify-content: flex-end;
+}
+
+.socialMediaBigDevices {
+  text-align: center;
+}
+
+.socialMediaBigDevices > i {
+  color: #fc9523;
+  display: none;
 }
 
 /* Botão do final da pagina */
@@ -228,7 +216,57 @@ p > span {
   text-align: center;
 }
 
+/* ------ BOOTSTRAP MEDIA QUERYS ------ */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .titleofsite > span {
+    font-size: calc(1.375rem + 1vw);
+  }
+  .traveler > .boxIMG {
+    flex: 0 1 70px;
+  }
 
-#travelerText {
-  display: none;
+  .traveler > .boxText {
+    flex: 0 1 80vw;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .titleofsite > span {
+    font-size: calc(1.375rem + 1vw);
+  }
+
+  .socialMediaBigDevices > i {
+    display: inline;
+  }
+
+  .socialMedia {
+    visibility: hidden;
+  }
+
+  .traveler > .boxIMG {
+    flex: 0 1 100px;
+  }
+
+  .traveler > .boxText {
+    flex: 0 1 80vw;
+  }
+
+  #travelerText {
+    display: inline;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .titleofsite > span {
+    font-size: calc(1.375rem + 1vw);
+  }
+
+  .traveler > .boxText {
+    flex: 0 1 88.5vw;
+  }
+
 }
