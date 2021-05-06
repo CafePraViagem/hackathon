@@ -141,7 +141,7 @@ a > h4 {
   border-radius: 100%!important;
 }
 
-.traveler > .boxName {
+.traveler > .boxText {
   flex: 0 1 63vw;
   font-size: 10.3px
 } 
@@ -178,7 +178,7 @@ p > span {
   font-size: 0.8rem;
 }
 
-.boxName > p {
+.boxText > p {
   margin-bottom: 0.5rem; 
 }
 
