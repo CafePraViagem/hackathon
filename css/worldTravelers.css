@@ -17,10 +17,8 @@
     color-stop(0.001, rgba(0, 0, 0, 0)),
     /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
       color-stop(0.05, rgba(0, 0, 0, 1))
-  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
-
+  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */ 
   position: relative;
-  height: 40vh;
   overflow: hidden;
   background: url("https://i.ibb.co/9Z19jXM/travelermap.png") no-repeat center;
   background-size: cover;
@@ -86,9 +84,7 @@ a > h4 {
     font-size: calc(1.375rem + 1vw);
   }
 
-  .header-image {
-    height: 40vh;
-  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -97,9 +93,7 @@ a > h4 {
     font-size: calc(1.375rem + 1vw);
   }
 
-  .header-image {
-    height: 50vh;
-  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -108,11 +102,7 @@ a > h4 {
     font-size: calc(1.375rem + 1vw);
   }
 
-  .header-image {
-    height: 60vh;
-  }
 }
-
 
 /* Viajante */
 .flex {
@@ -236,4 +226,9 @@ i {
 /* Centralizar o botão */
 .button {
   text-align: center;
+}
+
+
+#travelerText {
+  display: none;
 }
