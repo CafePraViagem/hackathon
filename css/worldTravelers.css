@@ -54,7 +54,7 @@ img {
   font-size: calc(1.375rem + 2vw);
 }
 
-span {
+.titleofsite > span {
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
@@ -144,7 +144,7 @@ h6 {
 /* Texto de cada viajanta */
 p > span {
   color : black;
-  font-weight: bold;
+  font-weight: none;
   text-shadow: none;
 
   font-size: 0.8rem;
@@ -157,7 +157,7 @@ p > span {
 /* Texto para medium-big deviced */
 #travelerText {
   display: none;
-  font-weight: bold;
+  font-weight: none;
   font-size: 0.8rem;
 }
 
@@ -254,9 +254,24 @@ p > span {
     flex: 0 1 80vw;
   }
 
+  /* Texto de cada viajanta */
+  p > span {
+  color : black;
+  font-weight: bold;
+  text-shadow: none;
+
+  font-size: 0.8rem;
+  }
+
+  .boxText > p {
+    margin-bottom: 0.5rem; 
+    font-weight: bold;
+  }
+
   #travelerText {
     display: inline;
   }
+  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -267,6 +282,24 @@ p > span {
 
   .traveler > .boxText {
     flex: 0 1 88.5vw;
+  }
+
+  /* Texto de cada viajanta */
+  p > span {
+  color : black;
+  font-weight: bold;
+  text-shadow: none;
+
+  font-size: 0.8rem;
+  }
+
+  .boxText > p {
+    margin-bottom: 0.5rem; 
+    font-weight: bold;
+  }
+
+  #travelerText {
+    display: inline;
   }
 
 }
