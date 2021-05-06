@@ -265,7 +265,7 @@ function somaExtra(){
 function calculaExtra(){
     let precoExtra = somaExtra();
     let output = document.getElementById("output6");
-    output.innerHTML = `Toral: R$ ${precoExtra}`;
+    output.innerHTML = `Total: R$ ${precoExtra}`;
 }
 
 function getNumeroViajantes(){
