@@ -112,8 +112,8 @@ div > strong {
   margin: 15px 0;
 }
 
-.country-indication img {
-  width: 84vw;
+.image-country {
+  width: 80vw;
   height: 40vh;
   margin: 0 auto;
   border-radius: 10px;
@@ -128,6 +128,10 @@ div > strong {
 .button-contries-adventurous,
 .button-contries-young {
   margin: 20px auto 0;
+}
+
+.carousel-control-prev-icon-indication, .carousel-control-next-icon-indication {
+  background-color: #ff9500;
 }
 
 @media (min-width: 834px) {
@@ -162,5 +166,37 @@ div > strong {
     margin-bottom: 30px;
     align-items: right;
     justify-items: right;
+  }
+
+  .indications {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .image-country {
+    width: 40vw;
+    height: 30vh;
+  }
+
+}
+
+@media (min-width: 1350px) {
+
+  .container-text-image-country {
+    display: flex;
+    flex-direction: initial;
+  }
+
+  .image-country {
+    width: 40vw;
+    height: 55vh;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .text-image-country {
+    width: 35vw;
+    align-items: right;
+    justify-content: right;
   }
 }
