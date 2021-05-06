@@ -222,6 +222,7 @@ div > strong {
 @media (min-width: 1350px) {
   
   .image-country {
-    height: 40vh;
+    margin-top: 20px;
+    height: 44vh;
   }
 }
