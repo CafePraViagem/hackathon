@@ -182,8 +182,48 @@ p > span {
   display: none;
 }
 
+/* Video preview para medium devices e big devices */
+.Preview {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Preview > .videoIMG{
+  flex: 0 1 300px;
+}
+
+.Preview > p {
+  flex: 0 1 100px;
+}
+
+.Preview > .sectionButton {
+  flex: 0 1 200px;
+}
+
+.sectionButton > .buttonTraveler {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttonTraveler > #buttonCountries {
+  margin: 1px;
+  border-radius: 100px;
+}
+
+.buttonTraveler > p {
+  flex: 0 1 100px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 /* Botão do final da pagina */
-#buttonCountries {
+#buttonCountries{
   background-color: #fc9523;
   border-radius: 10px;
 
@@ -271,6 +311,11 @@ p > span {
   #travelerText {
     display: inline;
   }
+
+  /* Video preview para medium devices e big devices */
+  /* .videoPreview {
+  display: inline; 
+} */
   
 }
 
