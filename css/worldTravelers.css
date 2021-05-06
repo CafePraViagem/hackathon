@@ -257,15 +257,16 @@ p > span {
   #travelerText {
     display: inline;
   }
-
-  
-
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .titleofsite > span {
     font-size: calc(1.375rem + 1vw);
+  }
+
+  .traveler > .boxText {
+    flex: 0 1 88.5vw;
   }
 
 }
