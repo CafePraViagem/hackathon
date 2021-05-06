@@ -151,29 +151,46 @@ a > h4 {
   border-radius: 100%!important;
 }
 
-h7 {
-  color: orange;
-  font-weight: bold;
-}
-
 .traveler > .boxName {
   flex: 0 1 63vw;
   font-size: 10.3px
 } 
-
-p > span {
-  color : black;
-  font-weight: bold;
-  text-shadow: none;
-
-  font-size: 10px;
-}
 
 .traveler > .socialMedia {
   flex: 0 1 80px;
   align-self: flex-end;
 }
 
+/* Nome do viajante */
+h5 {
+  color: black;
+  font-weight: bold;
+
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Parte alcunha do viajante */ 
+h6 {
+  color: #fc9523;
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Texto de cada viajanta */
+p > span {
+  color : black;
+  font-weight: bold;
+  text-shadow: none;
+
+  font-size: 0.8rem;
+}
+
+.boxName > p {
+  margin-bottom: 0.5rem; 
+}
 
 /* Botão do final da pagina */
 #buttonCountries {
@@ -207,4 +224,8 @@ p > span {
 /* Centralizar o botão */
 .button {
   text-align: center;
+}
+
+i {
+  color: #fc9523;
 }
