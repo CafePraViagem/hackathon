@@ -183,7 +183,7 @@ p > span {
 }
 
 /* Redes Sociais */
-i {
+.socialMedia > i {
   color: #fc9523;
   margin: 0.15rem;
   margin-bottom: 0.3rem;
