@@ -37,7 +37,6 @@
   justify-content: flex-start;
 }
 
-
 img {
   max-width: 100%;
   display: block;
@@ -70,6 +69,15 @@ a > h4 {
   font-weight: bold;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
+
+/* Subtitle da Pagina */
+.subTitle > p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
 
 /* ------ BOOTSTRAP MEDIA QUERYS ------ */
 /* Small devices (landscape phones, 576px and up) */
@@ -123,7 +131,6 @@ a > h4 {
   -webkit-box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
   -moz-box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
   box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
-  
 }
 
 .traveler {
@@ -139,10 +146,10 @@ a > h4 {
   margin: 10px 10px;
   align-self: flex-start;
 }
+
 .boxIMG > img {
   border-radius: 100%!important;
 }
-
 
 h7 {
   color: orange;
@@ -167,11 +174,6 @@ p > span {
   align-self: flex-end;
 }
 
-.subTitle > p {
-  margin-top: 1rem;
-  text-align: center;
-  font-weight: bold;
-}
 
 /* Botão do final da pagina */
 #buttonCountries {
