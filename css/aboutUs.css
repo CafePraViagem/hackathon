@@ -5,6 +5,21 @@
   padding: 0;
 }
 
+p {
+  font-size: 0.6rem;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+/* Custom Style Icons */
+i.fab,
+i.fas {
+  color: #4400c3;
+  font-size: 1rem;
+}
+
 /* HEADER */
 
 h4 {
@@ -19,15 +34,15 @@ h4 {
 }
 
 .imgHeader {
+  display: flex;
   margin: 0 auto;
   width: 80%;
-  display: flex;
 }
 
 .line {
-  height: 8px;
-  background-color: rgba(252, 149, 35, 0.8);
-  width: 70%;
+  height: 2px;
+  background-color: #fc9523;
+  width: 90%;
   border-radius: 10px;
 }
 
@@ -40,24 +55,10 @@ h4 {
   background-color: #fc9523;
 }
 
-p {
-  font-size: 0.6rem;
-}
-
 .welcomeTitle {
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 10px auto;
   width: 80%;
   font-size: 1.6rem;
-}
-
-p.contentAboutName {
-  font-weight: bold;
-}
-
-p.contentAboutHash {
-  color: #4400c3;
 }
 
 .imgProfile {
@@ -68,6 +69,7 @@ p.contentAboutHash {
 
 .name {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .accordion {
@@ -94,6 +96,7 @@ p.contentAboutHash {
   transition: background 0.3;
   transition: 0.3s;
   z-index: 0;
+  max-width: 576px;
   /* text-align: left; */
   /* display: block; */
 }
@@ -122,14 +125,14 @@ p.contentAboutHash {
   /* overflow: auto; */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 15% 10% 60% 15%;
   justify-items: center;
-  width: 82%;
-  padding: 0 10px;
+  width: 90%;
+  padding: 10px 10px 0 10px;
   font-family: sans-serif;
   background: #eee;
   border-radius: 0 0 10px 10px;
-  margin: -4px 0;
+  margin: -2px 0 0 0;
 
   display: none;
 }
@@ -138,35 +141,50 @@ p.contentAboutHash {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0;
-  line-height: 0;
-  border: 1px solid white;
+  justify-content: center;
+  line-height: 2px;
+  width: 100%;
+  /* border: 1px solid 
+  white; */
+}
+
+p.contentAboutName {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+p.contentAboutHash,
+.contentAboutJob {
+  color: #4400c3;
+  font-size: 0.8rem;
 }
 
 .contentSocialMidia {
   display: flex;
-  flex-direction: row;
+  width: 100%;
   align-items: center;
-  justify-content: space-evenly;
 
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .contentAbout {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  border: 1px solid white;
+  width: 100%;
+  padding: 0 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  /* border: 1px solid white; */
 }
 
 .contentSkills {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  padding: 0 10px;
+  width: 100%;
 }
 
 .footer {
