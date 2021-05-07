@@ -188,42 +188,151 @@
 
           <div class="container-form">
             <form method="post" action="mailto:cafepraviagem.squad1@gmail.com">
-              <fieldset>
-                <legend>Nome Completo:</legend>
-                <label for="text-name">
-                  <input type="text" id="text-name" placeholder="Maria da Silva" required>
-                </label>
-              </fieldset>
 
               <fieldset>
-                <legend>Cidade:</legend>
-                <label for="text-city">
-                  <input type="text" id="text-city" placeholder="Campinas" required>
-                </label>
+
+                <legend>Informações do Usuário:</legend>
+
+                <div>
+                  <label for="text-name">Nome Completo:
+                    <input type="text" id="text-name" placeholder="Maria da Silva" size="20" maxlength="80" required>
+                  </label>
+                </div>
+                <div>
+                  <label for="text-nasc">Data de Nascimento:
+                    <input type="date" id="text-nasc" required>
+                  </label>
+                </div>
+                <div>
+                  <label for="yourCity">Cidade: 
+                      <input type="text" name="yourCity" id="yourCity" size="20" maxlength="40" placeholder="Sua cidade" list="cities" required>
+                  </label>
+                </div>
+
+                <datalist id="cities">
+                    <option value="São Paulo"></option>
+                    <option value="Campinas"></option>
+                    <option value="Jundiaí"></option>
+                    <option value="Diadema"></option>
+                    <option value="Osasco"></option>
+                    <option value="Santo André"></option>
+                    <option value="São Bernardo do Campo"></option>
+                    <option value="São Caetano"></option>
+                </datalist>
+
+                <div>
+                    <label for="state">Estado:
+
+                      <select name="state" id="state">
+                          <optgroup label="Região Norte">
+                              <option value="AC">Acre</option>
+                              <option value="AP">Amapá</option>
+                              <option value="AM">Amazonas</option>
+                              <option value="PA">Pará</option>
+                              <option value="RO">Rondônia</option>
+                              <option value="RR">Roraima</option>
+                              <option value="TO">Tocantins</option>
+                          </optgroup>
+
+                          <optgroup label="Região Nordeste">
+                              <option value="AL">Alagoas</option>
+                              <option value="BA">Bahia</option>
+                              <option value="CE">Ceará</option>
+                              <option value="MA">Maranhão</option>
+                              <option value="PB">Paraíba</option>
+                              <option value="PE">Pernambuco</option>
+                              <option value="PI">Piauí</option>
+                              <option value="RN">Rio Grande do Norte</option>
+                              <option value="SE">Sergipe</option>
+                          </optgroup>
+
+                          <optgroup label="Região Centro-Oeste">
+                              <option value="DF">Distrito Federal</option>
+                              <option value="GO">Goiás</option>
+                              <option value="MT">Mato Grosso</option>
+                              <option value="MS">Mato Grosso do Sul</option>
+                          </optgroup>
+
+                          <optgroup label="Região Sudeste">
+                              <option value="ES">Espírito Santo</option>
+                              <option value="MG">Minas Gerais</option>
+                              <option value="RJ">Rio de Janeiro</option>
+                              <option value="SP" selected>São Paulo</option>
+                          </optgroup>
+
+                          <optgroup label="Região Sul">
+                              <option value="PR">Paraná</option>
+                              <option value="RS">Rio Grande do Sul</option>
+                              <option value="SC">Santa Catarina</option>
+                          </optgroup>
+
+                      </select>
+
+                    </label>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:
+                        <input type="email" id="email" placeholder="email@email.com" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="text-phone">Telefone:
+                    <input type="tel" id="text-phone" placeholder="+5511 99999 - 9999" required>
+                    </label>
+                </div>
+
               </fieldset>
 
-              <fieldset>
-                <legend>Estado:</legend>
-                <label for="text-state">
-                  <input type="text" id="text-state" placeholder="São Paulo" required>
-                </label>
-              </fieldset>
+              <br>      
 
               <fieldset>
-                <legend>E-mail:</legend>
-                <label for="email">
-                  <input type="email" id="email" placeholder="email@email.com" required>
-                </label>
+
+                  <legend>Fale Conosco:</legend>
+
+                  <div>
+                      <label for="question">
+                          <select name="question" id="question">
+                              <option value="notCountry">Meu país não está disponível</option>
+                              <option value="testimony">Deixar depoimento</option>
+                              <option value="business">Quero ser um parceiro</option>
+                              <option value="sugestionOrQuestion" selected>Sugestões e Dúvidas</option>
+                          </select>
+                      </label>
+                  </div>
+
+                  <div>
+                      <label for="message">Mensagem:
+                          <textarea  name="message" id="message" cols="45" rows="5" maxlength="2000"placeholder="Deixe aqui a sua mensagem pra gente! Digite até 2000 caracteres.">
+                          </textarea>
+                      </label>
+                  </div>
+
+                  <div>
+
+                      <label for="phoneMessage">
+                          <input class="input-form-checkbox" id="phoneMessage" type="checkbox"> Aceito receber contato por via sms 
+                      </label>
+
+                      <label for="emailMessage">
+                          <input class="input-form-checkbox" id="emailMessage" type="checkbox"> Aceito receber contato por via e-mail 
+                      </label>
+
+                      <label for="newsletter">
+                          <input class="input-form-checkbox" id="newsletter" type="checkbox"> Desejo receber newsletter da Café pra Viagem
+                      </label>
+
+                  </div>
+
               </fieldset>
 
-              <fieldset>
-                <legend>Telefone</legend>
-                <label for="text-phone">
-                  <input type="phone" id="text-phone" placeholder="+5511 99999 - 9999" required>
-                </label>
-              </fieldset>
+              <input type="button" value="Enviar"/> 
+
             </form>
+
           </div>
+
       </section>
     
       <br>

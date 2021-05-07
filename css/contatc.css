@@ -11,3 +11,10 @@
 .container-form {
     width: 70vw;
 }
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    color: #000;
+}

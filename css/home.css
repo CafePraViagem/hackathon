@@ -273,3 +273,15 @@ p.bolder-text {
     font-size: 1.4rem;
   }
 }
+
+@media(min-width: 1920px) {
+
+  main {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .carousek-item > img {
+    max-width: 1920px;
+  }
+}
