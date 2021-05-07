@@ -76,8 +76,8 @@ img.logo {
   height: 40vh;
 }
 
-#nextCarousel > .carousel-control-next-icon {
-  transform: translateY(-120px);
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  transform: translateY(-100px);
 }
 
 /* Botão Calculador */
@@ -104,7 +104,11 @@ img.logo {
 
 #howMuch:hover {
   outline: none;
-  box-shadow: inset 2px 2px 4px #fff;
+  background-color: #ffaf37;
+}
+
+#howMuch:active {
+  background-color: #fc9523;
 }
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
@@ -126,12 +130,6 @@ section {
   margin-bottom: 0.3rem;
 }
 
-#rectangle {
-  width: 6px;
-  height: 6px;
-  background: #ff9a9a;
-}
-
 .title-section {
   margin-left: 5px;
 }
@@ -139,12 +137,6 @@ section {
 #text-01 p,
 #text-02 p {
   font-size: 10px;
-}
-
-#rectangle {
-  width: 6px;
-  height: 6px;
-  background: #ff9a9a;
 }
 
 #text-01 h2,
@@ -227,11 +219,6 @@ p.bolder-text {
   }
 
   /* Texto & Infos */
-  #rectangle {
-    width: 8px;
-    height: 8px;
-    background: #ff9a9a;
-  }
   #text-01 h2,
   #text-02 h2 {
     font-size: 1rem;

@@ -56,12 +56,11 @@
 }
 
 .button-type-trip:hover {
-  background-color: #ff9500;
-  box-shadow: inset 2px 2px 4px #fff;
+  background-color: #ffaf37;
 }
 
 .button-type-trip:active {
-  background-color: #ff9500;
+  background-color: #fc9523;
 }
 
 .final-messege-simple {
@@ -135,18 +134,25 @@ div > strong {
 }
 
 .carousel-control-prev-icon-indication, .carousel-control-next-icon-indication {
-  background-color: #ff9500;
+  background-color: #ffaf37;
+  transform: translateY(-165px)
 }
 
 @media (min-width: 432px) {
   .image-country {
-    height: 30vh;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 584px) {
+  .image-country {
+    height: 50vh;
   }
 }
 
 @media (min-width: 650px) {
   .image-country {
-    height: 35vh;
+    height: 52vh;
   }
 }
 
@@ -191,16 +197,15 @@ div > strong {
 
   .image-country {
     width: 64vw;
-    height: 30vh;
   }
 
 }
 
 @media (min-width: 940px) {
-  .image-country {
-    height: 40vh;
+  .container-text-image-country {
+    max-width: 940px;
   }
-}
+} 
 
 @media (min-width: 1200px) {
 
@@ -211,7 +216,7 @@ div > strong {
 
   .image-country {
     width: 35vw;
-    height: 34vh;
+    height: 42vh;
     align-items: left;
     justify-content: left;
   }
@@ -220,6 +225,10 @@ div > strong {
     width: 35vw;
     align-items: right;
     justify-content: right;
+  }
+
+  .carousel-control-prev-icon-indication, .carousel-control-next-icon-indication {
+    transform: translateY(175px)
   }
 }
 
