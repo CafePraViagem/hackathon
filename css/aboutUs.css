@@ -137,7 +137,7 @@ h4 {
   display: none;
 }
 
-.contentTitle {
+.contentColumn1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,7 +159,7 @@ p.contentAboutHash,
   font-size: 0.8rem;
 }
 
-.contentSocialMidia {
+.contentColumn2 {
   display: flex;
   width: 100%;
   align-items: center;
@@ -167,7 +167,7 @@ p.contentAboutHash,
   /* border: 1px solid white; */
 }
 
-.contentAbout {
+.contentColumn3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +178,7 @@ p.contentAboutHash,
   /* border: 1px solid white; */
 }
 
-.contentSkills {
+.contentColumn4 {
   display: flex;
   flex-direction: row;
   align-items: center;

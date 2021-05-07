@@ -1,0 +1,13 @@
+.container-contact, 
+.container-form {
+    margin: 30px auto;
+}
+
+.container-contact {
+    width: 80vw;
+    text-align: center;
+}
+
+.container-form {
+    width: 70vw;
+}
