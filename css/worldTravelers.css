@@ -186,6 +186,10 @@ p > span {
   text-decoration: none;
 }
 
+.socialMediaBigDevices > a > i {
+  font-size: 1.5rem;
+}
+
 /* Video preview para medium devices e big devices */
 .Preview {
   display: none;
@@ -305,7 +309,7 @@ p > span {
   }
 
   .traveler > .boxIMG {
-    flex: 0 1 100px;
+    flex: 0 1 110px;
   }
 
   .traveler > .boxText {
