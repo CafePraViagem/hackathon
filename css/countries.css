@@ -24,38 +24,6 @@
   }
 }
 
-/* .header-image-countries-las-vegas {
-  background: url("https://images7.alphacoders.com/458/458532.jpg") no-repeat center;
-}
-
-.header-image-countries-berlim {
-  background: url("https://images.pexels.com/photos/1570610/pexels-photo-1570610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center;
-}
-
-.header-image-countries {
-  border-bottom: 6px solid #fc9523;
-  width: 100vw;
-  height: 40vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-@media (min-width:834px){
-  .header-image-countries{
-    height: 45vh;
-  }
-}
-
-@media (min-width:1200px){
-  .header-image-countries{
-    height: 50vh;
-  }
-}
-
-
- */
 body {
   background-color: transparent;
 }
@@ -100,15 +68,14 @@ img {
 
 .box:hover {
   transform: scale(1.1);
-  background-color: #4400c3;
-  box-shadow: 3px 3px #fc9523;
+  color: #000;
 }
 
-.box:active {
+/* .box:active {
   transform: scale(1.1);
   background-color: #4400c3;
   box-shadow: 3px 3px #fc9523;
-}
+} */
 
 /* Texto do Botão */
 .box > a {
