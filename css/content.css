@@ -67,11 +67,11 @@
   margin-top: 20px;
 }
 
-.final-link {
+.final-link, .link {
   color: #ff9500;
 }
 
-.final-link:hover {
+.final-link:hover, .link:hover {
   color: #4400c3;
 }
 
