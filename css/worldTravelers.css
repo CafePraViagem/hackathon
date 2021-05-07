@@ -241,14 +241,12 @@ p > span {
 
 #buttonCountries:hover {
   transform: scale(1.1);
-  background-color: #4400c3;
-  box-shadow: 3px 3px #fc9523;
+  background-color: #ffaf37;
 }
 
 #buttonCountries:active {
   transform: scale(1.1);
-  background-color: #4400c3;
-  box-shadow: 3px 3px #fc9523;
+  background-color: #ffaf37;
 }
 
 #buttonCountries > a {
@@ -284,6 +282,14 @@ p > span {
     font-size: calc(1.375rem + 1vw);
   }
 
+  .flex {
+    max-width: 95vw;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: solid 1px grey;
+    border-color: rgba(0, 0, 0, 0.15)
+  }
+
   .socialMediaBigDevices > i, .socialMediaBigDevices > a  {
     display: inline;
   }
@@ -293,12 +299,30 @@ p > span {
     
   }
 
+  .traveler {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+  }
+
   .traveler > .boxIMG {
     flex: 0 1 100px;
   }
 
   .traveler > .boxText {
-    flex: 0 1 80vw;
+    flex: 0 1 75vw;
+  }
+
+  /* Texto - VIAJANTE */
+  .boxText > h5 {
+    font-size: 1.4rem;
+  }
+
+  .boxText > h6 {
+    font-size: 1.2rem;
+  }
+
+  .boxText > p > span, #travelerText {
+    font-size: 1rem;
   }
 
   /* Texto de cada viajanta */
@@ -319,11 +343,6 @@ p > span {
     display: inline;
   }
 
-  /* Video preview para medium devices e big devices */
-  /* .videoPreview {
-  display: inline; 
-} */
-
   /* Botão final da page */
   .button > #buttonCountries{
     display: none;
@@ -341,7 +360,7 @@ p > span {
   }
 
   .traveler > .boxText {
-    flex: 0 1 88.5vw;
+    flex: 0 1 80vw;
   }
 
   /* Texto de cada viajanta */
