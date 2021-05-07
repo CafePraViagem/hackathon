@@ -68,6 +68,11 @@ a > h4 {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
+/* Tamanho da img */
+#smallDevices {
+  margin-bottom: 240px;
+}
+
 /* Subtitle da Pagina */
 .subTitle > p {
   font-size: 1.5rem;
@@ -292,10 +297,24 @@ p > span {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .titleofsite > span {
-    font-size: calc(1.375rem + 1vw);
+  .header-image > .titleofsite {
+    margin-left: 30px;
+    margin-top: 20px;
   }
 
+  .titleofsite > span {
+    font-size: calc(1.375rem + 2vw);
+  }
+
+  /* Tamanho do header */
+  #smallDevices {
+    display: none;
+  }
+
+  #mediumDevices {
+    margin-bottom: 190px;
+  }
+  
   .flex {
     max-width: 95vw;
     border-radius: 10px;
