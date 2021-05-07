@@ -15,16 +15,10 @@ git clone link do repositório
 ## -----Rotina de Commits no git
 ### 1 - Começando o dia de trabalho, puxando as alterações da Main.
 ```
+git checkout "nome da sua branch" //se já estiver na sua branch ignore
 git pull origin main
 ```
-//sair da Main e trocar de branch para não alterar codigo do seu brother.
-```
-git checkout nomeDaMinhaBranch
-```
-//juntar o que você puxou da main na sua branch
-```
-git merge main
-```
+
 ### 2 - Trabalhe como se não houvesse amanhã...  acabou?
 
 ### 3 - Vamos subir as modificações para o github, dentro da **mesma branch**.
