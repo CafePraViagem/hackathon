@@ -12,17 +12,28 @@
     width: 70vw;
 }
 
+h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    color: #000;
+}
+
 .h2-faq {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 1.4rem;
 }
 
-.link {
+.link, a {
     color: #ff9500;
 }
   
-.link:hover, i + a:hover {
+.link:hover, a:hover, i + a:hover {
     color: #4400c3;
+}
+
+a:active {
+    color: #ff9500;
 }
 
 .question-faq, 
@@ -75,7 +86,6 @@ footer {
 
 @media (min-width:768px) {
     .container-faq {
-        text-align: left;
         width: 70vw;
     }
 
