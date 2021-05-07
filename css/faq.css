@@ -1,6 +1,47 @@
-.container {
+.container, .container-questions {
     margin: 30px auto;
+}
+
+.container {
     width: 70vw;
 }
 
-h2
+.container-questions {
+    width: 60vw;
+}
+
+.h2-faq {
+    margin-top: 15px;
+    font-size: 1.6rem;
+}
+
+.link {
+    color: #ff9500;
+}
+  
+.link:hover {
+    color: #4400c3;
+}
+
+.question-faq {
+    color: #ff9500;
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.answer-faq {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.answer-faq-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+.answer-faq-link:hover {
+    color: #ff9500;
+}
