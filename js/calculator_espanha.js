@@ -173,7 +173,7 @@ function calculaAluguelCarros() {
         output.innerHTML = 'Quantidade de dias ou pessoas inválida!';    
         return 0;
     }else{
-        precoAluguel = getNumeroDias() * getNumeroViajantes() * precoAluguel;
+        precoAluguel = getNumeroDias() * precoAluguel;
         output.innerHTML = `Total: R$ ${precoAluguel.toFixed(2)}`;
         return precoAluguel;
     }   
