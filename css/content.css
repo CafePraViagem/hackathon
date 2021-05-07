@@ -56,8 +56,12 @@
 }
 
 .button-type-trip:hover {
-  background-color: #4400c3;
-  box-shadow: 3px 3px #fc9523;
+  background-color: #ff9500;
+  box-shadow: inset 2px 2px 4px #fff;
+}
+
+.button-type-trip:active {
+  background-color: #ff9500;
 }
 
 .final-messege-simple {
