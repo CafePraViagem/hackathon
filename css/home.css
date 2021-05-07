@@ -108,16 +108,9 @@ img.logo {
   box-shadow: inset 2px 2px 4px #fff;
 }
 
-/* #howMuch:active {
-  background: #4400c3;
-  outline: none;
-  box-shadow: none;
-  box-shadow: 2px 2px #fc9523;
-} */
-
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
 
-#carousel img {
+#carousel img, .header-image-countries {
   -webkit-mask-image: -webkit-gradient(
     linear,
     center top,
