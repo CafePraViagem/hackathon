@@ -184,7 +184,15 @@ a > h4 {
   background-color: rgba(68, 0, 195, 1);
   color: white;
   border-radius: 10px;
+  max-width: 50%;
   padding: 1rem;
+}
+
+.message-info-user {
+  font-size: 10px;
+  color: #fc9523;
+  margin: 0 auto;
+  font-style: italic;
 }
 
 /* ------ BOOTSTRAP MEDIA QUERYS ------ */
