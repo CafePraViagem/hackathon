@@ -74,11 +74,19 @@ a > h4 {
 }
 
 /* Subtitle da Pagina */
+.orangeMarker {
+  color: rgba(252, 149, 35, 0.8);
+  font-size: 0.8rem;
+  border: 2px solid;
+  background-color: #fc9523;
+}
+
 .subTitle > p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
-  text-align: center;
+  text-align: start;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 /* Viajante */
@@ -242,7 +250,7 @@ p > span {
 .buttonTraveler > p {
   flex: 0 1 100px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -315,6 +323,14 @@ p > span {
     margin-bottom: 190px;
   }
   
+  /* SubTitle */
+  .subTitle > p {
+    font-size: 2.5rem;
+  }
+
+  .subTitle > p > span {
+    font-size: 1.4rem;
+  }
   .flex {
     max-width: 95vw;
     border-radius: 10px;
@@ -415,5 +431,3 @@ p > span {
   }
 
 }
-
-
