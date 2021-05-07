@@ -1,305 +1,464 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta
-        name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- BOOTSTRAP -->
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"/>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet"/>
-        <!-- Font Awesome -->
-        <link
-        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/worldTravelers.css" />
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="https://trello-attachments.s3.amazonaws.com/6088661b1ac3767abcb8e1de/1000x600/deb52a1119280481ef4ec0076b052014/LOGO.png"
+      type="image/x-icon"
+    />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/home.css"/>
-        <link rel="stylesheet" href="css/worldTravelers.css"/>
-        <!-- FAVICON -->
-        <link rel="shortcut icon" href="https://trello-attachments.s3.amazonaws.com/6088661b1ac3767abcb8e1de/1000x600/deb52a1119280481ef4ec0076b052014/LOGO.png" type="image/x-icon"/>
+    <title>Viajantes pelo mundo</title>
+  </head>
 
-        <title>Viajantes pelo mundo</title>
-    </head>
+  <body>
+    <main role="main">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-md fixed-top navbar-light">
+        <div class="container-fluid">
+          <a href="home.html" class="navbar-brand">
+            <img
+              src="./images/CafeNoBuleLogo.svg"
+              alt="Café no Bule Logo"
+              class="logo d-inline-block align-center"
+            />
+            Café pra Viagem</a
+          >
+          <button
+            class="navbar-toggler navbar-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center">
+              <li>
+                <a class="nav-link main-menu" href="home.html">
+                  <i class="fas fa-globe-americas"></i>
+                  Conheça seu destino</a
+                >
+              </li>
+              <li>
+                <a class="nav-link main-menu" href="countries.html">
+                  <i class="fas fa-funnel-dollar"></i>
+                  Descobrir valores</a
+                >
+              </li>
+              <li>
+                <a class="nav-link main-menu" href="worldTravelers.html">
+                  <i class="fas fa-hiking"></i>
+                  Viajantes pelo mundo</a
+                >
+              </li>
+              <li>
+                <a class="nav-link main-menu" href="aboutUs.html">
+                  <i class="fas fa-user-astronaut"></i>
+                  Quem somos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- HEADER IMAGE -->
+      <div class="header-image">
+        <div class="titleofsite">
+          <span
+            >Aprenda
+            <br />
+            com quem
+            <br />
+            já tem
+            <br />
+            bagagem</span
+          >
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
 
-    <body>
+      <div class="subTitle">
+        <p>Viajantes pelo mundo</p>
+      </div>
 
-        <main
-            role="main">
-            <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-md fixed-top navbar-light">
-                <div class="container-fluid">
-                    <a href="home.html" class="navbar-brand">
-                        <img src="./images/CafeNoBuleLogo.svg" alt="Café no Bule Logo" class="logo d-inline-block align-center"/>
-                        Café pra viagem?</a>
-                    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                        <ul class="navbar-nav ms-auto text-center">
-                            <li>
-                                <a class="nav-link main-menu" href="home.html">
-                                    <i class="fas fa-globe-americas"></i>
-                                    Conheça seu destino</a>
-                            </li>
-                            <li>
-                                <a class="nav-link main-menu" href="countries.html">
-                                    <i class="fas fa-funnel-dollar"></i>
-                                    Descobrir valores</a>
-                            </li>
-                            <li>
-                                <a class="nav-link main-menu" href="worldTravelers.html">
-                                    <i class="fas fa-hiking"></i>
-                                    Viajantes pelo mundo</a>
-                            </li>
-                            <li>
-                                <a class="nav-link main-menu" href="aboutUs.html">
-                                    <i class="fas fa-user-astronaut"></i>
-                                    Quem somos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- HEADER IMAGE -->
-            <div class="header-image">
-                <div class="titleofsite">
-                    <span>Aprenda
-                        <br>
-                        com quem
-                        <br>
-                        já tem
-                        <br>
-                        bagagem</span>
-                </div>
-                <br><br><br><br><br><br><br><br><br><br>
+      <!-- ELIEZER -->
+      <div class="flex">
+        <div class="traveler">
+          <div class="boxIMG">
+            <img
+              src="https://i.ibb.co/nn4tpX7/Eliezer.png"
+              class="figure-img img-fluid rounded"
+              alt="Eliezer Tymniaks"
+            />
+            <div class="socialMediaBigDevices">
+              <a href="https://www.viainfinda.com.br/" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCkIEY6rUSPy4qQjLqBBLUSg"
+                target="_blank"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/viainfinda/?hl=pt-br"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/viaInfinda/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
             </div>
-
-            <div class="subTitle">
-                <p>Viajantes pelo mundo</p>
+          </div>
+          <div class="boxText">
+            <h5>Eliezer Tymniaks</h5>
+            <h6>O aventureiro Roots</h6>
+            <p>
+              <span
+                >Já cruzou por mais de 9 países, tem um canal no youtube de mais
+                de 1 milhão de inscritos e é autor de 3 livros sobre o código
+                roots do viajante.</span
+              >
+            </p>
+            <p id="travelerText">
+              O Via Infinda é um canal sobre o jovem Eliezer Tymniak da região
+              metropolitana de Brasília que certo dia resolveu vender
+              brigadeiros visando juntar dinheiro o suficiente para iniciar uma
+              viagem internacional com o mínimo possível. Com o difícil desejo
+              de viver fora do sistema, Eliezer passa algumas noites dormindo em
+              barraca ou trocando serviço por hospedagem em hostels europeus.
+              Chegando a trabalhar de forma temporária em alguns outros
+              empregos, o jovem mostra como é o custo de vida em países como
+              Portugal, Inglaterra, França, Bélgica e Holanda, além de dividir
+              com o público várias histórias cheias de diversão e emoção, além
+              de muitas reflexões sobre a vida e o valor das coisas. Atualmente
+              ele está no Brasil se preparando para uma nova jornada à bordo de
+              seu Bromobile; uma van judiada que está sendo reformada e equipada
+              para a nova empreitada.
+            </p>
+          </div>
+          <div class="socialMedia">
+            <a href="https://www.viainfinda.com.br/" target="_blank">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCkIEY6rUSPy4qQjLqBBLUSg"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/viainfinda/?hl=pt-br"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/viaInfinda/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="Preview">
+          <div class="videoIMG">
+            <a
+              href="https://www.youtube.com/channel/UCkIEY6rUSPy4qQjLqBBLUSg"
+              target="_blank"
+            >
+              <img
+                src="https://media.discordapp.net/attachments/839925245803495441/839925292919291904/unknown.png?width=742&height=559"
+                class="figure-img img-fluid rounded"
+                alt="Video preview do Elizer Tymniaks"
+              />
+            </a>
+          </div>
+          <div class="sectionButton">
+            <div class="buttonTraveler">
+              <p>O Eliezer tem algumas dicas pra você...</p>
+              <button
+                id="buttonCountries"
+                class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous"
+              >
+                <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- ELIEZER -->
-            <div class="flex">
-                <div class="traveler">
-                    <div class="boxIMG">
-                        <img src="https://i.ibb.co/nn4tpX7/Eliezer.png" class="figure-img img-fluid rounded" alt="Eliezer Tymniaks">
-                        <div class="socialMediaBigDevices">
-                            <a href="https://www.viainfinda.com.br/" target="_blank">
-                                <i class="fas fa-globe-americas"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCkIEY6rUSPy4qQjLqBBLUSg" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="https://www.instagram.com/viainfinda/?hl=pt-br" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.facebook.com/viaInfinda/" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="boxText">
-                        <h5>Eliezer Tymniaks</h5><h6>O aventureiro Roots</h6>
-                        <p><span>Já cruzou por mais de 9 países, tem um canal no youtube de mais de 1 milhão de inscritos e é autor de 3 livros sobre o código roots do viajante.</span></p>
-                        <p id="travelerText">O Via Infinda é um canal sobre o jovem Eliezer Tymniak da região metropolitana de Brasília que certo dia resolveu vender brigadeiros visando juntar dinheiro o suficiente para iniciar uma viagem internacional com o mínimo possível. Com o difícil desejo de viver fora do sistema, Eliezer passa algumas noites dormindo em barraca ou trocando serviço por hospedagem em hostels europeus. Chegando a trabalhar de forma temporária em alguns outros empregos, o jovem mostra como é o custo de vida em países como Portugal, Inglaterra, França, Bélgica e Holanda, além de dividir com o público várias histórias cheias de diversão e emoção, além de muitas reflexões sobre a vida e o valor das coisas. Atualmente ele está no Brasil se preparando para uma nova jornada à bordo de seu Bromobile; uma van judiada que está sendo reformada e equipada para a nova empreitada.</p>
-                    </div>
-                    <div class="socialMedia">
-                        <a href="https://www.viainfinda.com.br/" target="_blank">
-                            <i class="fas fa-globe-americas"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCkIEY6rUSPy4qQjLqBBLUSg" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.instagram.com/viainfinda/?hl=pt-br" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/viaInfinda/" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="Preview">
-                    <div class="videoIMG">
-                        <a href="https://www.youtube.com/channel/UCkIEY6rUSPy4qQjLqBBLUSg" target="_blank">
-                            <img src="https://media.discordapp.net/attachments/839925245803495441/839925292919291904/unknown.png?width=742&height=559" class="figure-img img-fluid rounded" alt="Video preview do Elizer Tymniaks">
-                        </a>
-                    </div>
-                    <div class="sectionButton">
-                        <div class="buttonTraveler">
-                            <p>O Eliezer tem algumas dicas pra você...</p>
-                            <button id="buttonCountries" class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous">
-                                <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+      <!-- MATHEUS -->
+      <div class="flex">
+        <div class="traveler">
+          <div class="boxIMG">
+            <img
+              src="https://pbs.twimg.com/profile_images/1313905961724239874/si6_-6CQ_400x400.jpg"
+              class="figure-img img-fluid rounded"
+              alt="Matheus Tomoto"
+            />
+            <div class="socialMediaBigDevices">
+              <i class="fas fa-globe-americas"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook"></i>
             </div>
-            
-            <!-- MATHEUS -->
-            <div class="flex">
-                <div class="traveler">
-                    <div class="boxIMG">
-                        <img src="https://pbs.twimg.com/profile_images/1313905961724239874/si6_-6CQ_400x400.jpg" class="figure-img img-fluid rounded" alt="Matheus Tomoto">
-                        <div class="socialMediaBigDevices">
-                            <i class="fas fa-globe-americas"></i>
-                            <i class="fab fa-youtube"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-facebook"></i>
-                        </div>
-                    </div>
-                    <div class="boxText">
-                        <h5>Matheus Tomoto</h5><h6>O Mentor de opoturnidades</h6>
-                        <p><span>Ajuda estudantes a enfrentar os desafios e a conseguir grandes oportunidades no exterior.
-                            Palestrou em diversas universidades como HAVARD, UNIFOR, FACENS entre outras no Brasil.</span></p>
-                        <p id="travelerText">Matheus veio de uma família muito humilde, estudou em escola pública a vida inteira e chegou em Harvard, Stanford, Oxford e no MIT.
-
-                            No canal MatheusTomoto você vai encontrar: as melhores oportunidades de intercâmbio, como estudar fora sem gastar muito ou de graça, dicas para aprender inglês mais fácil e rápido, como se preparar financeiramente e emocionalmente para uma oportunidade internacional e muito mais SEM UMA AGÊNCIA DE INTERCÂMBIO.</p>
-                    </div>
-                    <div class="socialMedia">
-                        <i class="fas fa-globe-americas"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                </div>
-                <div class="Preview">
-                    <div class="videoIMG">
-                        <img src="https://media.discordapp.net/attachments/839925245803495441/839925292919291904/unknown.png?width=742&height=559" class="figure-img img-fluid rounded" alt="Video preview do Elizer Tymniaks">
-                    </div>
-                    <div class="sectionButton">
-                        <div class="buttonTraveler">
-                            <p>O Eliezer tem algumas dicas pra você...</p>
-                            <button id="buttonCountries" class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous">
-                                <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="boxText">
+            <h5>Matheus Tomoto</h5>
+            <h6>O Mentor de opoturnidades</h6>
+            <p>
+              <span
+                >Ajuda estudantes a enfrentar os desafios e a conseguir grandes
+                oportunidades no exterior. Palestrou em diversas universidades
+                como HAVARD, UNIFOR, FACENS entre outras no Brasil.</span
+              >
+            </p>
+            <p id="travelerText">
+              Matheus veio de uma família muito humilde, estudou em escola
+              pública a vida inteira e chegou em Harvard, Stanford, Oxford e no
+              MIT. No canal MatheusTomoto você vai encontrar: as melhores
+              oportunidades de intercâmbio, como estudar fora sem gastar muito
+              ou de graça, dicas para aprender inglês mais fácil e rápido, como
+              se preparar financeiramente e emocionalmente para uma oportunidade
+              internacional e muito mais SEM UMA AGÊNCIA DE INTERCÂMBIO.
+            </p>
+          </div>
+          <div class="socialMedia">
+            <i class="fas fa-globe-americas"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+        </div>
+        <div class="Preview">
+          <div class="videoIMG">
+            <img
+              src="https://media.discordapp.net/attachments/839925245803495441/839925292919291904/unknown.png?width=742&height=559"
+              class="figure-img img-fluid rounded"
+              alt="Video preview do Elizer Tymniaks"
+            />
+          </div>
+          <div class="sectionButton">
+            <div class="buttonTraveler">
+              <p>O Eliezer tem algumas dicas pra você...</p>
+              <button
+                id="buttonCountries"
+                class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous"
+              >
+                <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- MATIAS -->
-            <div class="flex">
-                <div class="traveler">
-                    <div class="boxIMG">
-                        <img src="https://i.playboard.app/p/AATXAJyt8rryNuw_bJpaPfvL1je70B2jZNagVvEteGmj4Q/default.jpg" class="figure-img img-fluid rounded" alt="Matias Tarteri">
-                        <div class="socialMediaBigDevices">
-                            <i class="fas fa-globe-americas"></i>
-                            <i class="fab fa-youtube"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-facebook"></i>
-                        </div>
-                    </div>
-                    <div class="boxText">
-                        <h5>Matias Tartieri</h5><h6>O andarilho viajante</h6>
-                        <p><span>Conhecer o mundo era um sonho que tinha desde os 9 anos, fazê-lo a pé se tornaria um desafio inimaginável.</span></p>
-                        <p id="travelerText">Minha viagem começou quando me dei conta de que não havia ninguém que pudesse dizer que eu era capaz de fazer algo ou incapaz, exceto eu
-                            Tive muito medo no começo. Tinha muitas perguntas das quais queria encontrar uma resposta e foi o que mais me fez seguir adiante
-                            Antes de começar a viagem toda minha família me diziam: não te descuide de nada, tenha muito cuidado, cuide bem das suas coisas porque vão tentar te roubar, vão te sequestrar, tenha muito cuidado por favor porque tem muita gente má neste mundo. E a surpresa e o maior descobrimento tem sido esse, que as pessoas de bom coração predominam neste mundo
-                            Se o medo está te segurando, Bom, o medo faz parte da vida, aí tu decide, se é o medo que decidirá por ti ou tu que será o responsável pelo próprio sonho. Se quer algo, vá pelo o que quer e ponto
-                            Somente tu pode se segurar, somente tu pode conseguir o que quer
-                            Voce nao pode ficar toda a vida se preparando para algo, até que nao começar a viver não vai começar a se tornar realidade</p>
-                    </div>
-                    <div class="socialMedia">
-                        <i class="fas fa-globe-americas"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                </div>
-                <div class="Preview">
-                    <div class="videoIMG">
-                        <img src="https://media.discordapp.net/attachments/839925245803495441/839925292919291904/unknown.png?width=742&height=559" class="figure-img img-fluid rounded" alt="Video preview do Elizer Tymniaks">
-                    </div>
-                    <div class="sectionButton">
-                        <div class="buttonTraveler">
-                            <p>O Eliezer tem algumas dicas pra você...</p>
-                            <button id="buttonCountries" class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous">
-                                <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+      <!-- MATIAS -->
+      <div class="flex">
+        <div class="traveler">
+          <div class="boxIMG">
+            <img
+              src="https://i.playboard.app/p/AATXAJyt8rryNuw_bJpaPfvL1je70B2jZNagVvEteGmj4Q/default.jpg"
+              class="figure-img img-fluid rounded"
+              alt="Matias Tarteri"
+            />
+            <div class="socialMediaBigDevices">
+              <i class="fas fa-globe-americas"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook"></i>
             </div>
-
-            <!-- ROMULO E MIRELLA -->
-            <div class="flex">
-                <div class="traveler">
-                    <div class="boxIMG">
-                        <img src="https://i.ibb.co/p4SpydB/ROMULOEMIRELA.png" class="figure-img img-fluid rounded" alt="Rômulo e Mirella">
-                        <div class="socialMediaBigDevices">
-                            <i class="fas fa-globe-americas"></i>
-                            <i class="fab fa-youtube"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-facebook"></i>
-                        </div>
-                    </div>
-                    <div class="boxText">
-                        <h5>Rômulo e Mirella</h5><h6>Travel and Share</h6>
-                        <p><span>Juntos, largaram suas carreiras em multinacionais suecas em São Paulo, criaram o site Travel and Share  e transformaram a estrada em fonte de renda. </span></p>
-                        <p id="travelerText"></p>
-                    </div>
-                    <div class="socialMedia">
-                        <i class="fas fa-globe-americas"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                </div>
-                <div class="Preview">
-                    <div class="videoIMG">
-                        <img src="https://media.discordapp.net/attachments/839925245803495441/839925292919291904/unknown.png?width=742&height=559" class="figure-img img-fluid rounded" alt="Video preview do Elizer Tymniaks">
-                    </div>
-                    <div class="sectionButton">
-                        <div class="buttonTraveler">
-                            <p>O Eliezer tem algumas dicas pra você...</p>
-                            <button id="buttonCountries" class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous">
-                                <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="boxText">
+            <h5>Matias Tartieri</h5>
+            <h6>O andarilho viajante</h6>
+            <p>
+              <span
+                >Conhecer o mundo era um sonho que tinha desde os 9 anos,
+                fazê-lo a pé se tornaria um desafio inimaginável.</span
+              >
+            </p>
+            <p id="travelerText">
+              Minha viagem começou quando me dei conta de que não havia ninguém
+              que pudesse dizer que eu era capaz de fazer algo ou incapaz,
+              exceto eu Tive muito medo no começo. Tinha muitas perguntas das
+              quais queria encontrar uma resposta e foi o que mais me fez seguir
+              adiante Antes de começar a viagem toda minha família me diziam:
+              não te descuide de nada, tenha muito cuidado, cuide bem das suas
+              coisas porque vão tentar te roubar, vão te sequestrar, tenha muito
+              cuidado por favor porque tem muita gente má neste mundo. E a
+              surpresa e o maior descobrimento tem sido esse, que as pessoas de
+              bom coração predominam neste mundo Se o medo está te segurando,
+              Bom, o medo faz parte da vida, aí tu decide, se é o medo que
+              decidirá por ti ou tu que será o responsável pelo próprio sonho.
+              Se quer algo, vá pelo o que quer e ponto Somente tu pode se
+              segurar, somente tu pode conseguir o que quer Voce nao pode ficar
+              toda a vida se preparando para algo, até que nao começar a viver
+              não vai começar a se tornar realidade
+            </p>
+          </div>
+          <div class="socialMedia">
+            <i class="fas fa-globe-americas"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+        </div>
+        <div class="Preview">
+          <div class="videoIMG">
+            <img
+              src="https://media.discordapp.net/attachments/839925245803495441/839925292919291904/unknown.png?width=742&height=559"
+              class="figure-img img-fluid rounded"
+              alt="Video preview do Elizer Tymniaks"
+            />
+          </div>
+          <div class="sectionButton">
+            <div class="buttonTraveler">
+              <p>O Eliezer tem algumas dicas pra você...</p>
+              <button
+                id="buttonCountries"
+                class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous"
+              >
+                <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
 
-
-            <div class="button">
-                <button id="buttonCountries" class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous">
-                    <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
-                </button>
+      <!-- ROMULO E MIRELLA -->
+      <div class="flex">
+        <div class="traveler">
+          <div class="boxIMG">
+            <img
+              src="https://i.ibb.co/p4SpydB/ROMULOEMIRELA.png"
+              class="figure-img img-fluid rounded"
+              alt="Rômulo e Mirella"
+            />
+            <div class="socialMediaBigDevices">
+              <i class="fas fa-globe-americas"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook"></i>
             </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <footer class="bg-light text-center">
-                    <div class="container">
-                        <div id="link-footer">
-                            <a class="text-decoration-none" href="#">FAQ</a>
-                            <a class="text-decoration-none" href="#">Contato</a>
-                            <a class="text-decoration-none" href="#">Quem somos?</a>
-                        </div>
-                    </div>
-                </footer>
-                <footer id="footer2" class="bg-light text-center">
-                    <div class="container">
-                        <p class="bolder-text">
-                            Café No Bule 2021 &copy Todos Os Direitos Reservados
-                        </p>
-                    </div>
-                </footer>
+          </div>
+          <div class="boxText">
+            <h5>Rômulo e Mirella</h5>
+            <h6>Travel and Share</h6>
+            <p>
+              <span
+                >Juntos, largaram suas carreiras em multinacionais suecas em São
+                Paulo, criaram o site Travel and Share e transformaram a estrada
+                em fonte de renda.
+              </span>
+            </p>
+            <p id="travelerText"></p>
+          </div>
+          <div class="socialMedia">
+            <i class="fas fa-globe-americas"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+        </div>
+        <div class="Preview">
+          <div class="videoIMG">
+            <img
+              src="https://media.discordapp.net/attachments/839925245803495441/839925292919291904/unknown.png?width=742&height=559"
+              class="figure-img img-fluid rounded"
+              alt="Video preview do Elizer Tymniaks"
+            />
+          </div>
+          <div class="sectionButton">
+            <div class="buttonTraveler">
+              <p>O Eliezer tem algumas dicas pra você...</p>
+              <button
+                id="buttonCountries"
+                class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous"
+              >
+                <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
 
-        </main>
+      <div class="button">
+        <button
+          id="buttonCountries"
+          class="btn btn-primary button-type-trip button-type-trip-adventurous .button-contries-adventurous"
+        >
+          <a href="countries.html">Ja decidiu? Calcule sua viagem?</a>
+        </button>
+      </div>
 
-        <script src="js/calculator.js"></script>
+      <!-- Footer -->
+      <div class="footer">
+        <footer class="bg-light text-center">
+          <div class="container">
+            <div id="link-footer">
+              <a class="text-decoration-none" href="#">FAQ</a>
+              <a class="text-decoration-none" href="#">Contato</a>
+              <a class="text-decoration-none" href="#">Quem somos?</a>
+            </div>
+          </div>
+        </footer>
+        <footer id="footer2" class="bg-light text-center">
+          <div class="container">
+            <p class="bolder-text">
+              Café No Bule 2021 &copy Todos Os Direitos Reservados
+            </p>
+          </div>
+        </footer>
+      </div>
+    </main>
 
-        <!-- Script Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    </body>
+    <script src="js/calculator.js"></script>
+
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

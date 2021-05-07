@@ -32,8 +32,7 @@
 }
 
 a.navbar-brand {
-  margin: 0;
-  /* padding-top: 1rem; */
+  margin: 10px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,7 +109,8 @@ img.logo {
 
 /* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
 
-#carousel img, .header-image-countries {
+#carousel img,
+.header-image-countries {
   -webkit-mask-image: -webkit-gradient(
     linear,
     center top,
