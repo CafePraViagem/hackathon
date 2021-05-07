@@ -5,17 +5,17 @@ let Italy = {
 
         hospedagem1: {
             nomeHospedagem1: "5 Estrelas",
-            valor: 600.00,
+            valor: 450.00,
         },
 
         hospedagem2: {
             nomeHospedagem2: "4 Estrelas",
-            valor: 300.00
+            valor: 345.00
         },
 
         hospedagem3: {
             nomeHospedagem3: "3 Estrelas",
-            valor: 100.00
+            valor: 225.00
         },
         hospedagem4: {
             nomeHospedagem4: "AirBnB",
@@ -29,12 +29,12 @@ let Italy = {
         nomeCategoria: "Aluguel Carro",
         carro1: {
             nomeCarro1: "Carro Comum",
-            valor: 10.00
+            valor: 60.00
         },
 
         carro2: {
             nomeCarro2: "Carro 5+",
-            valor: 25.00
+            valor: 83.00
         }
 
     },
@@ -43,15 +43,15 @@ let Italy = {
         nomeCategoria: "Alimentação",
         cafeDaManha: {
             nome: "Café da Manhã",
-            valor: 90.00
+            valor: 23.00
         },
         almoco: {
             nome: "Almoço",
-            valor: 75.50
+            valor: 47.00
         },
         jantar: {
             nome: "Jantar",
-            valor: 44.90
+            valor: 51.50
         }
     },
 
@@ -59,15 +59,15 @@ let Italy = {
         nomeCategoria: "Seguro Viagem",
         seguroBagagem: {
             nome: "Bagagem",
-            valor: 480.99
+            valor: 350.99
         },
         seguroVida: {
             nome: "Vida",
-            valor: 897.99
+            valor: 589.59
         },
         seguroSaude: {
             nome: "Saúde",
-            valor: 987.99
+            valor: 175.79
         }
     },
 
@@ -75,15 +75,15 @@ let Italy = {
         nomeCategoria: "Turismo",
         primeiroPontoTuristico: {
             nome: "Coliseu",
-            valor: 700.00
+            valor: 190.00
         },
         segundoPontoTuristico: {
             nome: "Capela Sistina",
-            valor: 900.00
+            valor: 150.00
         },
         terceiroPontoTuristico: {
             nome: "Torre de Pisa",
-            valor: 700.00
+            valor: 113.00
         }
 
     },
@@ -92,15 +92,15 @@ let Italy = {
         nomeCategoria: "Extras",
         extraTour: {
             nome: "Tour com o Especialista",
-            valor: 900.00
+            valor: 129.00
         },
         extraVIP: {
             nome: "VIP Casa Noturna",
-            valor: 1999.99
+            valor: 257.99
         },
         extraPet: {
             nome: "Família com Pet",
-            valor: 249.99
+            valor: 89.50
         }
     }
 
@@ -137,7 +137,15 @@ function somaHospedagem() {
 function calculaHospedagem() {
     let output = document.getElementById("output1");
     let precoHospedagem = somaHospedagem();
-    output.innerHTML = `Total: R$ ${precoHospedagem.toFixed(2)}`;
+    
+    if(validaViajantes() == 0 || taxa() == 0){
+        output.innerHTML = 'Quantidade de dias ou pessoas inválida!';    
+        return 0;
+    }else{
+        precoHospedagem = getNumeroDias() * getNumeroViajantes() * precoHospedagem;
+        output.innerHTML = `Total: R$ ${precoHospedagem.toFixed(2)}`;
+        return precoHospedagem;
+    }   
 }
 
 function somaAluguelCarro() {
@@ -158,7 +166,15 @@ function somaAluguelCarro() {
 function calculaAluguelCarros() {
     let precoAluguel = somaAluguelCarro();
     let output = document.getElementById("output2");
-    output.innerHTML = `Total: R$ ${precoAluguel.toFixed(2)}`;
+    
+    if(validaViajantes() == 0 || taxa() == 0){
+        output.innerHTML = 'Quantidade de dias ou pessoas inválida!';    
+        return 0;
+    }else{
+        precoAluguel = getNumeroDias() * getNumeroViajantes() * precoAluguel;
+        output.innerHTML = `Total: R$ ${precoAluguel.toFixed(2)}`;
+        return precoAluguel;
+    }   
 }
 
 function somaTurismo() {
@@ -181,7 +197,14 @@ function somaTurismo() {
 function calculaTurismo() {
     let precoTurismo = somaTurismo();
     let output = document.getElementById("output3");
-    output.innerHTML = `Total: R$ ${precoTurismo.toFixed(2)}`;
+    if(validaViajantes() == 0 || taxa() == 0){
+        output.innerHTML = 'Quantidade de dias ou pessoas inválida!';    
+        return 0;
+    }else{
+        precoTurismo = getNumeroViajantes() * precoTurismo;
+        output.innerHTML = `Total: R$ ${precoTurismo.toFixed(2)}`;
+        return precoTurismo;
+    }   
 }
 
 function somaAlimentacao() {
@@ -204,7 +227,14 @@ function somaAlimentacao() {
 function calculaAlimentacao() {
     let precoAlimentacao = somaAlimentacao();
     let output = document.getElementById("output4");
-    output.innerHTML = `Total: R$ ${precoAlimentacao.toFixed(2)}`;
+    if(validaViajantes() == 0 || taxa() == 0){
+        output.innerHTML = 'Quantidade de dias ou pessoas inválida!';    
+        return 0;
+    }else{
+        precoAlimentacao = getNumeroViajantes() * precoAlimentacao * getNumeroDias();
+        output.innerHTML = `Total: R$ ${precoAlimentacao.toFixed(2)}`;
+        return precoAlimentacao;
+    }   
 }
 
 function somaSeguro() {
@@ -227,7 +257,15 @@ function somaSeguro() {
 function calculaSeguroVida() {
     let precoSeguro = somaSeguro();
     let output = document.getElementById("output5");
-    output.innerHTML = `Total: R$ ${precoSeguro.toFixed(2)}`;
+    
+    if(validaViajantes() == 0 || taxa() == 0){
+        output.innerHTML = 'Quantidade de dias ou pessoas inválida!';    
+        return 0;
+    }else{
+        precoSeguro = getNumeroViajantes() * precoSeguro;
+        output.innerHTML = `Total: R$ ${precoSeguro.toFixed(2)}`;
+        return precoSeguro;
+    }
 }
 
 function somaExtra() {
@@ -250,7 +288,15 @@ function somaExtra() {
 function calculaExtra() {
     let precoExtra = somaExtra();
     let output = document.getElementById("output6");
-    output.innerHTML = `Total: R$ ${precoExtra.toFixed(2)}`;
+    
+    if(validaViajantes() == 0 || taxa() == 0){
+        output.innerHTML = 'Quantidade de dias ou pessoas inválida!';    
+        return 0;
+    }else{
+        precoExtra = getNumeroViajantes() * precoExtra;
+        output.innerHTML = `Toral: R$ ${precoExtra.toFixed(2)}`;
+        return precoExtra;
+    }
 }
 
 function getNumeroViajantes() {
@@ -263,48 +309,17 @@ function getNumeroDias() {
     return dados.value;
 }
 
-function verificaDias(dias) {
-    if (dias >= 1 && dias <= 7) {
-        return 1.1;
-    } else if (dias > 7 && dias <= 15) {
-        return 1.2;
-    } else if (dias > 15 && dias <= 21){
-        return 1.3;
-    } else if (dias > 21 && dias <= 30){
-        return 1.4;
-    }else if (dias > 30 && dias <= 40){
-        return 1.5;
-    }else if (dias > 40 && dias <= 60){
-        return 1.65;
-    }else if (dias > 60 && dias <= 90){
-        return 1.7;
-    }
-    else {
-        return 0;
-    }
-}
-
 function taxa() {
     let output = document.getElementById('outputTaxa');
-    let valorTaxa = verificaDias(getNumeroDias());
+    let quantidadeDias = getNumeroDias();
 
-    if (valorTaxa == 1.1) {
-        output.innerHTML = `Acrésicmo de 10% no valor total`
-    } else if (valorTaxa == 1.2) {
-        output.innerHTML = `Acrésicmo de 20% no valor total`
-    } else if (valorTaxa == 1.3) {
-        output.innerHTML = `Acrésicmo de 30% no valor total`
-    } else if (valorTaxa == 1.4) {
-        output.innerHTML = `Acrésicmo de 40% no valor total`
-    } else if (valorTaxa == 1.5) {
-        output.innerHTML = `Acrésicmo de 50% no valor total`
-    } else if (valorTaxa == 1.65) {
-        output.innerHTML = `Acrésicmo de 65% no valor total`
-    } else if (valorTaxa == 1.7) {
-        output.innerHTML = `Acrésicmo de 70% no valor total`
+    if(quantidadeDias >= 1 && quantidadeDias <= 90){
+        output.innerHTML = `Taxa diária incluída`
+        return quantidadeDias;
     }
     else {
         output.innerHTML = `A quantidade de dias deve estar entre 1 e 90`
+        return 0;
     }
 }
 
@@ -312,28 +327,21 @@ function validaViajantes() {
     let viajantes = getNumeroViajantes();
     let output = document.getElementById('outputViajantes');
     if (viajantes >= 1 && viajantes <= 100) {
-        output.innerHTML.display = 'none';
-        return true;
-    } else {
+        output.innerHTML = 'Quantidade de pessoas incluída!';
+        return viajantes;
+    }else {
         output.innerHTML = `A quantidade de pessoas deve estar entre 1 e 100`
-        return false;
+        return 0;
     }
 }
 
 function somaTotal() {
-    return getNumeroViajantes() * (somaHospedagem() + somaTurismo()
-        + somaAlimentacao() + somaSeguro() + somaExtra()) + somaAluguelCarro();
+    return calculaAlimentacao() + calculaTurismo() + calculaAluguelCarros() + calculaHospedagem() + calculaSeguroVida() + calculaExtra();
 }
 
 function valorT() {
-    let taxaDias = verificaDias(getNumeroDias());
     let output = document.getElementById('resultado');
-
-    if (validaViajantes()) {
-        taxa();
-        valorTotal = somaTotal() * taxaDias;
-        let valorConvertido = valorTotal / 5.3;
-        output.innerHTML = `Valor total a ser investido: R$ ${valorTotal.toFixed(2)} | US$ ${valorConvertido.toFixed(2)}`;
-    }
+    let valorTotal = somaTotal();
+    let valorConvertido = valorTotal / 5.3;
+    output.innerHTML = `Valor total a ser investido: R$ ${valorTotal.toFixed(2)} | US$ ${valorConvertido.toFixed(2)}`;
 }
-
