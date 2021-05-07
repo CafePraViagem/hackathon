@@ -17,10 +17,8 @@
     color-stop(0.001, rgba(0, 0, 0, 0)),
     /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
       color-stop(0.05, rgba(0, 0, 0, 1))
-  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
-
+  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */ 
   position: relative;
-  height: 40vh;
   overflow: hidden;
   background: url("https://i.ibb.co/9Z19jXM/travelermap.png") no-repeat center;
   background-size: cover;
@@ -36,7 +34,6 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-
 
 img {
   max-width: 100%;
@@ -57,7 +54,7 @@ img {
   font-size: calc(1.375rem + 2vw);
 }
 
-span {
+.titleofsite > span {
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
@@ -71,16 +68,214 @@ a > h4 {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
+/* Subtitle da Pagina */
+.subTitle > p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Viajante */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+/* Box dos Viajantes*/
+.flex > .traveler {
+  flex: 0 1 100vw;
+  margin: 10px 10px;
+
+  border-color: black;
+
+  -webkit-box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
+  -moz-box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
+  box-shadow: 1px 9px 27px -8px rgba(0,0,0,0.42);
+}
+
+.traveler {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  margin: 0 auto;
+  justify-content: flex-start;
+
+  border-radius: 10px;
+}
+
+.traveler > .boxIMG {
+  flex: 0 1 60px;
+  margin: 10px 10px;
+  align-self: flex-start;
+}
+
+.boxIMG > img {
+  border-radius: 100%!important;
+}
+
+.traveler > .boxText {
+  flex: 0 1 64vw;
+  font-size: 10.3px
+} 
+
+.traveler > .socialMedia {
+  flex: 0 1 100vw;
+  align-self: flex-end;
+}
+
+/* Nome do viajante */
+h5 {
+  color: black;
+  font-weight: bold;
+
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Alcunha do viajante */ 
+h6 {
+  color: #fc9523;
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Texto de cada viajanta */
+p > span {
+  color : black;
+  font-weight: none;
+  text-shadow: none;
+
+  font-size: 0.8rem;
+}
+
+.boxText > p {
+  margin-bottom: 0.5rem; 
+}
+
+/* Texto para medium-big deviced */
+#travelerText {
+  display: none;
+  font-weight: none;
+  font-size: 0.8rem;
+}
+
+/* Redes Sociais */
+.socialMedia > i, .socialMedia > a {
+  color: #fc9523;
+  margin: 0.15rem;
+  margin-bottom: 0.3rem;
+  
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socialMediaBigDevices {
+  text-align: center;
+}
+
+.socialMediaBigDevices > i, .socialMediaBigDevices > a {
+  color: #fc9523;
+  display: none;
+  text-decoration: none;
+}
+
+/* Video preview para medium devices e big devices */
+.Preview {
+  display: none;
+  margin: 0 auto;
+  max-width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-bottom: 4rem;
+}
+
+.Preview > .videoIMG{
+  flex: 0 1 300px;
+}
+
+.Preview > p {
+  flex: 0 1 100px;
+}
+
+.Preview > .sectionButton {
+  flex: 0 1 200px;
+}
+
+.sectionButton > .buttonTraveler {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttonTraveler > #buttonCountries {
+  margin: 1px;
+  border-radius: 100px;
+}
+
+.buttonTraveler > p {
+  flex: 0 1 100px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Botão do final da pagina */
+#buttonCountries{
+  background-color: #fc9523;
+  border-radius: 10px;
+
+  margin: 50px;
+  border: none;
+  outline: none;
+  left: 50%;  
+}
+
+#buttonCountries:hover {
+  transform: scale(1.1);
+  background-color: #4400c3;
+  box-shadow: 3px 3px #fc9523;
+}
+
+#buttonCountries:active {
+  transform: scale(1.1);
+  background-color: #4400c3;
+  box-shadow: 3px 3px #fc9523;
+}
+
+#buttonCountries > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Centralizar o botão */
+.button {
+  text-align: center;
+}
+
 /* ------ BOOTSTRAP MEDIA QUERYS ------ */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .titleofsite > span {
     font-size: calc(1.375rem + 1vw);
   }
-
-  .header-image {
-    height: 40vh;
+  .traveler > .boxIMG {
+    flex: 0 1 70px;
   }
+
+  .traveler > .boxText {
+    flex: 0 1 80vw;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -89,8 +284,53 @@ a > h4 {
     font-size: calc(1.375rem + 1vw);
   }
 
-  .header-image {
-    height: 50vh;
+  .socialMediaBigDevices > i, .socialMediaBigDevices > a  {
+    display: inline;
+  }
+
+  .socialMedia {
+    visibility: hidden;
+    
+  }
+
+  .traveler > .boxIMG {
+    flex: 0 1 100px;
+  }
+
+  .traveler > .boxText {
+    flex: 0 1 80vw;
+  }
+
+  /* Texto de cada viajanta */
+  p > span {
+  color : black;
+  font-weight: bold;
+  text-shadow: none;
+
+  font-size: 0.8rem;
+  }
+
+  .boxText > p {
+    margin-bottom: 0.5rem; 
+    font-weight: bold;
+  }
+
+  #travelerText {
+    display: inline;
+  }
+
+  /* Video preview para medium devices e big devices */
+  /* .videoPreview {
+  display: inline; 
+} */
+
+  /* Botão final da page */
+  .button > #buttonCountries{
+    display: none;
+  }
+  
+  .Preview {
+    display: flex;
   }
 }
 
@@ -100,57 +340,28 @@ a > h4 {
     font-size: calc(1.375rem + 1vw);
   }
 
-  .header-image {
-    height: 60vh;
+  .traveler > .boxText {
+    flex: 0 1 88.5vw;
   }
-}
 
-
-/* Viajante */
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100vw;
-  margin: 0 auto;
-}
-.flex > .traveler {
-  flex: 0 1 100vw;
-  margin: 10px 10px;
-
-  border-color: black;
-  border: solid 1px black;
-}
-
-.traveler {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100vw;
-  margin: 0 auto;
-}
-
-.traveler > .boxIMG {
-  flex: 0 1 60px;
-  margin: 10px 10px;
-}
-.boxIMG > img {
-  border-radius: 100%!important;
-}
-
-
-h7 {
-  color: orange;
-  font-weight: bold;
-}
-
-.traveler > .boxName {
-  flex: 0 1 63vw;
-  font-size: 10.3px
-} 
-
-p > span {
+  /* Texto de cada viajanta */
+  p > span {
   color : black;
   font-weight: bold;
   text-shadow: none;
 
-  font-size: 10px;
+  font-size: 0.8rem;
+  }
+
+  .boxText > p {
+    margin-bottom: 0.5rem; 
+    font-weight: bold;
+  }
+
+  #travelerText {
+    display: inline;
+  }
+
 }
+
+

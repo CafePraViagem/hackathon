@@ -35,7 +35,7 @@
 }
 
 /* Imagem responsiva com 100% height - Quando a tela foir maior que 957px */
-@media (min-width: 660px) and (min-height: 1220px) {
+@media (min-width: 660px) and (min-height: 799px) {
   #backgroundImage {
     height: 100vh;
   }
