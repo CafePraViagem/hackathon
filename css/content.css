@@ -225,4 +225,8 @@ div > strong {
     margin-top: 20px;
     height: 44vh;
   }
+
+  .text-image-country {
+    margin-top: auto;
+  }
 }
