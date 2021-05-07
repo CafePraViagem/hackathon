@@ -33,17 +33,69 @@
   </head>
   <body>
     <header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-md fixed-top navbar-light">
+        <div class="container-fluid">
+          <a href="home.html" class="navbar-brand">
+            <img
+              src="./images/CafeNoBuleLogo.svg"
+              alt="Café no Bule Logo"
+              class="logo d-inline-block align-center"
+            />
+            Café pra Viagem</a
+          >
+          <button
+            class="navbar-toggler navbar-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center">
+              <li>
+                <a class="nav-link main-menu" href="home.html"
+                  ><i class="fas fa-globe-americas"></i> Conheça seu destino</a
+                >
+              </li>
+              <li>
+                <a class="nav-link main-menu" href="countries.html"
+                  ><i class="fas fa-funnel-dollar"></i> Descobrir valores</a
+                >
+              </li>
+              <li>
+                <a class="nav-link main-menu" href="worldTravelers.html"
+                  ><i class="fas fa-hiking"></i> Viajantes pelo mundo</a
+                >
+              </li>
+              <li>
+                <a class="nav-link main-menu" href="./aboutUs.html"
+                  ><i class="fas fa-user-astronaut"></i> Quem somos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
       <!-- HEADER -->
       <div class="headerBox">
         <h1 class="textTitle text-center">Hello!</h1>
 
         <img class="imgHeader" src="./images/Hello.png" alt="" />
+        <div class="line"></div>
       </div>
     </header>
-
+    <!-- MAIN -->
     <main>
-      <h4>Quem Somos</h4>
-      <h4>Under Maintenance - Visualizar em 280x653(Galaxy Fold)</h4>
+      <p class="welcomeTitle fw-bold">
+        <span class="orangeMarker">.</span>
+        Conheça a equipe bonita que fez esse projeto.
+      </p>
 
       <div class="accordion">
         <button type="button" class="accordion__button">
