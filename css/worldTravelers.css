@@ -205,6 +205,14 @@ p > span {
   flex: 0 1 300px;
 }
 
+.videoIMG > a > img {
+  border-radius: 10px!important;
+}
+
+.videoIMG:hover {
+  filter: opacity(0.8)
+}
+
 .Preview > p {
   flex: 0 1 100px;
 }
@@ -213,6 +221,7 @@ p > span {
   flex: 0 1 200px;
 }
 
+/* Botão em mid-big devices */
 .sectionButton > .buttonTraveler {
   display: flex;
   flex-direction: row;
@@ -251,6 +260,7 @@ p > span {
 #buttonCountries:active {
   transform: scale(1.1);
   background-color: #ffaf37;
+  outline: none;
 }
 
 #buttonCountries > a {
