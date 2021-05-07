@@ -37,20 +37,6 @@
   margin-top: 20px;
 }
 
-.btn:hover,
-.btn-primary:hover {
-    color: #fff;
-    background-color: #ffaf37;
-    border-color: #ffaf37;
-}
-
-.btn:active,
-.btn-primary:active {
-  color: #fff;
-    background-color: #fc9523;
-    border-color: #fc9523;
-}
-
 .button-type-trip {
   background: #fc9523;
   border-radius: 100px;
@@ -62,7 +48,8 @@
   font-size: 18px;
   line-height: 30px;
   margin: 10px 0;
-  padding: 6px 10px;
+  padding: 6px 12px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .button-type-trip a {
