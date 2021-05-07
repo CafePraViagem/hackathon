@@ -67,11 +67,13 @@
   margin-top: 20px;
 }
 
-.final-link, .link {
+.final-link, 
+.link {
   color: #ff9500;
 }
 
-.final-link:hover, .link:hover {
+.final-link:hover, 
+.link:hover {
   color: #4400c3;
 }
 
@@ -133,7 +135,8 @@ div > strong {
   margin: 20px auto 0;
 }
 
-.carousel-control-prev-icon-indication, .carousel-control-next-icon-indication {
+.carousel-control-prev-icon-indication, 
+.carousel-control-next-icon-indication {
   background-color: #ffaf37;
   transform: translateY(-165px)
 }
