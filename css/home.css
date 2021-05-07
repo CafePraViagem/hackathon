@@ -76,7 +76,8 @@ img.logo {
   height: 40vh;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
   transform: translateY(-100px);
 }
 

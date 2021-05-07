@@ -34,8 +34,7 @@ h1 {
   font-style: normal;
   font-weight: bold;
 
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  color: #000;
 }
 
 /* Grade do Botões */
@@ -68,9 +67,13 @@ img {
 
 .box:hover {
   transform: scale(1.1);
-  color: #000;
 }
 
+.btn-primary:hover {
+    color: #fff;
+    background-color: #fc9523;
+    border-color: #fc9523;
+}
 /* .box:active {
   transform: scale(1.1);
   background-color: #4400c3;

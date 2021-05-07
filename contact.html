@@ -18,9 +18,10 @@
 
     <!-- CSS -->
     
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/content.css" />
-    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/content.css"/>
+    <link rel="stylesheet" href="css/faq.css"/>
+    <link rel="stylesheet" href="css/contatc.css"/>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -180,11 +181,49 @@
       </section>
     
       <section>
-          <div class="container">
+
+          <div class="container-contact">
                 <h1>Contato</h1>
-                
           </div>
 
+          <div class="container-form">
+            <form method="post" action="mailto:cafepraviagem.squad1@gmail.com">
+              <fieldset>
+                <legend>Nome Completo:</legend>
+                <label for="text-name">
+                  <input type="text" id="text-name" placeholder="Maria da Silva" required>
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Cidade:</legend>
+                <label for="text-city">
+                  <input type="text" id="text-city" placeholder="Campinas" required>
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Estado:</legend>
+                <label for="text-state">
+                  <input type="text" id="text-state" placeholder="São Paulo" required>
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>E-mail:</legend>
+                <label for="email">
+                  <input type="email" id="email" placeholder="email@email.com" required>
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Telefone</legend>
+                <label for="text-phone">
+                  <input type="phone" id="text-phone" placeholder="+5511 99999 - 9999" required>
+                </label>
+              </fieldset>
+            </form>
+          </div>
       </section>
     
       <br>
