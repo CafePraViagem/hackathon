@@ -186,6 +186,10 @@ p > span {
   text-decoration: none;
 }
 
+.socialMediaBigDevices > a > i {
+  font-size: 1.5rem;
+}
+
 /* Video preview para medium devices e big devices */
 .Preview {
   display: none;
@@ -201,6 +205,14 @@ p > span {
   flex: 0 1 300px;
 }
 
+.videoIMG > a > img {
+  border-radius: 10px!important;
+}
+
+.videoIMG:hover {
+  filter: opacity(0.8)
+}
+
 .Preview > p {
   flex: 0 1 100px;
 }
@@ -209,6 +221,7 @@ p > span {
   flex: 0 1 200px;
 }
 
+/* Botão em mid-big devices */
 .sectionButton > .buttonTraveler {
   display: flex;
   flex-direction: row;
@@ -247,6 +260,7 @@ p > span {
 #buttonCountries:active {
   transform: scale(1.1);
   background-color: #ffaf37;
+  outline: none;
 }
 
 #buttonCountries > a {
@@ -305,7 +319,7 @@ p > span {
   }
 
   .traveler > .boxIMG {
-    flex: 0 1 100px;
+    flex: 0 1 110px;
   }
 
   .traveler > .boxText {
