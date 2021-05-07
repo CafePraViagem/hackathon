@@ -206,8 +206,11 @@ mudarFundoCalculadora()
 
 // Valida se opção está selecionada e mostra mensagem
 function isCheckedShowMessage(element, output) {
-    if (!element.checked) {
-        // Do something
+    const numViajantes = document.getElementById('numberOfTravelers'),
+        numDias = document.getElementById('numberOfDays');
+
+    if (!element.checked || numViajantes.value === '' || numDias.value === '' || numViajantes.value > 100 || numDias.value > 90) {
+        console.error('Erro: dados inválidos!');
     } else {
         showAlertMessage(output)
     }
