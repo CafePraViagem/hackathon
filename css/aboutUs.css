@@ -5,55 +5,6 @@
   padding: 0;
 }
 
-/* NAVBAR */
-
-.navbar {
-  padding: 0;
-  margin: 0 auto;
-}
-
-.container-fluid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-}
-
-.fixed-top {
-  position: relative;
-}
-
-a.navbar-brand {
-  margin: 10px 0 0 0;
-  /* padding-top: 1rem; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-img.logo {
-  width: 4rem;
-}
-
-.navbar-toggler {
-  position: absolute;
-  right: 0.8rem;
-  top: 0.8rem;
-  margin: 0;
-  padding: 0;
-  border: none;
-  font-size: 1.2rem;
-}
-
-.navbar-collapse {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  padding: 1rem;
-}
-
 /* HEADER */
 
 h4 {
