@@ -326,6 +326,8 @@ p > span {
   /* SubTitle */
   .subTitle > p {
     font-size: 2.5rem;
+    text-align: center;
+    margin-left: none;
   }
 
   .subTitle > p > span {
@@ -393,10 +395,6 @@ p > span {
   }
 
   /* Botão final da page */
-  .button > #buttonCountries{
-    display: none;
-  }
-  
   .Preview {
     display: flex;
   }
@@ -405,14 +403,30 @@ p > span {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .titleofsite > span {
-    font-size: calc(1.375rem + 1vw);
+    font-size: calc(2rem + 2vw);
   }
 
   .traveler > .boxText {
-    flex: 0 1 80vw;
+    flex: 1 1 75vw;
+  }
+
+  .traveler > .boxIMG {
+    flex: 0 1 150px;
+  }
+
+  .socialMediaBigDevices > a > i {
+    font-size: 2rem;
   }
 
   /* Texto de cada viajanta */
+  .boxText > h5 {
+    font-size: 1.6rem;
+  }
+
+  .boxText > h6 {
+    font-size: 1.4rem;
+  }
+
   p > span {
   color : black;
   font-weight: bold;
@@ -426,8 +440,23 @@ p > span {
     font-weight: bold;
   }
 
+  .boxText > p > span, #travelerText{
+    font-size: 1.2rem;
+  }
+
   #travelerText {
     display: inline;
   }
 
+  .Preview > .videoIMG{
+    flex: 0 1 400px;
+  }
+
+  .buttonTraveler > p {
+    font-size: 2rem;
+  }
+
+  #buttonCountries {
+    font-size: 20px;
+  }
 }
