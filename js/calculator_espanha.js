@@ -196,14 +196,6 @@ familia.addEventListener('click', () => {
     isCheckedShowMessage(familia, 'alert-extras')
 });
 
-/* Função para trocar a imagem do fundo */
-function mudarFundoCalculadora() {
-    var imgURL = document.getElementsByClassName("header-image")
-    imgURL[0].style.background = "url('" + France["image"] + "') no-repeat center bottom"
-    imgURL[0].style.backgroundSize = "cover"
-}
-mudarFundoCalculadora()
-
 // Valida se opção está selecionada e mostra mensagem
 function isCheckedShowMessage(element, output) {
     const numViajantes = document.getElementById('numberOfTravelers'),
@@ -232,7 +224,6 @@ function mudarFundoCalculadora() {
     imgURL[0].style.backgroundSize = "cover"
 }
 mudarFundoCalculadora()
-
 
 function somaHospedagem() {
     let valorSoma = 0;
