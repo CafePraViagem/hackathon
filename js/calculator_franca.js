@@ -78,7 +78,7 @@ let France = {
             valor: 43.50
         },
         segundoPontoTuristico: {
-            nome: "Subir na Torre",
+            nome: "Torre Eiffel",
             valor: 36.00
         },
         terceiroPontoTuristico: {
