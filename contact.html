@@ -186,25 +186,25 @@
           </div>
 
           <div class="container-form">
-            <form name="form-user-contact" class="form-contact" method="post" action="enviar.php">
+            <form name="formUserContact" class="form-contact" method="post" action="enviar.php">
 
               <fieldset class="user-form">
 
                 <legend>Informações do Usuário:</legend>
 
                 <div>
-                  <label for="text-name">Nome Completo:
-                    <input type="text" id="text-name" name="name" placeholder="Maria da Silva" size="20" maxlength="80" required>
+                  <label for="user-name">Nome Completo:
+                    <input type="text" id="user-name" name="name" placeholder="Maria da Silva" size="20" maxlength="80">
                   </label>
                 </div>
                 <div>
-                  <label for="text-nasc">Data de Nascimento:
-                    <input name="nasc" type="date" id="text-nasc" required>
+                  <label for="user-nasc">Data de Nascimento:
+                    <input name="nasc" type="date" id="user-nasc">
                   </label>
                 </div>
                 <div>
-                  <label for="yourCity">Cidade: 
-                      <input type="text" name="city" id="yourCity" size="20" maxlength="40" placeholder="Sua cidade" list="cities" required>
+                  <label for="user-city">Cidade: 
+                      <input type="text" name="city" id="user-city" size="20" maxlength="40" placeholder="Sua cidade" list="cities">
                   </label>
                 </div>
 
@@ -228,7 +228,7 @@
                 <div>
                     <label for="state">Estado:
 
-                      <select name="state" id="state" required>
+                      <select name="state" id="state">
 
                           <option value="AC">Acre</option>
                           <option value="AL">Alagoas</option>
@@ -264,14 +264,14 @@
                 </div>
 
                 <div>
-                    <label for="email">E-mail:
-                        <input name="email" type="email" id="email" placeholder="email@email.com" required>
+                    <label for="user-email">E-mail:
+                        <input name="email" type="email" id="user-email" placeholder="email@email.com">
                     </label>
                 </div>
 
                 <div>
-                    <label for="text-phone">Telefone:
-                    <input name="phone" type="tel" id="text-phone" placeholder="+5511 99999 - 9999" min="10" required>
+                    <label for="user-phone">Telefone:
+                    <input name="phone" type="tel" id="user-phone" placeholder="11 99999 - 9999">
                     </label>
                 </div>
 
@@ -279,13 +279,13 @@
 
               <br>      
 
-              <fieldset class="user-messege">
+              <fieldset class="user-message">
 
                   <legend>Fale Conosco</legend>
 
                   <div>
-                      <label for="question">
-                          <select name="question" id="question" required>
+                      <label for="user-message-question">
+                          <select name="question" id="user-message-question">
                               <option value="notCountry">Meu país não está disponível</option>
                               <option value="testimony">Deixar depoimento</option>
                               <option value="business">Quero ser um parceiro</option>
@@ -296,7 +296,7 @@
 
                   <div>
                       <label for="message">Mensagem:
-                          <textarea  name="message" id="message" cols="45" rows="5" maxlength="2000"placeholder="Deixe aqui a sua mensagem pra gente! Digite até 2000 caracteres." required>
+                          <textarea  name="message" id="message" cols="45" rows="5" maxlength="2000"placeholder="Deixe aqui a sua mensagem pra gente! Digite até 2000 caracteres.">
                           </textarea>
                       </label>
                   </div>
@@ -323,7 +323,7 @@
 
               </fieldset>
 
-              <input class="button-type-trip color-white" type="submit" value="Enviar"/> 
+              <input class="send-form button-type-trip color-white" type="submit" value="Enviar"/> 
 
             </form>
 
