@@ -105,6 +105,13 @@ let Peru = {
     }
 
 }
+/* Função para trocar a imagem do fundo */
+function mudarFundoCalculadora() {
+    var imgURL = document.getElementsByClassName("header-image")
+    imgURL[0].style.background = "url('" + Peru["image"] + "') no-repeat center"
+    imgURL[0].style.backgroundSize = "cover"
+}
+mudarFundoCalculadora()
 
 // Hospedagem Event Listeners
 const hospedagem1 = document.getElementById("hospedagem_1"),
@@ -216,14 +223,6 @@ function showAlertMessage(output) {
         document.getElementById(output).style.display = "none";
     }, 3000)
 }
-
-/* Função para trocar a imagem do fundo */
-function mudarFundoCalculadora() {
-    var imgURL = document.getElementsByClassName("header-image")
-    imgURL[0].style.background = "url('" + Peru["image"] + "') no-repeat center"
-    imgURL[0].style.backgroundSize = "cover"
-}
-mudarFundoCalculadora()
 
 function somaHospedagem() {
     let valorSoma = 0;

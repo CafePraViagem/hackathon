@@ -105,6 +105,13 @@ let France = {
     }
 
 }
+/* Função para trocar a imagem do fundo */
+function mudarFundoCalculadora() {
+    var imgURL = document.getElementsByClassName("header-image")
+    imgURL[0].style.background = "url('" + France["image"] + "') no-repeat center bottom"
+    imgURL[0].style.backgroundSize = "cover"
+}
+mudarFundoCalculadora()
 
 // Hospedagem Event Listeners
 const hospedagem1 = document.getElementById("hospedagem_1"),
@@ -195,14 +202,6 @@ vip.addEventListener('click', () => {
 familia.addEventListener('click', () => {
     isCheckedShowMessage(familia, 'alert-extras')
 });
-
-/* Função para trocar a imagem do fundo */
-function mudarFundoCalculadora() {
-    var imgURL = document.getElementsByClassName("header-image")
-    imgURL[0].style.background = "url('" + France["image"] + "') no-repeat center bottom"
-    imgURL[0].style.backgroundSize = "cover"
-}
-mudarFundoCalculadora()
 
 // Valida se opção está selecionada e mostra mensagem
 function isCheckedShowMessage(element, output) {
