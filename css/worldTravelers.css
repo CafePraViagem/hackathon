@@ -363,6 +363,10 @@ p > span {
   }
 
   /* Texto - VIAJANTE */
+  #recomendationSmallDevices {
+    display: none;
+  }
+  
   .boxText > h5 {
     font-size: 1.4rem;
   }
