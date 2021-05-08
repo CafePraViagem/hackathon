@@ -200,6 +200,10 @@ span {
 /* ------ BOOTSTRAP MEDIA QUERYS ------ */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  #headerHeight {
+    margin-bottom: 145px;
+  }
+
   .mainDivForm {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -237,9 +241,9 @@ span {
     font-size: calc(1.375rem + 2vw);
   }
 
-  .header-image {
+  /*.header-image {
     height: 40vh;
-  }
+  } */
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -248,9 +252,14 @@ span {
     font-size: calc(1.375rem + 3vw);
   }
 
-  .header-image {
-    height: 50vh;
+  #headerHeight {
+    margin-bottom: 135px;
   }
+
+
+  /* .header-image {
+    height: 50vh;
+  } */
 
   .mainDivForm {
     display: grid;
@@ -283,7 +292,11 @@ span {
     font-size: calc(1.375rem + 4vw);
   }
 
-  .header-image {
-    height: 60vh;
+  #headerHeightt {
+    margin-bottom: 145px;
   }
+
+  /* .header-image {
+    height: 60vh;
+  } */
 }
