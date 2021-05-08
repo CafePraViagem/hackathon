@@ -401,9 +401,6 @@ p > span {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .titleofsite > span {
-    font-size: calc(2rem + 2vw);
-  }
 
   .traveler > .boxText {
     flex: 1 1;
@@ -415,15 +412,6 @@ p > span {
 
   .socialMediaBigDevices > a > i {
     font-size: 2rem;
-  }
-
-  /* Texto de cada viajanta */
-  .boxText > h5 {
-    font-size: 1.6rem;
-  }
-
-  .boxText > h6 {
-    font-size: 1.4rem;
   }
 
   p > span {
@@ -440,7 +428,7 @@ p > span {
   }
 
   .boxText > p > span, #travelerText{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   #travelerText {
@@ -451,11 +439,8 @@ p > span {
     flex: 0 1 400px;
   }
 
-  .buttonTraveler > p {
-    font-size: 2rem;
-  }
-
   #buttonCountries {
+    margin-top: 10px;
     font-size: 20px;
   }
 }
