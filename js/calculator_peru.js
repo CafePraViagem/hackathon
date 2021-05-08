@@ -74,7 +74,7 @@ let Peru = {
     pontosTuristicos: {
         nomeCategoria: "Turismo",
         primeiroPontoTuristico: {
-            nome: "Huayna Picchu",
+            nome: "Machu Picchu",
             valor: 188.00
         },
         segundoPontoTuristico: {

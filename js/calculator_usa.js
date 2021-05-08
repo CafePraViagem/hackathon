@@ -74,15 +74,15 @@ let UnitedStates = {
     pontosTuristicos: {
         nomeCategoria: "Turismo",
         primeiroPontoTuristico: {
-            nome: "Shark Reef Aquarium",
+            nome: "Estátua da Liberdade",
             valor: 150.00
         },
         segundoPontoTuristico: {
-            nome: "Bellagio Resort (Cassino)",
+            nome: "Times Square",
             valor: 873.00
         },
         terceiroPontoTuristico: {
-            nome: "Stratosphere Las Vegas",
+            nome: "Pier de Santa Mônica",
             valor: 338.00
         }
 
@@ -144,18 +144,18 @@ aluguelCarro2.addEventListener("click", () => {
 });
 
 // Pontos Turisticos Event Listeners
-const aquarium = document.getElementById('aquarium'),
-cassino = document.getElementById('cassino'),
-vegas = document.getElementById('vegas');
+const statue = document.getElementById('statue'),
+times = document.getElementById('times'),
+pier = document.getElementById('pier');
 
-aquarium.addEventListener('click', () => {
-    isCheckedShowMessage(aquarium, 'alert-pontosTuristicos')
+statue.addEventListener('click', () => {
+    isCheckedShowMessage(statue, 'alert-pontosTuristicos')
 });
-cassino.addEventListener('click', () => {
-    isCheckedShowMessage(cassino, 'alert-pontosTuristicos')
+times.addEventListener('click', () => {
+    isCheckedShowMessage(times, 'alert-pontosTuristicos')
 });
-vegas.addEventListener('click', () => {
-    isCheckedShowMessage(vegas, 'alert-pontosTuristicos')
+pier.addEventListener('click', () => {
+    isCheckedShowMessage(pier, 'alert-pontosTuristicos')
 });
 
 // Seguro Viagem Event Listeners

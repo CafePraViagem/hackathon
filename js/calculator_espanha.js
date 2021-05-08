@@ -74,7 +74,7 @@ let Spain = {
     pontosTuristicos: {
         nomeCategoria: "Turismo",
         primeiroPontoTuristico: {
-            nome: "Catedral de Santiago de Compostela",
+            nome: "Mesquita de Córdoba",
             valor: 180.00
         },
         segundoPontoTuristico: {
@@ -82,7 +82,7 @@ let Spain = {
             valor: 105.00
         },
         terceiroPontoTuristico: {
-            nome: "Cidade Medieval de Cuenca",
+            nome: "Plaza de España",
             valor: 233.50
         }
 
@@ -144,18 +144,18 @@ aluguelCarro2.addEventListener("click", () => {
 });
 
 // Pontos Turisticos Event Listeners
-const compostela = document.getElementById('compostela'),
+const mosque = document.getElementById('mosque'),
     sagrada = document.getElementById('sagrada'),
-    cuenca = document.getElementById('cuenca');
+    park = document.getElementById('park');
 
-compostela.addEventListener('click', () => {
-    isCheckedShowMessage(compostela, 'alert-pontosTuristicos')
+mosque.addEventListener('click', () => {
+    isCheckedShowMessage(mosque, 'alert-pontosTuristicos')
 });
 sagrada.addEventListener('click', () => {
     isCheckedShowMessage(sagrada, 'alert-pontosTuristicos')
 });
-cuenca.addEventListener('click', () => {
-    isCheckedShowMessage(cuenca, 'alert-pontosTuristicos')
+park.addEventListener('click', () => {
+    isCheckedShowMessage(park, 'alert-pontosTuristicos')
 });
 
 // Seguro Viagem Event Listeners
