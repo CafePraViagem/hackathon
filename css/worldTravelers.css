@@ -454,7 +454,9 @@ p > span {
 
   #buttonCountries {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 25px;
+
+    border-radius: 15px;
   }
 }
 
@@ -462,6 +464,11 @@ p > span {
   .flex {
     max-width: 70vw;
     margin-bottom: 2vw;
+  }
+
+  #buttonCountries {
+    margin-top: 10px;
+    font-size: 30px;
   }
 }
 
