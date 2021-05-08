@@ -78,7 +78,7 @@ let Alemanha = {
             valor: 47.00
         },
         segundoPontoTuristico: {
-            nome: "Berliner Fernsehturm",
+            nome: "Portão de Brandenburgo",
             valor: 115.50
         },
         terceiroPontoTuristico: {
@@ -138,14 +138,14 @@ aluguelCarro2.addEventListener("click", () => {
 
 // Pontos Turisticos Event Listeners
 const memorial = document.getElementById('memorial'),
-    berliner = document.getElementById('berliner'),
+    gate = document.getElementById('gate'),
     reichstag = document.getElementById('reichstag');
 
 memorial.addEventListener('click', () => {
     isCheckedShowMessage(memorial, 'alert-pontosTuristicos')
 });
-berliner.addEventListener('click', () => {
-    isCheckedShowMessage(berliner, 'alert-pontosTuristicos')
+gate.addEventListener('click', () => {
+    isCheckedShowMessage(gate, 'alert-pontosTuristicos')
 });
 reichstag.addEventListener('click', () => {
     isCheckedShowMessage(reichstag, 'alert-pontosTuristicos')
