@@ -186,7 +186,7 @@
           </div>
 
           <div class="container-form">
-            <form class="was-validated needs-validation form-contact" method="post" action="mailto:cafepraviagem.squad1@gmail.com" novalidate>
+            <form name="form-user-contact" class="form-contact" method="post" action="enviar.php">
 
               <fieldset class="user-form">
 
@@ -194,17 +194,17 @@
 
                 <div>
                   <label for="text-name">Nome Completo:
-                    <input type="text" id="text-name" placeholder="Maria da Silva" size="20" maxlength="80" required>
+                    <input type="text" id="text-name" name="name" placeholder="Maria da Silva" size="20" maxlength="80" required>
                   </label>
                 </div>
                 <div>
                   <label for="text-nasc">Data de Nascimento:
-                    <input type="date" id="text-nasc" required>
+                    <input name="nasc" type="date" id="text-nasc" required>
                   </label>
                 </div>
                 <div>
                   <label for="yourCity">Cidade: 
-                      <input type="text" name="yourCity" id="yourCity" size="20" maxlength="40" placeholder="Sua cidade" list="cities" required>
+                      <input type="text" name="city" id="yourCity" size="20" maxlength="40" placeholder="Sua cidade" list="cities" required>
                   </label>
                 </div>
 
@@ -212,17 +212,24 @@
                     <option value="São Paulo"></option>
                     <option value="Campinas"></option>
                     <option value="Jundiaí"></option>
+                    <option value="Santos"></option>
+                    <option value="Mogi das Cruzes"></option>
                     <option value="Diadema"></option>
                     <option value="Osasco"></option>
                     <option value="Santo André"></option>
                     <option value="São Bernardo do Campo"></option>
                     <option value="São Caetano"></option>
+                    <option value="Independência"></option>
+                    <option value="Pau dos Ferros"></option>
+                    <option value="Fraiburgo"></option>
+                    <option value="Videira"></option>
                 </datalist>
 
                 <div>
                     <label for="state">Estado:
 
                       <select name="state" id="state" required>
+
                           <option value="AC">Acre</option>
                           <option value="AL">Alagoas</option>
                           <option value="AP">Amapá</option>
@@ -241,6 +248,7 @@
                           <option value="PR">Paraná</option>
                           <option value="PE">Pernambuco</option>
                           <option value="PI">Piauí</option>
+                          <option value="RJ">Rio de Janeiro</option>
                           <option value="RN">Rio Grande do Norte</option>
                           <option value="RS">Rio Grande do Sul</option>
                           <option value="RO">Rondônia</option>
@@ -257,13 +265,13 @@
 
                 <div>
                     <label for="email">E-mail:
-                        <input type="email" id="email" placeholder="email@email.com" required>
+                        <input name="email" type="email" id="email" placeholder="email@email.com" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="text-phone">Telefone:
-                    <input type="tel" id="text-phone" placeholder="+5511 99999 - 9999" required>
+                    <input name="phone" type="tel" id="text-phone" placeholder="+5511 99999 - 9999" min="10" required>
                     </label>
                 </div>
 
@@ -296,26 +304,26 @@
                   <div>
 
                       <label for="emailMessage">
-                          <input class="input-form-checkbox" id="emailMessage" type="checkbox" checked> Aceito receber contato por via e-mail 
+                          <input name="contact-email" class="input-form-checkbox" id="emailMessage" type="checkbox" checked> Aceito receber contato por via e-mail 
                       </label>
 
                       <br>
 
                       <label for="phoneMessage">
-                          <input class="input-form-checkbox" id="phoneMessage" type="checkbox"> Aceito receber contato por via sms 
+                          <input name="contact-sms" class="input-form-checkbox" id="phoneMessage" type="checkbox"> Aceito receber contato por via sms 
                       </label>
 
                       <br>
 
                       <label for="newsletter">
-                          <input class="input-form-checkbox" id="newsletter" type="checkbox"> Desejo receber newsletter da Café pra Viagem
+                          <input name="newsletter" class="input-form-checkbox" id="newsletter" type="checkbox"> Desejo receber newsletter da Café pra Viagem
                       </label>
 
                   </div>
 
               </fieldset>
 
-              <input class="button-type-trip color-white" type="button" value="Enviar"/> 
+              <input class="button-type-trip color-white" type="submit" value="Enviar"/> 
 
             </form>
 
