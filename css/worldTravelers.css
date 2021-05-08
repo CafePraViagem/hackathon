@@ -129,8 +129,10 @@ a > h4 {
 }
 
 .traveler > .boxText {
-  flex: 0 1 64vw;
-  font-size: 10.3px
+  flex: 1 1;
+  font-size: 10.3px;
+
+  padding: 5px;
 } 
 
 .traveler > .socialMedia {
@@ -214,16 +216,12 @@ p > span {
   margin-bottom: 4rem;
 }
 
-.Preview > .videoIMG{
+.Preview > .videoBox {
   flex: 0 1 300px;
 }
 
-.videoIMG > a > img {
+.videoBox > iframe {
   border-radius: 10px!important;
-}
-
-.videoIMG:hover {
-  filter: opacity(0.8)
 }
 
 .Preview > p {
@@ -298,8 +296,9 @@ p > span {
   }
 
   .traveler > .boxText {
-    flex: 0 1 80vw;
+    padding: 10px;
   }
+
 
 }
 
@@ -360,7 +359,7 @@ p > span {
   }
 
   .traveler > .boxText {
-    flex: 0 1 75vw;
+    flex: 1 1;
   }
 
   /* Texto - VIAJANTE */
@@ -407,7 +406,7 @@ p > span {
   }
 
   .traveler > .boxText {
-    flex: 1 1 75vw;
+    flex: 1 1;
   }
 
   .traveler > .boxIMG {
@@ -448,7 +447,7 @@ p > span {
     display: inline;
   }
 
-  .Preview > .videoIMG{
+  .Preview > .videoBox{
     flex: 0 1 400px;
   }
 
