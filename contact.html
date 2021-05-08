@@ -20,7 +20,6 @@
     
     <link rel="stylesheet" href="css/home.css"/>
     <link rel="stylesheet" href="css/content.css"/>
-    <link rel="stylesheet" href="css/faq.css"/>
     <link rel="stylesheet" href="css/contatc.css"/>
 
     <!-- Google Fonts -->
@@ -187,9 +186,9 @@
           </div>
 
           <div class="container-form">
-            <form method="post" action="mailto:cafepraviagem.squad1@gmail.com">
+            <form class="was-validated needs-validation" method="post" action="mailto:cafepraviagem.squad1@gmail.com" novalidate>
 
-              <fieldset>
+              <fieldset class="user-form">
 
                 <legend>Informações do Usuário:</legend>
 
@@ -223,8 +222,8 @@
                 <div>
                     <label for="state">Estado:
 
-                      <select name="state" id="state">
-                          <optgroup label="Região Norte">
+                      <select name="state" id="state" required>
+                          
                               <option value="AC">Acre</option>
                               <option value="AP">Amapá</option>
                               <option value="AM">Amazonas</option>
@@ -232,9 +231,9 @@
                               <option value="RO">Rondônia</option>
                               <option value="RR">Roraima</option>
                               <option value="TO">Tocantins</option>
-                          </optgroup>
+                          
 
-                          <optgroup label="Região Nordeste">
+                          
                               <option value="AL">Alagoas</option>
                               <option value="BA">Bahia</option>
                               <option value="CE">Ceará</option>
@@ -244,27 +243,28 @@
                               <option value="PI">Piauí</option>
                               <option value="RN">Rio Grande do Norte</option>
                               <option value="SE">Sergipe</option>
-                          </optgroup>
+                          
 
-                          <optgroup label="Região Centro-Oeste">
+                          
                               <option value="DF">Distrito Federal</option>
                               <option value="GO">Goiás</option>
                               <option value="MT">Mato Grosso</option>
                               <option value="MS">Mato Grosso do Sul</option>
-                          </optgroup>
+                          
 
-                          <optgroup label="Região Sudeste">
+                        
                               <option value="ES">Espírito Santo</option>
                               <option value="MG">Minas Gerais</option>
-                              <option value="RJ">Rio de Janeiro</option>
-                              <option value="SP" selected>São Paulo</option>
-                          </optgroup>
+                              
+                              
+                          
 
-                          <optgroup label="Região Sul">
+                          
                               <option value="PR">Paraná</option>
                               <option value="RS">Rio Grande do Sul</option>
                               <option value="SC">Santa Catarina</option>
-                          </optgroup>
+                              <option value="SP" selected>São Paulo</option>
+                          
 
                       </select>
 
@@ -287,13 +287,13 @@
 
               <br>      
 
-              <fieldset>
+              <fieldset class="user-messege">
 
-                  <legend>Fale Conosco:</legend>
+                  <legend>Fale Conosco</legend>
 
                   <div>
                       <label for="question">
-                          <select name="question" id="question">
+                          <select name="question" id="question" required>
                               <option value="notCountry">Meu país não está disponível</option>
                               <option value="testimony">Deixar depoimento</option>
                               <option value="business">Quero ser um parceiro</option>
@@ -304,21 +304,21 @@
 
                   <div>
                       <label for="message">Mensagem:
-                          <textarea  name="message" id="message" cols="45" rows="5" maxlength="2000"placeholder="Deixe aqui a sua mensagem pra gente! Digite até 2000 caracteres.">
+                          <textarea  name="message" id="message" cols="45" rows="5" maxlength="2000"placeholder="Deixe aqui a sua mensagem pra gente! Digite até 2000 caracteres." required>
                           </textarea>
                       </label>
                   </div>
 
                   <div>
 
-                      <label for="phoneMessage">
-                          <input class="input-form-checkbox" id="phoneMessage" type="checkbox"> Aceito receber contato por via sms 
+                      <label for="emailMessage">
+                          <input class="input-form-checkbox" id="emailMessage" type="checkbox" checked> Aceito receber contato por via e-mail 
                       </label>
 
                       <br>
 
-                      <label for="emailMessage">
-                          <input class="input-form-checkbox" id="emailMessage" type="checkbox"> Aceito receber contato por via e-mail 
+                      <label for="phoneMessage">
+                          <input class="input-form-checkbox" id="phoneMessage" type="checkbox"> Aceito receber contato por via sms 
                       </label>
 
                       <br>
@@ -331,7 +331,7 @@
 
               </fieldset>
 
-              <input type="button" value="Enviar"/> 
+              <input class="button-type-trip color-white" type="button" value="Enviar"/> 
 
             </form>
 
@@ -398,6 +398,8 @@
     <!-- /carroussel.js -->
     <script src="js/carousel.js"></script>
     
+    <!-- Form valid -->
+    <script src="js/form.js"></script>
   </body>
   
 </html>

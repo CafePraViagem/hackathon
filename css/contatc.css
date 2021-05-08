@@ -9,7 +9,7 @@
 }
 
 .container-form {
-    width: 70vw;
+    width: 80vw;
 }
 
 h1 {
@@ -17,4 +17,43 @@ h1 {
     font-style: normal;
     font-weight: bold;
     color: #000;
+}
+
+legend {
+    font-style: italic;
+}
+
+label {
+    margin: 1rem auto;
+    font-weight: bold;
+}
+
+input:not(.input-form-checkbox) {
+    margin-top: .4rem;
+    width: 80vw;
+}
+
+#text-nasc {
+    padding: 5px;
+}
+
+select {
+    width: 80vw;
+}
+
+.user-messege {
+    margin: 30px auto 0;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.color-white {
+    color: #FFF;
 }
