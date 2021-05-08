@@ -180,6 +180,7 @@ a > h4 {
 }
 
 .showValorMessage {
+  font-size: 1.3rem;
   margin: 1.4rem auto;
   background-color: rgba(68, 0, 195, 1);
   color: white;
