@@ -70,7 +70,7 @@ a > h4 {
 
 /* Tamanho da img */
 #smallDevices {
-  margin-bottom: 240px;
+  margin-bottom: 100px;
 }
 
 /* Subtitle da Pagina */
@@ -319,7 +319,7 @@ p > span {
   }
 
   #mediumDevices {
-    margin-bottom: 190px;
+    margin-bottom: 150px;
   }
   
   /* SubTitle */
@@ -378,7 +378,7 @@ p > span {
   /* Texto de cada viajanta */
   p > span {
   color : black;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-shadow: none;
 
   font-size: 0.8rem;
@@ -386,7 +386,7 @@ p > span {
 
   .boxText > p {
     margin-bottom: 0.5rem; 
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 
   #travelerText {
@@ -416,7 +416,7 @@ p > span {
 
   p > span {
   color : black;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-shadow: none;
 
   font-size: 0.8rem;
@@ -424,7 +424,7 @@ p > span {
 
   .boxText > p {
     margin-bottom: 0.5rem; 
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 
   .boxText > p > span, #travelerText{
