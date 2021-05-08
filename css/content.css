@@ -194,10 +194,14 @@ div > strong {
     /* float: right; */
     width: 35vw;
     margin-top: 30px;
-    text-align: left;
     margin-bottom: 30px;
+    text-align: left;
     align-items: right;
     justify-items: right;
+  }
+
+  .pefil-trip-adventurous {
+    margin-top: 12px;
   }
 
   .indications {

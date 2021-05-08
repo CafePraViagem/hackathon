@@ -275,13 +275,7 @@ p.bolder-text {
 }
 
 @media(min-width: 1920px) {
-
-  main {
-    width: 80vw;
-    margin: 0 auto;
-  }
-
-  .carousek-item > img {
-    max-width: 1920px;
+  .image-width-height-carousel {
+    height: 70vh;
   }
 }

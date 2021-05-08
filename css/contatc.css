@@ -28,9 +28,17 @@ label {
     font-weight: bold;
 }
 
+label > textarea {
+    padding-left: 10px;
+}
+
 input:not(.input-form-checkbox) {
     margin-top: .4rem;
     width: 80vw;
+}
+
+input {
+    padding-left: 5px;
 }
 
 #text-nasc {
@@ -47,7 +55,7 @@ select {
 
 textarea {
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80vw;
     height: auto;
     text-align: left;
@@ -56,4 +64,29 @@ textarea {
 
 .color-white {
     color: #FFF;
+}
+
+@media(min-width: 1200px) {
+    .container-contact {
+        width: 50vw;
+    
+    }
+    
+    .container-form {
+        width: 50vw;
+        margin: 0 auto
+    }
+
+    input:not(.input-form-checkbox) {
+        margin-top: 1rem;
+        width: 50vw;
+    }
+
+    select {
+        width: 50vw;
+    }
+
+    textarea {
+        width: 50vw;
+    }
 }
