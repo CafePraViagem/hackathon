@@ -127,6 +127,7 @@ div > strong {
   border: solid 3px #ff9500;
   box-shadow: 3px -3px #ff9500;
   max-width: 420px;
+  max-height: 290px;
 }
 
 .country-indication div {
