@@ -250,6 +250,7 @@ function calculaHospedagem() {
     let precoHospedagem = somaHospedagem();
 
     if (validaViajantes() == 0 || taxa() == 0) {
+        scroll(0, 100)
         showAlertMessage('alert-mainDiv');
         return 0;
     } else {
@@ -279,6 +280,7 @@ function calculaAluguelCarros() {
     let output = document.getElementById("output2");
 
     if (validaViajantes() == 0 || taxa() == 0) {
+        scroll(0, 100)
         showAlertMessage('alert-mainDiv');
         return 0;
     } else {
@@ -309,6 +311,7 @@ function calculaTurismo() {
     let precoTurismo = somaTurismo();
     let output = document.getElementById("output3");
     if (validaViajantes() == 0 || taxa() == 0) {
+        scroll(0, 100)
         showAlertMessage('alert-mainDiv');
         return 0;
     } else {
@@ -339,6 +342,7 @@ function calculaAlimentacao() {
     let precoAlimentacao = somaAlimentacao();
     let output = document.getElementById("output4");
     if (validaViajantes() == 0 || taxa() == 0) {
+        scroll(0, 100)
         showAlertMessage('alert-mainDiv');
         return 0;
     } else {
@@ -370,6 +374,7 @@ function calculaSeguroVida() {
     let output = document.getElementById("output5");
 
     if (validaViajantes() == 0 || taxa() == 0) {
+        scroll(0, 100)
         showAlertMessage('alert-mainDiv');
         return 0;
     } else {
@@ -401,6 +406,7 @@ function calculaExtra() {
     let output = document.getElementById("output6");
 
     if (validaViajantes() == 0 || taxa() == 0) {
+        scroll(0, 100)
         showAlertMessage('alert-mainDiv');
         return 0;
     } else {
