@@ -292,11 +292,17 @@ span {
     font-size: calc(1.375rem + 4vw);
   }
 
-  #headerHeightt {
+  #headerHeight {
     margin-bottom: 145px;
   }
 
   /* .header-image {
     height: 60vh;
   } */
+}
+
+@media (min-width: 1600px) {
+  #headerHeight {
+    margin-bottom: 300px;
+  }
 }
