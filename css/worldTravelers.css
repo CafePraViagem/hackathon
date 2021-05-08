@@ -439,6 +439,11 @@ p > span {
     flex: 0 1 400px;
   }
 
+  .videoBox > iframe{
+    width: 524px;
+    height: 328px;
+  }
+
   #buttonCountries {
     margin-top: 10px;
     font-size: 20px;
