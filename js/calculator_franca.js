@@ -209,7 +209,7 @@ function isCheckedShowMessage(element, output) {
     const numViajantes = document.getElementById('numberOfTravelers'),
         numDias = document.getElementById('numberOfDays');
 
-    if (!element.checked || numViajantes.value === '' || numDias.value === '' || numViajantes.value > 100 || numDias.value > 90) {
+    if (!element.checked || numViajantes.value === '' || numDias.value === '' || numViajantes.value > 100 || numDias.value > 90 || validaViajantes() == 0 || taxa() == 0) {
         console.error('Erro: dados inválidos!');
     } else {
         showAlertMessage(output)
@@ -429,7 +429,7 @@ function taxa() {
         return quantidadeDias;
     }
     else {
-        output.innerHTML = `A quantidade de dias deve estar entre 1 e 90`
+        // output.innerHTML = `A quantidade de dias deve estar entre 1 e 90`
         return 0;
     }
 }
@@ -441,7 +441,7 @@ function validaViajantes() {
         output.innerHTML = 'Quantidade de pessoas incluída!';
         return viajantes;
     } else {
-        output.innerHTML = `A quantidade de pessoas deve estar entre 1 e 100`
+        // output.innerHTML = `A quantidade de pessoas deve estar entre 1 e 100`
         return 0;
     }
 }
