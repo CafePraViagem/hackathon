@@ -100,11 +100,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
  [![Linkedin Badge](https://img.shields.io/badge/-Adelar-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/adelarjr21/)](https://www.linkedin.com/in/adelarjr21/) 
 
+<span>
 <a href="https://github.com/adelarjr21">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt="Adelar"/>
  <br />
  <sub><b>Adelar Gonçalves de Souza Junior</b></sub></a>
  <br />
+<span>
 
  [![Linkedin Badge](https://img.shields.io/badge/-Adelar-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/adelarjr21/)](https://www.linkedin.com/in/adelarjr21/) 
 
