@@ -13,6 +13,7 @@
  <a href="#-layout">Layout</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-autor">Autores</a> • 
+ <a href="#user-content--licença">Licença</a>
 </p>
 
 
@@ -89,7 +90,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-## 🦸 Autor
+## 🦸 Autores
 
 <a href="https://github.com/adelarjr21">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt="Adelar"/>
