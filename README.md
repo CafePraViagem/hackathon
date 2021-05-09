@@ -12,7 +12,7 @@
  <a href="#-funcionalidades">Funcionalidades</a> •
  <a href="#-layout">Layout</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#-autor">Autores</a> • 
+ <a href="#-autores">Autores</a> • 
  <a href="#user-content--licença">Licença</a>
 </p>
 
