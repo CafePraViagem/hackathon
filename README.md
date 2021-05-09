@@ -77,7 +77,7 @@ O layout da aplicação está disponível a seguir:
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="Café pra Viagem" title="#CafenoBule" src="https://i.ibb.co/Q8qPH0Y/WEB-1.png" width="400px">
 
-  <img alt="Café pra Viagem" title="#CafenoBule" src="https://i.ibb.co/Qbjc2Qs/WEB-2.png" width="400px">
+  <img alt="Café pra Viagem" title="#CafenoBule" src="https://i.ibb.co/w0fsxH1/WEB-3.png" width="400px">
 </p>
 
 ---
