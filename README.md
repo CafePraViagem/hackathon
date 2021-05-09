@@ -51,7 +51,6 @@ com parceira da [Alura](https://www.alura.com.br/)
 
 - [x] Informativo sobre viagens para aventureiros
 - [x] Informativo sobre viagens para jovens
-
 - [x] Viajantes pelo mundo - Informativo sobre viajantes:
   - Eliezer Tymniaks
   - Matheus Tomoto
