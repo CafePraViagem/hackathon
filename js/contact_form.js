@@ -30,11 +30,6 @@ function formValidation() {
     formUserContact.email.focus();
     clickButtonOutputChangeClass(outputEmail, "output-email-off", "output-email-on");
   }
-
-  if (userPhoneId.length > 9 && userPhoneId.length < 20) {
-    formUserContact.phone.focus();
-    clickButtonOutputChangeClass(outputPhone, ".output-phone-off", "output-phone-on");
-  } 
   
   if (userMessage.length > 1 && userMessage.length <= 2000) {
     if (userMessage > 2000) {
@@ -73,7 +68,7 @@ function checkLetterInputName(e) {
 
   const space = ' '
 
-  const accentuation = '[áÁãÃéÉíÍóÓõÕ]'
+  const accentuation = '[àÀáÁãÃâÂäÄèÈéÉêÊëËìÌíÍîÎïÏòÒóÓõÕôÔöÖùÙúÚûÛüÜçÇñÑýÝÿŸ]'
 
   if (charLetter.match(patternLetter) || charLetter.match(space) || charLetter.match(accentuation)) {
     return true;
@@ -101,7 +96,7 @@ function checkLetterInputCity(e) {
 
   const space = " ";
 
-  const accentuation = '[áÁãÃéÉíÍóÓõÕ]'
+  const accentuation = '[àÀáÁãÃâÂäÄèÈéÉêÊëËìÌíÍîÎïÏòÒóÓõÕôÔöÖùÙúÚûÛüÜçÇñÑýÝÿŸ]'
 
   if (charLetter.match(patternLetter) || charLetter.match(space) || charLetter.match(accentuation)) {
     return true;
@@ -113,25 +108,31 @@ function checkLetterInputCity(e) {
   }
 }
 
-let userPhoneId = String(document.querySelector("#userPhone").value);
-userPhoneId.addEventListener("keypress", function(e){
+function confirmPhoneNumber(phoneUser) {
+  const atualText = phoneUser.value;
+  const isPhoneNumber = atualText.length === 9;
 
-  if (!checkNumberPhoneUser(e)) {
-    e.preventDefault();
-  }
-  
-});
-function checkNumberPhoneUser(e) {
+  let correctText;
+      
+    if (isPhoneNumber) {
 
-  const charNumber = String.fromCharCode(e.keyCode);
+    } else {
 
-  const patternNumber = '^\\([0-9]{2}\\)((3[0-9]{3}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$';
+    }
 
-  if (charNumber.match(patternNumber)) {
-    return true;
-
-  }
+    phoneUser.value = correctText;
 }
+
+function noHyphen (phoneUser) {
+
+  const atualText = phoneUser.value;
+
+  const corresctText = atualText.replace(/\-/g, '');
+
+  phoneUser.value = corresctText;
+}
+
+
 
 let sendForm = document.querySelector(".send-form");
 sendForm.onclick = formValidation;
