@@ -456,8 +456,25 @@ function somaTotal() {
 }
 
 function valorT() {
-    let output = document.getElementById('resultado');
+    let output = document.getElementById("resultado");
     let valorTotal = somaTotal();
     let valorConvertido = valorTotal / 5.3;
-    output.innerHTML = `Valor a ser investido: <br> R$ ${valorTotal.toFixed(2)} | US$ ${valorConvertido.toFixed(2)}`;
-}
+    if((getNumeroViajantes() > 0 && getNumeroViajantes() <= 100) && (getNumeroDias() > 0 && getNumeroDias() <= 90)){
+      startModal("modalResult");  
+      //Davi, é só pegar qualquer valor abaixo de R$ 1500,00 e multiplicar pela getNumeroViajantes(), dá um Copia e Cola nisso aqui 
+      output.innerHTML = `Valor Passagem: R$ ${900.00*getNumeroViajantes()} <br> Valor Opções/Itens de Viagem: R$ ${valorTotal.toFixed(2)} ||  US$ ${valorConvertido.toFixed(2)} `;    
+    }
+  }
+  
+  //  ----> SHOW MODAL
+  function startModal(modalID) {
+    const modalBox = document.getElementById(modalID);
+  
+    modalBox.classList.add("showModal");
+    modalBox.addEventListener("click", (event) => {
+      if (event.target.id == modalID || event.target.id == "close") {
+        modalBox.classList.remove("showModal");
+      }
+    });
+  }
+  

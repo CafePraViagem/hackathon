@@ -233,21 +233,13 @@ function somaHospedagem() {
 
   for (let i = 0; i < dados.length; i++) {
     if (dados[i].checked) {
-      if (
-        dados[i].value == UnitedStates.hospedagem.hospedagem1.nomeHospedagem1
-      ) {
+      if (dados[i].value == UnitedStates.hospedagem.hospedagem1.nomeHospedagem1) {
         valorSoma = UnitedStates.hospedagem.hospedagem1.valor;
-      } else if (
-        dados[i].value == UnitedStates.hospedagem.hospedagem2.nomeHospedagem2
-      ) {
+      } else if (dados[i].value == UnitedStates.hospedagem.hospedagem2.nomeHospedagem2) {
         valorSoma = UnitedStates.hospedagem.hospedagem2.valor;
-      } else if (
-        dados[i].value == UnitedStates.hospedagem.hospedagem3.nomeHospedagem3
-      ) {
+      } else if (dados[i].value == UnitedStates.hospedagem.hospedagem3.nomeHospedagem3) {
         valorSoma = UnitedStates.hospedagem.hospedagem3.valor;
-      } else if (
-        dados[i].value == UnitedStates.hospedagem.hospedagem4.nomeHospedagem4
-      ) {
+      } else if (dados[i].value == UnitedStates.hospedagem.hospedagem4.nomeHospedagem4) {
         valorSoma = UnitedStates.hospedagem.hospedagem4.valor;
       }
     }
@@ -277,9 +269,7 @@ function somaAluguelCarro() {
     if (dados[i].checked) {
       if (dados[i].value == UnitedStates.aluguelCarro.carro1.nomeCarro1) {
         valorSoma = UnitedStates.aluguelCarro.carro1.valor;
-      } else if (
-        dados[i].value == UnitedStates.aluguelCarro.carro2.nomeCarro2
-      ) {
+      } else if (dados[i].value == UnitedStates.aluguelCarro.carro2.nomeCarro2) {
         valorSoma = UnitedStates.aluguelCarro.carro2.valor;
       }
     }
@@ -307,24 +297,12 @@ function somaTurismo() {
   let valorSoma = 0;
   for (let i = 0; i < dados.length; i++) {
     if (dados[i].checked) {
-      if (
-        dados[i].value ==
-        UnitedStates.pontosTuristicos.primeiroPontoTuristico.nome
-      ) {
+      if (dados[i].value == UnitedStates.pontosTuristicos.primeiroPontoTuristico.nome) {
         valorSoma = UnitedStates.pontosTuristicos.primeiroPontoTuristico.valor;
-      } else if (
-        dados[i].value ==
-        UnitedStates.pontosTuristicos.segundoPontoTuristico.nome
-      ) {
-        valorSoma =
-          valorSoma + UnitedStates.pontosTuristicos.segundoPontoTuristico.valor;
-      } else if (
-        dados[i].value ==
-        UnitedStates.pontosTuristicos.terceiroPontoTuristico.nome
-      ) {
-        valorSoma =
-          valorSoma +
-          UnitedStates.pontosTuristicos.terceiroPontoTuristico.valor;
+      } else if (dados[i].value == UnitedStates.pontosTuristicos.segundoPontoTuristico.nome) {
+        valorSoma = valorSoma + UnitedStates.pontosTuristicos.segundoPontoTuristico.valor;
+      } else if (dados[i].value == UnitedStates.pontosTuristicos.terceiroPontoTuristico.nome) {
+        valorSoma = valorSoma + UnitedStates.pontosTuristicos.terceiroPontoTuristico.valor;
       }
     }
   }
@@ -370,8 +348,7 @@ function calculaAlimentacao() {
     showAlertMessage("alert-mainDiv");
     return 0;
   } else {
-    precoAlimentacao =
-      getNumeroViajantes() * precoAlimentacao * getNumeroDias();
+    precoAlimentacao = getNumeroViajantes() * precoAlimentacao * getNumeroDias();
     output.innerHTML = `Total: R$ ${precoAlimentacao.toFixed(2)}`;
     return precoAlimentacao;
   }
@@ -491,8 +468,11 @@ function valorT() {
   let output = document.getElementById("resultado");
   let valorTotal = somaTotal();
   let valorConvertido = valorTotal / 5.3;
-  output.innerHTML = `R$ ${valorTotal.toFixed(2)} reais <br> ou <br> 
-    US$ ${valorConvertido.toFixed(2)} dólares`;
+  if((getNumeroViajantes() > 0 && getNumeroViajantes() <= 100) && (getNumeroDias() > 0 && getNumeroDias() <= 90)){
+    startModal("modalResult");  
+    //Davi, é só pegar qualquer valor abaixo de R$ 1500,00 e multiplicar pela getNumeroViajantes(), dá um Copia e Cola nisso aqui 
+    output.innerHTML = `Valor Passagem: R$ ${579.99*getNumeroViajantes()} <br> Valor Opções/Itens de Viagem: R$ ${valorTotal.toFixed(2)} ||  US$ ${valorConvertido.toFixed(2)} `;    
+  }
 }
 
 //  ----> SHOW MODAL
@@ -507,9 +487,3 @@ function startModal(modalID) {
   });
 }
 
-const resultButton = document.querySelector(".btnResult");
-console.log(resultButton);
-
-resultButton.addEventListener("click", () => {
-  startModal("modalResult");
-});
