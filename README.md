@@ -103,7 +103,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-## 🦸 Autores
+## 👨‍💻👩‍💻 Autores
 
 <table>
   <tr>
