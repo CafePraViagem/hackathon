@@ -22,6 +22,7 @@
 ✈ Café Pra Viagem ☕ - é um website responsivo para facilitar o planejamento de suas viagens, que calcula os preços
 do que você desejar nela.
 
+Site : https://cafepraviagem.github.io/hackathon/home.html
 
 Projeto desenvolvido durante o **Hackathon** oferecida pela [FCamara](https://www.fcamara.com.br/) 
 com parceira da [Alura](https://www.alura.com.br/)
