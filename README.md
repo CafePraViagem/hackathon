@@ -92,39 +92,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autores
 
-<a href="https://github.com/adelarjr21">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt="Adelar"/>
- <br />
- <sub><b>Adelar Gonçalves de Souza Junior</b></sub></a>
- <br />
-
- [![Linkedin Badge](https://img.shields.io/badge/-Adelar-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/adelarjr21/)](https://www.linkedin.com/in/adelarjr21/) 
-
-<span>
-<a href="https://github.com/adelarjr21">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt="Adelar"/>
- <br />
- <sub><b>Adelar Gonçalves de Souza Junior</b></sub></a>
- <br />
-<span>
-
- [![Linkedin Badge](https://img.shields.io/badge/-Adelar-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/adelarjr21/)](https://www.linkedin.com/in/adelarjr21/) 
-
- <a href="https://github.com/adelarjr21">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt="Adelar"/>
- <br />
- <sub><b>Adelar Gonçalves de Souza Junior</b></sub></a>
- <br />
-
- [![Linkedin Badge](https://img.shields.io/badge/-Adelar-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/adelarjr21/)](https://www.linkedin.com/in/adelarjr21/) 
-
- <a href="https://github.com/adelarjr21">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt="Adelar"/>
- <br />
- <sub><b>Adelar Gonçalves de Souza Junior</b></sub></a>
- <br />
-
- [![Linkedin Badge](https://img.shields.io/badge/-Adelar-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/adelarjr21/)](https://www.linkedin.com/in/adelarjr21/) 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/adelarjr21"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt=""/><br /><sub><b>Adelar G. de Souza Jr</b></sub></a><br /> [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/)</td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/4669899?s=460&u=806503605676192b5d0c363e4490e13d8127ed64&v=4" width="100px;" alt=""/><br /><sub><b>Cleiton Souza</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/861751?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Robson Marques</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/16831337?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Claudio Orlandi</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/37725197?s=460&u=446439436524c37f66e41f35b607dbb70358d5e4&v=4" width="100px;" alt=""/><br /><sub><b>Vinícios Fraga</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+  </tr>
+</table>
 
 ---
 
