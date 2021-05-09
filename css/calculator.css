@@ -222,10 +222,14 @@ span {
   background-color: #fff;
   width: 70%;
   min-width: 250px;
-  padding: 40px;
+  max-width: 600px;
+  max-height: 600px;
+  padding: 40px 20px;
+  align-items: center;
   border-radius: 10px;
   position: relative;
 }
+
 .closeModal {
   position: absolute;
   top: 2px;
@@ -237,23 +241,34 @@ span {
   background: rgba(68, 0, 195, 1);
   color: white;
   cursor: pointer;
-  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3); */
+}
+.warning {
+  position: absolute;
+  font-size: 0.8rem;
+  left: 20px;
+  top: 10px;
+  color: #a2a2a2;
+}
+
+.closeModal:hover {
+  background-color: rgba(252, 149, 35, 0.8);
 }
 
 .modalText {
   color: #fc9523;
+  font-size: 1.2rem;
 }
 
 .showValorMessage2 {
   margin: 0 auto;
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .resultImg {
   margin: 0 auto;
   width: 80%;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 @keyframes modalBox {
@@ -271,7 +286,7 @@ span {
 }
 
 /* ------> BOOTSTRAP MEDIA QUERYS <------ */
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (portrait phones, 576px and up) */
 @media (min-width: 576px) {
   #headerHeight {
     margin-bottom: 145px;
@@ -314,9 +329,14 @@ span {
     font-size: calc(1.375rem + 2vw);
   }
 
-  /*.header-image {
-    height: 40vh;
-  } */
+  /* modal */
+  .modalText {
+    font-size: 1.4rem;
+  }
+
+  .showValorMessage2 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -328,10 +348,6 @@ span {
   #headerHeight {
     margin-bottom: 135px;
   }
-
-  /* .header-image {
-    height: 50vh;
-  } */
 
   .mainDivForm {
     display: grid;
@@ -372,10 +388,6 @@ span {
     border-radius: 10px;
     max-width: 50%;
   }
-
-  /* .header-image {
-    height: 60vh;
-  } */
 }
 
 @media (min-width: 1600px) {
