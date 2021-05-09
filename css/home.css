@@ -6,6 +6,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  transition: 0;
+  transform: 0;
 }
 
 /* Utiliy */
@@ -68,6 +70,15 @@ img.logo {
   border-top: solid 6px #fc9523;
   z-index: 1;
   margin: 0;
+}
+
+.carousel-item img{
+  opacity: 0;
+  transition: opacity 1500ms;
+}
+
+.carousel-item.active img{
+  opacity: 1;
 }
 
 .image-width-height-carousel {
