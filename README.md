@@ -107,7 +107,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/adelarjr21"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt=""/><br /><sub><b>Adelar G. de Souza Jr</b></sub></a><br /><a href="https://rocketseat.com.br/" title="L‍inkedin">L‍inkedin</a></td>
+    <td align="center"><a href="https://github.com/adelarjr21"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49174532?v=4" width="100px;" alt=""/><br /><sub><b>Adelar G. de Souza Jr</b></sub></a><br /><a href="https://www.linkedin.com/in/adelarjr21/" title="L‍inkedin">L‍inkedin</a></td>
     <td align="center"><a href="https://github.com/davidtheblane"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/42559009?v=4" width="100px;" alt=""/><br /><sub><b>Davi Bernardo</b></sub></a><br /><a href="https://www.linkedin.com/in/davibernardo/" title="L‍inkedin">L‍inkedin</a></td>
     <td align="center"><a href="https://github.com/IsmaelRDeMelo"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/54531312?v=4" width="100px;" alt=""/><br /><sub><b>Ismael Rodrigues</b></sub></a><br /><a href="https://www.linkedin.com/in/ismael-rodrigues-7b5524193/" title="L‍inkedin">L‍inkedin</a></td>
     <td align="center"><a href="https://github.com/lauracarlotta"><img style="border-radius: 50%;" src="https://cafepraviagem.github.io/hackathon/images/Laura.jpg" width="100px;" alt=""/><br /><sub><b>Laura Carlota Custódio</b></sub></a><br /><a href="https://www.linkedin.com/in/lauracarlotta/" title="L‍inkedin">L‍inkedin</a></td>
