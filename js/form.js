@@ -29,16 +29,19 @@ function formValidation() {
   if (userEmail.indexOf("@") == -1 && userEmail.indexOf(".com") == -1) {
     formUserContact.email.focus();
     clickButtonOutputChangeClass(outputEmail, "output-email-off", "output-email-on");
-  } 
-  
-  if (userPhone.length < 9 ) {
+  }
+
+  if (userPhoneId.length > 9 && userPhoneId.length < 20) {
     formUserContact.phone.focus();
     clickButtonOutputChangeClass(outputPhone, ".output-phone-off", "output-phone-on");
-  }
+  } 
   
   if (userMessage.length > 1 && userMessage.length <= 2000) {
-    formUserContact.message.focus();
-    clickButtonOutputChangeClass(outputMessage, ".output-message-off", "output-message-on");
+    if (userMessage > 2000) {
+      formUserContact.message.focus();
+      clickButtonOutputChangeClass(outputMessage, ".output-message-off", "output-message-on");
+    }
+    
   }
 
 }
@@ -62,7 +65,6 @@ userNameId.addEventListener("keypress", function(e){
   }
   
 });
-
 function checkLetterInputName(e) {
 
   const charLetter = String.fromCharCode(e.keyCode);
@@ -71,7 +73,9 @@ function checkLetterInputName(e) {
 
   const space = ' '
 
-  if (charLetter.match(patternLetter) || charLetter.match(space)) {
+  const accentuation = '[áÁãÃéÉíÍóÓõÕ]'
+
+  if (charLetter.match(patternLetter) || charLetter.match(space) || charLetter.match(accentuation)) {
     return true;
 
   } else {
@@ -89,16 +93,17 @@ userCityId.addEventListener("keypress", function(e){
   }
   
 });
-
 function checkLetterInputCity(e) {
 
   const charLetter = String.fromCharCode(e.keyCode);
 
   const patternLetter = '[a-zA-z]';
 
-  const space = ' '
+  const space = " ";
 
-  if (charLetter.match(patternLetter) || charLetter.match(space)) {
+  const accentuation = '[áÁãÃéÉíÍóÓõÕ]'
+
+  if (charLetter.match(patternLetter) || charLetter.match(space) || charLetter.match(accentuation)) {
     return true;
 
   } else {
@@ -116,23 +121,16 @@ userPhoneId.addEventListener("keypress", function(e){
   }
   
 });
-
 function checkNumberPhoneUser(e) {
 
   const charNumber = String.fromCharCode(e.keyCode);
 
-  const patternNumber = '[0-9]';
+  const patternNumber = '^\\([0-9]{2}\\)((3[0-9]{3}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$';
 
-  const plus = '+'
-
-  if (charNumber.match(patternNumber) || charNumber.match(plus)) {
+  if (charNumber.match(patternNumber)) {
     return true;
 
-  } else {
-
-    formUserContact.phone.focus();
-    clickButtonOutputChangeClass(outputPhone, "output-phone-off", "output-phone-on");
-  }  
+  }
 }
 
 let sendForm = document.querySelector(".send-form");
