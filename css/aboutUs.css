@@ -112,8 +112,6 @@ a {
   max-width: 500px;
   border-radius: 10px;
   overflow: hidden;
-  /* text-align: left; */
-  /* display: block; */
 }
 
 .accordion__button::after {
@@ -136,17 +134,12 @@ a {
 }
 
 .accordion__content {
-  /* overflow: hidden; */
-  /* max-height: 0; */
-  /* transition: max-height 0.8s; */
-  /* overflow: auto; */
   display: grid;
   width: 90%;
   background: #dfdfdf;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
   grid-gap: 5px;
-  /* max-width: 500px; */
   padding-top: 10px;
   border-radius: 0 0 10px 10px;
 
@@ -186,9 +179,6 @@ a {
   width: 90%;
 }
 
-.photo {
-}
-
 .socialIcons {
   padding: 1rem 0;
 }
@@ -204,8 +194,6 @@ a {
   font-size: 1.1rem;
   background: rgba(68, 0, 195, 0.1);
   border-radius: 10px;
-
-  /* background: violet; */
 }
 .about {
   padding: 0;
@@ -228,8 +216,6 @@ a {
   align-items: center;
   line-height: 2rem;
   width: 100%;
-
-  /* background: LightPink; */
 }
 .skills {
   padding: 0;
@@ -247,20 +233,8 @@ a {
   flex-direction: column;
   color: #fc9523;
   padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: center;
   align-items: center;
-  /* box-shadow: 0 0 10px 1; */
-}
-
-/* ------ BOOTSTRAP MEDIA QUERYS ------ */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
 }
