@@ -459,5 +459,5 @@ function valorT() {
     let output = document.getElementById('resultado');
     let valorTotal = somaTotal();
     let valorConvertido = valorTotal / 5.3;
-    output.innerHTML = `Valor a ser investido: R$ ${valorTotal.toFixed(2)} | US$ ${valorConvertido.toFixed(2)}`;
+    output.innerHTML = `Valor a ser investido: <br> R$ ${valorTotal.toFixed(2)} | US$ ${valorConvertido.toFixed(2)}`;
 }
