@@ -14,29 +14,33 @@ if (doNotLiveInBrazil.value == checked) {
 } */
 
 function formValidation() {
-
-  if (userName == "") {
-    formUserContact.name.focus();
-    clickButtonOutputChangeClass(outputName, "output-name-off", "output-name-on");
-
-  }
-
-  if (userBirthdate.length < 9){
-    formUserContact.nasc.focus();
-    clickButtonOutputChangeClass(outputNasc, "output-nasc-off", "output-nasc-on");
-  } 
-  
-  if (userEmail.indexOf("@") == -1 && userEmail.indexOf(".com") == -1) {
-    formUserContact.email.focus();
-    clickButtonOutputChangeClass(outputEmail, "output-email-off", "output-email-on");
-  }
   
   if (userMessage.length > 1 && userMessage.length <= 2000) {
     if (userMessage > 2000) {
       formUserContact.message.focus();
       clickButtonOutputChangeClass(outputMessage, ".output-message-off", "output-message-on");
     }
-    
+  }
+
+  var inputConfirmePhoneNumber = document.querySelector("#userPhone");
+
+  console.log(inputConfirmePhoneNumber)
+
+  inputConfirmePhoneNumber = inputConfirmePhoneNumber.value;
+  console.log(inputConfirmePhoneNumber)
+
+  /* const numberList = '[0-9]' */
+
+  if (inputConfirmePhoneNumber.length > 9 || inputConfirmePhoneNumber.length <= 11 && isNaN(!inputConfirmePhoneNumber)) {
+
+    console.log(inputConfirmePhoneNumber);
+    return true;
+
+  } else {
+
+    formUserContact.phone.focus();
+    clickButtonOutputChangeClass(outputPhone, "output-phone-off", "output-phone-on");
+    console.log(inputConfirmePhoneNumber);
   }
 
 }
@@ -48,7 +52,7 @@ function clickButtonOutputChangeClass(tagId, outputOff, outputOn){
 
   setTimeout(() => {
     tagId.classList.add(outputOff);
-  }, 3000);
+  }, 5000);
 
 }
 
@@ -108,34 +112,8 @@ function checkLetterInputCity(e) {
   }
 }
 
-function confirmPhoneNumber(phoneUser) {
-  const atualText = phoneUser.value;
-  const isPhoneNumber = atualText.length === 9;
-
-  let correctText;
-      
-    if (isPhoneNumber) {
-
-    } else {
-
-    }
-
-    phoneUser.value = correctText;
-}
-
-function noHyphen (phoneUser) {
-
-  const atualText = phoneUser.value;
-
-  const corresctText = atualText.replace(/\-/g, '');
-
-  phoneUser.value = corresctText;
-}
-
-
-
-let sendForm = document.querySelector(".send-form");
-sendForm.onclick = formValidation;
+let buttonSubmit = document.querySelector(".send-form");
+buttonSubmit.onclick = formValidation;
 
 // Enviar para fomulário;
 //let userNameNoSpace = userName.trim();
