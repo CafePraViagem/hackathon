@@ -196,7 +196,7 @@
                   <label for="userName">Nome Completo:
                     <input type="text" id="userName" name="name" placeholder="Insira o seu nome completo" maxlength="80" required>
                   </label>
-                  <output id="outputName" class="output-name-off">O campo foi preenchido com caracteres inválidos</output>
+                  <output id="outputName" class="output-name-off">O campo não foi preenchido ou contém caracteres inválidos</output>
                 </div>
                 
 
@@ -204,14 +204,14 @@
                   <label for="user-nasc">Data de Nascimento:
                     <input name="nasc" type="date" id="user-nasc" required>
                   </label>
-                  <output id="outputNasc" class="output-narc-off">Preencha o campo corretamente com dd/mm/aaaa</output>
+                  <output id="outputNasc" class="output-nasc-off">Preencha o campo corretamente com dd/mm/aaaa</output>
                 </div>
 
                 <div>
                   <label for="user-city">Cidade: 
-                      <input type="text" name="city" id="user-city" size="20" maxlength="40" placeholder="Sua cidade" list="cities" required>
+                      <input type="text" name="city" id="user-city" size="20" max-length="40" placeholder="Sua cidade" list="cities" required>
                   </label>
-                  <output id="outputCity" class="output-city-off">O campo não foi preenchido ou contém caracteres inválidos</output>
+                  <output id="outputCity" class="output-city-off">O campo foi preenchido com caracteres inválidos</output>
                 </div>
 
                 <datalist id="cities">
@@ -285,7 +285,7 @@
 
                 <div>
                     <label for="user-phone">Telefone:
-                      <input name="phone" type="tel" id="user-phone" placeholder="11 99999 - 9999 / Não coloque espaços" required>
+                      <input name="phone" type="tel" id="userPhone" placeholder="(11) 99999-9999" max-length="20" required>
                     </label>
                     <output id="outputPhone" class="output-phone-off">O campo não foi preenchido ou contém caracteres inválidos</output>
                 </div>

@@ -1,97 +1,46 @@
 let userName = formUserContact.name.value;
 let userBirthdate = formUserContact.nasc.value;
 let userCity = formUserContact.city.valeu;
-let userState = formUserContact.state.value;
-let userMail  = formUserContact.email.value;
+let userEmail  = formUserContact.email.value;
 let userPhone = formUserContact.phone.value;
-let optionUserMessage = formUserContact.question.value;
 let userMessage = formUserContact.message.value;
 
+/* let doNotLiveInBrazil = document.querySelector("#doNotLiveInBrazil");
 
-function checkLetterInInput(e) {
-  
-  if (!checkLetter(e)) {
-    e.preventDefault();
-  }
-}; 
+if (doNotLiveInBrazil.value == checked) {
 
-function checkNumberInInput(e) {
-  
-  if (!checkNumber(e)) {
-    e.preventDefault();
-  }
-}
-
-function checkLetter(e) {
-
-  const charLetter = String.fromCharCode(e.keyCode);
-
-  const patternLetter = '[a-zA-z]';
-
-  const space = ' '
-
-  if (charLetter.match(patternLetter) || charLetter.match(space)) {
-    return true;
-
-  } else {
-    formUserContact.name.focus();
-    clickButtonOutputChangeClass(outputName, "output-name-off", "output-name-on");
-  }
-}
-
-function checkNumber(e) {
-
-  const charNumber = String.fromCharCode(e.keyCode);
-
-  const patternNumber = '[0-9]';
-
-  const plus = '+'
-
-  if (charNumber.match(patternNumber) || charNumber.match(plus)) {
-    return true;
-
-  } else {
-
-    invalidationTentativeMessage;
-    /* formUserContact.name.focus();
-    clickButtonOutputChangeClass(outputName, "output-name-off", "output-name-on"); */
-  }  
-}
-
-function invalidationTentativeMessage(inputName, outputId, outputOn, outputOff ){
-  formUserContact.inputName.focus();
-  clickButtonOutputChangeClass(outputId, outputOn , outputOff);
-}
+  document.querySelector("#user-city").disabled = true;    
+  document.querySelector("#state").disabled = true;
+} */
 
 function formValidation() {
 
-  /* if (userBirthdate < 9){
+  if (userName == "") {
+    formUserContact.name.focus();
+    clickButtonOutputChangeClass(outputName, "output-name-off", "output-name-on");
+
+  }
+
+  if (userBirthdate.length < 9){
     formUserContact.nasc.focus();
-    clickButtonOutputChangeClass(outputNasc, "output-narc-off", "output-narc-on");
-    return false;
-
-  } */ 
-
-  /* if (userCity == "") {
-    formUserContact.city.focus();
-    clickButtonOutputChangeClass();
-    return false;
-    
-  }  */
-
-  /* if (userEmail.indexOf("@") == -1 ) {
+    clickButtonOutputChangeClass(outputNasc, "output-nasc-off", "output-nasc-on");
+  } 
+  
+  if (userEmail.indexOf("@") == -1 && userEmail.indexOf(".com") == -1) {
     formUserContact.email.focus();
-    clickButtonOutputChangeClass();
-    return false;
-    
-  }  */
+    clickButtonOutputChangeClass(outputEmail, "output-email-off", "output-email-on");
+  } 
+  
+  if (userPhone.length < 9 ) {
+    formUserContact.phone.focus();
+    clickButtonOutputChangeClass(outputPhone, ".output-phone-off", "output-phone-on");
+  }
+  
+  if (userMessage.length > 1 && userMessage.length <= 2000) {
+    formUserContact.message.focus();
+    clickButtonOutputChangeClass(outputMessage, ".output-message-off", "output-message-on");
+  }
 
-  /* if (userPhone.length < 9 ) {
-    formUserContact.email.focus();
-    clickButtonOutputChangeClass();
-    return false;
-    
-  } */
 }
 
 function clickButtonOutputChangeClass(tagId, outputOff, outputOn){
@@ -106,7 +55,85 @@ function clickButtonOutputChangeClass(tagId, outputOff, outputOn){
 }
 
 let userNameId = document.querySelector("#userName");
-userNameId.onkeypress = checkLetterInInput;
+userNameId.addEventListener("keypress", function(e){
+
+  if (!checkLetterInputName(e)) {
+    e.preventDefault();
+  }
+  
+});
+
+function checkLetterInputName(e) {
+
+  const charLetter = String.fromCharCode(e.keyCode);
+
+  const patternLetter = '[a-zA-z]';
+
+  const space = ' '
+
+  if (charLetter.match(patternLetter) || charLetter.match(space)) {
+    return true;
+
+  } else {
+
+    formUserContact.name.focus();
+    clickButtonOutputChangeClass(outputName, "output-name-off", "output-name-on");
+  }
+}
+
+let userCityId = document.querySelector("#user-city");
+userCityId.addEventListener("keypress", function(e){
+
+  if (!checkLetterInputCity(e)) {
+    e.preventDefault();
+  }
+  
+});
+
+function checkLetterInputCity(e) {
+
+  const charLetter = String.fromCharCode(e.keyCode);
+
+  const patternLetter = '[a-zA-z]';
+
+  const space = ' '
+
+  if (charLetter.match(patternLetter) || charLetter.match(space)) {
+    return true;
+
+  } else {
+    
+    formUserContact.city.focus();
+    clickButtonOutputChangeClass(outputCity, "output-city-off", "output-city-on");
+  }
+}
+
+let userPhoneId = String(document.querySelector("#userPhone").value);
+userPhoneId.addEventListener("keypress", function(e){
+
+  if (!checkNumberPhoneUser(e)) {
+    e.preventDefault();
+  }
+  
+});
+
+function checkNumberPhoneUser(e) {
+
+  const charNumber = String.fromCharCode(e.keyCode);
+
+  const patternNumber = '[0-9]';
+
+  const plus = '+'
+
+  if (charNumber.match(patternNumber) || charNumber.match(plus)) {
+    return true;
+
+  } else {
+
+    formUserContact.phone.focus();
+    clickButtonOutputChangeClass(outputPhone, "output-phone-off", "output-phone-on");
+  }  
+}
 
 let sendForm = document.querySelector(".send-form");
 sendForm.onclick = formValidation;
