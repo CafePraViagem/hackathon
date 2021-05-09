@@ -21,7 +21,8 @@
 
   position: relative;
   overflow: hidden;
-  background: url("https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
+  background: url("https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center;
   border-bottom: solid 0.5rem #fc9523;
 }
 
@@ -136,6 +137,7 @@ span {
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+  height: 80px;
 }
 
 .result {
@@ -175,9 +177,9 @@ span {
   color: white;
   width: 8.5rem;
   height: 3.5rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   transition: 0.3s;
-  background-color: rgba(68, 0, 195, 1);
+  background-color: rgba(252, 149, 35, 0.8);
 }
 
 .showValorMessage {
@@ -195,7 +197,80 @@ span {
   font-style: italic;
 }
 
-/* ------ BOOTSTRAP MEDIA QUERYS ------ */
+/* ---------- > MODAL < ------------ */
+
+.modalContainer {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modalContainer.showModal {
+  display: flex;
+}
+
+.modalBox {
+  background-color: #fff;
+  width: 70%;
+  min-width: 250px;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+}
+.closeModal {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: rgba(68, 0, 195, 1);
+  color: white;
+  cursor: pointer;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3); */
+}
+
+.modalText {
+  color: #fc9523;
+}
+
+.showValorMessage2 {
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.resultImg {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 300px;
+}
+
+@keyframes modalBox {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.showModal .modalBox {
+  animation: modalBox 0.3s;
+}
+
+/* ------> BOOTSTRAP MEDIA QUERYS <------ */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #headerHeight {
@@ -254,7 +329,6 @@ span {
     margin-bottom: 135px;
   }
 
-
   /* .header-image {
     height: 50vh;
   } */
@@ -298,7 +372,7 @@ span {
     border-radius: 10px;
     max-width: 50%;
   }
-  
+
   /* .header-image {
     height: 60vh;
   } */
