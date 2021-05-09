@@ -193,19 +193,25 @@
                 <legend>Informações do Usuário:</legend>
 
                 <div>
-                  <label for="user-name">Nome Completo:
-                    <input type="text" id="user-name" name="name" placeholder="Maria da Silva" size="20" maxlength="80">
+                  <label for="userName">Nome Completo:
+                    <input type="text" id="userName" name="name" placeholder="Insira o seu nome completo" maxlength="80" required>
                   </label>
+                  <output id="outputName" class="output-name-off">O campo não foi preenchido ou contém caracteres inválidos</output>
                 </div>
+                
+
                 <div>
                   <label for="user-nasc">Data de Nascimento:
-                    <input name="nasc" type="date" id="user-nasc">
+                    <input name="nasc" type="date" id="user-nasc" required>
                   </label>
+                  <output id="outputNasc" class="output-nasc-off">Preencha o campo corretamente com dd/mm/aaaa</output>
                 </div>
+
                 <div>
                   <label for="user-city">Cidade: 
-                      <input type="text" name="city" id="user-city" size="20" maxlength="40" placeholder="Sua cidade" list="cities">
+                      <input type="text" name="city" id="user-city" size="20" max-length="40" placeholder="Sua cidade" list="cities" required>
                   </label>
+                  <output id="outputCity" class="output-city-off">O campo foi preenchido com caracteres inválidos</output>
                 </div>
 
                 <datalist id="cities">
@@ -261,18 +267,27 @@
                       </select>
 
                     </label>
+
                 </div>
 
                 <div>
-                    <label for="user-email">E-mail:
-                        <input name="email" type="email" id="user-email" placeholder="email@email.com">
+                    <label for="doNotLiveInBrazil">
+                        <input name="doNotLiveInBrazil" class="input-form-checkbox" id="doNotLiveInBrazil" type="checkbox"> Não vivo no Brasil
                     </label>
+                </div>
+
+                <div>
+                    <label for="userEmail">E-mail:
+                        <input name="email" type="email" id="userEmail" placeholder="email@email.com" required>
+                    </label>
+                    <output id="outputEmail" class="output-email-off">O campo não foi preenchido ou contém caracteres inválidos</output>
                 </div>
 
                 <div>
                     <label for="user-phone">Telefone:
-                    <input name="phone" type="tel" id="user-phone" placeholder="11 99999 - 9999">
+                      <input name="phone" type="tel" id="userPhone" placeholder="(11) 99999-9999" max-length="20" required>
                     </label>
+                    <output id="outputPhone" class="output-phone-off">O campo não foi preenchido ou contém caracteres inválidos</output>
                 </div>
 
               </fieldset>
@@ -292,13 +307,15 @@
                               <option value="sugestionOrQuestion" selected>Sugestões e Dúvidas</option>
                           </select>
                       </label>
+                      
                   </div>
 
                   <div>
                       <label for="message">Mensagem:
-                          <textarea  name="message" id="message" cols="45" rows="5" maxlength="2000"placeholder="Deixe aqui a sua mensagem pra gente! Digite até 2000 caracteres.">
-                          </textarea>
+                          <textarea  name="message" id="message" cols="45" rows="5" maxlength="2000"placeholder="Deixe aqui a sua mensagem pra gente! Digite até 2000 caracteres." required></textarea>
                       </label>
+                      <!-- kxopaskxpasokxpoaskxpoaskopaskpasokxskapokpoaskxpxaskpoaskxpoaskxpoaskxopaskxopaskxpokasxpokasopkxasoxkaspoxkpsaosxkpasokxxpaokxopaskpxoaskpxoakxposkkxpoaskxpaoskxpoaskxpaoskxpasokxpaoskkxpaoskxpaokpaxoaskxpoaskxpoaskxpoaskkxpoaskkxpoaxkpoxaskpxkaspoxkaskpxokaspxokaspoxkaspoxkapoxkxpaokxpasokxpasokxpasokxpasokxpasoxkpoaskxpoaskkxpoaskxpokxpxoaskpxoaskpoxsakxpaskxpoakxopaskkxopkaskpxokaspoxkasopkxpoaskxpoaskxpoakxpoakxpokxpoakxpoaskxopakxoskapoxkapoxkaspokxpaoskxpoaskxopaskpxokaspxokaspxokaspxokaspxoxkpoxkxpoakxpaoskxposxkxpxokosxpkoapkxpoaskxpoaskxpaoskxpasoxkpaosxpkxoaskxapsokxpaokxaspokxposkxpaokxposkpxaspoxkpoxakpoxkakpokxkxpoakxpokxpoaskxpoasxkpaokxpaokxpoaxkaospkxpaoskxpaoskxpasokxpoxkxpoxkxpaokxpoaskkpoaxkpoxkxpoxaskxpokxkpopkoxaspokxpasokxpsaokxpoakpxokaposxkpaoskxpasoxpxsokxspoaskpxoaskpxokapxoakxpaxoxkpoxkaspoxkapoxkpskoxaakpokxpkoxkxpokxaskpokpoxakpoakpoxakpoxkpoaxkasoposakoxkpoxakxospkapxokxspkopakpxoaskxpoakxpasokxpaokxkxpoaspokxaspokxpasoxkpsxokxapoakpaskxpkxapaokxpokkkkkkkxopaskxpasokxpoaskxpoaskopaskpasokxskapokpoaskxpxaskpoaskxpoaskxpoaskxopaskxopaskxpokasxpokasopkxasoxkaspoxkpsaosxkpasokxxpaokxopaskpxoaskpxoakxposkkxpoaskxpaoskxpoaskxpaoskxpasokxpaoskkxpaoskxpaokpaxoaskxpoaskxpoaskxpoaskkxpoaskkxpoaxkpoxaskpxkaspoxkaskpxokaspxokaspoxkaspoxkapoxkxpaokxpasokxpasokxpasokxpasokxpasoxkpoaskxpoaskkxpoaskxpokxpxoaskpxoaskpoxsakxpaskxpoakxopaskkxopkaskpxokaspoxkasopkxpoaskxpoaskxpoakxpoakxpokxpoakxpoaskxopakxoskapoxkapoxkaspokxpaoskxpoaskxopaskpxokaspxokaspxokaspxokaspxoxkpoxkxpoakxpaoskxposxkxpxokosxpkoapkxpoaskxpoaskxpaoskxpasoxkpaosxpkxoaskxapsokxpaokxaspokxposkxpaokxposkpxaspoxkpoxakpoxkakpokxkxpoakxpokxpoaskxpoasxkpaokxpaokxpoaxkaospkxpaoskxpaoskxpasokxpoxkxpoxkxpaokxpoaskkpoaxkpoxkxpoxaskxpokxkpopkoxaspokxpasokxpsaokxpoakpxokaposxkpaoskxpasoxpxsokxspoaskpxoaskpxokapxoakxpaxoxkpoxkaspoxkapoxkpskoxaakpokxpkoxkxpokxaskpokpoxakpoakpoxakpoxkpoaxkasoposakoxkpoxakxospkapxokxspkopakpxoaskxpoakxpasokxpaokxkxpoaspokxaspokxpasoxkpsxokxapoakpaskxpkxapaokxpokkkkkkp -->
+                      <output id="messageQuestion" class="output-message-off">Preencha o campo acima</output>
                   </div>
 
                   <div>
@@ -322,6 +339,8 @@
                   </div>
 
               </fieldset>
+
+              <br>
 
               <input class="send-form button-type-trip color-white" type="submit" value="Enviar"/> 
 
