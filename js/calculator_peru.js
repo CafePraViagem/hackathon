@@ -221,7 +221,7 @@ function showAlertMessage(output) {
 
     setTimeout(() => {
         document.getElementById(output).style.display = "none";
-    }, 3000)
+    }, 3000);
 }
 
 function somaHospedagem() {
