@@ -63,9 +63,9 @@ O layout da aplicação está disponível a seguir:
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
+  <img alt="Café pra Viagem" title="#CafenoBule" src="https://i.ibb.co/tbpW0sD/WEB-1.png" width="400px">
 
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
+  <img alt="Café pra Viagem" title="#CafenoBule" src="https://i.ibb.co/Qbjc2Qs/WEB-2.png" width="400px">
 </p>
 
 ---
