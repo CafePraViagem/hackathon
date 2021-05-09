@@ -49,7 +49,6 @@ com parceira da [Alura](https://www.alura.com.br/)
   - [x] Resultado
     - em Reais
     - em Dólares
-
 - [x] Informativo sobre viagens para aventureiros
 - [x] Informativo sobre viagens para jovens
 - [x] Viajantes pelo mundo - Informativo sobre viajantes:
@@ -57,6 +56,10 @@ com parceira da [Alura](https://www.alura.com.br/)
   - Matheus Tomoto
   - Matias Tartieri
   - Rômulo e Mirella
+- [x] Página para contato:
+  - Sugestões
+  - Reclamações
+
 
 ---
 
