@@ -1,0 +1,292 @@
+/* Font Awesome Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+  font-family: "Sen", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0;
+  transform: 0;
+}
+
+/* Utiliy */
+.bolder-text {
+  font-weight: bolder;
+}
+
+/* NAVBAR */
+
+.navbar {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.fixed-top {
+  position: relative;
+}
+
+a.navbar-brand {
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+img.logo {
+  width: 4rem;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.navbar-collapse {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* BODY */
+
+/* Carousel */
+#bordaCarrosel {
+  border-top: solid 6px #fc9523;
+  z-index: 1;
+  margin: 0;
+}
+
+.carousel-item img{
+  opacity: 0;
+  transition: opacity 1500ms;
+}
+
+.carousel-item.active img{
+  opacity: 1;
+}
+
+.image-width-height-carousel {
+  padding: 0;
+  width: 100vw;
+  height: 40vh;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  transform: translateY(-100px);
+}
+
+/* Botão Calculador */
+#alinhamentoCentro {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+#howMuch {
+  background: #fc9523;
+  border-radius: 100px;
+  transform: translateY(-30px);
+  border: none;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  /* <<<<<<< HEAD */
+  /* ======= */
+  box-shadow: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#howMuch:hover {
+  outline: none;
+  background-color: #ffaf37;
+}
+
+#howMuch:active {
+  background-color: #fc9523;
+}
+
+/* Carrosel Transparencia OBS : NÃO TEM TANTA COMPATIBILIDADE COM TODOS NAVEGADORES SE ALGUÉM TIVE UMA OPÇÃO MELHOR*/
+
+#carousel img,
+.header-image-countries {
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    center top,
+    center bottom,
+    color-stop(0.1, rgba(0, 0, 0, 0)),
+    /* Esse aumenta a parte branca de cima(Meio que vai cortando a imagem) está em 0.2 o maximo é 1.0 */
+      color-stop(0.4, rgba(0, 0, 0, 1))
+  ); /* Aqui aumenta o tamanho da transparencia de cima o numero maximo é o numero 1.0 está em 0.6 */
+}
+
+/* Texto & Infos */
+section {
+  margin-bottom: 0.3rem;
+}
+
+.title-section {
+  margin-left: 5px;
+}
+
+#text-01 p,
+#text-02 p {
+  font-size: 10px;
+}
+
+#text-01 h2,
+#text-02 h2 {
+  font-size: 0.8rem;
+}
+
+#text-01 p,
+#text-02 p {
+  font-size: 10px;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  clear: both;
+}
+
+footer {
+  padding: 10px 0 1px 0;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+#link-footer {
+  padding-bottom: 1rem;
+}
+
+#link-footer a {
+  font-size: 12px;
+  margin: 0.89rem;
+  color: rgb(0, 0, 0);
+}
+
+p.bolder-text {
+  color: rgb(0, 0, 0);
+}
+
+.bg-light > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Faq, Contato, Quem Somos */
+.bg-light {
+  background-color: #f0f0f0 !important;
+}
+
+/* Copyright */
+#footer2 {
+  background-color: #d6d6d6 !important;
+}
+
+/* Carousel */
+@media (min-width: 1010px) {
+  .image-width-height-carousel {
+    height: 54vh;
+  }
+}
+
+/* BOOTSTRAP MEDIA QUERY */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* navbar */
+  a.navbar-brand {
+    font-size: 2rem;
+  }
+
+  img.logo {
+    width: 5rem;
+  }
+
+  .navbar-toggler {
+    font-size: 1.6rem;
+  }
+
+  /* Texto & Infos */
+  #text-01 h2,
+  #text-02 h2 {
+    font-size: 1rem;
+  }
+
+  #text-01 p,
+  #text-02 p {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* navbar */
+  .navbar {
+    padding: 0 1rem;
+  }
+  .container-fluid {
+    flex-direction: row;
+  }
+
+  img.logo {
+    width: 4rem;
+  }
+
+  .navbar-collapse {
+    background-color: transparent;
+  }
+
+  /* Texto & Infos */
+  #text-01 h2,
+  #text-02 h2 {
+    font-size: 1.1rem;
+  }
+
+  #text-01 p,
+  #text-02 p {
+    font-size: 12px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* navbar */
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  a.navbar-brand {
+    font-size: 1.4rem;
+  }
+}
+
+@media(min-width: 1920px) {
+  .image-width-height-carousel {
+    height: 60vh;
+  }
+}

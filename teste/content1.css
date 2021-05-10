@@ -1,0 +1,260 @@
+.font-style-content-home {
+  font-size: 1.1rem;
+}
+
+.container-text-section,
+.coffee-go-trip,
+.container-click-button-message,
+.container-infos,
+.infos-trip-list,
+.ul-trip {
+  margin: 0 auto;
+  width: 70vw;
+  text-align: center;
+}
+
+.container-click-button-message,
+.coffee-go-trip {
+  text-align: center;
+}
+
+.container-text-button {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.infos-trip-list {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.li-iten-trip {
+  margin-right: 15px;
+}
+
+.plus-trip {
+  margin-top: 20px;
+}
+
+.button-type-trip {
+  background: #fc9523;
+  border-radius: 100px;
+  border: none;
+  box-shadow: none;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 10px 0;
+  padding: 6px 12px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button-type-trip a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-type-trip:hover {
+  background-color: #ffaf37;
+}
+
+.button-type-trip:active {
+  background-color: #fc9523;
+}
+
+.final-message-simple {
+  margin-top: 20px;
+}
+
+.final-link, 
+.link {
+  color: #ff9500;
+}
+
+.final-link:hover, 
+.link:hover {
+  color: #4400c3;
+}
+
+.info-message {
+  margin: 30px 0;
+}
+
+.text-decoration-color-underline {
+  text-decoration-color: #fc9523;
+}
+
+li > strong,
+div > strong {
+  color: #ff9500;
+}
+
+div > strong {
+  font-size: 1.3rem;
+}
+
+.adventurous-profile-on,
+.young-profile-on {
+  display: block;
+  position: relative;
+}
+
+.adventurous-profile-off,
+.young-profile-off {
+  display: none;
+}
+
+.indications {
+  margin: 40px 0;
+  border-radius: 10px;
+  border: solid 3px #fcca80;
+  box-shadow: 4px -4px #fcca80;
+  max-width: 910px;
+}
+
+.country-indication {
+  margin: 15px 0;
+}
+
+.image-country {
+  width: 82vw;
+  height: 30vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 3px #ff9500;
+  box-shadow: 3px -3px #ff9500;
+  max-width: 420px;
+  max-height: 290px;
+}
+
+.country-indication div {
+  margin: 10px;
+}
+
+.button-contries-adventurous,
+.button-contries-young {
+  margin: 20px auto 0;
+}
+
+.carousel-control-prev-icon-indication, 
+.carousel-control-next-icon-indication {
+  background-color: #ffaf37;
+  transform: translateY(-165px)
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+@media (min-width: 432px) {
+  .image-country {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 584px) {
+  .image-country {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 650px) {
+  .image-country {
+    height: 52vh;
+  }
+}
+
+@media (min-width: 834px) {
+  .font-style-conntent-home {
+    font-size: 1rem;
+  }
+
+  .container-infos {
+    width: 75vw;
+    display: flex;
+    flex-direction: initial;
+  }
+
+  .infos-trip-list,
+  .ul-trip {
+    /* float: left; */
+    width: 35vw;
+    text-align: right;
+    align-items: left;
+    justify-items: left;
+  }
+
+  .li-iten-trip {
+    margin-right: 0;
+  }
+
+  .plus-trip {
+    /* float: right; */
+    width: 35vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    align-items: right;
+    justify-items: right;
+  }
+
+  .pefil-trip-adventurous {
+    margin-top: 12px;
+  }
+
+  .indications {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .image-country {
+    width: 64vw;
+  }
+
+}
+
+@media (min-width: 940px) {
+  .container-text-image-country {
+    max-width: 940px;
+  }
+} 
+
+@media (min-width: 1200px) {
+
+  .container-text-image-country {
+    display: flex;
+    flex-direction: initial;
+  }
+
+  .image-country {
+    width: 35vw;
+    height: 42vh;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .text-image-country {
+    width: 35vw;
+    align-items: right;
+    justify-content: right;
+  }
+
+  .carousel-control-prev-icon-indication, .carousel-control-next-icon-indication {
+    transform: translateY(175px)
+  }
+}
+
+@media (min-width: 1350px) {
+  
+  .image-country {
+    margin-top: 20px;
+    height: 44vh;
+  }
+
+  .text-image-country {
+    margin-top: auto;
+  }
+}
