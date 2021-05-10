@@ -5,35 +5,26 @@ let userEmail = formUserContact.email.value;
 let userPhone = formUserContact.phone.value;
 let userMessage = formUserContact.message.value;
 
-document.getElementById('userPhone').addEventListener('keydown', function () {
-  const phone = document.getElementById('userPhone');
-  const re = /^\(?\d{2}\)?[-. ]?\d{5}[-. ]?\d{4}$/;
+// document.getElementById('userPhone').addEventListener('keydown', function () {
+//   const phone = document.getElementById('userPhone');
+//   const re = /^\(?\d{2}\)?[-. ]?\d{5}[-. ]?\d{4}$/;
 
-  if (!re.test(phone.value)) {
-    phone.classList.add('is-invalid')
-  } else {
-    phone.classList.remove('is-invalid')
-  }
-});
+//   if (!re.test(phone.value)) {
+//     phone.classList.add('is-invalid')
+//   } else {
+//     phone.classList.remove('is-invalid')
+//   }
+// });
 
 function formValidation() {
 
-  if (document.getElementById('userPhone').classList.contains('is-invalid')) {
-    alert('Erro! Preencha todos os campos corretamente.');
-  } else {
     if (userMessage.length > 1 && userMessage.length <= 2000) {
       if (userMessage > 2000) {
         formUserContact.message.focus();
         clickButtonOutputChangeClass(outputMessage, ".output-message-off", "output-message-on");
       }
     }
-
-    document.getElementById('formContact').addEventListener('submit', function (event) {
-      event.preventDefault()
-      startModal("modalResult")
-    })
   }
-}
 
 function clickButtonOutputChangeClass(tagId, outputOff, outputOn) {
 
@@ -153,3 +144,8 @@ function startModal(modalID) {
     }
   });
 }
+
+document.getElementById('formContact').addEventListener('submit', function (event) {
+  event.preventDefault()
+  startModal("modalResult")
+})
