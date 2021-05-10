@@ -136,11 +136,10 @@ checkboxNotBrazil.onchange = function () {
   });
 }
 
-document.getElementById('formContact').addEventListener('submit', function(evt){
-    evt.preventDefault();
-    startModal("modalResult");
+document.getElementById('formContact').addEventListener('submit', function(event) {
+  event.preventDefault()
+  startModal("modalResult")
 })
-
 
 /* let buttonSubmit = document.getElementById("enviar");
 buttonSubmit.onclick = formValidation(); */
