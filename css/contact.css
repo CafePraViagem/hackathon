@@ -104,11 +104,7 @@ textarea {
     padding: 0;
     width: 100vw;
     height: 100vh;
-<<<<<<< HEAD
-    position: static;
-=======
     position: fixed;
->>>>>>> 082d9be2962128c2cbfb84d783052c40f18656e3
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
