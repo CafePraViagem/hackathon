@@ -143,7 +143,18 @@ checkboxNotBrazil.onchange = function () {
 
 
 
+//  ----> SHOW MODAL
+function startModal(modalID) {
+  const modalBox = document.getElementById(modalID);
 
+  modalBox.classList.add("showModal");
+  modalBox.addEventListener("click", (event) => {
+    if (event.target.id == modalID || event.target.id == "close") {
+      modalBox.classList.remove("showModal");
+      window.location.reload();
+    }
+  });
+}
 
 
 let buttonSubmit = document.querySelector(".send-form");
