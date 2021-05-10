@@ -213,8 +213,12 @@
                       <input type="text" name="city" id="userCity" size="20" max-length="40" placeholder="Sua cidade" list="cities" enabled required>
                   </label>
                   <output id="outputCity" class="output-city-off">O campo foi preenchido com caracteres inválidos</output>
-                </div>document.getElementById('donate').style.display = 'none';
-    document.getElementById('topMessage').style.display = 'none';
+                </div>
+
+                <datalist id="cities">
+                    <option value="São Paulo"></option>
+                    <option value="Campinas"></option>
+                    <option value="Jundiaí"></option>
                     <option value="Santos"></option>
                     <option value="Mogi das Cruzes"></option>
                     <option value="Diadema"></option>
