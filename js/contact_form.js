@@ -5,14 +5,6 @@ let userEmail  = formUserContact.email.value;
 let userPhone = formUserContact.phone.value;
 let userMessage = formUserContact.message.value;
 
-/* let doNotLiveInBrazil = document.querySelector("#doNotLiveInBrazil");
-
-if (doNotLiveInBrazil.value == checked) {
-
-  document.querySelector("#user-city").disabled = true;    
-  document.querySelector("#state").disabled = true;
-} */
-
 function formValidation() {
   
   if (userMessage.length > 1 && userMessage.length <= 2000) {
@@ -24,16 +16,11 @@ function formValidation() {
 
   var inputConfirmePhoneNumber = document.querySelector("#userPhone");
 
-  console.log(inputConfirmePhoneNumber)
-
   inputConfirmePhoneNumber = inputConfirmePhoneNumber.value;
-  console.log(inputConfirmePhoneNumber)
 
-  /* const numberList = '[0-9]' */
 
   if (inputConfirmePhoneNumber.length > 9 || inputConfirmePhoneNumber.length <= 11 && isNaN(!inputConfirmePhoneNumber)) {
 
-    console.log(inputConfirmePhoneNumber);
     return true;
 
   } else {
@@ -84,7 +71,7 @@ function checkLetterInputName(e) {
   }
 }
 
-let userCityId = document.querySelector("#user-city");
+let userCityId = document.querySelector("#userCity");
 userCityId.addEventListener("keypress", function(e){
 
   if (!checkLetterInputCity(e)) {
@@ -111,6 +98,19 @@ function checkLetterInputCity(e) {
     clickButtonOutputChangeClass(outputCity, "output-city-off", "output-city-on");
   }
 }
+
+function checkDoNotLiveInBrazil () {
+
+  let doNotLiveInBrazil = document.querySelector("#doNotLiveInBrazil");
+
+if (doNotLiveInBrazil == checked) {
+
+  document.querySelector("#userCity").disabled = true;    
+  document.querySelector("#userState").disabled = true;
+  document.querySelector("#userPhone").disabled = true;
+}
+}
+
 
 let buttonSubmit = document.querySelector(".send-form");
 buttonSubmit.onclick = formValidation;

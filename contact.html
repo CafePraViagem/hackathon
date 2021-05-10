@@ -208,8 +208,8 @@
                 </div>
 
                 <div>
-                  <label for="user-city">Cidade: 
-                      <input type="text" name="city" id="user-city" size="20" max-length="40" placeholder="Sua cidade" list="cities" required>
+                  <label for="useCity">Cidade: 
+                      <input type="text" name="city" id="userCity" size="20" max-length="40" placeholder="Sua cidade" list="cities" disabled="false" required>
                   </label>
                   <output id="outputCity" class="output-city-off">O campo foi preenchido com caracteres inválidos</output>
                 </div>
@@ -232,9 +232,9 @@
                 </datalist>
 
                 <div>
-                    <label for="state">Estado:
+                    <label for="userState">Estado:
 
-                      <select name="state" id="state">
+                      <select name="state" id="userState" disabled="false">
 
                           <option value="AC">Acre</option>
                           <option value="AL">Alagoas</option>
@@ -285,7 +285,7 @@
 
                 <div>
                     <label for="user-phone">Celular:
-                      <input name="phone" type="tel" id="userPhone" placeholder="(11) 99999-9999 ou (11) 9999-9999" max-length="20" required>
+                      <input name="phone" type="tel" id="userPhone" placeholder="(11) 99999-9999 ou (11) 9999-9999" max-length="20" disabled="false" required>
                     </label>
                     <output id="outputPhone" class="output-phone-off">Coloque um numero válido</output>
                 </div>
