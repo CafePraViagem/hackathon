@@ -123,7 +123,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🧡 Agradecimentos 
 
-<img src="https://cafepraviagem.github.io/hackathon/images/thanks.jpg" style="width: 250px" alt="Obrigado" />
 <p>Agradecemos ao grupo Alura e ao grupo FCamara pela oportunidade.</p>
 #FuturosSangueLaranja
 
