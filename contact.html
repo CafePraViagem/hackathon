@@ -186,7 +186,7 @@
           </div>
 
           <div class="container-form">
-            <form name="formUserContact" class="form-contact">
+            <form id="formContact" name="formUserContact" class="form-contact">
 
               <!-- action="mailto:cafepraviagem.squad1@gmail.com" -->
               <fieldset class="user-form">
@@ -197,7 +197,7 @@
                   <label for="userName">Nome Completo:
                     <input type="text" id="userName" name="name" placeholder="Insira o seu nome completo" maxlength="80" required>
                   </label>
-                  <output id="outputName" class="output-name-off">O campo não foi preenchido ou contém caracteres inválidos</output>
+                  <output id="outputName" class="output-name-off">O campo foi preenchido com caracteres inválidos</output>
                 </div>
                 
 
@@ -213,12 +213,8 @@
                       <input type="text" name="city" id="userCity" size="20" max-length="40" placeholder="Sua cidade" list="cities" enabled required>
                   </label>
                   <output id="outputCity" class="output-city-off">O campo foi preenchido com caracteres inválidos</output>
-                </div>
-
-                <datalist id="cities">
-                    <option value="São Paulo"></option>
-                    <option value="Campinas"></option>
-                    <option value="Jundiaí"></option>
+                </div>document.getElementById('donate').style.display = 'none';
+    document.getElementById('topMessage').style.display = 'none';
                     <option value="Santos"></option>
                     <option value="Mogi das Cruzes"></option>
                     <option value="Diadema"></option>
@@ -342,7 +338,7 @@
 
               <br>
 
-              <input id="enviar" class="send-form button-type-trip color-white" type="submit" value="Enviar"/>
+              <input id="enviar" class="send-form button-type-trip color-white" type="submit" value="Enviar" onclick = formValidation()/>
 
             </form>
 

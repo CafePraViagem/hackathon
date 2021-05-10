@@ -11,25 +11,9 @@ function formValidation() {
     if (userMessage > 2000) {
       formUserContact.message.focus();
       clickButtonOutputChangeClass(outputMessage, ".output-message-off", "output-message-on");
-      startModal("modalResult");
+      ;
     }
-  }
-
-  var inputConfirmePhoneNumber = document.querySelector("#userPhone");
-
-  inputConfirmePhoneNumber = inputConfirmePhoneNumber.value;
-
-
-  if (inputConfirmePhoneNumber.length > 9 || inputConfirmePhoneNumber.length <= 11 && isNaN(!inputConfirmePhoneNumber)) {
-
-    return true;
-
-  } else {
-
-    formUserContact.phone.focus();
-    clickButtonOutputChangeClass(outputPhone, "output-phone-off", "output-phone-on");
-    console.log(inputConfirmePhoneNumber);
-  }
+  } 
 
 }
 
@@ -150,18 +134,13 @@ checkboxNotBrazil.onchange = function () {
       
     }
   });
-} 
+}
 
-/*$("#enviar").click(function(e){
-        e.preventDefault();
-        $("#modalResult").modal("show");
-        var nome = $("#nome").val();
-        $("#conteudo").empty();
-        $("#conteudo").append("Nome: " + nome);
-    }); */
+document.getElementById('formContact').addEventListener('submit', function(evt){
+    evt.preventDefault();
+    startModal("modalResult");
+})
 
-let buttonSubmit = document.querySelector(".send-form");
-buttonSubmit.onclick = formValidation();
 
-// Enviar para fomulário;
-//let userNameNoSpace = userName.trim();
+/* let buttonSubmit = document.getElementById("enviar");
+buttonSubmit.onclick = formValidation(); */
