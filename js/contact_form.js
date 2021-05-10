@@ -19,8 +19,7 @@ document.getElementById('userPhone').addEventListener('keydown', function () {
 function formValidation() {
 
   if (document.getElementById('userPhone').classList.contains('is-invalid')) {
-    // alert('Erro! Preencha todos os campos corretamente.');
-    formUserContact.phone.focus();
+    alert('Erro! Preencha todos os campos corretamente.');
   } else {
     if (userMessage.length > 1 && userMessage.length <= 2000) {
       if (userMessage > 2000) {
