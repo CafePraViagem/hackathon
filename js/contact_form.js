@@ -99,17 +99,51 @@ function checkLetterInputCity(e) {
   }
 }
 
-function checkDoNotLiveInBrazil () {
 
-  let doNotLiveInBrazil = document.querySelector("#doNotLiveInBrazil");
 
-if (doNotLiveInBrazil == checked) {
 
-  document.querySelector("#userCity").disabled = true;    
-  document.querySelector("#userState").disabled = true;
-  document.querySelector("#userPhone").disabled = true;
-}
-}
+var checkboxNotBrazil = document.querySelector("#doNotLiveInBrazil");
+
+
+
+checkboxNotBrazil.onchange = function () {
+
+  if (checkboxNotBrazil.checked) {
+    
+    var userCity = document.querySelector("#userCity");
+    var userState = document.querySelector("#userState");
+    var userPhone = document.querySelector("#userPhone");
+    var outputUserPhone = document.querySelector("#outputPhone");
+
+    userCity.disabled = true;
+    userPhone.disabled = true;
+    userState.disabled = true;
+
+    if (userCity.disabled && userPhone.disabled && userState.disabled) {
+
+      userCity.required = false;
+      userPhone.required = false;
+      userState.required = false;
+      outputUserPhone.style.color = "white";
+
+    } else {
+
+      userCity.required = true;
+      userPhone.required = true;
+      userState.required = true;
+
+    }
+
+  } else {
+
+    document.querySelector("#userPhone").disabled = false;
+  }
+};
+
+
+
+
+
 
 
 let buttonSubmit = document.querySelector(".send-form");

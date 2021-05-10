@@ -186,8 +186,9 @@
           </div>
 
           <div class="container-form">
-            <form name="formUserContact" class="form-contact" method="post" action="mailto: ">
+            <form name="formUserContact" class="form-contact">
 
+              <!-- action="mailto:cafepraviagem.squad1@gmail.com" -->
               <fieldset class="user-form">
 
                 <legend>Informações do Usuário:</legend>
@@ -209,7 +210,7 @@
 
                 <div>
                   <label for="useCity">Cidade: 
-                      <input type="text" name="city" id="userCity" size="20" max-length="40" placeholder="Sua cidade" list="cities" disabled="false" required>
+                      <input type="text" name="city" id="userCity" size="20" max-length="40" placeholder="Sua cidade" list="cities" enabled required>
                   </label>
                   <output id="outputCity" class="output-city-off">O campo foi preenchido com caracteres inválidos</output>
                 </div>
@@ -234,7 +235,7 @@
                 <div>
                     <label for="userState">Estado:
 
-                      <select name="state" id="userState" disabled="false">
+                      <select name="state" id="userState">
 
                           <option value="AC">Acre</option>
                           <option value="AL">Alagoas</option>
@@ -272,7 +273,7 @@
 
                 <div>
                     <label for="doNotLiveInBrazil">
-                        <input name="doNotLiveInBrazil" class="input-form-checkbox" id="doNotLiveInBrazil" type="checkbox"> Não vivo no Brasil
+                        <input name="doNotLiveInBrazil" class="input-form-checkbox" id="doNotLiveInBrazil" type="checkbox" value="unchecked"> Não vivo no Brasil
                     </label>
                 </div>
 
@@ -285,7 +286,7 @@
 
                 <div>
                     <label for="user-phone">Celular:
-                      <input name="phone" type="tel" id="userPhone" placeholder="(11) 99999-9999 ou (11) 9999-9999" max-length="20" disabled="false" required>
+                      <input name="phone" type="tel" id="userPhone" placeholder="(11) 99999-9999 ou (11) 9999-9999" max-length="20" enabled required>
                     </label>
                     <output id="outputPhone" class="output-phone-off">Coloque um numero válido</output>
                 </div>
@@ -341,7 +342,7 @@
 
               <br>
 
-              <input class="send-form button-type-trip color-white" type="submit" value="Enviar"/> 
+              <input class="send-form button-type-trip color-white" type="submit" value="Enviar"/>
 
             </form>
 
