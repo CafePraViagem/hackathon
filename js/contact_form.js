@@ -11,6 +11,7 @@ function formValidation() {
     if (userMessage > 2000) {
       formUserContact.message.focus();
       clickButtonOutputChangeClass(outputMessage, ".output-message-off", "output-message-on");
+      startModal("modalResult");
     }
   }
 
@@ -135,7 +136,7 @@ checkboxNotBrazil.onchange = function () {
 };
 
 //  ----> SHOW MODAL
-/* function startModal(modalID) {
+ function startModal(modalID) {
   const modalBox = document.getElementById(modalID);
 
   modalBox.classList.add("showModal");
@@ -145,15 +146,15 @@ checkboxNotBrazil.onchange = function () {
       window.location.reload();
     }
   });
-} */
+} 
 
-$("#enviar").click(function(e){
+/*$("#enviar").click(function(e){
         e.preventDefault();
         $("#modalResult").modal("show");
         var nome = $("#nome").val();
         $("#conteudo").empty();
         $("#conteudo").append("Nome: " + nome);
-    });
+    }); */
 
 let buttonSubmit = document.querySelector(".send-form");
 buttonSubmit.onclick = formValidation;
