@@ -99,13 +99,7 @@ function checkLetterInputCity(e) {
   }
 }
 
-
-
-
 var checkboxNotBrazil = document.querySelector("#doNotLiveInBrazil");
-
-
-
 checkboxNotBrazil.onchange = function () {
 
   if (checkboxNotBrazil.checked) {
@@ -140,11 +134,8 @@ checkboxNotBrazil.onchange = function () {
   }
 };
 
-
-
-
 //  ----> SHOW MODAL
-function startModal(modalID) {
+/* function startModal(modalID) {
   const modalBox = document.getElementById(modalID);
 
   modalBox.classList.add("showModal");
@@ -154,8 +145,15 @@ function startModal(modalID) {
       window.location.reload();
     }
   });
-}
+} */
 
+$("#enviar").click(function(e){
+        e.preventDefault();
+        $("#modalResult").modal("show");
+        var nome = $("#nome").val();
+        $("#conteudo").empty();
+        $("#conteudo").append("Nome: " + nome);
+    });
 
 let buttonSubmit = document.querySelector(".send-form");
 buttonSubmit.onclick = formValidation;
