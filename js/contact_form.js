@@ -157,7 +157,7 @@ checkboxNotBrazil.onchange = function () {
     }); */
 
 let buttonSubmit = document.querySelector(".send-form");
-buttonSubmit.onclick = formValidation;
+buttonSubmit.onclick = formValidation();
 
 // Enviar para fomulário;
 //let userNameNoSpace = userName.trim();
