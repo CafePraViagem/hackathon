@@ -13,6 +13,7 @@
  <a href="#-layout">Layout</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-autores">Autores</a> • 
+ <a href="#-agradecimentos">Agradecimentos</a> • 
  <a href="#user-content--licença">Licença</a>
 </p>
 
@@ -120,6 +121,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
+## 🧡 Agradecimentos 
+
+<p>Agradecemos ao grupo Alura e ao grupo FCamara pela oportunidade.</p>
+#FuturosSangueLaranja
+
+---
+
 ## 📝 Licença
 
-Feito com ❤️ por SQUAD-01
+Feito com 🧡 por SQUAD-01
+#FuturosSangueLaranja
+
+---
