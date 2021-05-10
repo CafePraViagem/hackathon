@@ -129,9 +129,8 @@ checkboxNotBrazil.onchange = function () {
   modalBox.classList.add("showModal");
   modalBox.addEventListener("click", (event) => {
     if (event.target.id == modalID || event.target.id == "close") {
-      
       modalBox.classList.remove("showModal");
-      
+      window.location.reload();
     }
   });
 }
