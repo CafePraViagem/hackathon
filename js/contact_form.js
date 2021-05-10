@@ -5,14 +5,6 @@ let userEmail  = formUserContact.email.value;
 let userPhone = formUserContact.phone.value;
 let userMessage = formUserContact.message.value;
 
-/* let doNotLiveInBrazil = document.querySelector("#doNotLiveInBrazil");
-
-if (doNotLiveInBrazil.value == checked) {
-
-  document.querySelector("#user-city").disabled = true;    
-  document.querySelector("#state").disabled = true;
-} */
-
 function formValidation() {
   
   if (userMessage.length > 1 && userMessage.length <= 2000) {
@@ -24,16 +16,11 @@ function formValidation() {
 
   var inputConfirmePhoneNumber = document.querySelector("#userPhone");
 
-  console.log(inputConfirmePhoneNumber)
-
   inputConfirmePhoneNumber = inputConfirmePhoneNumber.value;
-  console.log(inputConfirmePhoneNumber)
 
-  /* const numberList = '[0-9]' */
 
   if (inputConfirmePhoneNumber.length > 9 || inputConfirmePhoneNumber.length <= 11 && isNaN(!inputConfirmePhoneNumber)) {
 
-    console.log(inputConfirmePhoneNumber);
     return true;
 
   } else {
@@ -84,7 +71,7 @@ function checkLetterInputName(e) {
   }
 }
 
-let userCityId = document.querySelector("#user-city");
+let userCityId = document.querySelector("#userCity");
 userCityId.addEventListener("keypress", function(e){
 
   if (!checkLetterInputCity(e)) {
@@ -111,6 +98,64 @@ function checkLetterInputCity(e) {
     clickButtonOutputChangeClass(outputCity, "output-city-off", "output-city-on");
   }
 }
+
+
+
+
+var checkboxNotBrazil = document.querySelector("#doNotLiveInBrazil");
+
+
+
+checkboxNotBrazil.onchange = function () {
+
+  if (checkboxNotBrazil.checked) {
+    
+    var userCity = document.querySelector("#userCity");
+    var userState = document.querySelector("#userState");
+    var userPhone = document.querySelector("#userPhone");
+    var outputUserPhone = document.querySelector("#outputPhone");
+
+    userCity.disabled = true;
+    userPhone.disabled = true;
+    userState.disabled = true;
+
+    if (userCity.disabled && userPhone.disabled && userState.disabled) {
+
+      userCity.required = false;
+      userPhone.required = false;
+      userState.required = false;
+      outputUserPhone.style.color = "white";
+
+    } else {
+
+      userCity.required = true;
+      userPhone.required = true;
+      userState.required = true;
+
+    }
+
+  } else {
+
+    document.querySelector("#userPhone").disabled = false;
+  }
+};
+
+
+
+
+//  ----> SHOW MODAL
+function startModal(modalID) {
+  const modalBox = document.getElementById(modalID);
+
+  modalBox.classList.add("showModal");
+  modalBox.addEventListener("click", (event) => {
+    if (event.target.id == modalID || event.target.id == "close") {
+      modalBox.classList.remove("showModal");
+      window.location.reload();
+    }
+  });
+}
+
 
 let buttonSubmit = document.querySelector(".send-form");
 buttonSubmit.onclick = formValidation;

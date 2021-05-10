@@ -93,6 +93,106 @@ textarea {
     display: none;
 }
 
+/* ---------- > MODAL < ------------ */
+
+.modalContainer {
+    margin: 0 auto;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.modalContainer.showModal {
+    display: flex;
+}
+
+.modalBox {
+    background-color: #fff;
+    width: 70%;
+    min-width: 250px;
+    max-width: 600px;
+    max-height: 600px;
+    padding: 20px 20px;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.closeModal {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: rgba(68, 0, 195, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.closeModal:hover {
+    background-color: rgba(252, 149, 35, 0.8);
+}
+
+.modalText {
+    color: #fc9523;
+    font-size: 1.2rem;
+}
+
+.modalText-h2 {
+    color: #fc9523;
+    font-weight: bold;
+}
+
+.showValorMessage2 {
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.resultImg {
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    width: 80%;
+    max-width: 250px;
+}
+
+@keyframes modalBox {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.showModal .modalBox {
+animation: modalBox 0.3s;
+}
+
+@media(min-width: 576px) {
+      /* modal */
+    .modalText {
+        font-size: 1.4rem;
+    }
+
+    .showValorMessage2 {
+        font-size: 1.2rem;
+    }
+}
+
 @media(min-width: 1200px) {
     .container-contact {
         width: 50vw;

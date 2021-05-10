@@ -186,8 +186,9 @@
           </div>
 
           <div class="container-form">
-            <form name="formUserContact" class="form-contact" method="post" action="mailto: ">
+            <form name="formUserContact" class="form-contact">
 
+              <!-- action="mailto:cafepraviagem.squad1@gmail.com" -->
               <fieldset class="user-form">
 
                 <legend>Informações do Usuário:</legend>
@@ -208,8 +209,8 @@
                 </div>
 
                 <div>
-                  <label for="user-city">Cidade: 
-                      <input type="text" name="city" id="user-city" size="20" max-length="40" placeholder="Sua cidade" list="cities" required>
+                  <label for="useCity">Cidade: 
+                      <input type="text" name="city" id="userCity" size="20" max-length="40" placeholder="Sua cidade" list="cities" enabled required>
                   </label>
                   <output id="outputCity" class="output-city-off">O campo foi preenchido com caracteres inválidos</output>
                 </div>
@@ -232,9 +233,9 @@
                 </datalist>
 
                 <div>
-                    <label for="state">Estado:
+                    <label for="userState">Estado:
 
-                      <select name="state" id="state">
+                      <select name="state" id="userState">
 
                           <option value="AC">Acre</option>
                           <option value="AL">Alagoas</option>
@@ -272,7 +273,7 @@
 
                 <div>
                     <label for="doNotLiveInBrazil">
-                        <input name="doNotLiveInBrazil" class="input-form-checkbox" id="doNotLiveInBrazil" type="checkbox"> Não vivo no Brasil
+                        <input name="doNotLiveInBrazil" class="input-form-checkbox" id="doNotLiveInBrazil" type="checkbox" value="unchecked"> Não vivo no Brasil
                     </label>
                 </div>
 
@@ -285,7 +286,7 @@
 
                 <div>
                     <label for="user-phone">Celular:
-                      <input name="phone" type="tel" id="userPhone" placeholder="(11) 99999-9999 ou (11) 9999-9999" max-length="20" required>
+                      <input name="phone" type="tel" id="userPhone" placeholder="(11) 99999-9999 ou (11) 9999-9999" max-length="20" enabled required>
                     </label>
                     <output id="outputPhone" class="output-phone-off">Coloque um numero válido</output>
                 </div>
@@ -341,13 +342,26 @@
 
               <br>
 
-              <input class="send-form button-type-trip color-white" type="submit" value="Enviar"/> 
+              <input class="send-form button-type-trip color-white" type="submit" value="Enviar"/>
 
             </form>
 
           </div>
 
       </section>
+
+      <div id="modalResult" class="modalContainer">
+        <div class="modalBox">
+         <button id="close" class="closeModal">x</button> 
+         <div class="container-img">
+           <br>
+           <img class="resultImg center" src="images/contact.png" alt="Imagem de um viajante segurando sua mala">
+           <br>
+         </div>
+         <h2 class="modalText-h2 text-center">OBRIGADA POR ENTRAR EM CONTATO CONOSCO!!!</h2> 
+         <h3 class="modalText text-center">Agora é só aguardar que um membro de nossa equipe entrará em contato com você!</h3>         
+        </div>
+      </div>
     
       <br>
 
@@ -406,7 +420,8 @@
     <script src="js/home_buttons.js"></script>
 
     <!-- /carroussel.js -->
-    <script src="js/carousel.js"></script>
+    <!-- <script src="js/carousel.js"></script> -->
+    <script src="js/carousel_bootstrap.js"></script>
     
     <!-- Form valid -->
     <script src="js/contact_form.js"></script>
